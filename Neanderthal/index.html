@@ -187,18 +187,12 @@
         function drop(event) {
             event.preventDefault();
             var data = event.dataTransfer.getData("src");
-            {#alert(data);#}
-            {#alert(data.slice(16));#}
-            {#alert(event.target.id.slice(0))#}
             document.getElementById(event.target.id.slice(0)).src = data;
         }
 
         function drop2(event) {
             event.preventDefault();
             var data = event.dataTransfer.getData("dsrc");
-            {#alert(data);#}
-            {#alert(data.slice(16));#}
-            {#alert(event.target.id.slice(0))#}
             var div = document.createElement('div');
             div.innerHTML = '已卖<input type="checkbox"><input type="checkbox"><input type="checkbox"><img src="' + data + '"' + ' height="100%" width="50%"' + '>';
             div.className= "row clearfix";
