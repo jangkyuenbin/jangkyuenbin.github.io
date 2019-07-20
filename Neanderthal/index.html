@@ -83,7 +83,7 @@
             n[5]="n6";
             for (var i=0;i<n.length;i++)
             {
-                document.getElementById(n[i]).src='/images/north_europe_back.jpg';
+                document.getElementById(n[i]).src='images/north_europe_back.jpg';
             }
             n[0]="s1";
             n[1]="s2";
@@ -93,15 +93,15 @@
             n[5]="s6";
             for (var i=0;i<n.length;i++)
             {
-                document.getElementById(n[i]).src='/images/south_europe_back.jpg';
+                document.getElementById(n[i]).src='images/south_europe_back.jpg';
             }
 
           }
         function changeevent()
         {
             var num = a[iii] + 37
-            document.getElementById("eventimg").src='/images/event' + num + '.jpg';
-            document.getElementById("dimg").src='/images/event' + num + '.jpg';
+            document.getElementById("eventimg").src='images/event' + num + '.jpg';
+            document.getElementById("dimg").src='images/event' + num + '.jpg';
             iii += 1
         }
 
@@ -139,7 +139,7 @@
                 if(mutation([document.getElementById(n[i]).src, "north_europe_back.jpg"]))
                 {
                     var num =  b[ii];
-                    document.getElementById(n[i]).src='/images/resource' + num + '.jpg';
+                    document.getElementById(n[i]).src='images/resource' + num + '.jpg';
                     document.getElementById(n[i]).value='f';
                     ii+=1;
                 }
@@ -160,7 +160,7 @@
                 if(mutation([document.getElementById(n[i]).src, "south_europe_back.jpg"]))
                 {
                     var num =  c[ii];
-                    document.getElementById(n[i]).src='/images/resource' + num + '.jpg';
+                    document.getElementById(n[i]).src='images/resource' + num + '.jpg';
                     document.getElementById(n[i]).value='f';
                     ii+=1;
                 }
@@ -170,9 +170,9 @@
 
         function dragging(event) {
             if (mutation([event.target.id, 'n'])){
-                document.getElementById(event.target.id).src='/images/north_europe_back.jpg';
+                document.getElementById(event.target.id).src='images/north_europe_back.jpg';
             }else{
-                document.getElementById(event.target.id).src='/images/south_europe_back.jpg';
+                document.getElementById(event.target.id).src='images/south_europe_back.jpg';
             }
         }
         function dragStart(event) {
