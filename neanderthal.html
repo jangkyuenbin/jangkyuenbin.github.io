@@ -78,7 +78,7 @@
             n[5]="s6";
             for (var i=0;i<n.length;i++)
             {
-                document.getElementById(n[i]).src='images/south_europe_back.jpg';
+                document.getElementById(n[i]).src='Neanderthal/images/south_europe_back.jpg';
             }
 			location.reload();
 
@@ -86,8 +86,8 @@
         function changeevent()
         {
             var num = a[iii] + 37
-            document.getElementById("eventimg").src='images/event' + num + '.jpg';
-            document.getElementById("dimg").src='images/event' + num + '.jpg';
+            document.getElementById("eventimg").src='Neanderthal/images/event' + num + '.jpg';
+            document.getElementById("dimg").src='Neanderthal/images/event' + num + '.jpg';
             iii += 1
         }
 
@@ -125,7 +125,7 @@
                 if(mutation([document.getElementById(n[i]).src, "north_europe_back.jpg"]))
                 {
                     var num =  b[ii];
-                    document.getElementById(n[i]).src='images/resource' + num + '.jpg';
+                    document.getElementById(n[i]).src='Neanderthal/images/resource' + num + '.jpg';
                     document.getElementById(n[i]).value='f';
                     ii+=1;
                 }
@@ -146,7 +146,7 @@
                 if(mutation([document.getElementById(n[i]).src, "south_europe_back.jpg"]))
                 {
                     var num =  c[ii];
-                    document.getElementById(n[i]).src='images/resource' + num + '.jpg';
+                    document.getElementById(n[i]).src='Neanderthal/images/resource' + num + '.jpg';
                     document.getElementById(n[i]).value='f';
                     ii+=1;
                 }
@@ -156,9 +156,9 @@
 
         function dragging(event) {
             if (mutation([event.target.id, 'n'])){
-                document.getElementById(event.target.id).src='images/north_europe_back.jpg';
+                document.getElementById(event.target.id).src='Neanderthal/images/north_europe_back.jpg';
             }else{
-                document.getElementById(event.target.id).src='images/south_europe_back.jpg';
+                document.getElementById(event.target.id).src='Neanderthal/images/south_europe_back.jpg';
             }
         }
         function dragStart(event) {
@@ -222,26 +222,26 @@
 												<div class="col-md-2 column">
 													<h3>
 														NORTH ROW
-													</h3><img src="images/north_europe_back.jpg" height="80%" width="100%" onclick="north()"/>
+													</h3><img src="Neanderthal/images/north_europe_back.jpg" height="80%" width="100%" onclick="north()"/>
 												</div>
 												<div class="col-md-10 column">
 													<div class="row clearfix">
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn1" ondrop="drop(event)" ondragover="allowDrop(event)">
-																	<img id="n1" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																	<img id="n1" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 
 																<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -250,18 +250,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn2" ondrop="drop(event)" ondragover="allowDrop(event)">
-																	<img id="n2" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																	<img id="n2" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -270,18 +270,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn3" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="n3" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="n3" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -290,18 +290,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn4" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="n4" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="n4" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -310,18 +310,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn5" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="n5" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="n5" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -330,18 +330,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="dn6" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="n6" src="images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="n6" src="Neanderthal/images/north_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 'n')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -354,25 +354,25 @@
 												<div class="col-md-2 column">
 													<h3>
 														SOUTH ROW
-													</h3><img alt="140x140" src="images/south_europe_back.jpg" height="80%" width="100%" onclick="south()"/>
+													</h3><img alt="140x140" src="Neanderthal/images/south_europe_back.jpg" height="80%" width="100%" onclick="south()"/>
 												</div>
 												<div class="col-md-10 column">
 													<div class="row clearfix">
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds1" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s1" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s1" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -381,18 +381,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds2" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s2" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s2" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -401,18 +401,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds3" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s3" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s3" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -421,18 +421,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds4" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s4" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s4" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -441,18 +441,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds5" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s5" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s5" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 
 																</div><form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -461,18 +461,18 @@
 														<div class="col-md-2 column">
 															<div class="row clearfix">
 																<div id="ds6" ondrop="drop(event)" ondragover="allowDrop(event)">
-																<img id="s6" src="images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
+																<img id="s6" src="Neanderthal/images/south_europe_back.jpg" height="100%" width="100%" onclick="reverse(this.id, 's')" ondrag="dragging(event)" ondragstart="dragStart(event)"/>
 																</div>
 																	<form class="form-inline">
 																<div class="form-group">
-																	<img src="images/cube_yellow.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_yellow.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																	<div class="form-group">
-																	<img src="images/cube_green.png" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_green.png" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																	</div><div class="form-group">
-																	<img src="images/cube_red.PNG" height="5%" width="5%"/>
+																	<img src="Neanderthal/images/cube_red.PNG" height="5%" width="5%"/>
 																	<input type="text" class="form-control" placeholder="0">
 																</div>
 																</form>
@@ -483,15 +483,15 @@
 											</div>
 											<div class="row clearfix">
 												<div class="col-md-3 column">
-													<img id="eventimg" src="images/event37.jpg" height="100%" width="100%" style="transform: rotate(180deg)"/>
+													<img id="eventimg" src="Neanderthal/images/event37.jpg" height="100%" width="100%" style="transform: rotate(180deg)"/>
 												</div>
 												<div class="col-md-3 column">
-													<img id="dimg" src="images/event37.jpg" height="100%" width="100%" ondragstart=" ddragStart(event)"/>
+													<img id="dimg" src="Neanderthal/images/event37.jpg" height="100%" width="100%" ondragstart=" ddragStart(event)"/>
 												</div>
 												<div class="col-md-6 column">
 													<div class="row clearfix">
 														<div class="col-md-10 column">
-															<img src="images/event_back.jpg" height="100%" width="50%"/>
+															<img src="Neanderthal/images/event_back.jpg" height="100%" width="50%"/>
 														</div>
 														<div class="col-md-2 column">
 															 <button type="button" class="btn btn-default" onclick="changeevent()">下一回</button>
@@ -539,37 +539,37 @@
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >维纳斯门户</div>
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >萨满门户</div>
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >野牛门户</div>
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
-																<img src="images/Neanderthal_A.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Neanderthal_A.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-785416">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/Neanderthal_B.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Neanderthal_B.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-3721">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/sexuality59f.jpg" height="100%" width="60%"/>
+																<img src="Neanderthal/images/sexuality59f.jpg" height="100%" width="60%"/>
 															</div>
 															<div class="tab-pane" id="panel-37216679">
 
@@ -620,37 +620,37 @@
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >维纳斯门户</div>
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >萨满门户</div>
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >野牛门户</div>
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
-																<img src="images/Archaic_A.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Archaic_A.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-530929">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/Archaic_B.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Archaic_B.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-6679">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/sexuality59f.jpg" height="100%" width="60%"/>
+																<img src="Neanderthal/images/sexuality59f.jpg" height="100%" width="60%"/>
 															</div>
 															<div class="tab-pane" id="panel-66793721">
 
@@ -701,37 +701,37 @@
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >维纳斯门户</div>
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >萨满门户</div>
-																		<img src="images/fuel.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/fuel.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
 																<form class="form-inline">
 																	<div class="form-group">
 																		<div >野牛门户</div>
-																		<img src="images/ivory.png" height="5%" width="5%"/><input type="checkbox">
-																		<img src="images/iron.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/ivory.png" height="5%" width="5%"/><input type="checkbox">
+																		<img src="Neanderthal/images/iron.png" height="5%" width="5%"/><input type="checkbox">
 																	</div>
 																</form>
-																<img src="images/Cro-Magnon_A.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Cro-Magnon_A.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-477898">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/Cro-Magnon_B.jpg" height="100%" width="100%"/>
+																<img src="Neanderthal/images/Cro-Magnon_B.jpg" height="100%" width="100%"/>
 															</div>
 															<div class="tab-pane" id="panel-994413">
 																<p>
 																	Howdy, I'm in Section 2.
 																</p>
-																<img src="images/sexuality59f.jpg" height="100%" width="60%"/>
+																<img src="Neanderthal/images/sexuality59f.jpg" height="100%" width="60%"/>
 															</div>
 															<div class="tab-pane" id="panel-314499">
 
@@ -751,9 +751,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >社会词汇</div>
-																<img src="images/fuel.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/fuel.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_yellow.PNG" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_yellow.PNG" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="6">
 															</div>
 														</form>
@@ -762,9 +762,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >科技词汇</div>
-																<img src="images/iron.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/iron.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_green.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_green.png" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="0">
 															</div>
 														</form>
@@ -774,9 +774,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >自然词汇</div>
-																<img src="images/ivory.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/ivory.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_red.PNG" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_red.PNG" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="0">
 															</div>
 														</form>
@@ -787,9 +787,9 @@
 														<form class="form-inline">
 														  <div class="form-group">
 															<div >社会词汇</div>
-															<img src="images/fuel.png" height="10%" width="10%"/>
+															<img src="Neanderthal/images/fuel.png" height="10%" width="10%"/>
 															<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-															<img src="images/cube_yellow.PNG" height="10%" width="10%"/>
+															<img src="Neanderthal/images/cube_yellow.PNG" height="10%" width="10%"/>
 															<input type="text" class="form-control" placeholder="0">
 														  </div>
 														</form>
@@ -798,9 +798,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >科技词汇</div>
-																<img src="images/iron.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/iron.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_green.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_green.png" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="6">
 															</div>
 														</form>
@@ -810,9 +810,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >自然词汇</div>
-																<img src="images/ivory.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/ivory.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_red.PNG" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_red.PNG" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="0">
 															</div>
 														</form>
@@ -823,9 +823,9 @@
 														<form class="form-inline">
 														  <div class="form-group">
 															<div >社会词汇</div>
-															<img src="images/fuel.png" height="10%" width="10%"/>
+															<img src="Neanderthal/images/fuel.png" height="10%" width="10%"/>
 															<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-															<img src="images/cube_yellow.PNG" height="10%" width="10%"/>
+															<img src="Neanderthal/images/cube_yellow.PNG" height="10%" width="10%"/>
 															<input type="text" class="form-control" placeholder="0">
 														  </div>
 														</form>
@@ -834,9 +834,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >科技词汇</div>
-																<img src="images/iron.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/iron.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_green.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_green.png" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="0">
 															</div>
 														</form>
@@ -846,9 +846,9 @@
 														<form class="form-inline">
 															<div class="form-group">
 																<div >自然词汇</div>
-																<img src="images/ivory.png" height="10%" width="10%"/>
+																<img src="Neanderthal/images/ivory.png" height="10%" width="10%"/>
 																<input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-																<img src="images/cube_red.PNG" height="10%" width="10%"/>
+																<img src="Neanderthal/images/cube_red.PNG" height="10%" width="10%"/>
 																<input type="text" class="form-control" placeholder="6">
 															</div>
 														</form>
@@ -1051,15 +1051,15 @@
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="Neanderthal/images/pic07.jpg" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="Neanderthal/images/pic08.jpg" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="Neanderthal/images/pic09.jpg" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 									</div>
