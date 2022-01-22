@@ -203,5 +203,10 @@
         "chinese": "请输入DIY卡名称",
         "english": "Please enter DIY card name",
         "japanese": "DIYカード名を入力してください"
+    },
+    "generic_page_text": {
+        "chinese": "通用",
+        "english": "Generic",
+        "japanese": "ユニバーサル"
     }
 }
