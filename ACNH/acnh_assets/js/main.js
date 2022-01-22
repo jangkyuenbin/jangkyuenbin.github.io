@@ -1,20 +1,20 @@
-function arrayRemove(e,n){return e.filter(function(e){return e!==n})}function goto_page(e){window.location.href=e}function goto_home_page(){window.location.href="./index.html"}function menu_onload(){var e=document.getElementById("language-category"),n=document.getElementById("user-category")
-const o=getSelectedUserJson()
-var t="0"
-if(null!=o.global.language&&(t=o.global.language),null!=n&&null!=e){for(;n.firstChild;)n.removeChild(n.firstChild)
-var l=getAllUserName()
-if(e.options[parseInt(t)].selected=!0,null!=l)for(var a=0;a<l.length;a++){const s=document.createElement("option")
-s.value=l[a],s.textContent=l[a],o.info.name===l[a]&&(s.selected=!0),n.appendChild(s)}else{const s=document.createElement("option")
-s.value="none",s.textContent="-未注册-",n.appendChild(s)}}}function all_page_onload(){menu_onload()}function menu_form_change(){var e=document.getElementById("language-category"),n=e.selectedIndex,o=getGlobalJson()
-null!=o?o.language=e.options[n].value:o={language:e.options[n].value},saveGlobalJson(o),location.reload()}function change_user(){var e=document.getElementById("user-category"),n=e.selectedIndex
-console.log(e.options[n].value),cancelSelectionOtherUser()
-const o=getUserJson(e.options[n].value)
-o.is_selected=!0,saveUserJson(e.options[n].value,o),location.reload()}function init_language(){var e="db/json/language.json",n=new XMLHttpRequest,o="0"
-const t=getSelectedUserJson()
-null!=t.global.language&&(o=t.global.language),n.open("get",e),n.send(null),n.onload=function(){if(200==n.status){var e=JSON.parse(n.responseText),t=0
-for(var l in e){var a,s=e[l],r=document.getElementsByClassName(l)
-if(null!=r)for(t=0;t<r.length;++t)if("0"===o?a=s.english:"1"===o?a=s.chinese:"2"===o&&(a=s.japanese),"INPUT"===r[t].tagName)r[t].placeholder=a
-else if("umbrella_category_all_text"===l){var i=document.createElement("span")
-i.classList.add("icon_more"),r[t].textContent=a,r[t].appendChild(i)}else r[t].textContent=a
-if(r=document.getElementsByClassName(l+"_left"),null!=r)for(t=0;t<r.length;++t)"0"===o?a=s.chinese:"1"===o?a=s.japanese:"2"===o&&(a=s.english),"INPUT"===r[t].tagName?(console.log(r[t]),console.log(r[t].tagName),r[t].placeholder=a):r[t].textContent=a
-if(r=document.getElementsByClassName(l+"_right"),null!=r)for(t=0;t<r.length;++t)"0"===o?a=s.japanese:"1"===o?a=s.english:"2"===o&&(a=s.chinese),"INPUT"===r[t].tagName?(console.log(r[t]),console.log(r[t].tagName),r[t].placeholder=a):r[t].textContent=a}}else console.log("error")}}
+function arrayRemove(e,t){return e.filter(function(e){return e!==t})}function goto_page(e){window.location.href=e}function goto_home_page(){window.location.href="./index.html"}function cleanElementChild(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function menu_onload(){var e=document.getElementById("language-category"),t=document.getElementById("user-category")
+const n=getSelectedUserJson()
+var l="0"
+if(null!=n.global.language&&(l=n.global.language),null!=t&&null!=e){for(;t.firstChild;)t.removeChild(t.firstChild)
+var a=getAllUserName()
+if(e.options[parseInt(l)].selected=!0,null!=a)for(var o=0;o<a.length;o++){const r=document.createElement("option")
+r.value=a[o],r.textContent=a[o],n.info.name===a[o]&&(r.selected=!0),t.appendChild(r)}else{const r=document.createElement("option")
+r.value="none",r.textContent="-未注册-",t.appendChild(r)}}}function all_page_onload(){menu_onload()}function menu_form_change(){var e=document.getElementById("language-category"),t=e.selectedIndex,n=getGlobalJson()
+null!=n?n.language=e.options[t].value:n={language:e.options[t].value},saveGlobalJson(n),location.reload()}function change_user(){var e=document.getElementById("user-category"),t=e.selectedIndex
+console.log(e.options[t].value),cancelSelectionOtherUser()
+const n=getUserJson(e.options[t].value)
+n.is_selected=!0,saveUserJson(e.options[t].value,n),location.reload()}function init_language(){var e="db/json/language.json",t=new XMLHttpRequest,n="0"
+const l=getSelectedUserJson()
+null!=l.global.language&&(n=l.global.language),t.open("get",e),t.send(null),t.onload=function(){if(200==t.status){var e=JSON.parse(t.responseText),l=0
+for(var a in e){var o,r=e[a],s=document.getElementsByClassName(a)
+if(null!=s)for(l=0;l<s.length;++l)if("0"===n?o=r.english:"1"===n?o=r.chinese:"2"===n&&(o=r.japanese),"INPUT"===s[l].tagName)s[l].placeholder=o
+else if("umbrella_category_all_text"===a){var c=document.createElement("span")
+c.classList.add("icon_more"),s[l].textContent=o,s[l].appendChild(c)}else s[l].textContent=o
+if(s=document.getElementsByClassName(a+"_left"),null!=s)for(l=0;l<s.length;++l)"0"===n?o=r.chinese:"1"===n?o=r.japanese:"2"===n&&(o=r.english),"INPUT"===s[l].tagName?(console.log(s[l]),console.log(s[l].tagName),s[l].placeholder=o):s[l].textContent=o
+if(s=document.getElementsByClassName(a+"_right"),null!=s)for(l=0;l<s.length;++l)"0"===n?o=r.japanese:"1"===n?o=r.english:"2"===n&&(o=r.chinese),"INPUT"===s[l].tagName?(console.log(s[l]),console.log(s[l].tagName),s[l].placeholder=o):s[l].textContent=o}}else console.log("error")}}
