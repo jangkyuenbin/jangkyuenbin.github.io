@@ -1,81 +1,41 @@
-function celeste_page_onload() {
-    all_page_onload();
-}
-    var request = new XMLHttpRequest();
-    var i = 0;
-    // 设置请求方法与路径
-    request.open("get", 'db/json/celeste.json');
-    // 不发送数据到服务器
-    request.send(null);
-    //XHR对象获取到返回信息后执行
-    request.onload = function () {
-        // 返回状态为200，即为数据获取成功
-        if (request.status == 200) {
-            var data = JSON.parse(request.responseText);
-            console.log(data.length);
-            var page_json = getPageJson('umbrella')
-            for (i = 0; i < data.length; i++) {
-                data[i].show_flag = 1
-            }
-
-            if (page_json != null) {
-                for (i = 0; i < data.length; i++) {
-                    if (page_json.includes(data[i].id)) {
-                        data[i].own_flag = 1
-                    }
-                }
-            }
-            // filter name data
-            if (name != null) {
-                console.log('name filter')
-                for (i = 0; i < data.length; i++) {
-                    if (data[i].show_flag === 1) {
-                        if (data[i].name.english.indexOf(name) > -1 ||
-                            data[i].name.chinese.indexOf(name) > -1 ||
-                            data[i].name.japanese.indexOf(name) > -1) {
-                            data[i].show_flag = 1
-                        } else {
-                            data[i].show_flag = 0
-                        }
-                    }
-                }
-            }
-
-            // filter own data
-            if (own != null) {
-                console.log('own filter')
-                for (i = 0; i < data.length; i++) {
-                    if (data[i].show_flag === 1) {
-                        if (own) {
-                            data[i].show_flag = data[i].own_flag
-                        } else {
-                            data[i].show_flag = data[i].own_flag ^ 1
-                        }
-                    }
-
-                }
-            }
-
-            // filter cate data
-            if (checkbox_select_list.length != 0) {
-                console.log('cate filter')
-                for (i = 0; i < data.length; i++) {
-                    if (data[i].show_flag === 1) {
-                        if (checkbox_select_list.includes(data[i].source.english) ||
-                            checkbox_select_list.includes(data[i].source.chinese) ||
-                            checkbox_select_list.includes(data[i].source.japanese)) {
-                            data[i].show_flag = 1
-                        } else {
-                            data[i].show_flag = 0
-                        }
-                    }
-
-                }
-            }
-            update_page(data);
-            init_language();
-        } else {
-            console.log('error');
-        }
-    }
-}
+function celeste_page_onload(){all_page_onload(),load_celeste_db(null,null)}function onCelesteEnterPress(e){console.log(e),13===e.which&&(console.log(e),alert("You've entered: "))}function onCelesteReset(){var e=document.getElementById("celeste_name"),t=document.getElementById("celeste_radio_00")
+e.value="",t.checked=!0,current_page=1,celeste_page_onload()}function onCelesteSearch(e){var t=document.getElementById("celeste_name"),n=(document.getElementById("celeste_radio_00"),document.getElementById("celeste_radio_01")),l=document.getElementById("celeste_radio_02"),a=null
+if(""!==t.value&&(a=t.value),null!=e&&"LABEL"===e.tagName){var o=document.getElementById(e.htmlFor)
+return o.checked||("1"===o.value?load_celeste_db(name=a,own=!0):"2"===o.value?load_celeste_db(name=a,own=!1):load_celeste_db(name=a,own=null)),null}return n.checked?load_celeste_db(name=a,own=!0):l.checked?load_celeste_db(name=a,own=!1):load_celeste_db(name=a,own=null),null}function getPrevDiv(){var e=document.createElement("span")
+e.classList.add("button"),e.classList.add("small"),e.classList.add("prev_text"),1===current_page&&e.classList.add("disabled")
+var t=document.createElement("li")
+return t.onclick=function(){current_page>1&&(current_page-=1,onCelesteSearch(null))},t.appendChild(e),t}function getNextDiv(){var e=document.createElement("span")
+e.classList.add("button"),e.classList.add("small"),e.classList.add("next_text"),current_page===max_page&&e.classList.add("disabled")
+var t=document.createElement("li")
+return t.onclick=function(){max_page>current_page&&(current_page+=1,onCelesteSearch(null))},t.appendChild(e),t}function getNavPageDiv(e){var t=document.createElement("a")
+t.classList.add("page"),t.textContent=e,e===current_page&&t.classList.add("active")
+var n=document.createElement("li")
+return n.onclick=function(){max_page>=e&&e>=1&&(current_page=e,onCelesteSearch(null))},n.appendChild(t),n}function update_pagination(){var e,t=0,n=document.getElementById("pagination")
+if(null!=n&&(cleanElementChild(n),max_page>1)){var l=getPrevDiv(),a=getNextDiv()
+if(n.appendChild(l),7>=max_page)for(t=0;max_page>t;t++)e=getNavPageDiv(t+1),n.appendChild(e)
+else for(t=1;7>=t;t++)e=getNavPageDiv(max_page>=current_page+3?Math.max([current_page-4+t,1]):max_page-7+t),n.appendChild(e)
+n.appendChild(a)}}function get_celeste_img_div(e){var t=document.createElement("div"),n=document.createElement("img")
+return n.style="border-radius: 10px",n.className="one",n.src=e,n.width="100%",t.className="border_tr",t.style="width: 100%;",t.appendChild(n),t}function change_celeste_own_flag(e){var t=getPageJson("celeste")
+if(null!=t)if(t.includes(e)){const n=t.indexOf(e)
+n>-1&&t.splice(n,1)}else t.push(e)
+else t=[e]
+t=Array.from(new Set(t)),t.sort(function(e,t){return e-t}),savePageJson("celeste",t),onCelesteSearch(null)}function get_celeste_node_div(e,t,n,l){var a=get_celeste_img_div(t),o=document.createElement("div")
+o.classList.add("border_b"),o.style="width: 100%;text-align: center;",""===n?o.classList.add("not_translated_text"):o.textContent=n
+var c=document.createElement("div")
+c.classList.add("border_b"),0===l?c.classList.add("not_owned_label_text"):c.classList.add("owned_label_text"),c.style="width: 100%;text-align: center;",c.onclick=function(){change_celeste_own_flag(e)}
+var r=document.createElement("div")
+r.className="row out_border",r.appendChild(a),r.appendChild(o),r.appendChild(c)
+var s=document.createElement("div")
+return s.className="col-2 col-6-small pd",s.appendChild(r),s}function update_celeste_page(e){var t=getLanguage(),n=0,l=0,a=(current_page-1)*max_item,o=current_page*max_item,c=document.getElementById("items_div")
+for(cleanElementChild(c),n=0;n<e.length;n++)if(1===e[n].show_flag){if(l>=a&&o>l){var r=get_celeste_node_div(id=e[n].id,url="./images/celeste_png/"+e[n].pic_name,name=e[n].name[t],flag=e[n].own_flag)
+c.appendChild(r)}l++}max_page=Math.ceil(l/max_item),console.log(max_page),update_pagination()
+var s=document.getElementById("celeste_name")
+s.addEventListener("keydown",function(e){13===e.keyCode&&(e.preventDefault(),document.getElementById("celeste_search_btn").click())})}function load_celeste_db(e,t){var n=new XMLHttpRequest,l=0
+n.open("get","db/json/celeste.json"),n.send(null),n.onload=function(){if(200==n.status){var a=JSON.parse(n.responseText)
+console.log(a.length)
+var o=getPageJson("celeste")
+for(l=0;l<a.length;l++)a[l].show_flag=1
+if(null!=o)for(l=0;l<a.length;l++)o.includes(a[l].id)&&(a[l].own_flag=1)
+if(null!=e)for(console.log("name filter"),l=0;l<a.length;l++)1===a[l].show_flag&&(a[l].name.english.indexOf(e)>-1||a[l].name.chinese.indexOf(e)>-1||a[l].name.japanese.indexOf(e)>-1?a[l].show_flag=1:a[l].show_flag=0)
+if(null!=t)for(console.log("own filter"),l=0;l<a.length;l++)1===a[l].show_flag&&(t?a[l].show_flag=a[l].own_flag:a[l].show_flag=1^a[l].own_flag)
+update_celeste_page(a),init_language()}else console.log("error")}}var current_page=1,max_page=10,max_item=18

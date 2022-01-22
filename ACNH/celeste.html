@@ -9,12 +9,12 @@
     <title>CELESTE</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="acnh_assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./acnh_assets/css/main.css"/>
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
+        <link rel="stylesheet" href="./assets/css/noscript.css"/>
     </noscript>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="./favicon.ico"/>
 </head>
 
 <body class="is-preload">
@@ -22,7 +22,7 @@
 <div id="wrapper">
     <!-- Header -->
     <header id="header">
-        <a href="index.html" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
+        <a href="./index.html" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
         <nav>
             <a class="menu_name_text" href="#menu">Menu</a>
         </nav>
@@ -31,10 +31,10 @@
     <!-- Menu -->
     <nav id="menu">
         <ul class="links">
-            <li><a class="home_page_text" href="index.html">主页</a></li>
+            <li><a class="home_page_text" href="./index.html">主页</a></li>
             <li><a class="furniture_page_text" href="#">家具图鉴</a></li>
             <li><a class="fossil_page_text" href="#">化石图鉴</a></li>
-            <li><a class="elements_page_text" href="elements.html">Elements</a></li>
+            <li><a class="elements_page_text" href="./elements.html">Elements</a></li>
         </ul>
         <form id="menu_form" method="post" action="#" onchange="menu_form_change()">
             <div class="row gtr-uniform">
@@ -56,7 +56,7 @@
                 <a class="button icon solid fa-download small fit download_btn_text"
                    onclick="downloadCurrentUserJson()">导出</a></li>
         </ul>
-        <div style="width: 0px;height: 0px;display: none">
+        <div style="width: 0;height: 0;display: none">
             <input type="file" name="input_f" id="input_f">
         </div>
 
@@ -71,7 +71,7 @@
                 </div>
             </form>
             <li class="nav_li_right_6">
-                <a href="edit.html" class="button fit edit_btn_text">编辑</a></li>
+                <a href="./edit.html" class="button fit edit_btn_text">编辑</a></li>
         </ul>
 
     </nav>
@@ -91,69 +91,30 @@
                             <input class="celeste_input_text" type="text" name="celeste_name" id="celeste_name"
                                    value="" placeholder="请输入DIY卡名称"/>
                         </div>
-                        <div class="col-3 col-12-xsmall" id="multi_select">
-                            <div class="col-6 col-12-xsmall">
-                                <div class="fit multi_select2 celeste_category_all_text" id="celeste_category">
-                                    <span class="icon_more"></span>
-                                </div>
-                            </div>
-                            <div class="col-6 col-12-xsmall multi_select">
-                                <div id="multi_select_content" class="multi_select_content">
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_01" name="demo-copy">
-                                        <label for="demo_01">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_02" name="demo-copy">
-                                        <label for="demo_02">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_03" name="demo-copy">
-                                        <label for="demo_03">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_04" name="demo-copy">
-                                        <label for="demo_04">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_05" name="demo-copy">
-                                        <label for="demo_05">Email me a copy</label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
                         <div class="col-3 col-12-xsmall">
                             <ul class="actions">
                                 <li>
-                                    <a href="#" class="button primary fit search_btn_text"
-                                       onclick="onSearch(this)">搜索</a>
+                                    <a id="celeste_search_btn" href="#" class="button primary fit search_btn_text"
+                                       onclick="onCelesteSearch(this)">搜索</a>
                                 </li>
-                                <li><a href="#" class="button fit reset_btn_text" onclick="onReset()">重置</a></li>
+                                <li><a href="#" class="button fit reset_btn_text" onclick="onCelesteReset()">重置</a></li>
                             </ul>
                         </div>
 
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_00" name="demo-priority" value="0" checked>
-                            <label class="all_label_text" for="celeste_radio_00" onclick="onSearch(this)">全部</label>
+                            <label class="all_label_text" for="celeste_radio_00" onclick="onCelesteSearch(this)">全部</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_01" name="demo-priority" value="1">
                             <label class="owned_label_text" for="celeste_radio_01"
-                                   onclick="onSearch(this)">已拥有</label>
+                                   onclick="onCelesteSearch(this)">已拥有</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_02" name="demo-priority" value="2">
                             <label class="not_owned_label_text" for="celeste_radio_02"
-                                   onclick="onSearch(this)">未拥有</label>
+                                   onclick="onCelesteSearch(this)">未拥有</label>
                         </div>
-
-
-                        <!-- Break -->
-
-
-                        <!-- Break -->
                     </div>
                 </form>
 
