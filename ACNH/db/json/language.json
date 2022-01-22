@@ -198,5 +198,10 @@
         "chinese": "请输入用户名",
         "english": "Please enter user name",
         "japanese": "ユーザー名を入力してください"
+    },
+    "celeste_input_text": {
+        "chinese": "请输入DIY卡名称",
+        "english": "Please enter DIY card name",
+        "japanese": "DIYカード名を入力してください"
     }
 }
