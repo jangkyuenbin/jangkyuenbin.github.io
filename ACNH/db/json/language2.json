@@ -1,0 +1,184 @@
+{
+    "index": {
+        "menu_01": {
+            "chinese": "主页",
+            "english": "Home",
+            "japanese": "家"
+        },
+        "menu_02": {
+            "chinese": "家具图鉴",
+            "english": "Furniture",
+            "japanese": "家具の図解"
+        },
+        "menu_03": {
+            "chinese": "化石图鉴",
+            "english": "Fossil",
+            "japanese": "化石の図解"
+        },
+        "menu_04": {
+            "chinese": "元素",
+            "english": "Elements",
+            "japanese": "要素"
+        },
+        "upload_a": {
+            "chinese": "导入",
+            "english": "Import",
+            "japanese": "輸入"
+        },
+        "reset_a": {
+            "chinese": "重置",
+            "english": "Reset",
+            "japanese": "リセット"
+        },
+        "download_a": {
+            "chinese": "导出",
+            "english": "Export",
+            "japanese": "輸出"
+        },
+        "edit_a": {
+            "chinese": "编辑",
+            "english": "Edit",
+            "japanese": "編集"
+        },
+        "banner_h1": {
+            "chinese": "欢迎来到, 《集合啦！动物森友会》图鉴工具",
+            "english": "Welcome to, Animal Crossing: New Horizons Illustrated handbook",
+            "japanese": "《あつまれ どうぶつの森》ポケモン図鑑ツールへようこそ"
+        },
+        "banner_start": {
+            "chinese": "开始使用",
+            "english": "Get Started",
+            "japanese": "使い始める"
+        },
+        "menu_name": {
+            "chinese": "菜单",
+            "english": "Menu",
+            "japanese": "メニュー"
+        },
+        "main_01_a": {
+            "chinese": "傅珂DIY卡图鉴",
+            "english": "Celeste Book",
+            "japanese": "フーコDIYカードブック"
+        },
+        "main_01_p": {
+            "chinese": "フーコDIYカードブック",
+            "english": "傅珂DIY卡图鉴",
+            "japanese": "Celeste Book"
+        },
+        "main_02_a": {
+            "chinese": "化石图鉴",
+            "english": "Fossil Book",
+            "japanese": "化石の図解"
+        },
+        "main_02_p": {
+            "chinese": "化石の図解",
+            "english": "化石图鉴",
+            "japanese": "Fossil Book"
+        },
+        "main_03_a": {
+            "chinese": "服饰图鉴",
+            "english": "Clothing Book",
+            "japanese": "衣料品ポケモン図鑑"
+        },
+        "main_03_p": {
+            "chinese": "衣料品ポケモン図鑑",
+            "english": "服饰图鉴",
+            "japanese": "Clothing Book"
+        },
+        "main_04_a": {
+            "chinese": "DIY 方程式",
+            "english": "DIY recipes",
+            "japanese": "DIYレシピ"
+        },
+        "main_04_p": {
+            "chinese": "DIYレシピ",
+            "english": "DIY 方程式",
+            "japanese": "DIY recipes"
+        },
+        "main_05_a": {
+            "chinese": "艺术品图鉴",
+            "english": "Art Book",
+            "japanese": "画集"
+        },
+        "main_05_p": {
+            "chinese": "画集",
+            "english": "艺术品图鉴",
+            "japanese": "Art Book"
+        },
+        "main_06_a": {
+            "chinese": "村民小动物",
+            "english": "Villager Book",
+            "japanese": "あつ森の住民"
+        },
+        "main_06_p": {
+            "chinese": "あつ森の住民",
+            "english": "村民小动物",
+            "japanese": "Villager Book"
+        },
+        "main_07_a": {
+            "chinese": "鱼类图鉴",
+            "english": "Fish Book",
+            "japanese": "魚のポケモン図鑑"
+        },
+        "main_07_p": {
+            "chinese": "魚のポケモン図鑑",
+            "english": "鱼类图鉴",
+            "japanese": "Fish Book"
+        },
+        "main_08_a": {
+            "chinese": "昆虫图鉴",
+            "english": "Insect book",
+            "japanese": "昆虫イラスト本"
+        },
+        "main_08_p": {
+            "chinese": "昆虫イラスト本",
+            "english": "昆虫图鉴",
+            "japanese": "Insect book"
+        },
+        "main_09_a": {
+            "chinese": "地板图鉴",
+            "english": "Floor Book",
+            "japanese": "フロアポケモン図鑑"
+        },
+        "main_09_p": {
+            "chinese": "フロアポケモン図鑑",
+            "english": "地板图鉴",
+            "japanese": "Floor Book"
+        },
+        "main_10_a": {
+            "chinese": "唱片图鉴",
+            "english": "Music Record Book",
+            "japanese": "音楽記録簿"
+        },
+        "main_10_p": {
+            "chinese": "音楽記録簿",
+            "english": "唱片图鉴",
+            "japanese": "Music Record Book"
+        },
+        "main_11_a": {
+            "chinese": "家具图鉴",
+            "english": "Furniture Book",
+            "japanese": "家具の図解"
+        },
+        "main_11_p": {
+            "chinese": "家具の図解",
+            "english": "家具图鉴",
+            "japanese": "Furniture Book"
+        },
+        "main_12_a": {
+            "chinese": "雨伞图鉴",
+            "english": "Umbrella Book",
+            "japanese": "傘のイラスト"
+        },
+        "main_12_p": {
+            "chinese": "傘のイラスト",
+            "english": "雨伞图鉴",
+            "japanese": "Umbrella Book"
+        },
+        "main_h2": {
+            "chinese": "第三方工具网站",
+            "english": "Third-party tools",
+            "japanese": "サードパーティツール"
+        }
+    }
+}

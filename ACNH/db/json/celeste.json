@@ -1,0 +1,520 @@
+[
+  {
+    "id": 0,
+    "pic_name": "FtrZodiacAquarius.webp",
+    "name": {
+      "english": "Aquarius urn",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "20/01",
+      "end": "18/02"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 1,
+    "pic_name": "FtrMeteo.webp",
+    "name": {
+      "english": "Asteroid",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 2,
+    "pic_name": "FtrSpacesuit.webp",
+    "name": {
+      "english": "Astronaut suit",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 3,
+    "pic_name": "FtrZodiacCancer.webp",
+    "name": {
+      "english": "Cancer table",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "22/06",
+      "end": "22/07"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 4,
+    "pic_name": "FtrZodiacCapricornus.webp",
+    "name": {
+      "english": "Capricorn ornament",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "22/12",
+      "end": "19/01"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 5,
+    "pic_name": "ToolStickCosmos.webp",
+    "name": {
+      "english": "Cosmos wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 6,
+    "pic_name": "FtrStarMoonChairL_Remake_0_0.webp",
+    "name": {
+      "english": "Crescent-moon chair",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 7,
+    "pic_name": "FtrSpacecraft.webp",
+    "name": {
+      "english": "Crewed spaceship",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 8,
+    "pic_name": "FtrUFO.webp",
+    "name": {
+      "english": "Flying saucer",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 9,
+    "pic_name": "FtrZodiacGemini.webp",
+    "name": {
+      "english": "Gemini closet",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "21/05",
+      "end": "21/06"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 10,
+    "pic_name": "FtrMoon.webp",
+    "name": {
+      "english": "Moon",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 11,
+    "pic_name": "ToolStickGolden.webp",
+    "name": {
+      "english": "Golden wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 12,
+    "pic_name": "ToolStickHyacinth.webp",
+    "name": {
+      "english": "Hyacinth wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 13,
+    "pic_name": "ToolStickIron.webp",
+    "name": {
+      "english": "Iron wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 14,
+    "pic_name": "FtrZodiacLeo.webp",
+    "name": {
+      "english": "Leo sculpture",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "23/07",
+      "end": "22/08"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 15,
+    "pic_name": "FtrZodiacLibra.webp",
+    "name": {
+      "english": "Libra scale",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "23/09",
+      "end": "23/10"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 16,
+    "pic_name": "ToolStickYuri.webp",
+    "name": {
+      "english": "Lily wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 17,
+    "pic_name": "FtrModule.webp",
+    "name": {
+      "english": "Lunar lander",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 18,
+    "pic_name": "FtrMoonrover.webp",
+    "name": {
+      "english": "Lunar rover",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 19,
+    "pic_name": "RoomTexFloorLunar00.webp",
+    "name": {
+      "english": "Lunar surface",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 20,
+    "pic_name": "RoomSpFloorGalaxy00.png",
+    "name": {
+      "english": "Galaxy flooring",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 21,
+    "pic_name": "ToolStickChrysanthemum.webp",
+    "name": {
+      "english": "Mums wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 22,
+    "pic_name": "FtrStarLamp_Remake_0_0.png",
+    "name": {
+      "english": "Nova light",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 23,
+    "pic_name": "ToolStickPansy.png",
+    "name": {
+      "english": "Pansy wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 24,
+    "pic_name": "FtrZodiacPisces.png",
+    "name": {
+      "english": "Pisces lamp",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "19/02",
+      "end": "20/03"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 25,
+    "pic_name": "FtrRocket.webp",
+    "name": {
+      "english": "Rocket",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 26,
+    "pic_name": "ToolStickRose.png",
+    "name": {
+      "english": "Rose wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 27,
+    "pic_name": "FtrZodiacSagittarius.png",
+    "name": {
+      "english": "Sagittarius arrow",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "23/11",
+      "end": "21/12"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 28,
+    "pic_name": "FtrSatellite.png",
+    "name": {
+      "english": "Satellite",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 29,
+    "pic_name": "RoomSpFloorSF00.png",
+    "name": {
+      "english": "Sci-fi flooring",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 30,
+    "pic_name": "RoomSpWallSF00.png",
+    "name": {
+      "english": "Sci-fi wall",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 31,
+    "pic_name": "FtrZodiacScorpio.png",
+    "name": {
+      "english": "Scorpio lamp",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "24/10",
+      "end": "22/11"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 32,
+    "pic_name": "FtrShuttle.png",
+    "name": {
+      "english": "Space shuttle",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 33,
+    "pic_name": "CapCostumeStar0.png",
+    "name": {
+      "english": "Star head",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 34,
+    "pic_name": "ToolStickWood.webp",
+    "name": {
+      "english": "Wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 35,
+    "pic_name": "BagShoulderStar0.png",
+    "name": {
+      "english": "Star pochette",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 36,
+    "pic_name": "ToolChangeStick.png",
+    "name": {
+      "english": "Star wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 37,
+    "pic_name": "FtrStarDecorationWall_Remake_0_0.png",
+    "name": {
+      "english": "Starry garland",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 38,
+    "pic_name": "RoomSpWallStarSky00.png",
+    "name": {
+      "english": "Starry-sky wall",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 39,
+    "pic_name": "RoomSpWallStarPrint00.png",
+    "name": {
+      "english": "Starry wall",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 40,
+    "pic_name": "FtrZodiacTaurus.webp",
+    "name": {
+      "english": "Taurus bathtub",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "20/04",
+      "end": "20/05"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 41,
+    "pic_name": "ToolStickTree.webp",
+    "name": {
+      "english": "Tree-branch wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 42,
+    "pic_name": "ToolStickTulip.webp",
+    "name": {
+      "english": "Tulip wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 43,
+    "pic_name": "FtrZodiacVirgo.webp",
+    "name": {
+      "english": "Virgo harp",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "23/08",
+      "end": "22/09"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 44,
+    "pic_name": "FtrStarClock_Remake_0_0.png",
+    "name": {
+      "english": "Star clock",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 45,
+    "pic_name": "ToolStickAnemones.webp",
+    "name": {
+      "english": "Windflower wand",
+      "chinese": "",
+      "japanese": ""
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 46,
+    "pic_name": "FtrZodiacAries.webp",
+    "name": {
+      "english": "Aries rocking chair",
+      "chinese": "",
+      "japanese": ""
+    },
+    "day_range": {
+      "start": "21/03",
+      "end": "19/04"
+    },
+    "own_flag": 0
+  }
+]

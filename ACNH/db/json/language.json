@@ -1,0 +1,202 @@
+{
+    "home_page_text": {
+        "chinese": "主页",
+        "english": "Home",
+        "japanese": "家"
+    },
+    "elements_page_text": {
+        "chinese": "元素",
+        "english": "Elements",
+        "japanese": "要素"
+    },
+    "import_btn_text": {
+        "chinese": "导入",
+        "english": "Import",
+        "japanese": "輸入"
+    },
+    "reset_btn_text": {
+        "chinese": "重置",
+        "english": "reset",
+        "japanese": "リセット"
+    },
+    "download_btn_text": {
+        "chinese": "导出",
+        "english": "Export",
+        "japanese": "輸出"
+    },
+    "edit_btn_text": {
+        "chinese": "编辑",
+        "english": "Edit",
+        "japanese": "編集"
+    },
+    "banner_h1_text": {
+        "chinese": "欢迎来到, 集合啦！动物森友会图鉴工具",
+        "english": "Welcome to, Animal Crossing: New Horizons Illustrated handbook",
+        "japanese": "あつまれ どうぶつの森ポケモン図鑑ツールへようこそ"
+    },
+    "banner_start_text": {
+        "chinese": "开始使用",
+        "english": "Get Started",
+        "japanese": "使い始める"
+    },
+    "menu_name_text": {
+        "chinese": "菜单",
+        "english": "Menu",
+        "japanese": "メニュー"
+    },
+    "furniture_page_text": {
+        "chinese": "家具图鉴",
+        "english": "Furniture",
+        "japanese": "家具の図解"
+    },
+    "fossil_page_text": {
+        "chinese": "化石图鉴",
+        "english": "Fossil",
+        "japanese": "化石の図解"
+    },
+    "celeste_page_text": {
+        "chinese": "傅珂DIY卡图鉴",
+        "english": "Celeste Book",
+        "japanese": "フーコDIYカードブック"
+    },
+    "clothing_page_text": {
+        "chinese": "服饰图鉴",
+        "english": "Clothing Book",
+        "japanese": "衣料品ポケモン図鑑"
+    },
+    "diy_recipes_page_text": {
+        "chinese": "DIY 方程式",
+        "english": "DIY recipes",
+        "japanese": "DIYレシピ"
+    },
+    "art_page_text": {
+        "chinese": "艺术品图鉴",
+        "english": "Art Book",
+        "japanese": "画集"
+    },
+    "villager_page_text": {
+        "chinese": "村民小动物",
+        "english": "Villager Book",
+        "japanese": "あつ森の住民"
+    },
+    "fish_page_text": {
+        "chinese": "鱼类图鉴",
+        "english": "Fish Book",
+        "japanese": "魚のポケモン図鑑"
+    },
+    "insect_page_text": {
+        "chinese": "昆虫图鉴",
+        "english": "Insect book",
+        "japanese": "昆虫イラスト本"
+    },
+    "floor_page_text": {
+        "chinese": "地板图鉴",
+        "english": "Floor Book",
+        "japanese": "フロアポケモン図鑑"
+    },
+    "record_page_text": {
+        "chinese": "唱片图鉴",
+        "english": "Music Record Book",
+        "japanese": "音楽記録簿"
+    },
+    "umbrella_page_text": {
+        "chinese": "雨伞图鉴",
+        "english": "Umbrella Book",
+        "japanese": "傘のイラスト"
+    },
+    "main_h2_text": {
+        "chinese": "第三方工具网站",
+        "english": "Third-party tools",
+        "japanese": "サードパーティツール"
+    },
+    "search_btn_text": {
+        "chinese": "搜索",
+        "english": "search",
+        "japanese": "探す"
+    },
+    "umbrella_input_text": {
+        "chinese": "请输入雨伞名称",
+        "english": "Please enter the umbrella name",
+        "japanese": "傘の名前を入力してください"
+    },
+    "all_label_text": {
+        "chinese": "全部",
+        "english": "All",
+        "japanese": "全て"
+    },
+    "owned_label_text": {
+        "chinese": "已拥有",
+        "english": "Owned",
+        "japanese": "所有"
+    },
+    "not_owned_label_text": {
+        "chinese": "未拥有",
+        "english": "Not Owned",
+        "japanese": "所有される"
+    },
+    "not_translated_text": {
+        "chinese": "待翻译",
+        "english": "Not Translated",
+        "japanese": "翻訳される"
+    },
+    "umbrella_category_all_text": {
+        "chinese": "- 全部 -",
+        "english": "- All -",
+        "japanese": "- 全て -"
+    },
+    "prev_text": {
+        "chinese": "上一页",
+        "english": "Prev",
+        "japanese": "前"
+    },
+    "next_text": {
+        "chinese": "下一页",
+        "english": "Next",
+        "japanese": "次"
+    },
+    "edit_h1_text": {
+        "chinese": "账户设置",
+        "english": "Account Settings",
+        "japanese": "アカウント設定"
+    },
+    "edit_a_text": {
+        "chinese": "修改",
+        "english": "Modify",
+        "japanese": "改訂"
+    },
+    "edit_default_a_text": {
+        "chinese": "设置为默认用户",
+        "english": "Set as default",
+        "japanese": "デフォルトユーザーとして設定"
+    },
+    "create_user_a_text": {
+        "chinese": "创建新用户",
+        "english": "Create User",
+        "japanese": "ユーザーを作成"
+    },
+    "reset_cuser_a_text": {
+        "chinese": "重置当前用户",
+        "english": "Reset Current User",
+        "japanese": "現在のユーザーをリセット"
+    },
+    "delete_cuser_a_text": {
+        "chinese": "删除当前用户",
+        "english": "Delete Current User",
+        "japanese": "現在のユーザーを削除する"
+    },
+    "save_a_text": {
+        "chinese": "保存",
+        "english": "Save",
+        "japanese": "保存する"
+    },
+    "cancel_a_text": {
+        "chinese": "取消",
+        "english": "Cancel",
+        "japanese": "キャンセル"
+    },
+    "input_user_name_text": {
+        "chinese": "请输入用户名",
+        "english": "Please enter user name",
+        "japanese": "ユーザー名を入力してください"
+    }
+}

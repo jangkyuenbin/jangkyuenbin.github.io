@@ -1,0 +1,1007 @@
+[
+  {
+    "id": 0,
+    "pic_name": "UmbrellaDoc0.png",
+    "name": {
+      "english": "DAL umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Dodo Airlines",
+      "chinese": "\u6e21\u6e21\u9e1f\u822a\u7a7a",
+      "japanese": "DAL\u306e\u666f\u54c1"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 1,
+    "pic_name": "UmbrellaLogo0.png",
+    "name": {
+      "english": "Logo umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 2,
+    "pic_name": "UmbrellaRco0.png",
+    "name": {
+      "english": "Nook Inc. umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook Miles Shop",
+      "chinese": "\u72f8\u7aef\u673a",
+      "japanese": "\u30de\u30a4\u30eb\u4ea4\u63db"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 3,
+    "pic_name": "UmbrellaTricolor0.png",
+    "name": {
+      "english": "Gelato umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 4,
+    "pic_name": "UmbrellaChina0.png",
+    "name": {
+      "english": "Exquisite parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 5,
+    "pic_name": "UmbrellaPineapple0.png",
+    "name": {
+      "english": "Pineapple umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 6,
+    "pic_name": "UmbrellaLeaf0.png",
+    "name": {
+      "english": "Leaf umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 7,
+    "pic_name": "UmbrellaSunflower0.png",
+    "name": {
+      "english": "Sunny parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 8,
+    "pic_name": "UmbrellaBroken0.png",
+    "name": {
+      "english": "Busted umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 9,
+    "pic_name": "UmbrellaKiwi0.png",
+    "name": {
+      "english": "Kiwi umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 10,
+    "pic_name": "UmbrellaGingham1.png",
+    "name": {
+      "english": "Melon umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 11,
+    "pic_name": "UmbrellaMargaret0.png",
+    "name": {
+      "english": "Petal parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 12,
+    "pic_name": "UmbrellaRainbow0.png",
+    "name": {
+      "english": "Rainbow umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 13,
+    "pic_name": "UmbrellaTwocolor0.png",
+    "name": {
+      "english": "Two-tone umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 14,
+    "pic_name": "UmbrellaTeruteru0.png",
+    "name": {
+      "english": "Ghost umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 15,
+    "pic_name": "UmbrellaFairytale0.png",
+    "name": {
+      "english": "Fairy-tale umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 16,
+    "pic_name": "UmbrellaPacodarace0.png",
+    "name": {
+      "english": "Pink shiny-bows parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 17,
+    "pic_name": "UmbrellaGingham4.png",
+    "name": {
+      "english": "Lemon umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 18,
+    "pic_name": "UmbrellaPeach0.png",
+    "name": {
+      "english": "Peach umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 19,
+    "pic_name": "UmbrellaPear0.png",
+    "name": {
+      "english": "Pear umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 20,
+    "pic_name": "UmbrellaCherry0.png",
+    "name": {
+      "english": "Cherry umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 21,
+    "pic_name": "UmbrellaCherryblossom0.png",
+    "name": {
+      "english": "Cherry-blossom umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 22,
+    "pic_name": "UmbrellaOrange0.png",
+    "name": {
+      "english": "Orange umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 23,
+    "pic_name": "UmbrellaKabuki0.png",
+    "name": {
+      "english": "Kabuki umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 24,
+    "pic_name": "UmbrellaBeach0.png",
+    "name": {
+      "english": "Beach umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 25,
+    "pic_name": "UmbrellaBangasa0.png",
+    "name": {
+      "english": "Paper parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 26,
+    "pic_name": "UmbrellaBear0.png",
+    "name": {
+      "english": "Bear umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 27,
+    "pic_name": "UmbrellaPanda0.png",
+    "name": {
+      "english": "Panda umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 28,
+    "pic_name": "UmbrellaLadybug0.png",
+    "name": {
+      "english": "Ladybug umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Bug-Off",
+      "chinese": "\u6355\u866b\u5927\u8d5b",
+      "japanese": "\u866b\u53d6\u308a\u5927\u4f1a"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 29,
+    "pic_name": "UmbrellaPacodarace3.png",
+    "name": {
+      "english": "White shiny-bows parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 30,
+    "pic_name": "UmbrellaFlorets0.png",
+    "name": {
+      "english": "Mini-flower-print umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 31,
+    "pic_name": "UmbrellaStripe0.png",
+    "name": {
+      "english": "Striped umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 32,
+    "pic_name": "UmbrellaAutumn0.png",
+    "name": {
+      "english": "Maple-leaf umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 33,
+    "pic_name": "UmbrellaSchool0.png",
+    "name": {
+      "english": "Pink umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 34,
+    "pic_name": "UmbrellaPolkadot2.png",
+    "name": {
+      "english": "Blue dot parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 35,
+    "pic_name": "UmbrellaPacodarace1.png",
+    "name": {
+      "english": "Purple shiny-bows parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 36,
+    "pic_name": "UmbrellaPacodarace6.png",
+    "name": {
+      "english": "Red chic umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 37,
+    "pic_name": "UmbrellaPolkadotRed.png",
+    "name": {
+      "english": "Toad parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 38,
+    "pic_name": "UmbrellaStandard1.png",
+    "name": {
+      "english": "Red umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 39,
+    "pic_name": "UmbrellaHydrangea0.png",
+    "name": {
+      "english": "Hydrangea umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 40,
+    "pic_name": "UmbrellaPacodarace4.png",
+    "name": {
+      "english": "Green chic umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 41,
+    "pic_name": "UmbrellaStandard3.png",
+    "name": {
+      "english": "Green umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 42,
+    "pic_name": "UmbrellaBoundary0.png",
+    "name": {
+      "english": "Patterned vinyl umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 43,
+    "pic_name": "UmbrellaPlaid0.png",
+    "name": {
+      "english": "Tartan-check umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 44,
+    "pic_name": "UmbrellaApple0.png",
+    "name": {
+      "english": "Apple umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 45,
+    "pic_name": "UmbrellaGingham0.png",
+    "name": {
+      "english": "Candy umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 46,
+    "pic_name": "UmbrellaStrawberry0.png",
+    "name": {
+      "english": "Strawberry umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 47,
+    "pic_name": "UmbrellaGingham3.png",
+    "name": {
+      "english": "Picnic umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 48,
+    "pic_name": "UmbrellaGrape0.png",
+    "name": {
+      "english": "Grape umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 49,
+    "pic_name": "UmbrellaPacodarace5.png",
+    "name": {
+      "english": "Black chic umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 50,
+    "pic_name": "UmbrellaPacoda0.png",
+    "name": {
+      "english": "Purple chic umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 51,
+    "pic_name": "UmbrellaStandard2.png",
+    "name": {
+      "english": "Blue umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 52,
+    "pic_name": "UmbrellaLace0.png",
+    "name": {
+      "english": "Lacy parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 53,
+    "pic_name": "UmbrellaGingham2.png",
+    "name": {
+      "english": "Mint umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 54,
+    "pic_name": "UmbrellaMushroom0.png",
+    "name": {
+      "english": "Mush umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 55,
+    "pic_name": "UmbrellaSpider0.png",
+    "name": {
+      "english": "Spider umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 56,
+    "pic_name": "UmbrellaBat0.png",
+    "name": {
+      "english": "Bat umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 57,
+    "pic_name": "UmbrellaWater0.png",
+    "name": {
+      "english": "Watermelon umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 58,
+    "pic_name": "UmbrellaOutdoor0.png",
+    "name": {
+      "english": "Camo umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 59,
+    "pic_name": "UmbrellaVinyl0.png",
+    "name": {
+      "english": "Vinyl umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 60,
+    "pic_name": "UmbrellaRain0.png",
+    "name": {
+      "english": "Raindrop umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 61,
+    "pic_name": "UmbrellaCrystal0.png",
+    "name": {
+      "english": "Snowflake umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 62,
+    "pic_name": "UmbrellaFrog0.png",
+    "name": {
+      "english": "Frog umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 63,
+    "pic_name": "UmbrellaFish0.png",
+    "name": {
+      "english": "Fish umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Fishing Tourney",
+      "chinese": "\u9493\u9c7c\u6bd4\u8d5b",
+      "japanese": "\u91e3\u308a\u5927\u4f1a"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 64,
+    "pic_name": "UmbrellaPolkadot1.png",
+    "name": {
+      "english": "Eggy parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 65,
+    "pic_name": "UmbrellaPacodarace2.png",
+    "name": {
+      "english": "Blue shiny-bows parasol",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  },
+  {
+    "id": 66,
+    "pic_name": "UmbrellaRace0.png",
+    "name": {
+      "english": "Black lace umbrella",
+      "chinese": "",
+      "japanese": ""
+    },
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "\u72f8\u732b\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "own_flag": 0
+  }
+]
