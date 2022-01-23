@@ -4,8 +4,8 @@
     "pic_name": "FtrZodiacAquarius.webp",
     "name": {
       "english": "Aquarius urn",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "水瓶座水瓶",
+      "japanese": "アクエリアスのみずがめ"
     },
     "day_range": {
       "start": "20/01",
@@ -18,8 +18,8 @@
     "pic_name": "FtrMeteo.webp",
     "name": {
       "english": "Asteroid",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "陨石",
+      "japanese": "いんせき"
     },
     "own_flag": 0
   },
@@ -28,8 +28,8 @@
     "pic_name": "FtrSpacesuit.webp",
     "name": {
       "english": "Astronaut suit",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "太空人",
+      "japanese": "アストロノーツ"
     },
     "own_flag": 0
   },
@@ -38,8 +38,8 @@
     "pic_name": "FtrZodiacCancer.webp",
     "name": {
       "english": "Cancer table",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "巨蟹座桌子",
+      "japanese": "キャンサーのテーブル"
     },
     "day_range": {
       "start": "22/06",
@@ -52,8 +52,8 @@
     "pic_name": "FtrZodiacCapricornus.webp",
     "name": {
       "english": "Capricorn ornament",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "摩羯座摆饰",
+      "japanese": "カプリコーンのおきもの"
     },
     "day_range": {
       "start": "22/12",
@@ -66,8 +66,8 @@
     "pic_name": "ToolStickCosmos.webp",
     "name": {
       "english": "Cosmos wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "波斯菊棒",
+      "japanese": "コスモスのステッキ"
     },
     "own_flag": 0
   },
@@ -76,8 +76,8 @@
     "pic_name": "FtrStarMoonChairL_Remake_0_0.webp",
     "name": {
       "english": "Crescent-moon chair",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "新月椅",
+      "japanese": "みかづきチェア"
     },
     "own_flag": 0
   },
@@ -86,8 +86,8 @@
     "pic_name": "FtrSpacecraft.webp",
     "name": {
       "english": "Crewed spaceship",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "载人太空船",
+      "japanese": "ゆうじんうちゅうせん"
     },
     "own_flag": 0
   },
@@ -96,8 +96,8 @@
     "pic_name": "FtrUFO.webp",
     "name": {
       "english": "Flying saucer",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "飞碟",
+      "japanese": "そらとぶえんばん"
     },
     "own_flag": 0
   },
@@ -106,8 +106,8 @@
     "pic_name": "FtrZodiacGemini.webp",
     "name": {
       "english": "Gemini closet",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "双子座衣柜",
+      "japanese": "ジェミニのクロゼット"
     },
     "day_range": {
       "start": "21/05",
@@ -120,8 +120,8 @@
     "pic_name": "FtrMoon.webp",
     "name": {
       "english": "Moon",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "月亮",
+      "japanese": "つき"
     },
     "own_flag": 0
   },
@@ -130,8 +130,8 @@
     "pic_name": "ToolStickGolden.webp",
     "name": {
       "english": "Golden wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "黄金棒",
+      "japanese": "おうごんのステッキ"
     },
     "own_flag": 0
   },
@@ -140,8 +140,8 @@
     "pic_name": "ToolStickHyacinth.webp",
     "name": {
       "english": "Hyacinth wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "风信子棒",
+      "japanese": "ヒヤシンスのステッキ"
     },
     "own_flag": 0
   },
@@ -150,8 +150,8 @@
     "pic_name": "ToolStickIron.webp",
     "name": {
       "english": "Iron wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "铁棒",
+      "japanese": "てつのステッキ"
     },
     "own_flag": 0
   },
@@ -160,8 +160,8 @@
     "pic_name": "FtrZodiacLeo.webp",
     "name": {
       "english": "Leo sculpture",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "狮子座雕塑",
+      "japanese": "レオのちょうこく"
     },
     "day_range": {
       "start": "23/07",
@@ -174,8 +174,8 @@
     "pic_name": "FtrZodiacLibra.webp",
     "name": {
       "english": "Libra scale",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "天秤座天平",
+      "japanese": "リブラのてんびん"
     },
     "day_range": {
       "start": "23/09",
@@ -188,8 +188,8 @@
     "pic_name": "ToolStickYuri.webp",
     "name": {
       "english": "Lily wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "百合棒",
+      "japanese": "ユリのステッキ"
     },
     "own_flag": 0
   },
@@ -198,8 +198,8 @@
     "pic_name": "FtrModule.webp",
     "name": {
       "english": "Lunar lander",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "登月舱",
+      "japanese": "ちゃくりくせん"
     },
     "own_flag": 0
   },
@@ -208,8 +208,8 @@
     "pic_name": "FtrMoonrover.webp",
     "name": {
       "english": "Lunar rover",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "月球车",
+      "japanese": "げつめんいどうしゃ"
     },
     "own_flag": 0
   },
@@ -218,8 +218,8 @@
     "pic_name": "RoomTexFloorLunar00.webp",
     "name": {
       "english": "Lunar surface",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "月球表面地板",
+      "japanese": "げつめんのゆか"
     },
     "own_flag": 0
   },
@@ -228,8 +228,8 @@
     "pic_name": "RoomSpFloorGalaxy00.png",
     "name": {
       "english": "Galaxy flooring",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "银河系地板",
+      "japanese": "ぎんがけいのゆか"
     },
     "own_flag": 0
   },
@@ -238,8 +238,8 @@
     "pic_name": "ToolStickChrysanthemum.webp",
     "name": {
       "english": "Mums wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "菊花棒",
+      "japanese": "キクのステッキ"
     },
     "own_flag": 0
   },
@@ -248,8 +248,8 @@
     "pic_name": "FtrStarLamp_Remake_0_0.png",
     "name": {
       "english": "Nova light",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星光",
+      "japanese": "スターライト"
     },
     "own_flag": 0
   },
@@ -258,8 +258,8 @@
     "pic_name": "ToolStickPansy.png",
     "name": {
       "english": "Pansy wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "三色堇棒",
+      "japanese": "パンジーのステッキ"
     },
     "own_flag": 0
   },
@@ -268,8 +268,8 @@
     "pic_name": "FtrZodiacPisces.png",
     "name": {
       "english": "Pisces lamp",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "双鱼座灯",
+      "japanese": "ピスケスのランプ"
     },
     "day_range": {
       "start": "19/02",
@@ -282,8 +282,8 @@
     "pic_name": "FtrRocket.webp",
     "name": {
       "english": "Rocket",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "火箭",
+      "japanese": "ロケット"
     },
     "own_flag": 0
   },
@@ -292,8 +292,8 @@
     "pic_name": "ToolStickRose.png",
     "name": {
       "english": "Rose wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "玫瑰棒",
+      "japanese": "バラのステッキ"
     },
     "own_flag": 0
   },
@@ -302,8 +302,8 @@
     "pic_name": "FtrZodiacSagittarius.png",
     "name": {
       "english": "Sagittarius arrow",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "射手座箭矢",
+      "japanese": "サジタリアスのや"
     },
     "day_range": {
       "start": "23/11",
@@ -316,8 +316,8 @@
     "pic_name": "FtrSatellite.png",
     "name": {
       "english": "Satellite",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "人工卫星",
+      "japanese": "じんこうえいせい"
     },
     "own_flag": 0
   },
@@ -326,8 +326,8 @@
     "pic_name": "RoomSpFloorSF00.png",
     "name": {
       "english": "Sci-fi flooring",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "太空船地板",
+      "japanese": "うちゅうせんのゆか"
     },
     "own_flag": 0
   },
@@ -336,8 +336,8 @@
     "pic_name": "RoomSpWallSF00.png",
     "name": {
       "english": "Sci-fi wall",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "太空船墙",
+      "japanese": "うちゅうせんのかべ"
     },
     "own_flag": 0
   },
@@ -346,8 +346,8 @@
     "pic_name": "FtrZodiacScorpio.png",
     "name": {
       "english": "Scorpio lamp",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "天蝎座灯",
+      "japanese": "スコーピオのランプ"
     },
     "day_range": {
       "start": "24/10",
@@ -360,8 +360,8 @@
     "pic_name": "FtrShuttle.png",
     "name": {
       "english": "Space shuttle",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "太空梭",
+      "japanese": "スペースシャトル"
     },
     "own_flag": 0
   },
@@ -370,8 +370,8 @@
     "pic_name": "CapCostumeStar0.png",
     "name": {
       "english": "Star head",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星头套",
+      "japanese": "おほしさまのあたま"
     },
     "own_flag": 0
   },
@@ -380,8 +380,8 @@
     "pic_name": "ToolStickWood.webp",
     "name": {
       "english": "Wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "棒子",
+      "japanese": "ステッキ"
     },
     "own_flag": 0
   },
@@ -390,8 +390,8 @@
     "pic_name": "BagShoulderStar0.png",
     "name": {
       "english": "Star pochette",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星侧背包",
+      "japanese": "スターなポシェット"
     },
     "own_flag": 0
   },
@@ -400,8 +400,8 @@
     "pic_name": "ToolChangeStick.png",
     "name": {
       "english": "Star wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星棒",
+      "japanese": "スターなステッキ"
     },
     "own_flag": 0
   },
@@ -410,8 +410,8 @@
     "pic_name": "FtrStarDecorationWall_Remake_0_0.png",
     "name": {
       "english": "Starry garland",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星挂旗",
+      "japanese": "スターなガーランド"
     },
     "own_flag": 0
   },
@@ -420,8 +420,8 @@
     "pic_name": "RoomSpWallStarSky00.png",
     "name": {
       "english": "Starry-sky wall",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星空墙",
+      "japanese": "ほしぞらのかべ"
     },
     "own_flag": 0
   },
@@ -430,8 +430,8 @@
     "pic_name": "RoomSpWallStarPrint00.png",
     "name": {
       "english": "Starry wall",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星墙",
+      "japanese": "スターなかべ"
     },
     "own_flag": 0
   },
@@ -440,8 +440,8 @@
     "pic_name": "FtrZodiacTaurus.webp",
     "name": {
       "english": "Taurus bathtub",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "金牛座浴缸",
+      "japanese": "タウラスのバスタブ"
     },
     "day_range": {
       "start": "20/04",
@@ -454,8 +454,8 @@
     "pic_name": "ToolStickTree.webp",
     "name": {
       "english": "Tree-branch wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "树枝棒",
+      "japanese": "きのえだのステッキ"
     },
     "own_flag": 0
   },
@@ -464,8 +464,8 @@
     "pic_name": "ToolStickTulip.webp",
     "name": {
       "english": "Tulip wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "郁金香棒",
+      "japanese": "チューリップのステッキ"
     },
     "own_flag": 0
   },
@@ -474,8 +474,8 @@
     "pic_name": "FtrZodiacVirgo.webp",
     "name": {
       "english": "Virgo harp",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "处女座竖琴",
+      "japanese": "ヴァルゴのハープ"
     },
     "day_range": {
       "start": "23/08",
@@ -488,8 +488,8 @@
     "pic_name": "FtrStarClock_Remake_0_0.png",
     "name": {
       "english": "Star clock",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "星星时钟",
+      "japanese": "スタークロック"
     },
     "own_flag": 0
   },
@@ -498,8 +498,8 @@
     "pic_name": "ToolStickAnemones.webp",
     "name": {
       "english": "Windflower wand",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "银莲花棒",
+      "japanese": "アネモネのステッキ"
     },
     "own_flag": 0
   },
@@ -508,13 +508,35 @@
     "pic_name": "FtrZodiacAries.webp",
     "name": {
       "english": "Aries rocking chair",
-      "chinese": "",
-      "japanese": ""
+      "chinese": "牡羊座木马",
+      "japanese": "アリエスのもくば"
     },
     "day_range": {
       "start": "21/03",
       "end": "19/04"
     },
+    "own_flag": 0
+  },
+  {
+    "id": 47,
+    "pic_name": "RugRoundZodiacM00.png",
+    "name": {
+      "english": "starry-skies rug",
+      "chinese": "星空地毯",
+      "japanese": "ほしぞらのラグ"
+    },
+    "is_v2": true,
+    "own_flag": 0
+  },
+  {
+    "id": 48,
+    "pic_name": "RugRoundZodiacM01.png",
+    "name": {
+      "english": "yellow star rug",
+      "chinese": "黄色星星地毯",
+      "japanese": "きいろいおほしさまのラグ"
+    },
+    "is_v2": true,
     "own_flag": 0
   }
 ]
