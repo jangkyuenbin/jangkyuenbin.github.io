@@ -223,5 +223,10 @@
         "chinese": "唱片音乐",
         "english": "Aircheck",
         "japanese": "音楽を録音する"
+    },
+    "music_input_text": {
+        "chinese": "请输入唱片名称",
+        "english": "Please enter the album name",
+        "japanese": "アルバム名を入力してください"
     }
 }
