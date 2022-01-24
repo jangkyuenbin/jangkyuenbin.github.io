@@ -208,5 +208,20 @@
         "chinese": "通用",
         "english": "Generic",
         "japanese": "ユニバーサル"
+    },
+    "development_page_text": {
+        "chinese": "正在开发中...",
+        "english": "In development...",
+        "japanese": "開発中..."
+    },
+    "music_live_label_text": {
+        "chinese": "现场演奏",
+        "english": "Live",
+        "japanese": "ライブ音楽"
+    },
+    "music_aircheck_label_text": {
+        "chinese": "唱片音乐",
+        "english": "Aircheck",
+        "japanese": "音楽を録音する"
     }
 }
