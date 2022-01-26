@@ -283,6 +283,7 @@ function load_music_db() {
         update_music_page();
         onChangePlayerMusic(null);
         init_language();
+        window.location.href = "#two"
     } else {
         var request = new XMLHttpRequest();
         request.open("get", 'db/json/music.json');
