@@ -29,7 +29,6 @@ function onCelesteReset() {
     celeste_page_onload();
 }
 
-
 function onCelesteSearch(element) {
     var celeste_name = document.getElementById('celeste_name');
     var radio_01 = document.getElementById('celeste_radio_01');
@@ -235,6 +234,7 @@ function load_celeste_db() {
         filter_celeste_data();
         update_celeste_page();
         init_language();
+        window.location.href = "#two"
     } else {
         var request = new XMLHttpRequest();
         request.open("get", 'db/json/celeste.json');
