@@ -194,13 +194,7 @@ function getLanguage() {
     var global_json = getGlobalJson();
     if (global_json != null) {
         if (global_json['language'] != null) {
-            if (global_json['language'] === '0') {
-                return 'english';
-            } else if (global_json['language'] === '1') {
-                return 'chinese';
-            } else if (global_json['language'] === '2') {
-                return 'japanese';
-            }
+            return global_json['language']
         }
         return 'english';
     } else {
