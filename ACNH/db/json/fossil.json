@@ -1,0 +1,1243 @@
+[
+  {
+    "id": 1,
+    "pic_name": "trilobite.png",
+    "name": {
+      "english": "trilobite",
+      "chinese": "\u4e09\u53f6\u866b",
+      "t_chinese": "\u4e09\u8449\u87f2",
+      "japanese": "\u3055\u3093\u3088\u3046\u3061\u3085\u3046",
+      "korean": "trilobite",
+      "russian": "trilobite",
+      "dutch": "trilobite",
+      "german": "trilobite",
+      "spanish": "trilobite",
+      "french": "trilobite",
+      "italian": "trilobite"
+    }
+  },
+  {
+    "id": 2,
+    "pic_name": "tricera skull.png",
+    "name": {
+      "english": "tricera skull",
+      "chinese": "\u4e09\u89d2\u9f99\u7684\u5934",
+      "t_chinese": "\u4e09\u89d2\u9f8d\u7684\u982d",
+      "japanese": "\u30c8\u30ea\u30b1\u30e9\u30c8\u30d7\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "tricera skull",
+      "russian": "tricera skull",
+      "dutch": "tricera skull",
+      "german": "tricera skull",
+      "spanish": "tricera skull",
+      "french": "tricera skull",
+      "italian": "tricera skull"
+    }
+  },
+  {
+    "id": 3,
+    "pic_name": "tricera tail.png",
+    "name": {
+      "english": "tricera tail",
+      "chinese": "\u4e09\u89d2\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u4e09\u89d2\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30c8\u30ea\u30b1\u30e9\u30c8\u30d7\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "tricera tail",
+      "russian": "tricera tail",
+      "dutch": "tricera tail",
+      "german": "tricera tail",
+      "spanish": "tricera tail",
+      "french": "tricera tail",
+      "italian": "tricera tail"
+    }
+  },
+  {
+    "id": 4,
+    "pic_name": "tricera torso.png",
+    "name": {
+      "english": "tricera torso",
+      "chinese": "\u4e09\u89d2\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u4e09\u89d2\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30c8\u30ea\u30b1\u30e9\u30c8\u30d7\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "tricera torso",
+      "russian": "tricera torso",
+      "dutch": "tricera torso",
+      "german": "tricera torso",
+      "spanish": "tricera torso",
+      "french": "tricera torso",
+      "italian": "tricera torso"
+    }
+  },
+  {
+    "id": 5,
+    "pic_name": "myllokunmingia.png",
+    "name": {
+      "english": "myllokunmingia",
+      "chinese": "\u4e30\u5a07\u6606\u660e\u9c7c",
+      "t_chinese": "\u8c50\u5b0c\u6606\u660e\u9b5a",
+      "japanese": "\u30df\u30ed\u30af\u30f3\u30df\u30f3\u30ae\u30a2",
+      "korean": "myllokunmingia",
+      "russian": "myllokunmingia",
+      "dutch": "myllokunmingia",
+      "german": "myllokunmingia",
+      "spanish": "myllokunmingia",
+      "french": "myllokunmingia",
+      "italian": "myllokunmingia"
+    }
+  },
+  {
+    "id": 6,
+    "pic_name": "juramaia.png",
+    "name": {
+      "english": "juramaia",
+      "chinese": "\u4f8f\u7f57\u517d",
+      "t_chinese": "\u4f8f\u7f85\u7378",
+      "japanese": "\u30b8\u30e5\u30e9\u30de\u30a4\u30a2",
+      "korean": "juramaia",
+      "russian": "juramaia",
+      "dutch": "juramaia",
+      "german": "juramaia",
+      "spanish": "juramaia",
+      "french": "juramaia",
+      "italian": "juramaia"
+    }
+  },
+  {
+    "id": 7,
+    "pic_name": "sabertooth skull.png",
+    "name": {
+      "english": "sabertooth skull",
+      "chinese": "\u5251\u9f7f\u864e\u7684\u5934",
+      "t_chinese": "\u528d\u9f52\u864e\u7684\u982d",
+      "japanese": "\u30b9\u30df\u30ed\u30c9\u30f3\u306e\u3042\u305f\u307e",
+      "korean": "sabertooth skull",
+      "russian": "sabertooth skull",
+      "dutch": "sabertooth skull",
+      "german": "sabertooth skull",
+      "spanish": "sabertooth skull",
+      "french": "sabertooth skull",
+      "italian": "sabertooth skull"
+    }
+  },
+  {
+    "id": 8,
+    "pic_name": "sabertooth tail.png",
+    "name": {
+      "english": "sabertooth tail",
+      "chinese": "\u5251\u9f7f\u864e\u7684\u8eab\u4f53",
+      "t_chinese": "\u528d\u9f52\u864e\u7684\u8eab\u9ad4",
+      "japanese": "\u30b9\u30df\u30ed\u30c9\u30f3\u306e\u304b\u3089\u3060",
+      "korean": "sabertooth tail",
+      "russian": "sabertooth tail",
+      "dutch": "sabertooth tail",
+      "german": "sabertooth tail",
+      "spanish": "sabertooth tail",
+      "french": "sabertooth tail",
+      "italian": "sabertooth tail"
+    }
+  },
+  {
+    "id": 9,
+    "pic_name": "stego skull.png",
+    "name": {
+      "english": "stego skull",
+      "chinese": "\u5251\u9f99\u7684\u5934",
+      "t_chinese": "\u528d\u9f8d\u7684\u982d",
+      "japanese": "\u30b9\u30c6\u30b4\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "stego skull",
+      "russian": "stego skull",
+      "dutch": "stego skull",
+      "german": "stego skull",
+      "spanish": "stego skull",
+      "french": "stego skull",
+      "italian": "stego skull"
+    }
+  },
+  {
+    "id": 10,
+    "pic_name": "stego tail.png",
+    "name": {
+      "english": "stego tail",
+      "chinese": "\u5251\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u528d\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30b9\u30c6\u30b4\u30b5\u30a6\u30eb\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "stego tail",
+      "russian": "stego tail",
+      "dutch": "stego tail",
+      "german": "stego tail",
+      "spanish": "stego tail",
+      "french": "stego tail",
+      "italian": "stego tail"
+    }
+  },
+  {
+    "id": 11,
+    "pic_name": "stego torso.png",
+    "name": {
+      "english": "stego torso",
+      "chinese": "\u5251\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u528d\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30b9\u30c6\u30b4\u30b5\u30a6\u30eb\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "stego torso",
+      "russian": "stego torso",
+      "dutch": "stego torso",
+      "german": "stego torso",
+      "spanish": "stego torso",
+      "french": "stego torso",
+      "italian": "stego torso"
+    }
+  },
+  {
+    "id": 12,
+    "pic_name": "parasaur skull.png",
+    "name": {
+      "english": "parasaur skull",
+      "chinese": "\u526f\u6809\u9f99\u7684\u5934",
+      "t_chinese": "\u526f\u6adb\u9f8d\u7684\u982d",
+      "japanese": "\u30d1\u30e9\u30b5\u30a6\u30ed\u30ed\u30d5\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "parasaur skull",
+      "russian": "parasaur skull",
+      "dutch": "parasaur skull",
+      "german": "parasaur skull",
+      "spanish": "parasaur skull",
+      "french": "parasaur skull",
+      "italian": "parasaur skull"
+    }
+  },
+  {
+    "id": 13,
+    "pic_name": "parasaur tail.png",
+    "name": {
+      "english": "parasaur tail",
+      "chinese": "\u526f\u6809\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u526f\u6adb\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30d1\u30e9\u30b5\u30a6\u30ed\u30ed\u30d5\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "parasaur tail",
+      "russian": "parasaur tail",
+      "dutch": "parasaur tail",
+      "german": "parasaur tail",
+      "spanish": "parasaur tail",
+      "french": "parasaur tail",
+      "italian": "parasaur tail"
+    }
+  },
+  {
+    "id": 14,
+    "pic_name": "parasaur torso.png",
+    "name": {
+      "english": "parasaur torso",
+      "chinese": "\u526f\u6809\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u526f\u6adb\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30d1\u30e9\u30b5\u30a6\u30ed\u30ed\u30d5\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "parasaur torso",
+      "russian": "parasaur torso",
+      "dutch": "parasaur torso",
+      "german": "parasaur torso",
+      "spanish": "parasaur torso",
+      "french": "parasaur torso",
+      "italian": "parasaur torso"
+    }
+  },
+  {
+    "id": 15,
+    "pic_name": "australopith.png",
+    "name": {
+      "english": "australopith",
+      "chinese": "\u5357\u65b9\u53e4\u733f",
+      "t_chinese": "\u5357\u65b9\u53e4\u733f",
+      "japanese": "\u30a2\u30a6\u30b9\u30c8\u30e9\u30ed\u30d4\u30c6\u30af\u30b9",
+      "korean": "australopith",
+      "russian": "australopith",
+      "dutch": "australopith",
+      "german": "australopith",
+      "spanish": "australopith",
+      "french": "australopith",
+      "italian": "australopith"
+    }
+  },
+  {
+    "id": 16,
+    "pic_name": "pachy skull.png",
+    "name": {
+      "english": "pachy skull",
+      "chinese": "\u539a\u5934\u9f99\u7684\u5934",
+      "t_chinese": "\u539a\u982d\u9f8d\u7684\u982d",
+      "japanese": "\u30d1\u30ad\u30b1\u30d5\u30a1\u30ed\u306e\u3042\u305f\u307e",
+      "korean": "pachy skull",
+      "russian": "pachy skull",
+      "dutch": "pachy skull",
+      "german": "pachy skull",
+      "spanish": "pachy skull",
+      "french": "pachy skull",
+      "italian": "pachy skull"
+    }
+  },
+  {
+    "id": 17,
+    "pic_name": "pachy torso.png",
+    "name": {
+      "english": "pachy torso",
+      "chinese": "\u539a\u5934\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u539a\u982d\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30d1\u30ad\u30b1\u30d5\u30a1\u30ed\u306e\u304b\u3089\u3060",
+      "korean": "pachy torso",
+      "russian": "pachy torso",
+      "dutch": "pachy torso",
+      "german": "pachy torso",
+      "spanish": "pachy torso",
+      "french": "pachy torso",
+      "italian": "pachy torso"
+    }
+  },
+  {
+    "id": 18,
+    "pic_name": "plesio skull.png",
+    "name": {
+      "english": "plesio skull",
+      "chinese": "\u53cc\u53f6\u94c3\u6728\u9f99\u7684\u5934",
+      "t_chinese": "\u96d9\u8449\u9234\u6728\u9f8d\u7684\u982d",
+      "japanese": "\u30d5\u30bf\u30d0\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "plesio skull",
+      "russian": "plesio skull",
+      "dutch": "plesio skull",
+      "german": "plesio skull",
+      "spanish": "plesio skull",
+      "french": "plesio skull",
+      "italian": "plesio skull"
+    }
+  },
+  {
+    "id": 19,
+    "pic_name": "plesio tail.png",
+    "name": {
+      "english": "plesio tail",
+      "chinese": "\u53cc\u53f6\u94c3\u6728\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u96d9\u8449\u9234\u6728\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30d5\u30bf\u30d0\u30b5\u30a6\u30eb\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "plesio tail",
+      "russian": "plesio tail",
+      "dutch": "plesio tail",
+      "german": "plesio tail",
+      "spanish": "plesio tail",
+      "french": "plesio tail",
+      "italian": "plesio tail"
+    }
+  },
+  {
+    "id": 20,
+    "pic_name": "plesio body.png",
+    "name": {
+      "english": "plesio body",
+      "chinese": "\u53cc\u53f6\u94c3\u6728\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u96d9\u8449\u9234\u6728\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30d5\u30bf\u30d0\u30b5\u30a6\u30eb\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "plesio body",
+      "russian": "plesio body",
+      "dutch": "plesio body",
+      "german": "plesio body",
+      "spanish": "plesio body",
+      "french": "plesio body",
+      "italian": "plesio body"
+    }
+  },
+  {
+    "id": 21,
+    "pic_name": "ophthalmo skull.png",
+    "name": {
+      "english": "ophthalmo skull",
+      "chinese": "\u5927\u773c\u9c7c\u9f99\u7684\u5934",
+      "t_chinese": "\u5927\u773c\u9b5a\u9f8d\u7684\u982d",
+      "japanese": "\u30aa\u30d5\u30bf\u30eb\u30e2\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "ophthalmo skull",
+      "russian": "ophthalmo skull",
+      "dutch": "ophthalmo skull",
+      "german": "ophthalmo skull",
+      "spanish": "ophthalmo skull",
+      "french": "ophthalmo skull",
+      "italian": "ophthalmo skull"
+    }
+  },
+  {
+    "id": 22,
+    "pic_name": "ophthalmo torso.png",
+    "name": {
+      "english": "ophthalmo torso",
+      "chinese": "\u5927\u773c\u9c7c\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u5927\u773c\u9b5a\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30aa\u30d5\u30bf\u30eb\u30e2\u30b5\u30a6\u30eb\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "ophthalmo torso",
+      "russian": "ophthalmo torso",
+      "dutch": "ophthalmo torso",
+      "german": "ophthalmo torso",
+      "spanish": "ophthalmo torso",
+      "french": "ophthalmo torso",
+      "italian": "ophthalmo torso"
+    }
+  },
+  {
+    "id": 23,
+    "pic_name": "right megalo side.png",
+    "name": {
+      "english": "right megalo side",
+      "chinese": "\u5927\u89d2\u9e7f\u7684\u53f3\u534a\u8eab",
+      "t_chinese": "\u5927\u89d2\u9e7f\u7684\u53f3\u534a\u8eab",
+      "japanese": "\u30e1\u30ac\u30ed\u30b1\u30ed\u30b9\u306e\u307f\u304e\u306f\u3093\u3057\u3093",
+      "korean": "right megalo side",
+      "russian": "right megalo side",
+      "dutch": "right megalo side",
+      "german": "right megalo side",
+      "spanish": "right megalo side",
+      "french": "right megalo side",
+      "italian": "right megalo side"
+    }
+  },
+  {
+    "id": 24,
+    "pic_name": "left megalo side.png",
+    "name": {
+      "english": "left megalo side",
+      "chinese": "\u5927\u89d2\u9e7f\u7684\u5de6\u534a\u8eab",
+      "t_chinese": "\u5927\u89d2\u9e7f\u7684\u5de6\u534a\u8eab",
+      "japanese": "\u30e1\u30ac\u30ed\u30b1\u30ed\u30b9\u306e\u3072\u3060\u308a\u306f\u3093\u3057\u3093",
+      "korean": "left megalo side",
+      "russian": "left megalo side",
+      "dutch": "left megalo side",
+      "german": "left megalo side",
+      "spanish": "left megalo side",
+      "french": "left megalo side",
+      "italian": "left megalo side"
+    }
+  },
+  {
+    "id": 25,
+    "pic_name": "anomalocaris.png",
+    "name": {
+      "english": "anomalocaris",
+      "chinese": "\u5947\u867e",
+      "t_chinese": "\u5947\u8766",
+      "japanese": "\u30a2\u30ce\u30de\u30ed\u30ab\u30ea\u30b9",
+      "korean": "anomalocaris",
+      "russian": "anomalocaris",
+      "dutch": "anomalocaris",
+      "german": "anomalocaris",
+      "spanish": "anomalocaris",
+      "french": "anomalocaris",
+      "italian": "anomalocaris"
+    }
+  },
+  {
+    "id": 26,
+    "pic_name": "archaeopteryx.png",
+    "name": {
+      "english": "archaeopteryx",
+      "chinese": "\u59cb\u7956\u9e1f",
+      "t_chinese": "\u59cb\u7956\u9ce5",
+      "japanese": "\u3057\u305d\u3061\u3087\u3046",
+      "korean": "archaeopteryx",
+      "russian": "archaeopteryx",
+      "dutch": "archaeopteryx",
+      "german": "archaeopteryx",
+      "spanish": "archaeopteryx",
+      "french": "archaeopteryx",
+      "italian": "archaeopteryx"
+    }
+  },
+  {
+    "id": 27,
+    "pic_name": "megacero skull.png",
+    "name": {
+      "english": "megacero skull",
+      "chinese": "\u5de8\u89d2\u7280\u7684\u5934",
+      "t_chinese": "\u5de8\u89d2\u7280\u7684\u982d",
+      "japanese": "\u30e1\u30ac\u30bb\u30ed\u30d7\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "megacero skull",
+      "russian": "megacero skull",
+      "dutch": "megacero skull",
+      "german": "megacero skull",
+      "spanish": "megacero skull",
+      "french": "megacero skull",
+      "italian": "megacero skull"
+    }
+  },
+  {
+    "id": 28,
+    "pic_name": "megacero tail.png",
+    "name": {
+      "english": "megacero tail",
+      "chinese": "\u5de8\u89d2\u7280\u7684\u5c3e\u5df4",
+      "t_chinese": "\u5de8\u89d2\u7280\u7684\u5c3e\u5df4",
+      "japanese": "\u30e1\u30ac\u30bb\u30ed\u30d7\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "megacero tail",
+      "russian": "megacero tail",
+      "dutch": "megacero tail",
+      "german": "megacero tail",
+      "spanish": "megacero tail",
+      "french": "megacero tail",
+      "italian": "megacero tail"
+    }
+  },
+  {
+    "id": 29,
+    "pic_name": "megacero torso.png",
+    "name": {
+      "english": "megacero torso",
+      "chinese": "\u5de8\u89d2\u7280\u7684\u8eab\u4f53",
+      "t_chinese": "\u5de8\u89d2\u7280\u7684\u8eab\u9ad4",
+      "japanese": "\u30e1\u30ac\u30bb\u30ed\u30d7\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "megacero torso",
+      "russian": "megacero torso",
+      "dutch": "megacero torso",
+      "german": "megacero torso",
+      "spanish": "megacero torso",
+      "french": "megacero torso",
+      "italian": "megacero torso"
+    }
+  },
+  {
+    "id": 30,
+    "pic_name": "archelon skull.png",
+    "name": {
+      "english": "archelon skull",
+      "chinese": "\u5e1d\u9f9f\u7684\u5934",
+      "t_chinese": "\u5e1d\u9f9c\u7684\u982d",
+      "japanese": "\u30a2\u30fc\u30b1\u30ed\u30f3\u306e\u3042\u305f\u307e",
+      "korean": "archelon skull",
+      "russian": "archelon skull",
+      "dutch": "archelon skull",
+      "german": "archelon skull",
+      "spanish": "archelon skull",
+      "french": "archelon skull",
+      "italian": "archelon skull"
+    }
+  },
+  {
+    "id": 31,
+    "pic_name": "archelon tail.png",
+    "name": {
+      "english": "archelon tail",
+      "chinese": "\u5e1d\u9f9f\u7684\u8eab\u4f53",
+      "t_chinese": "\u5e1d\u9f9c\u7684\u8eab\u9ad4",
+      "japanese": "\u30a2\u30fc\u30b1\u30ed\u30f3\u306e\u304b\u3089\u3060",
+      "korean": "archelon tail",
+      "russian": "archelon tail",
+      "dutch": "archelon tail",
+      "german": "archelon tail",
+      "spanish": "archelon tail",
+      "french": "archelon tail",
+      "italian": "archelon tail"
+    }
+  },
+  {
+    "id": 32,
+    "pic_name": "dimetrodon skull.png",
+    "name": {
+      "english": "dimetrodon skull",
+      "chinese": "\u5f02\u9f7f\u9f99\u7684\u5934",
+      "t_chinese": "\u7570\u9f52\u9f8d\u7684\u982d",
+      "japanese": "\u30c7\u30a3\u30e1\u30c8\u30ed\u30c9\u30f3\u306e\u3042\u305f\u307e",
+      "korean": "dimetrodon skull",
+      "russian": "dimetrodon skull",
+      "dutch": "dimetrodon skull",
+      "german": "dimetrodon skull",
+      "spanish": "dimetrodon skull",
+      "french": "dimetrodon skull",
+      "italian": "dimetrodon skull"
+    }
+  },
+  {
+    "id": 33,
+    "pic_name": "dimetrodon torso.png",
+    "name": {
+      "english": "dimetrodon torso",
+      "chinese": "\u5f02\u9f7f\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u7570\u9f52\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30c7\u30a3\u30e1\u30c8\u30ed\u30c9\u30f3\u306e\u304b\u3089\u3060",
+      "korean": "dimetrodon torso",
+      "russian": "dimetrodon torso",
+      "dutch": "dimetrodon torso",
+      "german": "dimetrodon torso",
+      "spanish": "dimetrodon torso",
+      "french": "dimetrodon torso",
+      "italian": "dimetrodon torso"
+    }
+  },
+  {
+    "id": 34,
+    "pic_name": "deinony torso.png",
+    "name": {
+      "english": "deinony torso",
+      "chinese": "\u6050\u722a\u9f99\u7684\u5934",
+      "t_chinese": "\u6050\u722a\u9f8d\u7684\u982d",
+      "japanese": "\u30c7\u30a3\u30ce\u30cb\u30af\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "deinony torso",
+      "russian": "deinony torso",
+      "dutch": "deinony torso",
+      "german": "deinony torso",
+      "spanish": "deinony torso",
+      "french": "deinony torso",
+      "italian": "deinony torso"
+    }
+  },
+  {
+    "id": 35,
+    "pic_name": "deinony tail.png",
+    "name": {
+      "english": "deinony tail",
+      "chinese": "\u6050\u722a\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u6050\u722a\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30c7\u30a3\u30ce\u30cb\u30af\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "deinony tail",
+      "russian": "deinony tail",
+      "dutch": "deinony tail",
+      "german": "deinony tail",
+      "spanish": "deinony tail",
+      "french": "deinony tail",
+      "italian": "deinony tail"
+    }
+  },
+  {
+    "id": 36,
+    "pic_name": "dinosaur track.png",
+    "name": {
+      "english": "dinosaur track",
+      "chinese": "\u6050\u9f99\u811a\u5370\u5316\u77f3",
+      "t_chinese": "\u6050\u9f8d\u8173\u5370\u5316\u77f3",
+      "japanese": "\u3042\u3057\u3042\u3068\u306e\u304b\u305b\u304d",
+      "korean": "dinosaur track",
+      "russian": "dinosaur track",
+      "dutch": "dinosaur track",
+      "german": "dinosaur track",
+      "spanish": "dinosaur track",
+      "french": "dinosaur track",
+      "italian": "dinosaur track"
+    }
+  },
+  {
+    "id": 37,
+    "pic_name": "eusthenopteron.png",
+    "name": {
+      "english": "eusthenopteron",
+      "chinese": "\u65b0\u7ffc\u9c7c",
+      "t_chinese": "\u65b0\u7ffc\u9b5a",
+      "japanese": "\u30e6\u30fc\u30b9\u30c6\u30ce\u30d7\u30c6\u30ed\u30f3",
+      "korean": "eusthenopteron",
+      "russian": "eusthenopteron",
+      "dutch": "eusthenopteron",
+      "german": "eusthenopteron",
+      "spanish": "eusthenopteron",
+      "french": "eusthenopteron",
+      "italian": "eusthenopteron"
+    }
+  },
+  {
+    "id": 38,
+    "pic_name": "right ptera wing.png",
+    "name": {
+      "english": "right ptera wing",
+      "chinese": "\u65e0\u9f7f\u7ffc\u9f99\u7684\u53f3\u7ffc",
+      "t_chinese": "\u7121\u9f52\u7ffc\u9f8d\u7684\u53f3\u7ffc",
+      "japanese": "\u30d7\u30c6\u30e9\u30ce\u30c9\u30f3\u306e\u3046\u3088\u304f",
+      "korean": "right ptera wing",
+      "russian": "right ptera wing",
+      "dutch": "right ptera wing",
+      "german": "right ptera wing",
+      "spanish": "right ptera wing",
+      "french": "right ptera wing",
+      "italian": "right ptera wing"
+    }
+  },
+  {
+    "id": 39,
+    "pic_name": "ptera body.png",
+    "name": {
+      "english": "ptera body",
+      "chinese": "\u65e0\u9f7f\u7ffc\u9f99\u7684\u5934",
+      "t_chinese": "\u7121\u9f52\u7ffc\u9f8d\u7684\u982d",
+      "japanese": "\u30d7\u30c6\u30e9\u30ce\u30c9\u30f3\u306e\u3042\u305f\u307e",
+      "korean": "ptera body",
+      "russian": "ptera body",
+      "dutch": "ptera body",
+      "german": "ptera body",
+      "spanish": "ptera body",
+      "french": "ptera body",
+      "italian": "ptera body"
+    }
+  },
+  {
+    "id": 40,
+    "pic_name": "left ptera wing.png",
+    "name": {
+      "english": "left ptera wing",
+      "chinese": "\u65e0\u9f7f\u7ffc\u9f99\u7684\u5de6\u7ffc",
+      "t_chinese": "\u7121\u9f52\u7ffc\u9f8d\u7684\u5de6\u7ffc",
+      "japanese": "\u30d7\u30c6\u30e9\u30ce\u30c9\u30f3\u306e\u3055\u3088\u304f",
+      "korean": "left ptera wing",
+      "russian": "left ptera wing",
+      "dutch": "left ptera wing",
+      "german": "left ptera wing",
+      "spanish": "left ptera wing",
+      "french": "left ptera wing",
+      "italian": "left ptera wing"
+    }
+  },
+  {
+    "id": 41,
+    "pic_name": "T. rex skull.png",
+    "name": {
+      "english": "T. rex skull",
+      "chinese": "\u66b4\u9f99\u7684\u5934",
+      "t_chinese": "\u66b4\u9f8d\u7684\u982d",
+      "japanese": "T\u30ec\u30c3\u30af\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "T. rex skull",
+      "russian": "T. rex skull",
+      "dutch": "T. rex skull",
+      "german": "T. rex skull",
+      "spanish": "T. rex skull",
+      "french": "T. rex skull",
+      "italian": "T. rex skull"
+    }
+  },
+  {
+    "id": 42,
+    "pic_name": "T. rex tail.png",
+    "name": {
+      "english": "T. rex tail",
+      "chinese": "\u66b4\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u66b4\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "T\u30ec\u30c3\u30af\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "T. rex tail",
+      "russian": "T. rex tail",
+      "dutch": "T. rex tail",
+      "german": "T. rex tail",
+      "spanish": "T. rex tail",
+      "french": "T. rex tail",
+      "italian": "T. rex tail"
+    }
+  },
+  {
+    "id": 43,
+    "pic_name": "T. rex torso.png",
+    "name": {
+      "english": "T. rex torso",
+      "chinese": "\u66b4\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u66b4\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "T\u30ec\u30c3\u30af\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "T. rex torso",
+      "russian": "T. rex torso",
+      "dutch": "T. rex torso",
+      "german": "T. rex torso",
+      "spanish": "T. rex torso",
+      "french": "T. rex torso",
+      "italian": "T. rex torso"
+    }
+  },
+  {
+    "id": 44,
+    "pic_name": "diplo skull.png",
+    "name": {
+      "english": "diplo skull",
+      "chinese": "\u6881\u9f99\u7684\u5934",
+      "t_chinese": "\u6881\u9f8d\u7684\u982d",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "diplo skull",
+      "russian": "diplo skull",
+      "dutch": "diplo skull",
+      "german": "diplo skull",
+      "spanish": "diplo skull",
+      "french": "diplo skull",
+      "italian": "diplo skull"
+    }
+  },
+  {
+    "id": 45,
+    "pic_name": "diplo tail.png",
+    "name": {
+      "english": "diplo tail",
+      "chinese": "\u6881\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u6881\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "diplo tail",
+      "russian": "diplo tail",
+      "dutch": "diplo tail",
+      "german": "diplo tail",
+      "spanish": "diplo tail",
+      "french": "diplo tail",
+      "italian": "diplo tail"
+    }
+  },
+  {
+    "id": 46,
+    "pic_name": "diplo tail tip.png",
+    "name": {
+      "english": "diplo tail tip",
+      "chinese": "\u6881\u9f99\u7684\u5c3e\u5df4\u5c16",
+      "t_chinese": "\u6881\u9f8d\u7684\u5c3e\u7aef",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u3057\u3063\u307d\u306e\u3055\u304d",
+      "korean": "diplo tail tip",
+      "russian": "diplo tail tip",
+      "dutch": "diplo tail tip",
+      "german": "diplo tail tip",
+      "spanish": "diplo tail tip",
+      "french": "diplo tail tip",
+      "italian": "diplo tail tip"
+    }
+  },
+  {
+    "id": 47,
+    "pic_name": "diplo chest.png",
+    "name": {
+      "english": "diplo chest",
+      "chinese": "\u6881\u9f99\u7684\u80f8\u90e8",
+      "t_chinese": "\u6881\u9f8d\u7684\u80f8\u90e8",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u3080\u306d",
+      "korean": "diplo chest",
+      "russian": "diplo chest",
+      "dutch": "diplo chest",
+      "german": "diplo chest",
+      "spanish": "diplo chest",
+      "french": "diplo chest",
+      "italian": "diplo chest"
+    }
+  },
+  {
+    "id": 48,
+    "pic_name": "diplo neck.png",
+    "name": {
+      "english": "diplo neck",
+      "chinese": "\u6881\u9f99\u7684\u8116\u5b50",
+      "t_chinese": "\u6881\u9f8d\u7684\u8116\u5b50",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u304f\u3073",
+      "korean": "diplo neck",
+      "russian": "diplo neck",
+      "dutch": "diplo neck",
+      "german": "diplo neck",
+      "spanish": "diplo neck",
+      "french": "diplo neck",
+      "italian": "diplo neck"
+    }
+  },
+  {
+    "id": 49,
+    "pic_name": "diplo pelvis.png",
+    "name": {
+      "english": "diplo pelvis",
+      "chinese": "\u6881\u9f99\u7684\u8170\u90e8",
+      "t_chinese": "\u6881\u9f8d\u7684\u8170\u90e8",
+      "japanese": "\u30c7\u30a3\u30d7\u30ed\u30c9\u30af\u30b9\u306e\u3053\u3057",
+      "korean": "diplo pelvis",
+      "russian": "diplo pelvis",
+      "dutch": "diplo pelvis",
+      "german": "diplo pelvis",
+      "spanish": "diplo pelvis",
+      "french": "diplo pelvis",
+      "italian": "diplo pelvis"
+    }
+  },
+  {
+    "id": 50,
+    "pic_name": "acanthostega.png",
+    "name": {
+      "english": "acanthostega",
+      "chinese": "\u68d8\u8788",
+      "t_chinese": "\u68d8\u8788",
+      "japanese": "\u30a2\u30ab\u30f3\u30c8\u30b9\u30c6\u30ac",
+      "korean": "acanthostega",
+      "russian": "acanthostega",
+      "dutch": "acanthostega",
+      "german": "acanthostega",
+      "spanish": "acanthostega",
+      "french": "acanthostega",
+      "italian": "acanthostega"
+    }
+  },
+  {
+    "id": 51,
+    "pic_name": "spino skull.png",
+    "name": {
+      "english": "spino skull",
+      "chinese": "\u68d8\u9f99\u7684\u5934",
+      "t_chinese": "\u68d8\u9f8d\u7684\u982d",
+      "japanese": "\u30b9\u30d4\u30ce\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "spino skull",
+      "russian": "spino skull",
+      "dutch": "spino skull",
+      "german": "spino skull",
+      "spanish": "spino skull",
+      "french": "spino skull",
+      "italian": "spino skull"
+    }
+  },
+  {
+    "id": 52,
+    "pic_name": "spino tail.png",
+    "name": {
+      "english": "spino tail",
+      "chinese": "\u68d8\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u68d8\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30b9\u30d4\u30ce\u30b5\u30a6\u30eb\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "spino tail",
+      "russian": "spino tail",
+      "dutch": "spino tail",
+      "german": "spino tail",
+      "spanish": "spino tail",
+      "french": "spino tail",
+      "italian": "spino tail"
+    }
+  },
+  {
+    "id": 53,
+    "pic_name": "spino torso.png",
+    "name": {
+      "english": "spino torso",
+      "chinese": "\u68d8\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u68d8\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30b9\u30d4\u30ce\u30b5\u30a6\u30eb\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "spino torso",
+      "russian": "spino torso",
+      "dutch": "spino torso",
+      "german": "spino torso",
+      "spanish": "spino torso",
+      "french": "spino torso",
+      "italian": "spino torso"
+    }
+  },
+  {
+    "id": 54,
+    "pic_name": "amber.png",
+    "name": {
+      "english": "amber",
+      "chinese": "\u7425\u73c0",
+      "t_chinese": "\u7425\u73c0",
+      "japanese": "\u30b3\u30cf\u30af",
+      "korean": "amber",
+      "russian": "amber",
+      "dutch": "amber",
+      "german": "amber",
+      "spanish": "amber",
+      "french": "amber",
+      "italian": "amber"
+    }
+  },
+  {
+    "id": 55,
+    "pic_name": "ankylo skull.png",
+    "name": {
+      "english": "ankylo skull",
+      "chinese": "\u7532\u9f99\u7684\u5934",
+      "t_chinese": "\u7532\u9f8d\u7684\u982d",
+      "japanese": "\u30a2\u30f3\u30ad\u30ed\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "ankylo skull",
+      "russian": "ankylo skull",
+      "dutch": "ankylo skull",
+      "german": "ankylo skull",
+      "spanish": "ankylo skull",
+      "french": "ankylo skull",
+      "italian": "ankylo skull"
+    }
+  },
+  {
+    "id": 56,
+    "pic_name": "ankylo tail.png",
+    "name": {
+      "english": "ankylo tail",
+      "chinese": "\u7532\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u7532\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30a2\u30f3\u30ad\u30ed\u30b5\u30a6\u30eb\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "ankylo tail",
+      "russian": "ankylo tail",
+      "dutch": "ankylo tail",
+      "german": "ankylo tail",
+      "spanish": "ankylo tail",
+      "french": "ankylo tail",
+      "italian": "ankylo tail"
+    }
+  },
+  {
+    "id": 57,
+    "pic_name": "ankylo torso.png",
+    "name": {
+      "english": "ankylo torso",
+      "chinese": "\u7532\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u7532\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30a2\u30f3\u30ad\u30ed\u30b5\u30a6\u30eb\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "ankylo torso",
+      "russian": "ankylo torso",
+      "dutch": "ankylo torso",
+      "german": "ankylo torso",
+      "spanish": "ankylo torso",
+      "french": "ankylo torso",
+      "italian": "ankylo torso"
+    }
+  },
+  {
+    "id": 58,
+    "pic_name": "iguanodon skull.png",
+    "name": {
+      "english": "iguanodon skull",
+      "chinese": "\u79bd\u9f99\u7684\u5934",
+      "t_chinese": "\u79bd\u9f8d\u7684\u982d",
+      "japanese": "\u30a4\u30b0\u30a2\u30ce\u30c9\u30f3\u306e\u3042\u305f\u307e",
+      "korean": "iguanodon skull",
+      "russian": "iguanodon skull",
+      "dutch": "iguanodon skull",
+      "german": "iguanodon skull",
+      "spanish": "iguanodon skull",
+      "french": "iguanodon skull",
+      "italian": "iguanodon skull"
+    }
+  },
+  {
+    "id": 59,
+    "pic_name": "iguanodon tail.png",
+    "name": {
+      "english": "iguanodon tail",
+      "chinese": "\u79bd\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u79bd\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30a4\u30b0\u30a2\u30ce\u30c9\u30f3\u306e\u3057\u3063\u307d",
+      "korean": "iguanodon tail",
+      "russian": "iguanodon tail",
+      "dutch": "iguanodon tail",
+      "german": "iguanodon tail",
+      "spanish": "iguanodon tail",
+      "french": "iguanodon tail",
+      "italian": "iguanodon tail"
+    }
+  },
+  {
+    "id": 60,
+    "pic_name": "iguanodon torso.png",
+    "name": {
+      "english": "iguanodon torso",
+      "chinese": "\u79bd\u9f99\u7684\u8eab\u4f53",
+      "t_chinese": "\u79bd\u9f8d\u7684\u8eab\u9ad4",
+      "japanese": "\u30a4\u30b0\u30a2\u30ce\u30c9\u30f3\u306e\u304b\u3089\u3060",
+      "korean": "iguanodon torso",
+      "russian": "iguanodon torso",
+      "dutch": "iguanodon torso",
+      "german": "iguanodon torso",
+      "spanish": "iguanodon torso",
+      "french": "iguanodon torso",
+      "italian": "iguanodon torso"
+    }
+  },
+  {
+    "id": 61,
+    "pic_name": "coprolite.png",
+    "name": {
+      "english": "coprolite",
+      "chinese": "\u7caa\u5316\u77f3",
+      "t_chinese": "\u7cde\u5316\u77f3",
+      "japanese": "\u30a6\u30f3\u30b3\u306e\u304b\u305b\u304d",
+      "korean": "coprolite",
+      "russian": "coprolite",
+      "dutch": "coprolite",
+      "german": "coprolite",
+      "spanish": "coprolite",
+      "french": "coprolite",
+      "italian": "coprolite"
+    }
+  },
+  {
+    "id": 62,
+    "pic_name": "brachio skull.png",
+    "name": {
+      "english": "brachio skull",
+      "chinese": "\u8155\u9f99\u7684\u5934",
+      "t_chinese": "\u8155\u9f8d\u7684\u982d",
+      "japanese": "\u30d6\u30e9\u30ad\u30aa\u30b5\u30a6\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "brachio skull",
+      "russian": "brachio skull",
+      "dutch": "brachio skull",
+      "german": "brachio skull",
+      "spanish": "brachio skull",
+      "french": "brachio skull",
+      "italian": "brachio skull"
+    }
+  },
+  {
+    "id": 63,
+    "pic_name": "brachio tail.png",
+    "name": {
+      "english": "brachio tail",
+      "chinese": "\u8155\u9f99\u7684\u5c3e\u5df4",
+      "t_chinese": "\u8155\u9f8d\u7684\u5c3e\u5df4",
+      "japanese": "\u30d6\u30e9\u30ad\u30aa\u30b5\u30a6\u30eb\u30b9\u306e\u3057\u3063\u307d",
+      "korean": "brachio tail",
+      "russian": "brachio tail",
+      "dutch": "brachio tail",
+      "german": "brachio tail",
+      "spanish": "brachio tail",
+      "french": "brachio tail",
+      "italian": "brachio tail"
+    }
+  },
+  {
+    "id": 64,
+    "pic_name": "brachio chest.png",
+    "name": {
+      "english": "brachio chest",
+      "chinese": "\u8155\u9f99\u7684\u80f8\u90e8",
+      "t_chinese": "\u8155\u9f8d\u7684\u80f8\u90e8",
+      "japanese": "\u30d6\u30e9\u30ad\u30aa\u30b5\u30a6\u30eb\u30b9\u306e\u3080\u306d",
+      "korean": "brachio chest",
+      "russian": "brachio chest",
+      "dutch": "brachio chest",
+      "german": "brachio chest",
+      "spanish": "brachio chest",
+      "french": "brachio chest",
+      "italian": "brachio chest"
+    }
+  },
+  {
+    "id": 65,
+    "pic_name": "brachio pelvis.png",
+    "name": {
+      "english": "brachio pelvis",
+      "chinese": "\u8155\u9f99\u7684\u8170\u90e8",
+      "t_chinese": "\u8155\u9f8d\u7684\u8170\u90e8",
+      "japanese": "\u30d6\u30e9\u30ad\u30aa\u30b5\u30a6\u30eb\u30b9\u306e\u3053\u3057",
+      "korean": "brachio pelvis",
+      "russian": "brachio pelvis",
+      "dutch": "brachio pelvis",
+      "german": "brachio pelvis",
+      "spanish": "brachio pelvis",
+      "french": "brachio pelvis",
+      "italian": "brachio pelvis"
+    }
+  },
+  {
+    "id": 66,
+    "pic_name": "ammonite.png",
+    "name": {
+      "english": "ammonite",
+      "chinese": "\u83ca\u77f3",
+      "t_chinese": "\u83ca\u77f3",
+      "japanese": "\u30a2\u30f3\u30e2\u30ca\u30a4\u30c8",
+      "korean": "ammonite",
+      "russian": "ammonite",
+      "dutch": "ammonite",
+      "german": "ammonite",
+      "spanish": "ammonite",
+      "french": "ammonite",
+      "italian": "ammonite"
+    }
+  },
+  {
+    "id": 67,
+    "pic_name": "dunkleosteus.png",
+    "name": {
+      "english": "dunkleosteus",
+      "chinese": "\u9093\u6c0f\u9c7c",
+      "t_chinese": "\u9127\u6c0f\u9b5a",
+      "japanese": "\u30c0\u30f3\u30af\u30eb\u30aa\u30b9\u30c6\u30a6\u30b9",
+      "korean": "dunkleosteus",
+      "russian": "dunkleosteus",
+      "dutch": "dunkleosteus",
+      "german": "dunkleosteus",
+      "spanish": "dunkleosteus",
+      "french": "dunkleosteus",
+      "italian": "dunkleosteus"
+    }
+  },
+  {
+    "id": 68,
+    "pic_name": "mammoth skull.png",
+    "name": {
+      "english": "mammoth skull",
+      "chinese": "\u957f\u6bdb\u8c61\u7684\u5934",
+      "t_chinese": "\u9577\u6bdb\u8c61\u7684\u982d",
+      "japanese": "\u30de\u30f3\u30e2\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "mammoth skull",
+      "russian": "mammoth skull",
+      "dutch": "mammoth skull",
+      "german": "mammoth skull",
+      "spanish": "mammoth skull",
+      "french": "mammoth skull",
+      "italian": "mammoth skull"
+    }
+  },
+  {
+    "id": 69,
+    "pic_name": "mammoth torso.png",
+    "name": {
+      "english": "mammoth torso",
+      "chinese": "\u957f\u6bdb\u8c61\u7684\u8eab\u4f53",
+      "t_chinese": "\u9577\u6bdb\u8c61\u7684\u8eab\u9ad4",
+      "japanese": "\u30de\u30f3\u30e2\u30b9\u306e\u304b\u3089\u3060",
+      "korean": "mammoth torso",
+      "russian": "mammoth torso",
+      "dutch": "mammoth torso",
+      "german": "mammoth torso",
+      "spanish": "mammoth torso",
+      "french": "mammoth torso",
+      "italian": "mammoth torso"
+    }
+  },
+  {
+    "id": 70,
+    "pic_name": "right quetzal wing.png",
+    "name": {
+      "english": "right quetzal wing",
+      "chinese": "\u98ce\u795e\u7ffc\u9f99\u7684\u53f3\u7ffc",
+      "t_chinese": "\u98a8\u795e\u7ffc\u9f8d\u7684\u53f3\u7ffc",
+      "japanese": "\u30b1\u30c4\u30a1\u30eb\u30b3\u30a2\u30c8\u30eb\u30b9\u306e\u3046\u3088\u304f",
+      "korean": "right quetzal wing",
+      "russian": "right quetzal wing",
+      "dutch": "right quetzal wing",
+      "german": "right quetzal wing",
+      "spanish": "right quetzal wing",
+      "french": "right quetzal wing",
+      "italian": "right quetzal wing"
+    }
+  },
+  {
+    "id": 71,
+    "pic_name": "quetzal torso.png",
+    "name": {
+      "english": "quetzal torso",
+      "chinese": "\u98ce\u795e\u7ffc\u9f99\u7684\u5934",
+      "t_chinese": "\u98a8\u795e\u7ffc\u9f8d\u7684\u982d",
+      "japanese": "\u30b1\u30c4\u30a1\u30eb\u30b3\u30a2\u30c8\u30eb\u30b9\u306e\u3042\u305f\u307e",
+      "korean": "quetzal torso",
+      "russian": "quetzal torso",
+      "dutch": "quetzal torso",
+      "german": "quetzal torso",
+      "spanish": "quetzal torso",
+      "french": "quetzal torso",
+      "italian": "quetzal torso"
+    }
+  },
+  {
+    "id": 72,
+    "pic_name": "left quetzal wing.png",
+    "name": {
+      "english": "left quetzal wing",
+      "chinese": "\u98ce\u795e\u7ffc\u9f99\u7684\u5de6\u7ffc",
+      "t_chinese": "\u98a8\u795e\u7ffc\u9f8d\u7684\u5de6\u7ffc",
+      "japanese": "\u30b1\u30c4\u30a1\u30eb\u30b3\u30a2\u30c8\u30eb\u30b9\u306e\u3055\u3088\u304f",
+      "korean": "left quetzal wing",
+      "russian": "left quetzal wing",
+      "dutch": "left quetzal wing",
+      "german": "left quetzal wing",
+      "spanish": "left quetzal wing",
+      "french": "left quetzal wing",
+      "italian": "left quetzal wing"
+    }
+  },
+  {
+    "id": 73,
+    "pic_name": "shark-tooth pattern.png",
+    "name": {
+      "english": "shark-tooth pattern",
+      "chinese": "\u9ca8\u9c7c\u7259\u9f7f\u5316\u77f3",
+      "t_chinese": "\u9bca\u9b5a\u7259\u9f52\u5316\u77f3",
+      "japanese": "\u30b5\u30e1\u306e\u306f\u306e\u304b\u305b\u304d",
+      "korean": "shark-tooth pattern",
+      "russian": "shark-tooth pattern",
+      "dutch": "shark-tooth pattern",
+      "german": "shark-tooth pattern",
+      "spanish": "shark-tooth pattern",
+      "french": "shark-tooth pattern",
+      "italian": "shark-tooth pattern"
+    }
+  }
+]
