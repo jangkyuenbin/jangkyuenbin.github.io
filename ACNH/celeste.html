@@ -30,49 +30,6 @@
 
     <!-- Menu -->
     <nav id="menu">
-        <ul class="links">
-            <li><a class="home_page_text" href="./index.html">主页</a></li>
-            <li><a class="furniture_page_text" href="#">家具图鉴</a></li>
-            <li><a class="fossil_page_text" href="#">化石图鉴</a></li>
-            <li><a class="elements_page_text" href="./elements.html">Elements</a></li>
-        </ul>
-        <form id="menu_form" method="post" action="#" onchange="menu_form_change()">
-            <div class="row gtr-uniform">
-                <div class="col-12">
-                    <select name="language" id="language-category">
-                        <option value="0">English</option>
-                        <option value="1">中文</option>
-                        <option value="2">日本語</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-        <ul class="nav_ul">
-            <li class="nav_li_left_4">
-                <a class="button primary small fit import_btn_text" onclick="uploadUserJson()">导入</a></li>
-            <li class="nav_li_center_4">
-                <a class="button primary small fit reset_btn_text" onclick="resetGlobalSettings()">重置</a></li>
-            <li class="nav_li_right_4">
-                <a class="button icon solid fa-download small fit download_btn_text"
-                   onclick="downloadCurrentUserJson()">导出</a></li>
-        </ul>
-        <div style="width: 0;height: 0;display: none">
-            <input type="file" name="input_f" id="input_f">
-        </div>
-
-        <ul class="nav_ul">
-            <form class="nav_li_left_6" id="user_form" method="post" action="#" onchange="change_user()">
-                <div class="row gtr-uniform">
-                    <div class="col-12">
-                        <select name="language" id="user-category">
-                            <option value="none">-未注册-</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <li class="nav_li_right_6">
-                <a href="./edit.html" class="button fit edit_btn_text">编辑</a></li>
-        </ul>
 
     </nav>
 
@@ -86,21 +43,26 @@
                     <h1 class="celeste_page_text">傅珂DIY卡图鉴</h1>
                 </header>
                 <form method="post" id="celeste_form" action="#">
-                    <div class="row gtr-uniform">
+                    <div class="row" style="margin-bottom: 4%">
                         <div class="col-6 col-12-xsmall">
                             <input class="celeste_input_text" type="text" name="celeste_name" id="celeste_name"
                                    value="" placeholder="请输入DIY卡名称"/>
                         </div>
-                        <div class="col-3 col-12-xsmall">
-                            <ul class="actions">
-                                <li>
-                                    <a id="celeste_search_btn" href="#" class="button primary fit search_btn_text"
+                        <div class="col-6 col-12-xsmall">
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <a id="celeste_search_btn" href="#"
+                                       class="button primary fit search_btn_text"
                                        onclick="onCelesteSearch(this)">搜索</a>
-                                </li>
-                                <li><a href="#" class="button fit reset_btn_text" onclick="onCelesteReset()">重置</a></li>
-                            </ul>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <a href="#" class="button fit reset_btn_text"
+                                       onclick="onCelesteReset()">重置</a>
+                                </div>
+                            </div>
                         </div>
-
+                    </div>
+                    <div class="row">
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_00" name="demo-priority" value="0" checked>
                             <label class="all_label_text" for="celeste_radio_00"
@@ -117,6 +79,7 @@
                                    onclick="onCelesteSearch(this)">未拥有</label>
                         </div>
                     </div>
+
                 </form>
             </div>
         </section>
@@ -166,17 +129,18 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
 
-<script src="acnh_assets/js/main.js"></script>
-<script src="acnh_assets/js/celeste.js"></script>
-<script src="acnh_assets/js/CookieHandler.js"></script>
+<script src="./acnh_assets/js/main.js"></script>
+<script src="./acnh_assets/js/celeste.js"></script>
+<script src="./acnh_assets/js/CookieHandler.js"></script>
 <script>
     celeste_page_onload();
 </script>

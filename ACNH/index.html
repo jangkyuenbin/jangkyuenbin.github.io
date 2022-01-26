@@ -30,53 +30,8 @@
 
     <!-- Menu -->
     <nav id="menu">
-        <ul class="links">
-            <li><a class="home_page_text" href="./index.html">主页</a></li>
-            <li><a class="furniture_page_text" href="#">家具图鉴</a></li>
-            <li><a class="fossil_page_text" href="#">化石图鉴</a></li>
-            <li><a class="elements_page_text" href="./elements.html">Elements</a></li>
-            <li><a class="generic_page_text" href="./generic.html">Generic</a></li>
-        </ul>
-        <form id="menu_form" method="post" action="#" onchange="menu_form_change()">
-            <div class="row gtr-uniform">
-                <div class="col-12">
-                    <select name="language" id="language-category">
-                        <option value="0">English</option>
-                        <option value="1">中文</option>
-                        <option value="2">日本語</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-        <ul class="nav_ul">
-            <li class="nav_li_left_4">
-                <a class="button primary small fit import_btn_text" onclick="uploadUserJson()">导入</a></li>
-            <li class="nav_li_center_4">
-                <a class="button primary small fit reset_btn_text" onclick="resetGlobalSettings()">重置</a></li>
-            <li class="nav_li_right_4">
-                <a class="button icon solid fa-download small fit download_btn_text"
-                   onclick="downloadCurrentUserJson()">导出</a></li>
-        </ul>
-        <div style="width: 0;height: 0;display: none">
-            <input type="file" name="input_f" id="input_f">
-        </div>
-
-        <ul class="nav_ul">
-            <form class="nav_li_left_6" id="user_form" method="post" action="#" onchange="change_user()">
-                <div class="row gtr-uniform">
-                    <div class="col-12">
-                        <select name="language" id="user-category">
-                            <option value="none">-未注册-</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <li class="nav_li_right_6">
-                <a href="./edit.html" class="button fit edit_btn_text">编辑</a></li>
-        </ul>
 
     </nav>
-
     <!-- Banner -->
     <section id="banner" class="major">
         <div class="inner">
@@ -115,7 +70,7 @@
                 <img src="images/home_png/FD.png" alt=""/>
             </span>
                 <header class="major">
-                    <h3 class="fossil_page_text"><a href="./development.html" class="link">化石图鉴</a></h3>
+                    <h3 class="fossil_page_text"><a href="./fossil.html" class="link">化石图鉴</a></h3>
                     <p class="fossil_page_text_left">Fossil Book</p>
                 </header>
             </article>
@@ -250,11 +205,13 @@
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
-                <li><a href="mailto:jangkyuenbin@163.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="mailto:jangkyuenbin@163.com" class="icon solid alt fa-envelope"><span
+                        class="label">Email</span></a></li>
                 <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
                 <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/jangkyuenbin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://github.com/jangkyuenbin" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                </li>
                 <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
             </ul>
             <ul class="copyright">
@@ -267,6 +224,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="./acnh_assets/js/createMenu.js"></script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/jquery.scrolly.min.js"></script>
 <script src="./assets/js/jquery.scrollex.min.js"></script>

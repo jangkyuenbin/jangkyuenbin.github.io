@@ -1,3 +1,20 @@
+var language_data = null;
+
+function isIntNum(val) {
+    var regPos = / ^\d+$/; // 非负整数
+    var regNeg = /^\-[1-9][0-9]*$/; // 负整数
+    if (regPos.test(val) && regNeg.test(val)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isPositiveInteger(s){//是否为正整数
+     var re = /^[0-9]+$/ ;
+     return re.test(s)
+ }
+
 function arrayRemove(arr, value) {
     return arr.filter(function (ele) {
         return ele !== value;
@@ -18,20 +35,73 @@ function cleanElementChild(ele) {
     }
 }
 
+function htmlToElements(html) {
+    var template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content.childNodes;
+}
+
+function insertAfter(referenceNode, newNode) {
+    console.log(newNode)
+    console.log(referenceNode.nextSibling)
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function setMenufunc() {
+    var menu_form = document.getElementById('menu_form');
+    var user_form = document.getElementById("user_form");
+    var import_btn_text = document.getElementById("import_btn_text");
+    var reset_btn_text = document.getElementById("reset_btn_text");
+    var download_btn_text = document.getElementById("download_btn_text");
+
+    if (menu_form != null) {
+        menu_form.onchange = function () {
+            menu_form_change();
+        }
+    }
+
+    if (user_form != null) {
+        user_form.onchange = function () {
+            change_user();
+        }
+    }
+    if (import_btn_text != null) {
+        import_btn_text.onclick = function () {
+            uploadUserJson();
+        }
+    }
+    if (reset_btn_text != null) {
+        reset_btn_text.onclick = function () {
+            resetGlobalSettings();
+        }
+    }
+    if (download_btn_text != null) {
+        download_btn_text.onclick = function () {
+            downloadCurrentUserJson();
+        }
+    }
+}
+
+
 function menu_onload() {
     var language_select = document.getElementById('language-category')
     var user_select = document.getElementById('user-category')
     const current_user_json = getSelectedUserJson();
-    var index = '0';
-    if (current_user_json.global.language != null) {
-        index = current_user_json.global.language;
-    }
+    var language = getLanguage();
+
+    setMenufunc();
+
     if (user_select != null && language_select != null) {
         while (user_select.firstChild) {
             user_select.removeChild(user_select.firstChild);
         }
         var all_user_names = getAllUserName();
-        language_select.options[parseInt(index)].selected = true;
+        for (var i = 0; i < language_select.options.length; i++) {
+            if (language_select.options[i].value === language) {
+                language_select.options[i].selected = true;
+                break;
+            }
+        }
 
         if (all_user_names != null) {
             for (var i = 0; i < all_user_names.length; i++) {
@@ -65,6 +135,7 @@ function menu_form_change() {
     } else {
         global_json = {'language': select.options[index].value}
     }
+    console.log(global_json);
     saveGlobalJson(global_json);
     location.reload();
 }
@@ -167,95 +238,83 @@ function update_pagination(onPageSearch) {
     }
 }
 
-function init_language() {
-    var url = 'db/json/language.json'
-    var request = new XMLHttpRequest();
-    var i = 0;
-    var language = '0';
-    const current_user_json = getSelectedUserJson();
-    if (current_user_json.global.language != null) {
-        language = current_user_json.global.language;
-    }
-    // 设置请求方法与路径
-    request.open("get", url);
-    // 不发送数据到服务器
-    request.send(null);
-    //XHR对象获取到返回信息后执行
-    request.onload = function () {
-        // 返回状态为200，即为数据获取成功
-        if (request.status == 200) {
-            var language_json = JSON.parse(request.responseText);
-            var i = 0;
-            for (var name_k in language_json) {
-                var name_v = language_json[name_k];
-                var objs = document.getElementsByClassName(name_k);
-                var text;
-                if (objs != null) {
-                    for (i = 0; i < objs.length; ++i) {
-                        if (language === '0') {
-                            text = name_v.english;
-                        } else if (language === '1') {
-                            text = name_v.chinese;
-                        } else if (language === '2') {
-                            text = name_v.japanese;
-                        }
-                        if (objs[i].tagName === "INPUT") {
-                            objs[i].placeholder = text;
-                        } else if (name_k === "umbrella_category_all_text") {
-                            var span = document.createElement('span');
-                            span.classList.add('icon_more');
-                            objs[i].textContent = text;
-                            objs[i].appendChild(span);
-                        } else {
-                            objs[i].textContent = text;
-                        }
-
-                    }
-                }
-
-                objs = document.getElementsByClassName(name_k + "_left");
-                if (objs != null) {
-                    for (i = 0; i < objs.length; ++i) {
-                        if (language === '0') {
-                            text = name_v.chinese;
-                        } else if (language === '1') {
-                            text = name_v.japanese;
-                        } else if (language === '2') {
-                            text = name_v.english;
-                        }
-                        if (objs[i].tagName === "INPUT") {
-                            console.log(objs[i])
-                            console.log(objs[i].tagName)
-                            objs[i].placeholder = text;
-                        } else {
-                            objs[i].textContent = text;
-                        }
-                    }
-                }
-
-                objs = document.getElementsByClassName(name_k + "_right");
-                if (objs != null) {
-                    for (i = 0; i < objs.length; ++i) {
-                        if (language === '0') {
-                            text = name_v.japanese;
-                        } else if (language === '1') {
-                            text = name_v.english;
-                        } else if (language === '2') {
-                            text = name_v.chinese;
-                        }
-                        if (objs[i].tagName === "INPUT") {
-                            console.log(objs[i])
-                            console.log(objs[i].tagName)
-                            objs[i].placeholder = text;
-                        } else {
-                            objs[i].textContent = text;
-                        }
-                    }
+function assign_element_language() {
+    var language = getLanguage();
+    var i;
+    var result;
+    for (var name_k in language_data) {
+        var name_v = language_data[name_k];
+        var objs = document.getElementsByClassName(name_k);
+        var text;
+        if (objs != null) {
+            for (i = 0; i < objs.length; ++i) {
+                text = name_v[language];
+                if (objs[i].tagName === "INPUT") {
+                    objs[i].placeholder = text;
+                } else if (name_k === "umbrella_category_all_text") {
+                    var span = document.createElement('span');
+                    span.classList.add('icon_more');
+                    objs[i].textContent = text;
+                    objs[i].appendChild(span);
+                } else {
+                    objs[i].textContent = text;
                 }
 
             }
-        } else {
-            console.log('error');
+        }
+
+        objs = document.getElementsByClassName(name_k + "_left");
+        if (objs != null) {
+            for (i = 0; i < objs.length; ++i) {
+                result = Object.keys(name_v).map(e => name_v[e]);
+                result.push(result.shift());
+                name_v = Object.fromEntries(new Map(Object.keys(name_v).map(function (e, i) {
+                    return [e, result[i]];
+                })));
+                text = name_v[language];
+                if (objs[i].tagName === "INPUT") {
+                    objs[i].placeholder = text;
+                } else {
+                    objs[i].textContent = text;
+                }
+            }
+        }
+
+        objs = document.getElementsByClassName(name_k + "_right");
+        if (objs != null) {
+            for (i = 0; i < objs.length; ++i) {
+                result = Object.keys(name_v).map(e => name_v[e]);
+                result.push(result.shift());
+                result.push(result.shift());
+                name_v = Object.fromEntries(new Map(Object.keys(name_v).map(function (e, i) {
+                    return [e, result[i]];
+                })));
+                text = name_v[language];
+                if (objs[i].tagName === "INPUT") {
+                    objs[i].placeholder = text;
+                } else {
+                    objs[i].textContent = text;
+                }
+            }
         }
     }
+}
+
+function init_language() {
+    if (language_data != null) {
+        assign_element_language();
+    } else {
+        var request = new XMLHttpRequest();
+        request.open("get", 'db/json/language.json');
+        request.send(null);
+        request.onload = function () {
+            if (request.status === 200) {
+                language_data = JSON.parse(request.responseText);
+                assign_element_language();
+            } else {
+                console.log('error');
+            }
+        }
+    }
+
 }
