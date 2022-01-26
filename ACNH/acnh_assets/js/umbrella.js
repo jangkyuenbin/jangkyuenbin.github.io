@@ -412,6 +412,7 @@ function load_umbrella_db() {
         filter_umbrella_data();
         update_umbrella_page();
         init_language();
+        window.location.href = "#two"
     } else {
         var request = new XMLHttpRequest();
         request.open("get", 'db/json/umbrella.json');
