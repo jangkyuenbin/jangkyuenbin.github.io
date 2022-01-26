@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>FOSSIL</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./acnh_assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css"/>
+    </noscript>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <a href="./index.html" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
+        <nav>
+            <a class="menu_name_text" href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+
+    </nav>
+
+    <section id="three" style="display: none">
+        <img src="./images/home_png/acnh.jpg"
+             style="position: absolute;z-index: 0;width: 100%;height: 35%;object-fit: cover;object-position: right top">
+        <div class="inner" style="z-index: 1;position: relative">
+            <header class="major">
+                <h1 class="fossil_page_text">three</h1>
+            </header>
+            <div class="content" style="justify-content: right; display: flex">
+                <img src="./images/qrcode.png" style="height: 125px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1 class="fossil_page_text">化石图鉴</h1>
+                </header>
+                <form method="post" id="fossil_form" action="#">
+                    <div class="row" style="margin-bottom: 4%">
+                        <div class="col-6 col-12-xsmall">
+                            <input class="fossil_input_text" type="text" name="fossil_name" id="fossil_name"
+                                   value="" placeholder=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <a id="fossil_search_btn" href="#"
+                                       class="button primary fit search_btn_text"
+                                       onclick="onFossilSearch(this)">搜索</a>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <a href="#" class="button fit reset_btn_text"
+                                       onclick="onFossilReset()">重置</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="fossil_radio_00" name="demo-priority" value="0" checked>
+                            <label class="all_label_text" for="fossil_radio_00"
+                                   onclick="onFossilSearch(this)"></label>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="fossil_radio_01" name="demo-priority" value="1">
+                            <label class="donated_label_text" for="fossil_radio_01"
+                                   onclick="onFossilSearch(this)"></label>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="fossil_radio_02" name="demo-priority" value="2">
+                            <label class="not_donated_label_text" for="fossil_radio_02"
+                                   onclick="onFossilSearch(this)"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="two">
+            <div class="inner">
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                        <tr>
+                            <th class="text_center fossil_table_pic_text">化石图片</th>
+                            <th class="text_center fossil_table_name_text">化石名称</th>
+                            <th class="text_center fossil_table_donate_text">是否捐赠</th>
+                            <th class="text_center fossil_table_redundancy_text">冗余个数</th>
+                        </tr>
+                        </thead>
+                        <tbody id="fossil_table_body">
+                        <tr>
+                            <td class="text_center">
+                                <img src=""/>
+                            </td>
+                            <td class="text_center">1</td>
+                            <td class="text_center">2</td>
+                            <td class="text_center">
+                                <input id="{{ f[0] }}" type="text" value="{{ f[3] }}" onchange=""
+                                       style="text-align: center">
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td style="text-align: center" id="summary_td">{{ s }}</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <a id="snapshot_btn" class="button icon solid fa-download export_fossil_text"
+                       onclick="exportCanvasAsPNG2()">导出截图</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="mailto:jangkyuenbin@163.com" class="icon solid alt fa-envelope"><span
+                        class="label">Email</span></a></li>
+                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/jangkyuenbin" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                </li>
+                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Animal Crossing Book</li>
+                <li>Design: <a href="https://jangkyuenbin.github.io">Jang</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/dom-to-image-more.min.js"></script>
+
+<script src="./acnh_assets/js/main.js"></script>
+<script src="./acnh_assets/js/fossil.js"></script>
+<script src="./acnh_assets/js/CookieHandler.js"></script>
+<script>
+    fossil_page_onload();
+</script>
+</body>
+</html>
