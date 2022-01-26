@@ -1,232 +1,272 @@
 {
-    "home_page_text": {
-        "chinese": "主页",
-        "english": "Home",
-        "japanese": "家"
-    },
-    "elements_page_text": {
-        "chinese": "元素",
-        "english": "Elements",
-        "japanese": "要素"
-    },
-    "import_btn_text": {
-        "chinese": "导入",
-        "english": "Import",
-        "japanese": "輸入"
-    },
-    "reset_btn_text": {
-        "chinese": "重置",
-        "english": "reset",
-        "japanese": "リセット"
-    },
-    "download_btn_text": {
-        "chinese": "导出",
-        "english": "Export",
-        "japanese": "輸出"
-    },
-    "edit_btn_text": {
-        "chinese": "编辑",
-        "english": "Edit",
-        "japanese": "編集"
-    },
-    "banner_h1_text": {
-        "chinese": "欢迎来到, 集合啦！动物森友会图鉴工具",
-        "english": "Welcome to, Animal Crossing: New Horizons Illustrated handbook",
-        "japanese": "あつまれ どうぶつの森ポケモン図鑑ツールへようこそ"
-    },
-    "banner_start_text": {
-        "chinese": "开始使用",
-        "english": "Get Started",
-        "japanese": "使い始める"
-    },
-    "menu_name_text": {
-        "chinese": "菜单",
-        "english": "Menu",
-        "japanese": "メニュー"
-    },
-    "furniture_page_text": {
-        "chinese": "家具图鉴",
-        "english": "Furniture",
-        "japanese": "家具の図解"
-    },
-    "fossil_page_text": {
-        "chinese": "化石图鉴",
-        "english": "Fossil",
-        "japanese": "化石の図解"
-    },
-    "celeste_page_text": {
-        "chinese": "傅珂DIY卡图鉴",
-        "english": "Celeste Book",
-        "japanese": "フーコDIYカードブック"
-    },
-    "clothing_page_text": {
-        "chinese": "服饰图鉴",
-        "english": "Clothing Book",
-        "japanese": "衣料品ポケモン図鑑"
-    },
-    "diy_recipes_page_text": {
-        "chinese": "DIY 方程式",
-        "english": "DIY recipes",
-        "japanese": "DIYレシピ"
-    },
-    "art_page_text": {
-        "chinese": "艺术品图鉴",
-        "english": "Art Book",
-        "japanese": "画集"
-    },
-    "villager_page_text": {
-        "chinese": "村民小动物",
-        "english": "Villager Book",
-        "japanese": "あつ森の住民"
-    },
-    "fish_page_text": {
-        "chinese": "鱼类图鉴",
-        "english": "Fish Book",
-        "japanese": "魚のポケモン図鑑"
-    },
-    "insect_page_text": {
-        "chinese": "昆虫图鉴",
-        "english": "Insect book",
-        "japanese": "昆虫イラスト本"
-    },
-    "floor_page_text": {
-        "chinese": "地板图鉴",
-        "english": "Floor Book",
-        "japanese": "フロアポケモン図鑑"
-    },
-    "record_page_text": {
-        "chinese": "唱片图鉴",
-        "english": "Music Record Book",
-        "japanese": "音楽記録簿"
-    },
-    "umbrella_page_text": {
-        "chinese": "雨伞图鉴",
-        "english": "Umbrella Book",
-        "japanese": "傘のイラスト"
-    },
-    "main_h2_text": {
-        "chinese": "第三方工具网站",
-        "english": "Third-party tools",
-        "japanese": "サードパーティツール"
-    },
-    "search_btn_text": {
-        "chinese": "搜索",
-        "english": "search",
-        "japanese": "探す"
-    },
-    "umbrella_input_text": {
-        "chinese": "请输入雨伞名称",
-        "english": "Please enter the umbrella name",
-        "japanese": "傘の名前を入力してください"
-    },
-    "all_label_text": {
-        "chinese": "全部",
-        "english": "All",
-        "japanese": "全て"
-    },
-    "owned_label_text": {
-        "chinese": "已拥有",
-        "english": "Owned",
-        "japanese": "所有"
-    },
-    "not_owned_label_text": {
-        "chinese": "未拥有",
-        "english": "Not Owned",
-        "japanese": "所有される"
-    },
-    "not_translated_text": {
-        "chinese": "待翻译",
-        "english": "Not Translated",
-        "japanese": "翻訳される"
-    },
-    "umbrella_category_all_text": {
-        "chinese": "- 全部 -",
-        "english": "- All -",
-        "japanese": "- 全て -"
-    },
-    "prev_text": {
-        "chinese": "上一页",
-        "english": "Prev",
-        "japanese": "前"
-    },
-    "next_text": {
-        "chinese": "下一页",
-        "english": "Next",
-        "japanese": "次"
-    },
-    "edit_h1_text": {
-        "chinese": "账户设置",
-        "english": "Account Settings",
-        "japanese": "アカウント設定"
-    },
-    "edit_a_text": {
-        "chinese": "修改",
-        "english": "Modify",
-        "japanese": "改訂"
-    },
-    "edit_default_a_text": {
-        "chinese": "设置为默认用户",
-        "english": "Set as default",
-        "japanese": "デフォルトユーザーとして設定"
-    },
-    "create_user_a_text": {
-        "chinese": "创建新用户",
-        "english": "Create User",
-        "japanese": "ユーザーを作成"
-    },
-    "reset_cuser_a_text": {
-        "chinese": "重置当前用户",
-        "english": "Reset Current User",
-        "japanese": "現在のユーザーをリセット"
-    },
-    "delete_cuser_a_text": {
-        "chinese": "删除当前用户",
-        "english": "Delete Current User",
-        "japanese": "現在のユーザーを削除する"
-    },
-    "save_a_text": {
-        "chinese": "保存",
-        "english": "Save",
-        "japanese": "保存する"
-    },
-    "cancel_a_text": {
-        "chinese": "取消",
-        "english": "Cancel",
-        "japanese": "キャンセル"
-    },
-    "input_user_name_text": {
-        "chinese": "请输入用户名",
-        "english": "Please enter user name",
-        "japanese": "ユーザー名を入力してください"
-    },
-    "celeste_input_text": {
-        "chinese": "请输入DIY卡名称",
-        "english": "Please enter DIY card name",
-        "japanese": "DIYカード名を入力してください"
-    },
-    "generic_page_text": {
-        "chinese": "通用",
-        "english": "Generic",
-        "japanese": "ユニバーサル"
-    },
-    "development_page_text": {
-        "chinese": "正在开发中...",
-        "english": "In development...",
-        "japanese": "開発中..."
-    },
-    "music_live_label_text": {
-        "chinese": "现场演奏",
-        "english": "Live",
-        "japanese": "ライブ音楽"
-    },
-    "music_aircheck_label_text": {
-        "chinese": "唱片音乐",
-        "english": "Aircheck",
-        "japanese": "音楽を録音する"
-    },
-    "music_input_text": {
-        "chinese": "请输入唱片名称",
-        "english": "Please enter the album name",
-        "japanese": "アルバム名を入力してください"
-    }
+  "home_page_text": {
+    "chinese": "\u4e3b\u9875",
+    "english": "Home",
+    "japanese": "\u5bb6"
+  },
+  "elements_page_text": {
+    "chinese": "\u5143\u7d20",
+    "english": "Elements",
+    "japanese": "\u8981\u7d20"
+  },
+  "import_btn_text": {
+    "chinese": "\u5bfc\u5165",
+    "english": "Import",
+    "japanese": "\u8f38\u5165"
+  },
+  "reset_btn_text": {
+    "chinese": "\u91cd\u7f6e",
+    "english": "Reset",
+    "japanese": "\u30ea\u30bb\u30c3\u30c8"
+  },
+  "download_btn_text": {
+    "chinese": "\u5bfc\u51fa",
+    "english": "Export",
+    "japanese": "\u8f38\u51fa"
+  },
+  "edit_btn_text": {
+    "chinese": "\u7f16\u8f91",
+    "english": "Edit",
+    "japanese": "\u7de8\u96c6"
+  },
+  "banner_h1_text": {
+    "chinese": "\u6b22\u8fce\u6765\u5230, \u96c6\u5408\u5566\uff01\u52a8\u7269\u68ee\u53cb\u4f1a\u56fe\u9274\u5de5\u5177",
+    "english": "Welcome to, Animal Crossing: New Horizons Illustrated handbook",
+    "japanese": "\u3042\u3064\u307e\u308c \u3069\u3046\u3076\u3064\u306e\u68ee\u30dd\u30b1\u30e2\u30f3\u56f3\u9451\u30c4\u30fc\u30eb\u3078\u3088\u3046\u3053\u305d"
+  },
+  "banner_start_text": {
+    "chinese": "\u5f00\u59cb\u4f7f\u7528",
+    "english": "Get Started",
+    "japanese": "\u4f7f\u3044\u59cb\u3081\u308b"
+  },
+  "menu_name_text": {
+    "chinese": "\u83dc\u5355",
+    "english": "Menu",
+    "japanese": "\u30e1\u30cb\u30e5\u30fc"
+  },
+  "furniture_page_text": {
+    "chinese": "\u5bb6\u5177\u56fe\u9274",
+    "english": "Furniture Book",
+    "japanese": "\u5bb6\u5177\u306e\u56f3\u89e3"
+  },
+  "fossil_page_text": {
+    "chinese": "\u5316\u77f3\u56fe\u9274",
+    "english": "Fossil Book",
+    "japanese": "\u5316\u77f3\u306e\u56f3\u89e3"
+  },
+  "celeste_page_text": {
+    "chinese": "\u5085\u73c2DIY\u5361\u56fe\u9274",
+    "english": "Celeste Book",
+    "japanese": "\u30d5\u30fc\u30b3DIY\u30ab\u30fc\u30c9\u30d6\u30c3\u30af"
+  },
+  "clothing_page_text": {
+    "chinese": "\u670d\u9970\u56fe\u9274",
+    "english": "Clothing Book",
+    "japanese": "\u8863\u6599\u54c1\u30dd\u30b1\u30e2\u30f3\u56f3\u9451"
+  },
+  "diy_recipes_page_text": {
+    "chinese": "DIY \u65b9\u7a0b\u5f0f",
+    "english": "DIY recipes",
+    "japanese": "DIY \u30ec\u30b7\u30d4"
+  },
+  "art_page_text": {
+    "chinese": "\u827a\u672f\u54c1\u56fe\u9274",
+    "english": "Art Book",
+    "japanese": "\u7f8e\u8853\u54c1\u306e\u56f3\u89e3"
+  },
+  "villager_page_text": {
+    "chinese": "\u6751\u6c11\u5c0f\u52a8\u7269",
+    "english": "Villager Book",
+    "japanese": "\u3042\u3064\u68ee\u306e\u4f4f\u6c11"
+  },
+  "fish_page_text": {
+    "chinese": "\u9c7c\u7c7b\u56fe\u9274",
+    "english": "Fish Book",
+    "japanese": "\u9b5a\u56f3\u9451"
+  },
+  "insect_page_text": {
+    "chinese": "\u6606\u866b\u56fe\u9274",
+    "english": "Insect book",
+    "japanese": "\u866b\u56f3\u9451"
+  },
+  "floor_page_text": {
+    "chinese": "\u5730\u677f\u56fe\u9274",
+    "english": "Floor Book",
+    "japanese": "\u5e8a\u677f\u4e00\u89a7"
+  },
+  "record_page_text": {
+    "chinese": "\u5531\u7247\u56fe\u9274",
+    "english": "Music Record Book",
+    "japanese": "\u3068\u305f\u3051\u3051\u306e\u66f2\u4e00\u89a7"
+  },
+  "umbrella_page_text": {
+    "chinese": "\u96e8\u4f1e\u56fe\u9274",
+    "english": "Umbrella Book",
+    "japanese": "\u5098\u4e00\u89a7"
+  },
+  "main_h2_text": {
+    "chinese": "\u7b2c\u4e09\u65b9\u5de5\u5177\u7f51\u7ad9",
+    "english": "Third-party tools",
+    "japanese": "\u30b5\u30fc\u30c9\u30d1\u30fc\u30c6\u30a3\u30c4\u30fc\u30eb"
+  },
+  "search_btn_text": {
+    "chinese": "\u641c\u7d22",
+    "english": "Search",
+    "japanese": "\u63a2\u3059"
+  },
+  "umbrella_input_text": {
+    "chinese": "\u8bf7\u8f93\u5165\u96e8\u4f1e\u540d\u79f0",
+    "english": "Please enter the umbrella name",
+    "japanese": "\u5098\u306e\u540d\u524d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  },
+  "all_label_text": {
+    "chinese": "\u5168\u90e8",
+    "english": "All",
+    "japanese": "\u5168\u3066"
+  },
+  "owned_label_text": {
+    "chinese": "\u5df2\u62e5\u6709",
+    "english": "Owned",
+    "japanese": "\u6240\u6709"
+  },
+  "not_owned_label_text": {
+    "chinese": "\u672a\u62e5\u6709",
+    "english": "Not Owned",
+    "japanese": "\u6240\u6709\u3055\u308c\u308b"
+  },
+  "not_translated_text": {
+    "chinese": "\u5f85\u7ffb\u8bd1",
+    "english": "Not Translated",
+    "japanese": "\u7ffb\u8a33\u3055\u308c\u308b"
+  },
+  "umbrella_category_all_text": {
+    "chinese": "- \u5168\u90e8 -",
+    "english": "- All -",
+    "japanese": "- \u5168\u3066 -"
+  },
+  "prev_text": {
+    "chinese": "\u4e0a\u4e00\u9875",
+    "english": "Prev",
+    "japanese": "\u524d"
+  },
+  "next_text": {
+    "chinese": "\u4e0b\u4e00\u9875",
+    "english": "Next",
+    "japanese": "\u6b21"
+  },
+  "edit_h1_text": {
+    "chinese": "\u8d26\u6237\u8bbe\u7f6e",
+    "english": "Account Settings",
+    "japanese": "\u30a2\u30ab\u30a6\u30f3\u30c8\u8a2d\u5b9a"
+  },
+  "edit_a_text": {
+    "chinese": "\u4fee\u6539",
+    "english": "Modify",
+    "japanese": "\u6539\u8a02"
+  },
+  "edit_default_a_text": {
+    "chinese": "\u8bbe\u7f6e\u4e3a\u9ed8\u8ba4\u7528\u6237",
+    "english": "Set as default",
+    "japanese": "\u30c7\u30d5\u30a9\u30eb\u30c8\u30e6\u30fc\u30b6\u30fc\u3068\u3057\u3066\u8a2d\u5b9a"
+  },
+  "create_user_a_text": {
+    "chinese": "\u521b\u5efa\u65b0\u7528\u6237",
+    "english": "Create User",
+    "japanese": "\u30e6\u30fc\u30b6\u30fc\u3092\u4f5c\u6210"
+  },
+  "reset_cuser_a_text": {
+    "chinese": "\u91cd\u7f6e\u5f53\u524d\u7528\u6237",
+    "english": "Reset Current User",
+    "japanese": "\u73fe\u5728\u306e\u30e6\u30fc\u30b6\u30fc\u3092\u30ea\u30bb\u30c3\u30c8"
+  },
+  "delete_cuser_a_text": {
+    "chinese": "\u5220\u9664\u5f53\u524d\u7528\u6237",
+    "english": "Delete Current User",
+    "japanese": "\u73fe\u5728\u306e\u30e6\u30fc\u30b6\u30fc\u3092\u524a\u9664\u3059\u308b"
+  },
+  "save_a_text": {
+    "chinese": "\u4fdd\u5b58",
+    "english": "Save",
+    "japanese": "\u4fdd\u5b58\u3059\u308b"
+  },
+  "cancel_a_text": {
+    "chinese": "\u53d6\u6d88",
+    "english": "Cancel",
+    "japanese": "\u30ad\u30e3\u30f3\u30bb\u30eb"
+  },
+  "input_user_name_text": {
+    "chinese": "\u8bf7\u8f93\u5165\u7528\u6237\u540d",
+    "english": "Please enter user name",
+    "japanese": "\u30e6\u30fc\u30b6\u30fc\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  },
+  "celeste_input_text": {
+    "chinese": "\u8bf7\u8f93\u5165DIY\u5361\u540d\u79f0",
+    "english": "Please enter DIY card name",
+    "japanese": "DIY\u30ab\u30fc\u30c9\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  },
+  "generic_page_text": {
+    "chinese": "\u901a\u7528",
+    "english": "Generic",
+    "japanese": "\u30e6\u30cb\u30d0\u30fc\u30b5\u30eb"
+  },
+  "development_page_text": {
+    "chinese": "\u6b63\u5728\u5f00\u53d1\u4e2d...",
+    "english": "In development...",
+    "japanese": "\u958b\u767a\u4e2d..."
+  },
+  "music_live_label_text": {
+    "chinese": "\u73b0\u573a\u6f14\u594f",
+    "english": "Live",
+    "japanese": "\u30e9\u30a4\u30d6\u97f3\u697d"
+  },
+  "music_aircheck_label_text": {
+    "chinese": "\u5531\u7247\u97f3\u4e50",
+    "english": "Aircheck",
+    "japanese": "\u97f3\u697d\u3092\u9332\u97f3\u3059\u308b"
+  },
+  "music_input_text": {
+    "chinese": "\u8bf7\u8f93\u5165\u5531\u7247\u540d\u79f0",
+    "english": "Please enter the album name",
+    "japanese": "\u30a2\u30eb\u30d0\u30e0\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  },
+  "fossil_table_pic_text": {
+    "chinese": "\u5316\u77f3\u56fe\u7247",
+    "english": "Picture",
+    "japanese": "\u5316\u77f3\u306e\u5199\u771f"
+  },
+  "fossil_table_name_text": {
+    "chinese": "\u5316\u77f3\u540d\u79f0",
+    "english": "Name",
+    "japanese": "\u5316\u77f3\u540d"
+  },
+  "fossil_table_donate_text": {
+    "chinese": "\u662f\u5426\u6350\u8d60",
+    "english": "Donate",
+    "japanese": "\u5bc4\u4ed8\u3059\u308b\u304b\u3069\u3046\u304b"
+  },
+  "fossil_table_redundancy_text": {
+    "chinese": "\u5197\u4f59\u4e2a\u6570",
+    "english": "Redundancy",
+    "japanese": "\u5197\u9577\u6027\u306e\u6570"
+  },
+  "export_fossil_text": {
+    "chinese": "\u5bfc\u51fa\u622a\u56fe",
+    "english": "Screenshot",
+    "japanese": "\u30b9\u30af\u30ea\u30fc\u30f3\u30b7\u30e7\u30c3\u30c8"
+  },
+  "donated_label_text": {
+    "chinese": "\u5df2\u6350\u8d60",
+    "english": "Donated",
+    "japanese": "\u5bc4\u4ed8"
+  },
+  "not_donated_label_text": {
+    "chinese": "\u672a\u6350\u8d60",
+    "english": "Not Donated",
+    "japanese": "\u5bc4\u4ed8\u3055\u308c\u3066\u3044\u307e\u305b\u3093"
+  },
+  "fossil_input_text": {
+    "chinese": "\u8bf7\u8f93\u5165\u5316\u77f3\u540d\u79f0",
+    "english": "Please enter a fossil name",
+    "japanese": "\u5316\u77f3\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  }
 }
