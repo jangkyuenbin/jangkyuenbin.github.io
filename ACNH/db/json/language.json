@@ -268,5 +268,35 @@
     "chinese": "\u8bf7\u8f93\u5165\u5316\u77f3\u540d\u79f0",
     "english": "Please enter a fossil name",
     "japanese": "\u5316\u77f3\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+  },
+  "artwork_table_pic_text": {
+    "chinese": "\u827a\u672f\u54c1\u56fe\u7247",
+    "english": "Picture",
+    "japanese": "\u30a2\u30fc\u30c8\u30ef\u30fc\u30af\u306e\u5199\u771f"
+  },
+  "artwork_table_name_text": {
+    "chinese": "\u827a\u672f\u54c1\u540d\u79f0",
+    "english": "Name",
+    "japanese": "\u30a2\u30fc\u30c8\u30ef\u30fc\u30af\u540d"
+  },
+  "artwork_table_donate_text": {
+    "chinese": "\u662f\u5426\u6350\u8d60",
+    "english": "Donate",
+    "japanese": "\u5bc4\u4ed8\u3059\u308b\u304b\u3069\u3046\u304b"
+  },
+  "artwork_real_text": {
+    "chinese": "\u771f\u8ff9",
+    "english": "Genuine",
+    "japanese": "\u7d14\u6b63"
+  },
+  "artwork_fake_text": {
+    "chinese": "\u8d5d\u54c1",
+    "english": "Fake",
+    "japanese": "\u507d"
+  },
+  "artwork_input_text": {
+    "chinese": "\u8bf7\u8f93\u5165\u827a\u672f\u54c1\u540d\u79f0",
+    "english": "Please enter the artwork name",
+    "japanese": "\u30a2\u30fc\u30c8\u30ef\u30fc\u30af\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
   }
 }
