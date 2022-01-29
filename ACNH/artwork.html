@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>ARTWORK</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./acnh_assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css"/>
+    </noscript>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <a href="./index.html" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
+        <nav>
+            <a class="menu_name_text" href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1 class="art_page_text">艺术品</h1>
+                </header>
+                <form method="post" id="artwork_form" action="#">
+                    <div class="row" style="margin-bottom: 4%">
+                        <div class="col-6 col-12-xsmall">
+                            <input class="artwork_input_text" type="text" name="artwork_name" id="artwork_name"
+                                   value="" placeholder=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <a id="artwork_search_btn" href="#"
+                                       class="button primary fit search_btn_text"
+                                       onclick="onArtworkSearch(this)">搜索</a>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <a href="#" class="button fit reset_btn_text"
+                                       onclick="onArtworkReset()">重置</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="artwork_radio_00" name="demo-priority" value="0" checked>
+                            <label class="all_label_text" for="artwork_radio_00"
+                                   onclick="onArtworkSearch(this)"></label>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="artwork_radio_01" name="demo-priority" value="1">
+                            <label class="donated_label_text" for="artwork_radio_01"
+                                   onclick="onArtworkSearch(this)"></label>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <input type="radio" id="artwork_radio_02" name="demo-priority" value="2">
+                            <label class="not_donated_label_text" for="artwork_radio_02"
+                                   onclick="onArtworkSearch(this)"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="two">
+            <div class="inner">
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                        <tr>
+                            <th class="text_center artwork_table_pic_text">艺术品图片</th>
+                            <th class="text_center artwork_table_name_text">艺术品名称</th>
+                            <th class="text_center artwork_table_donate_text">是否捐赠</th>
+                        </tr>
+                        </thead>
+                        <tbody id="artwork_table_body">
+                        <tr>
+                            <td class="text_center">
+                                <div class="row">
+                                    <div class="col-6 col-12-xsmall">
+                                        <div class="img_dec_box" onmouseover="onMouseIn(this)"
+                                             onmouseout="onMouseOut(this)">
+                                            <img src="./images/artwork_png/Academic_Painting_NH_Icon.png">
+                                            <p>123</p>
+                                            <div class="img_dec_mask"></div>
+                                            <p class="img_dec_sub">
+                                                《鼠来宝》是蒂姆·希尔执导的福克斯鼠来宝电影系列第一部，杰森·李、大卫·克洛斯等主演的动画影片。2007年12月14日在美国上映。</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 col-12-xsmall">
+                                        <div class="img_dec_box" onmouseover="onMouseIn(this)"
+                                             onmouseout="onMouseOut(this)">
+                                            <img src="./images/artwork_png/Academic_Painting_(Forgery)_NH_Icon.png">
+                                            <div class="img_dec_mask"></div>
+                                            <p class="img_dec_sub">
+                                                《鼠来宝》是蒂姆·希尔执导的福克斯鼠来宝电影系列第一部，杰森·李、大卫·克洛斯等主演的动画影片。2007年12月14日在美国上映。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text_center">1</td>
+                            <td class="text_center">2</td>
+                        </tr>
+                        <tr>
+                            <td class="text_center">
+                                <div class="img_dec_box" onmouseover="onMouseIn(this)"
+                                     onmouseout="onMouseOut(this)">
+                                    <img src="./images/artwork_png/Academic_Painting_NH_Icon.png">
+                                    <p>123</p>
+                                    <div class="img_dec_mask"></div>
+                                    <p class="img_dec_sub">
+                                        《鼠来宝》是蒂姆·希尔执导的福克斯鼠来宝电影系列第一部，杰森·李、大卫·克洛斯等主演的动画影片。2007年12月14日在美国上映。</p>
+                                </div>
+                            </td>
+                            <td class="text_center">1</td>
+                            <td class="text_center">2</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="mailto:jangkyuenbin@163.com" class="icon solid alt fa-envelope"><span
+                        class="label">Email</span></a></li>
+                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/jangkyuenbin" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                </li>
+                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Animal Crossing Book</li>
+                <li>Design: <a href="https://jangkyuenbin.github.io">Jang</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/dom-to-image-more.min.js"></script>
+
+<script src="./acnh_assets/js/main.js"></script>
+<script src="./acnh_assets/js/artwork.js"></script>
+<script src="./acnh_assets/js/CookieHandler.js"></script>
+<script>
+    artwork_page_onload();
+</script>
+</body>
+</html>

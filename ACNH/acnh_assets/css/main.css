@@ -161,3 +161,33 @@ div.multi_select2:checked .icon_more {
     text-align: center;
     vertical-align: middle;
 }
+
+.img_dec_box {
+    height: 200px;
+    width: 100%;
+    position: relative
+}
+
+.img_dec_sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    display: none
+}
+
+.img_dec_mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .3;
+    display: none
+}
+
+.img_dec_txtShow .img_dec_mask,.img_dec_txtShow .img_dec_sub{ display:block;}
