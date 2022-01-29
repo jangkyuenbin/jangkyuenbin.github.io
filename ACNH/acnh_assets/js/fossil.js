@@ -109,6 +109,7 @@ function get_fossil_tr(id, url, name, flag, rv) {
     };
 
     input.type = "text";
+    input.style.textAlign = "center";
     if (rv) {
         input.value = rv;
     } else {
