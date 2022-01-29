@@ -1,1022 +1,1906 @@
 [
   {
     "id": 0,
-    "pic_name": "UmbrellaDoc0.png",
+    "pic_name": "Apple_Umbrella_NH_Icon.png",
     "name": {
-      "english": "DAL umbrella",
-      "chinese": "DAL\u96e8\u4f1e",
-      "japanese": "\uff24\uff21\uff2c\u306e\u304b\u3055"
+      "english": "Apple Umbrella",
+      "chinese": "\u82f9\u679c\u96e8\u4f1e",
+      "t_chinese": "\u860b\u679c\u96e8\u5098",
+      "japanese": "\u30ea\u30f3\u30b4\u306e\u304b\u3055",
+      "korean": "\uc0ac\uacfc \uc6b0\uc0b0",
+      "russian": "\u044f\u0431\u043b\u043e\u0447\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "appelparaplu",
+      "german": "Apfelschirm",
+      "spanish": "paraguas manzana",
+      "french": "parapluie pomme",
+      "italian": "ombrello mela"
     },
+    "buy": "Not for sale",
+    "sell": "1,400 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Yellow",
+      "Red"
+    ]
+  },
+  {
+    "id": 1,
+    "pic_name": "Bat_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Bat Umbrella",
+      "chinese": "\u8759\u8760\u96e8\u4f1e",
+      "t_chinese": "\u8759\u8760\u96e8\u5098",
+      "japanese": "\u3053\u3046\u3082\u308a\u304c\u3055",
+      "korean": "\ubc15\uc950 \uc6b0\uc0b0",
+      "russian": "\u0447\u0435\u0440\u043d\u043e\u043a\u0440\u044b\u043b\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "vleermuisparaplu",
+      "german": "Flederschirm",
+      "spanish": "paraguas negro",
+      "french": "parapluie noir",
+      "italian": "ombrello tetro"
+    },
+    "buy": "840 Bells",
+    "sell": "210 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Black",
+      "Black"
+    ]
+  },
+  {
+    "id": 2,
+    "pic_name": "Beach_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Beach Umbrella",
+      "chinese": "\u6c99\u6ee9\u4f1e",
+      "t_chinese": "\u6c99\u7058\u5098",
+      "japanese": "\u30d3\u30fc\u30c1\u306a\u304b\u3055",
+      "korean": "\ud574\ubcc0\uac00 \uc6b0\uc0b0",
+      "russian": "\u043f\u043b\u044f\u0436\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "strandbalparaplu",
+      "german": "Strandschirm",
+      "spanish": "paraguas playa",
+      "french": "parapluie de plage",
+      "italian": "ombrello da mare"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Blue",
+      "White"
+    ]
+  },
+  {
+    "id": 3,
+    "pic_name": "Bear_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Bear Umbrella",
+      "chinese": "\u718a\u718a\u96e8\u4f1e",
+      "t_chinese": "\u718a\u718a\u96e8\u5098",
+      "japanese": "\u30af\u30de\u306e\u304b\u3055",
+      "korean": "\uacf0 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043c\u0435\u0434\u0432\u0435\u0436\u043e\u043d\u043a\u043e\u043c",
+      "dutch": "beerparaplu",
+      "german": "B\u00e4renschirm",
+      "spanish": "paraguas oso",
+      "french": "parapluie ours",
+      "italian": "ombrello orso"
+    },
+    "buy": "1,570 Bells",
+    "sell": "392 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Brown",
+      "Beige"
+    ]
+  },
+  {
+    "id": 4,
+    "pic_name": "Black_Chic_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Black Chic Umbrella",
+      "chinese": "\u9ed1\u8272\u5178\u96c5\u96e8\u4f1e",
+      "t_chinese": "\u9ed1\u8272\u5178\u96c5\u96e8\u5098",
+      "japanese": "\u304f\u308d\u3044\u30b7\u30c3\u30af\u306a\u304b\u3055",
+      "korean": "\uac80\uc815 \uc2dc\ud06c \uc6b0\uc0b0",
+      "russian": "\u0448\u0438\u043a\u0430\u0440\u043d\u044b\u0439 \u0447\u0435\u0440\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "zwarte chique paraplu",
+      "german": "Schwarz-Klassikschirm",
+      "spanish": "parasol g\u00f3tico negro",
+      "french": "ombrelle chic noire",
+      "italian": "ombrello nero chic"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Black",
+      "Black"
+    ]
+  },
+  {
+    "id": 5,
+    "pic_name": "Black_Lace_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Black Lace Umbrella",
+      "chinese": "\u9ed1\u8272\u857e\u4e1d\u96e8\u4f1e",
+      "t_chinese": "\u9ed1\u8272\u857e\u7d72\u96e8\u5098",
+      "japanese": "\u304f\u308d\u3044\u30ec\u30fc\u30b9\u306e\u304b\u3055",
+      "korean": "\uac80\uc815 \ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u0447\u0435\u0440\u043d\u044b\u0439 \u043a\u0440\u0443\u0436\u0435\u0432\u043d\u043e\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "zwarte kanten paraplu",
+      "german": "Spitzenschirm",
+      "spanish": "paraguas de encaje",
+      "french": "ombrelle dentelle noire",
+      "italian": "ombrello ricami nero"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": 6,
+    "pic_name": "Blue_Dot_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Blue Dot Parasol",
+      "chinese": "\u84dd\u8272\u70b9\u70b9\u96e8\u4f1e",
+      "t_chinese": "\u85cd\u8272\u5713\u9ede\u96e8\u5098",
+      "japanese": "\u3042\u304a\u3044\u307f\u305a\u305f\u307e\u306e\u304b\u3055",
+      "korean": "\ud30c\ub780 \ubb3c\ubc29\uc6b8 \uc6b0\uc0b0",
+      "russian": "\u0441\u0438\u043d\u0438\u0439 \u0437\u043e\u043d\u0442 \u0432 \u0433\u043e\u0440\u043e\u0445",
+      "dutch": "blauwe parasol met stippen",
+      "german": "Wolkenschirm",
+      "spanish": "parasol mar",
+      "french": "parapluie \u00e0 pois bleu",
+      "italian": "parasole bolle blu"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Blue",
+      "White"
+    ]
+  },
+  {
+    "id": 7,
+    "pic_name": "Blue_Shiny-Bows_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Blue Shiny-Bows Parasol",
+      "chinese": "\u84dd\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
+      "t_chinese": "\u85cd\u8272\u863f\u8389\u5854\u96e8\u5098",
+      "japanese": "\u30d6\u30eb\u30fc\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055",
+      "korean": "\ube14\ub8e8 \ub9ac\ubcf8 \ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u0441\u0438\u043d\u0438\u043c\u0438 \u0431\u0430\u043d\u0442\u0438\u043a\u0430\u043c\u0438",
+      "dutch": "blauwe strikjesparasol",
+      "german": "Blau-Niedlich-Schirm",
+      "spanish": "parasol mu\u00f1equita azul",
+      "french": "ombrelle \u00e0 rubans bleue",
+      "italian": "parasole bambolina blu"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Blue",
+      "White"
+    ]
+  },
+  {
+    "id": 8,
+    "pic_name": "Blue_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Blue Umbrella",
+      "chinese": "\u84dd\u8272\u7eaf\u8272\u96e8\u4f1e",
+      "t_chinese": "\u85cd\u8272\u7121\u5716\u6848\u96e8\u5098",
+      "japanese": "\u3042\u304a\u3044\u3080\u3058\u306e\u304b\u3055",
+      "korean": "\ud30c\ub780 \uc6b0\uc0b0",
+      "russian": "\u0441\u0438\u043d\u0438\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "blauwe paraplu",
+      "german": "Aquaschirm",
+      "spanish": "paraguas azul",
+      "french": "parapluie bleu",
+      "italian": "ombrello blu"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Blue",
+      "Blue"
+    ]
+  },
+  {
+    "id": 9,
+    "pic_name": "Busted_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Busted Umbrella",
+      "chinese": "\u574f\u6389\u7684\u96e8\u4f1e",
+      "t_chinese": "\u58de\u6389\u7684\u96e8\u5098",
+      "japanese": "\u3053\u308f\u308c\u305f\u304b\u3055",
+      "korean": "\ubd80\ub7ec\uc9c4 \uc6b0\uc0b0",
+      "russian": "\u0441\u043b\u043e\u043c\u0430\u043d\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "kapotte paraplu",
+      "german": "Antikschirm",
+      "spanish": "paraguas roto",
+      "french": "parapluie cass\u00e9",
+      "italian": "ombrello rotto"
+    },
+    "buy": "1,570 Bells",
+    "sell": "392 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Black",
+      "Black"
+    ]
+  },
+  {
+    "id": 10,
+    "pic_name": "Camo_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Camo Umbrella",
+      "chinese": "\u8ff7\u5f69\u96e8\u4f1e",
+      "t_chinese": "\u8ff7\u5f69\u96e8\u5098",
+      "japanese": "\u3081\u3044\u3055\u3044\u306e\u304b\u3055",
+      "korean": "\ubc00\ub9ac\ud130\ub9ac \uc6b0\uc0b0",
+      "russian": "\u043a\u0430\u043c\u0443\u0444\u043b\u044f\u0436\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "camouflageparaplu",
+      "german": "Tarnschirm",
+      "spanish": "paraguas camuflaje",
+      "french": "parapluie camouflage",
+      "italian": "ombrello mimetico"
+    },
+    "buy": "650 Bells",
+    "sell": "162 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Green",
+      "Beige"
+    ]
+  },
+  {
+    "id": 11,
+    "pic_name": "Candy_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Candy Umbrella",
+      "chinese": "\u8349\u8393\u5609\u987f\u683c\u96e8\u4f1e",
+      "t_chinese": "\u8349\u8393\u5609\u9813\u683c\u96e8\u5098",
+      "japanese": "\u3044\u3061\u3054\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055",
+      "korean": "\ub538\uae30 \uae45\uc5c4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0432 \u043b\u0435\u0434\u0435\u043d\u0446\u043e\u0432\u044b\u0445 \u0442\u043e\u043d\u0430\u0445",
+      "dutch": "roze geruite paraplu",
+      "german": "Karoschirm",
+      "spanish": "paraguas vichy",
+      "french": "parapluie vichy fraise",
+      "italian": "ombrello caramella"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Pink",
+      "White"
+    ]
+  },
+  {
+    "id": 12,
+    "pic_name": "Cherry_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Cherry Umbrella",
+      "chinese": "\u6a31\u6843\u96e8\u4f1e",
+      "t_chinese": "\u6afb\u6843\u96e8\u5098",
+      "japanese": "\u3055\u304f\u3089\u3093\u307c\u306e\u304b\u3055",
+      "korean": "\uccb4\ub9ac \uc6b0\uc0b0",
+      "russian": "\u0432\u0438\u0448\u043d\u0435\u0432\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "kersenparaplu",
+      "german": "Kirschschirm",
+      "spanish": "paraguas cerezas",
+      "french": "parapluie cerises",
+      "italian": "ombrello ciliegie"
+    },
+    "buy": "Not for sale",
+    "sell": "1,400 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Red",
+      "Red"
+    ]
+  },
+  {
+    "id": 13,
+    "pic_name": "Cherry-Blossom_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Cherry-Blossom Umbrella",
+      "chinese": "\u6a31\u82b1\u96e8\u4f1e",
+      "t_chinese": "\u6afb\u82b1\u96e8\u5098",
+      "japanese": "\u3055\u304f\u3089\u306e\u304b\u3055",
+      "korean": "\ubc9a\uaf43 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u00ab\u0426\u0432\u0435\u0442\u043e\u043a \u0432\u0438\u0448\u043d\u0438\u00bb",
+      "dutch": "kersenbloesemparaplu",
+      "german": "Kirschbl\u00fctenschirm",
+      "spanish": "paraguas flor de cerezo",
+      "french": "parapluie fleur de cerisier",
+      "italian": "ombrello fiore di ciliegio"
+    },
+    "buy": "Not for sale",
+    "sell": "2,800 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Pink",
+      "Green"
+    ]
+  },
+  {
+    "id": 14,
+    "pic_name": "DAL_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "DAL Umbrella",
+      "chinese": "DAL\u96e8\u4f1e",
+      "t_chinese": "DAL\u96e8\u5098",
+      "japanese": "\uff24\uff21\uff2c\u306e\u304b\u3055",
+      "korean": "DAL \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 DAL",
+      "dutch": "DAL-paraplu",
+      "german": "DAL-Schirm",
+      "spanish": "paraguas de DAL",
+      "french": "parapluie Dodo Airlines",
+      "italian": "ombrello DAL"
+    },
+    "buy": "Not for sale",
+    "sell": "1,010 Bells",
     "source": {
       "english": "Dodo Airlines",
       "chinese": "\u673a\u573a",
       "japanese": "\u98db\u884c\u5834"
     },
-    "own_flag": 0
-  },
-  {
-    "id": 1,
-    "pic_name": "UmbrellaLogo0.png",
-    "name": {
-      "english": "Logo umbrella",
-      "chinese": "Logo\u96e8\u4f1e",
-      "japanese": "\u30ed\u30b4\u3044\u308a\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 2,
-    "pic_name": "UmbrellaRco0.png",
-    "name": {
-      "english": "Nook Inc. umbrella",
-      "chinese": "Nook Inc.\u96e8\u4f1e",
-      "japanese": "\u305f\u306c\u304d\u304b\u3044\u306f\u3064\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook Miles Shop",
-      "chinese": "\u72f8\u7aef\u673a",
-      "japanese": "\u30de\u30a4\u30eb\u4ea4\u63db"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 3,
-    "pic_name": "UmbrellaTricolor0.png",
-    "name": {
-      "english": "Gelato umbrella",
-      "chinese": "\u4e09\u8272\u96e8\u4f1e",
-      "japanese": "\u30c8\u30ea\u30b3\u30ed\u30fc\u30eb\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 4,
-    "pic_name": "UmbrellaChina0.png",
-    "name": {
-      "english": "Exquisite parasol",
-      "chinese": "\u4e1c\u65b9\u98ce\u96e8\u4f1e",
-      "japanese": "\u30aa\u30ea\u30a8\u30f3\u30bf\u30eb\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 5,
-    "pic_name": "UmbrellaPineapple0.png",
-    "name": {
-      "english": "Pineapple umbrella",
-      "chinese": "\u51e4\u68a8\u96e8\u4f1e",
-      "japanese": "\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 6,
-    "pic_name": "UmbrellaLeaf0.png",
-    "name": {
-      "english": "Leaf umbrella",
-      "chinese": "\u53f6\u5b50\u96e8\u4f1e",
-      "japanese": "\u306f\u3063\u3071\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 7,
-    "pic_name": "UmbrellaSunflower0.png",
-    "name": {
-      "english": "Sunny parasol",
-      "chinese": "\u5411\u65e5\u8475\u96e8\u4f1e",
-      "japanese": "\u3072\u307e\u308f\u308a\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 8,
-    "pic_name": "UmbrellaBroken0.png",
-    "name": {
-      "english": "Busted umbrella",
-      "chinese": "\u574f\u6389\u7684\u96e8\u4f1e",
-      "japanese": "\u3053\u308f\u308c\u305f\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 9,
-    "pic_name": "UmbrellaKiwi0.png",
-    "name": {
-      "english": "Kiwi umbrella",
-      "chinese": "\u5947\u5f02\u679c\u96e8\u4f1e",
-      "japanese": "\u30ad\u30a6\u30a4\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 10,
-    "pic_name": "UmbrellaGingham1.png",
-    "name": {
-      "english": "Melon umbrella",
-      "chinese": "\u5ae9\u53f6\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
-      "japanese": "\u308f\u304b\u3070\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 11,
-    "pic_name": "UmbrellaMargaret0.png",
-    "name": {
-      "english": "Petal parasol",
-      "chinese": "\u5c0f\u96cf\u83ca\u96e8\u4f1e",
-      "japanese": "\u30de\u30fc\u30ac\u30ec\u30c3\u30c8\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 12,
-    "pic_name": "UmbrellaRainbow0.png",
-    "name": {
-      "english": "Rainbow umbrella",
-      "chinese": "\u5f69\u8679\u96e8\u4f1e",
-      "japanese": "\u30ec\u30a4\u30f3\u30dc\u30fc\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 13,
-    "pic_name": "UmbrellaTwocolor0.png",
-    "name": {
-      "english": "Two-tone umbrella",
-      "chinese": "\u649e\u8272\u96e8\u4f1e",
-      "japanese": "\u30c4\u30fc\u30c8\u30f3\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 14,
-    "pic_name": "UmbrellaTeruteru0.png",
-    "name": {
-      "english": "Ghost umbrella",
-      "chinese": "\u6674\u5929\u5a03\u5a03\u96e8\u4f1e",
-      "japanese": "\u3066\u308b\u3066\u308b\u307c\u3046\u305a\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
+    "colors": [
+      "Blue",
+      "Blue"
+    ]
   },
   {
     "id": 15,
-    "pic_name": "UmbrellaFairytale0.png",
+    "pic_name": "Eggy_Parasol_NH_Icon.png",
     "name": {
-      "english": "Fairy-tale umbrella",
-      "chinese": "\u7ae5\u8bdd\u98ce\u96e8\u4f1e",
-      "japanese": "\u30e1\u30eb\u30d8\u30f3\u306a\u304b\u3055"
+      "english": "Eggy Parasol",
+      "chinese": "\u9ec4\u8272\u70b9\u70b9\u96e8\u4f1e",
+      "t_chinese": "\u9ec3\u8272\u5713\u9ede\u96e8\u5098",
+      "japanese": "\u304d\u3044\u308d\u307f\u305a\u305f\u307e\u306e\u304b\u3055",
+      "korean": "\ub178\ub780 \ubb3c\ubc29\uc6b8 \uc6b0\uc0b0",
+      "russian": "\u044f\u0438\u0447\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "gele parasol met stippen",
+      "german": "Eigelbschirm",
+      "spanish": "parasol sol",
+      "french": "parapluie \u00e0 pois jaune",
+      "italian": "parasole bolle giallo"
     },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Yellow",
+      "White"
+    ]
   },
   {
     "id": 16,
-    "pic_name": "UmbrellaPacodarace0.png",
+    "pic_name": "Exquisite_Parasol_NH_Icon.png",
     "name": {
-      "english": "Pink shiny-bows parasol",
-      "chinese": "\u7c89\u7ea2\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
-      "japanese": "\u30d4\u30f3\u30af\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055"
+      "english": "Exquisite Parasol",
+      "chinese": "\u4e1c\u65b9\u98ce\u96e8\u4f1e",
+      "t_chinese": "\u6771\u65b9\u98a8\u96e8\u5098",
+      "japanese": "\u30aa\u30ea\u30a8\u30f3\u30bf\u30eb\u306a\u304b\u3055",
+      "korean": "\uc624\ub9ac\uc5d4\ud0c8 \uc6b0\uc0b0",
+      "russian": "\u0438\u0437\u044b\u0441\u043a\u0430\u043d\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "verfijnde parasol",
+      "german": "Asienschirm",
+      "spanish": "sombrilla oriental",
+      "french": "ombrelle magnifique",
+      "italian": "parasole squisito"
     },
+    "buy": "1,670 Bells",
+    "sell": "417 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Yellow",
+      "Pink"
+    ]
   },
   {
     "id": 17,
-    "pic_name": "UmbrellaGingham4.png",
+    "pic_name": "Fairy-Tale_Umbrella_NH_Icon.png",
     "name": {
-      "english": "Lemon umbrella",
-      "chinese": "\u67e0\u6aac\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
-      "japanese": "\u30ec\u30e2\u30f3\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055"
+      "english": "Fairy-Tale Umbrella",
+      "chinese": "\u7ae5\u8bdd\u98ce\u96e8\u4f1e",
+      "t_chinese": "\u7ae5\u8a71\u98a8\u96e8\u5098",
+      "japanese": "\u30e1\u30eb\u30d8\u30f3\u306a\u304b\u3055",
+      "korean": "\uba54\ub974\ud5e8 \uc6b0\uc0b0",
+      "russian": "\u0441\u043a\u0430\u0437\u043e\u0447\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "sprookjesparaplu",
+      "german": "M\u00e4rchenschirm",
+      "spanish": "parasol de cuento",
+      "french": "parapluie conte de f\u00e9es",
+      "italian": "ombrello favola"
     },
+    "buy": "820 Bells",
+    "sell": "205 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Green",
+      "Yellow"
+    ]
   },
   {
     "id": 18,
-    "pic_name": "UmbrellaPeach0.png",
+    "pic_name": "Fish_Umbrella_NH_Icon.png",
     "name": {
-      "english": "Peach umbrella",
-      "chinese": "\u6843\u5b50\u96e8\u4f1e",
-      "japanese": "\u30e2\u30e2\u306e\u304b\u3055"
+      "english": "Fish Umbrella",
+      "chinese": "\u9c7c\u513f\u96e8\u4f1e",
+      "t_chinese": "\u9b5a\u5152\u96e8\u5098",
+      "japanese": "\u30b5\u30ab\u30ca\u306e\u304b\u3055",
+      "korean": "\ubb3c\uace0\uae30 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u0440\u044b\u0431\u043a\u043e\u0439",
+      "dutch": "visparaplu",
+      "german": "Fischschirm",
+      "spanish": "paraguas peces",
+      "french": "parapluie poissons",
+      "italian": "ombrello pesci"
     },
+    "buy": "Not for sale",
+    "sell": "80 Bells",
     "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 19,
-    "pic_name": "UmbrellaPear0.png",
-    "name": {
-      "english": "Pear umbrella",
-      "chinese": "\u68a8\u5b50\u96e8\u4f1e",
-      "japanese": "\u30ca\u30b7\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 20,
-    "pic_name": "UmbrellaCherry0.png",
-    "name": {
-      "english": "Cherry umbrella",
-      "chinese": "\u6a31\u6843\u96e8\u4f1e",
-      "japanese": "\u3055\u304f\u3089\u3093\u307c\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 21,
-    "pic_name": "UmbrellaCherryblossom0.png",
-    "name": {
-      "english": "Cherry-blossom umbrella",
-      "chinese": "\u6a31\u82b1\u96e8\u4f1e",
-      "japanese": "\u3055\u304f\u3089\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 22,
-    "pic_name": "UmbrellaOrange0.png",
-    "name": {
-      "english": "Orange umbrella",
-      "chinese": "\u6a58\u5b50\u96e8\u4f1e",
-      "japanese": "\u30aa\u30ec\u30f3\u30b8\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 23,
-    "pic_name": "UmbrellaKabuki0.png",
-    "name": {
-      "english": "Kabuki umbrella",
-      "chinese": "\u6b4c\u821e\u4f0e\u96e8\u4f1e",
-      "japanese": "\u304b\u3076\u304d\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 24,
-    "pic_name": "UmbrellaBeach0.png",
-    "name": {
-      "english": "Beach umbrella",
-      "chinese": "\u6c99\u6ee9\u4f1e",
-      "japanese": "\u30d3\u30fc\u30c1\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 25,
-    "pic_name": "UmbrellaBangasa0.png",
-    "name": {
-      "english": "Paper parasol",
-      "chinese": "\u6cb9\u7eb8\u4f1e",
-      "japanese": "\u3070\u3093\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 26,
-    "pic_name": "UmbrellaBear0.png",
-    "name": {
-      "english": "Bear umbrella",
-      "chinese": "\u718a\u718a\u96e8\u4f1e",
-      "japanese": "\u30af\u30de\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 27,
-    "pic_name": "UmbrellaPanda0.png",
-    "name": {
-      "english": "Panda umbrella",
-      "chinese": "\u718a\u732b\u96e8\u4f1e",
-      "japanese": "\u30d1\u30f3\u30c0\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 28,
-    "pic_name": "UmbrellaLadybug0.png",
-    "name": {
-      "english": "Ladybug umbrella",
-      "chinese": "\u74e2\u866b\u96e8\u4f1e",
-      "japanese": "\u30c6\u30f3\u30c8\u30a6\u30e0\u30b7\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Bug-Off",
+      "english": "Bug off",
       "chinese": "\u6355\u866b\u5927\u8d5b",
       "japanese": "\u30e0\u30b7\u3068\u308a\u305f\u3044\u304b\u3044\u5927\u4f1a"
     },
-    "own_flag": 0
+    "colors": [
+      "Blue",
+      "Aqua"
+    ]
+  },
+  {
+    "id": 19,
+    "pic_name": "Frog_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Frog Umbrella",
+      "chinese": "\u9752\u86d9\u96e8\u4f1e",
+      "t_chinese": "\u9752\u86d9\u96e8\u5098",
+      "japanese": "\u30ab\u30a8\u30eb\u306e\u304b\u3055",
+      "korean": "\uac1c\uad6c\ub9ac \uc6b0\uc0b0",
+      "russian": "\u043b\u044f\u0433\u0443\u0448\u0430\u0447\u0438\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "kikkerparaplu",
+      "german": "Froschschirm",
+      "spanish": "paraguas rana",
+      "french": "parapluie grenouille",
+      "italian": "ombrello rana"
+    },
+    "buy": "1,570 Bells",
+    "sell": "392 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Green",
+      "Green"
+    ]
+  },
+  {
+    "id": 20,
+    "pic_name": "Gelato_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Gelato Umbrella",
+      "chinese": "\u4e09\u8272\u96e8\u4f1e",
+      "t_chinese": "\u4e09\u8272\u96e8\u5098",
+      "japanese": "\u30c8\u30ea\u30b3\u30ed\u30fc\u30eb\u306a\u304b\u3055",
+      "korean": "3\uc0c9 \uc6b0\uc0b0",
+      "russian": "\u0442\u0440\u0435\u0445\u0446\u0432\u0435\u0442\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "tricoloreparaplu",
+      "german": "3-Farben-Schirm",
+      "spanish": "paraguas tricolor",
+      "french": "parapluie Rome",
+      "italian": "ombrello spicchi"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Colorful",
+      "Colorful"
+    ]
+  },
+  {
+    "id": 21,
+    "pic_name": "Ghost_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Ghost Umbrella",
+      "chinese": "\u6674\u5929\u5a03\u5a03\u96e8\u4f1e",
+      "t_chinese": "\u6674\u5929\u5a03\u5a03\u96e8\u5098",
+      "japanese": "\u3066\u308b\u3066\u308b\u307c\u3046\u305a\u306e\u304b\u3055",
+      "korean": "\ud574\ub098\uc640\ub77c \uc6b0\uc0b0",
+      "russian": "\u043f\u0440\u0438\u0437\u0440\u0430\u0447\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "spookparaplu",
+      "german": "Geisterschirm",
+      "spanish": "paraguas amuleto",
+      "french": "parapluie bonze",
+      "italian": "ombrello fantasma"
+    },
+    "buy": "1,670 Bells",
+    "sell": "417 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "White"
+    ]
+  },
+  {
+    "id": 22,
+    "pic_name": "Grape_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Grape Umbrella",
+      "chinese": "\u8461\u8404\u96e8\u4f1e",
+      "t_chinese": "\u8461\u8404\u96e8\u5098",
+      "japanese": "\u3076\u3069\u3046\u306e\u304b\u3055",
+      "korean": "\ud3ec\ub3c4 \uc6b0\uc0b0",
+      "russian": "\u0432\u0438\u043d\u043e\u0433\u0440\u0430\u0434\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "druivenparaplu",
+      "german": "Traubenschirm",
+      "spanish": "paraguas uvas",
+      "french": "parapluie raisin",
+      "italian": "ombrello uva"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Purple",
+      "Green"
+    ]
+  },
+  {
+    "id": 23,
+    "pic_name": "Green_Chic_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Green Chic Umbrella",
+      "chinese": "\u7eff\u8272\u5178\u96c5\u96e8\u4f1e",
+      "t_chinese": "\u7da0\u8272\u5178\u96c5\u96e8\u5098",
+      "japanese": "\u307f\u3069\u308a\u306e\u30b7\u30c3\u30af\u306a\u304b\u3055",
+      "korean": "\ucd08\ub85d \uc2dc\ud06c \uc6b0\uc0b0",
+      "russian": "\u0448\u0438\u043a\u0430\u0440\u043d\u044b\u0439 \u0437\u0435\u043b\u0435\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "groene chique paraplu",
+      "german": "Gr\u00fcn-Klassikschirm",
+      "spanish": "parasol g\u00f3tico verde",
+      "french": "ombrelle chic verte",
+      "italian": "ombrello verde chic"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Green",
+      "Black"
+    ]
+  },
+  {
+    "id": 24,
+    "pic_name": "Green_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Green Umbrella",
+      "chinese": "\u7eff\u8272\u7eaf\u8272\u96e8\u4f1e",
+      "t_chinese": "\u7da0\u8272\u7121\u5716\u6848\u96e8\u5098",
+      "japanese": "\u307f\u3069\u308a\u306e\u3080\u3058\u306e\u304b\u3055",
+      "korean": "\ucd08\ub85d \uc6b0\uc0b0",
+      "russian": "\u0437\u0435\u043b\u0435\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "groene paraplu",
+      "german": "Smaragdschirm",
+      "spanish": "paraguas verde",
+      "french": "parapluie vert",
+      "italian": "ombrello verde"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Green",
+      "Green"
+    ]
+  },
+  {
+    "id": 25,
+    "pic_name": "Hydrangea_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Hydrangea Umbrella",
+      "chinese": "\u7ee3\u7403\u82b1\u96e8\u4f1e",
+      "t_chinese": "\u7e61\u7403\u82b1\u96e8\u5098",
+      "japanese": "\u30a2\u30b8\u30b5\u30a4\u306e\u304b\u3055",
+      "korean": "\uc218\uad6d \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u0433\u043e\u0440\u0442\u0435\u043d\u0437\u0438\u044f",
+      "dutch": "hortensiaparaplu",
+      "german": "Hortensienschirm",
+      "spanish": "paraguas hortensias",
+      "french": "parapluie hortensias",
+      "italian": "ombrello ortensia"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Aqua",
+      "White"
+    ]
+  },
+  {
+    "id": 26,
+    "pic_name": "Kabuki_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Kabuki Umbrella",
+      "chinese": "\u6b4c\u821e\u4f0e\u96e8\u4f1e",
+      "t_chinese": "\u6b4c\u821e\u4f0e\u96e8\u5098",
+      "japanese": "\u304b\u3076\u304d\u306a\u304b\u3055",
+      "korean": "\uac00\ubd80\ud0a4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u043a\u0430\u0431\u0443\u043a\u0438",
+      "dutch": "kabukiparasol",
+      "german": "Kabuki-Schirm",
+      "spanish": "sombrilla kabuki",
+      "french": "ombrelle kabuki",
+      "italian": "ombrello kabuki"
+    },
+    "buy": "1,670 Bells",
+    "sell": "417 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Purple",
+      "White"
+    ]
+  },
+  {
+    "id": 27,
+    "pic_name": "Kiwi_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Kiwi Umbrella",
+      "chinese": "\u5947\u5f02\u679c\u96e8\u4f1e",
+      "t_chinese": "\u5947\u7570\u679c\u96e8\u5098",
+      "japanese": "\u30ad\u30a6\u30a4\u306e\u304b\u3055",
+      "korean": "\ud0a4\uc704 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u043a\u0438\u0432\u0438",
+      "dutch": "kiwiparaplu",
+      "german": "Kiwischirm",
+      "spanish": "paraguas kiwi",
+      "french": "parapluie kiwi",
+      "italian": "ombrello kiwi"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Green",
+      "Brown"
+    ]
+  },
+  {
+    "id": 28,
+    "pic_name": "Lacy_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Lacy Parasol",
+      "chinese": "\u857e\u4e1d\u96e8\u4f1e",
+      "t_chinese": "\u857e\u7d72\u96e8\u5098",
+      "japanese": "\u30ec\u30fc\u30b9\u306e\u304b\u3055",
+      "korean": "\ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u043a\u0440\u0443\u0436\u0435\u0432\u043d\u043e\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "kanten parasol",
+      "german": "Damenschirmchen",
+      "spanish": "parasol encaje",
+      "french": "ombrelle en dentelle",
+      "italian": "parasole ricami"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "White"
+    ]
   },
   {
     "id": 29,
-    "pic_name": "UmbrellaPacodarace3.png",
+    "pic_name": "Ladybug_Umbrella_NH_Icon.png",
     "name": {
-      "english": "White shiny-bows parasol",
-      "chinese": "\u767d\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
-      "japanese": "\u30db\u30ef\u30a4\u30c8\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 30,
-    "pic_name": "UmbrellaFlorets0.png",
-    "name": {
-      "english": "Mini-flower-print umbrella",
-      "chinese": "\u788e\u82b1\u7eb9\u96e8\u4f1e",
-      "japanese": "\u3053\u3070\u306a\u304c\u3089\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 31,
-    "pic_name": "UmbrellaStripe0.png",
-    "name": {
-      "english": "Striped umbrella",
-      "chinese": "\u6761\u7eb9\u96e8\u4f1e",
-      "japanese": "\u30b9\u30c8\u30e9\u30a4\u30d7\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 32,
-    "pic_name": "UmbrellaAutumn0.png",
-    "name": {
-      "english": "Maple-leaf umbrella",
-      "chinese": "\u67ab\u53f6\u96e8\u4f1e",
-      "japanese": "\u3082\u307f\u3058\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 33,
-    "pic_name": "UmbrellaSchool0.png",
-    "name": {
-      "english": "Pink umbrella",
-      "chinese": "\u7c89\u7ea2\u8272\u7eaf\u8272\u96e8\u4f1e",
-      "japanese": "\u30d4\u30f3\u30af\u306e\u3080\u3058\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 34,
-    "pic_name": "UmbrellaPolkadot2.png",
-    "name": {
-      "english": "Blue dot parasol",
-      "chinese": "\u84dd\u8272\u70b9\u70b9\u96e8\u4f1e",
-      "japanese": "\u3042\u304a\u3044\u307f\u305a\u305f\u307e\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 35,
-    "pic_name": "UmbrellaPacodarace1.png",
-    "name": {
-      "english": "Purple shiny-bows parasol",
-      "chinese": "\u7d2b\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
-      "japanese": "\u30d1\u30fc\u30d7\u30eb\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 36,
-    "pic_name": "UmbrellaPacodarace6.png",
-    "name": {
-      "english": "Red chic umbrella",
-      "chinese": "\u7ea2\u8272\u5178\u96c5\u96e8\u4f1e",
-      "japanese": "\u3042\u304b\u3044\u30b7\u30c3\u30af\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 37,
-    "pic_name": "UmbrellaPolkadotRed.png",
-    "name": {
-      "english": "Toad parasol",
-      "chinese": "\u7ea2\u8272\u70b9\u70b9\u96e8\u4f1e",
-      "japanese": "\u3042\u304b\u3044\u307f\u305a\u305f\u307e\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 38,
-    "pic_name": "UmbrellaStandard1.png",
-    "name": {
-      "english": "Red umbrella",
-      "chinese": "\u7ea2\u8272\u7eaf\u8272\u96e8\u4f1e",
-      "japanese": "\u7ea2\u8272\u7eaf\u8272\u96e8\u4f1e"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 39,
-    "pic_name": "UmbrellaHydrangea0.png",
-    "name": {
-      "english": "Hydrangea umbrella",
-      "chinese": "\u7ee3\u7403\u82b1\u96e8\u4f1e",
-      "japanese": "\u30a2\u30b8\u30b5\u30a4\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 40,
-    "pic_name": "UmbrellaPacodarace4.png",
-    "name": {
-      "english": "Green chic umbrella",
-      "chinese": "\u7eff\u8272\u5178\u96c5\u96e8\u4f1e",
-      "japanese": "\u307f\u3069\u308a\u306e\u30b7\u30c3\u30af\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 41,
-    "pic_name": "UmbrellaStandard3.png",
-    "name": {
-      "english": "Green umbrella",
-      "chinese": "\u7eff\u8272\u7eaf\u8272\u96e8\u4f1e",
-      "japanese": "\u307f\u3069\u308a\u306e\u3080\u3058\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 42,
-    "pic_name": "UmbrellaBoundary0.png",
-    "name": {
-      "english": "Patterned vinyl umbrella",
-      "chinese": "\u82b1\u7eb9\u900f\u660e\u96e8\u4f1e",
-      "japanese": "\u30ac\u30e9\u3044\u308a\u30d3\u30cb\u30fc\u30eb\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 43,
-    "pic_name": "UmbrellaPlaid0.png",
-    "name": {
-      "english": "Tartan-check umbrella",
-      "chinese": "\u82cf\u683c\u5170\u683c\u7eb9\u96e8\u4f1e",
-      "japanese": "\u30bf\u30fc\u30bf\u30f3\u30c1\u30a7\u30c3\u30af\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 44,
-    "pic_name": "UmbrellaApple0.png",
-    "name": {
-      "english": "Apple umbrella",
-      "chinese": "\u82f9\u679c\u96e8\u4f1e",
-      "japanese": "\u30ea\u30f3\u30b4\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 45,
-    "pic_name": "UmbrellaGingham0.png",
-    "name": {
-      "english": "Candy umbrella",
-      "chinese": "\u8349\u8393\u5609\u987f\u683c\u96e8\u4f1e",
-      "japanese": "\u3044\u3061\u3054\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 46,
-    "pic_name": "UmbrellaStrawberry0.png",
-    "name": {
-      "english": "Strawberry umbrella",
-      "chinese": "\u8349\u8393\u96e8\u4f1e",
-      "japanese": "\u3044\u3061\u3054\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 47,
-    "pic_name": "UmbrellaGingham3.png",
-    "name": {
-      "english": "Picnic umbrella",
-      "chinese": "\u8393\u679c\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
-      "japanese": "\u30d9\u30ea\u30fc\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 48,
-    "pic_name": "UmbrellaGrape0.png",
-    "name": {
-      "english": "Grape umbrella",
-      "chinese": "\u8461\u8404\u96e8\u4f1e",
-      "japanese": "\u3076\u3069\u3046\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 49,
-    "pic_name": "UmbrellaPacodarace5.png",
-    "name": {
-      "english": "Black chic umbrella",
-      "chinese": "\u9ed1\u8272\u5178\u96c5\u96e8\u4f1e",
-      "japanese": "\u304f\u308d\u3044\u30b7\u30c3\u30af\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 50,
-    "pic_name": "UmbrellaPacoda0.png",
-    "name": {
-      "english": "Purple chic umbrella",
-      "chinese": "\u7d2b\u8272\u5178\u96c5\u96e8\u4f1e",
-      "japanese": "\u3080\u3089\u3055\u304d\u306e\u30b7\u30c3\u30af\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 51,
-    "pic_name": "UmbrellaStandard2.png",
-    "name": {
-      "english": "Blue umbrella",
-      "chinese": "\u84dd\u8272\u7eaf\u8272\u96e8\u4f1e",
-      "japanese": "\u3042\u304a\u3044\u3080\u3058\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 52,
-    "pic_name": "UmbrellaLace0.png",
-    "name": {
-      "english": "Lacy parasol",
-      "chinese": "\u857e\u4e1d\u96e8\u4f1e",
-      "japanese": "\u30ec\u30fc\u30b9\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 53,
-    "pic_name": "UmbrellaGingham2.png",
-    "name": {
-      "english": "Mint umbrella",
-      "chinese": "\u8584\u8377\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
-      "japanese": "\u30df\u30f3\u30c8\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 54,
-    "pic_name": "UmbrellaMushroom0.png",
-    "name": {
-      "english": "Mush umbrella",
-      "chinese": "\u8611\u83c7\u96e8\u4f1e",
-      "japanese": "\u30ad\u30ce\u30b3\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Crafting",
-      "chinese": "\u5236\u4f5c\u53f0",
-      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 55,
-    "pic_name": "UmbrellaSpider0.png",
-    "name": {
-      "english": "Spider umbrella",
-      "chinese": "\u8718\u86db\u7f51\u96e8\u4f1e",
-      "japanese": "\u30b9\u30d1\u30a4\u30c0\u30fc\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 56,
-    "pic_name": "UmbrellaBat0.png",
-    "name": {
-      "english": "Bat umbrella",
-      "chinese": "\u8759\u8760\u96e8\u4f1e",
-      "japanese": "\u3053\u3046\u3082\u308a\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 57,
-    "pic_name": "UmbrellaWater0.png",
-    "name": {
-      "english": "Watermelon umbrella",
-      "chinese": "\u897f\u74dc\u96e8\u4f1e",
-      "japanese": "\u30b9\u30a4\u30ab\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 58,
-    "pic_name": "UmbrellaOutdoor0.png",
-    "name": {
-      "english": "Camo umbrella",
-      "chinese": "\u8ff7\u5f69\u96e8\u4f1e",
-      "japanese": "\u3081\u3044\u3055\u3044\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 59,
-    "pic_name": "UmbrellaVinyl0.png",
-    "name": {
-      "english": "Vinyl umbrella",
-      "chinese": "\u900f\u660e\u96e8\u4f1e",
-      "japanese": "\u30d3\u30cb\u30fc\u30eb\u304c\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 60,
-    "pic_name": "UmbrellaRain0.png",
-    "name": {
-      "english": "Raindrop umbrella",
-      "chinese": "\u96e8\u70b9\u96e8\u4f1e",
-      "japanese": "\u30ec\u30a4\u30cb\u30fc\u306a\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 61,
-    "pic_name": "UmbrellaCrystal0.png",
-    "name": {
-      "english": "Snowflake umbrella",
-      "chinese": "\u96ea\u82b1\u96e8\u4f1e",
-      "japanese": "\u30b9\u30ce\u30fc\u30d5\u30ec\u30fc\u30af\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 62,
-    "pic_name": "UmbrellaFrog0.png",
-    "name": {
-      "english": "Frog umbrella",
-      "chinese": "\u9752\u86d9\u96e8\u4f1e",
-      "japanese": "\u30ab\u30a8\u30eb\u306e\u304b\u3055"
-    },
-    "source": {
-      "english": "Nook's Cranny",
-      "chinese": "Nook\u5546\u5e97",
-      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
-    },
-    "own_flag": 0
-  },
-  {
-    "id": 63,
-    "pic_name": "UmbrellaFish0.png",
-    "name": {
-      "english": "Fish umbrella",
-      "chinese": "\u9c7c\u513f\u96e8\u4f1e",
-      "japanese": "\u30b5\u30ab\u30ca\u306e\u304b\u3055"
-    },
+      "english": "Ladybug Umbrella",
+      "chinese": "\u74e2\u866b\u96e8\u4f1e",
+      "t_chinese": "\u74e2\u87f2\u96e8\u5098",
+      "japanese": "\u30c6\u30f3\u30c8\u30a6\u30e0\u30b7\u306e\u304b\u3055",
+      "korean": "\ubb34\ub2f9\ubc8c\ub808 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u00ab\u0411\u043e\u0436\u044c\u044f \u043a\u043e\u0440\u043e\u0432\u043a\u0430\u00bb",
+      "dutch": "lieveheersbeestjeparaplu",
+      "german": "Marienk\u00e4ferschirm",
+      "spanish": "paraguas mariquita",
+      "french": "parapluie coccinelle",
+      "italian": "ombrello coccinella"
+    },
+    "buy": "Not for sale",
+    "sell": "80 Bells",
     "source": {
       "english": "Fishing Tourney",
       "chinese": "\u5b63\u9493\u9c7c\u5927\u8d5b",
       "japanese": "\u91e3\u308a\u5927\u4f1a"
     },
-    "own_flag": 0
+    "colors": [
+      "Red",
+      "Black"
+    ]
   },
   {
-    "id": 64,
-    "pic_name": "UmbrellaPolkadot1.png",
+    "id": 30,
+    "pic_name": "Leaf_Umbrella_NH_Icon.png",
     "name": {
-      "english": "Eggy parasol",
-      "chinese": "\u9ec4\u8272\u70b9\u70b9\u96e8\u4f1e",
-      "japanese": "\u304d\u3044\u308d\u307f\u305a\u305f\u307e\u306e\u304b\u3055"
+      "english": "Leaf Umbrella",
+      "chinese": "\u53f6\u5b50\u96e8\u4f1e",
+      "t_chinese": "\u8449\u5b50\u96e8\u5098",
+      "japanese": "\u306f\u3063\u3071\u306e\u304b\u3055",
+      "korean": "\uc5f0\uaf43\uc78e \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u043b\u0438\u0441\u0442",
+      "dutch": "bladparaplu",
+      "german": "Bl\u00e4ttchenschirm",
+      "spanish": "parasol hoja",
+      "french": "feuillapluie",
+      "italian": "ombrello foglia"
     },
+    "buy": "Not for sale",
+    "sell": "300 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Green",
+      "Green"
+    ]
+  },
+  {
+    "id": 31,
+    "pic_name": "Lemon_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Lemon Umbrella",
+      "chinese": "\u67e0\u6aac\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u6ab8\u6aac\u5609\u9813\u683c\u96e8\u5098",
+      "japanese": "\u30ec\u30e2\u30f3\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055",
+      "korean": "\ub808\ubaac \uae45\uc5c4 \uc6b0\uc0b0",
+      "russian": "\u043b\u0438\u043c\u043e\u043d\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "geelgeruite paraplu",
+      "german": "Zitrusschirm",
+      "spanish": "paraguas lim\u00f3n",
+      "french": "parapluie vichy citron",
+      "italian": "ombrello limone"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Yellow",
+      "White"
+    ]
   },
   {
-    "id": 65,
-    "pic_name": "UmbrellaPacodarace2.png",
+    "id": 32,
+    "pic_name": "Logo_Umbrella_NH_Icon.png",
     "name": {
-      "english": "Blue shiny-bows parasol",
-      "chinese": "\u84dd\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
-      "japanese": "\u30d6\u30eb\u30fc\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055"
+      "english": "Logo Umbrella",
+      "chinese": "Logo\u96e8\u4f1e",
+      "t_chinese": "Logo\u96e8\u5098",
+      "japanese": "\u30ed\u30b4\u3044\u308a\u306e\u304b\u3055",
+      "korean": "\ub85c\uace0 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043b\u043e\u0433\u043e\u0442\u0438\u043f\u043e\u043c",
+      "dutch": "logoparaplu",
+      "german": "Logoschirm",
+      "spanish": "paraguas logotipo",
+      "french": "parapluie \u00e0 logo",
+      "italian": "ombrello con logo"
     },
+    "buy": "650 Bells",
+    "sell": "162 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Blue",
+      "White"
+    ]
   },
   {
-    "id": 66,
-    "pic_name": "UmbrellaRace0.png",
+    "id": 33,
+    "pic_name": "Maple-Leaf_Umbrella_NH_Icon.png",
     "name": {
-      "english": "Black lace umbrella",
-      "chinese": "\u9ed1\u8272\u857e\u4e1d\u96e8\u4f1e",
-      "japanese": "\u304f\u308d\u3044\u30ec\u30fc\u30b9\u306e\u304b\u3055"
+      "english": "Maple-Leaf Umbrella",
+      "chinese": "\u67ab\u53f6\u96e8\u4f1e",
+      "t_chinese": "\u6953\u8449\u96e8\u5098",
+      "japanese": "\u3082\u307f\u3058\u306e\u304b\u3055",
+      "korean": "\ub2e8\ud48d\uc78e \uc6b0\uc0b0",
+      "russian": "\u043a\u043b\u0435\u043d\u043e\u0432\u044b\u0439 \u043b\u0438\u0441\u0442-\u0437\u043e\u043d\u0442",
+      "dutch": "esdoornbladparaplu",
+      "german": "Ahornschirm",
+      "spanish": "parasol hoja de arce",
+      "french": "parapluie feuille d'\u00e9rable",
+      "italian": "ombrello foglia d'acero"
     },
+    "buy": "Not for sale",
+    "sell": "2,800 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Orange",
+      "Orange"
+    ]
+  },
+  {
+    "id": 34,
+    "pic_name": "Melon_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Melon Umbrella",
+      "chinese": "\u5ae9\u53f6\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u5ae9\u7da0\u5609\u9813\u683c\u96e8\u5098",
+      "japanese": "\u308f\u304b\u3070\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055",
+      "korean": "\uc0c8\uc2f9 \uae45\uc5c4 \uc6b0\uc0b0",
+      "russian": "\u0434\u044b\u043d\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "groengeruite paraplu",
+      "german": "Melonenschirm",
+      "spanish": "paraguas mel\u00f3n",
+      "french": "parapluie vichy melon",
+      "italian": "ombrello melone"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
     "source": {
       "english": "Nook's Cranny",
       "chinese": "Nook\u5546\u5e97",
       "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
     },
-    "own_flag": 0
+    "colors": [
+      "Green",
+      "White"
+    ]
   },
   {
-    "id": 67,
-    "pic_name": "UmbrellaTakumi0.png",
+    "id": 35,
+    "pic_name": "Mini-Flower-Print_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Mini-Flower-Print Umbrella",
+      "chinese": "\u788e\u82b1\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u788e\u82b1\u96e8\u5098",
+      "japanese": "\u3053\u3070\u306a\u304c\u3089\u306e\u304b\u3055",
+      "korean": "\uc794\uaf43\ubb34\ub2ac \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0432 \u043c\u0435\u043b\u043a\u0438\u0439 \u0446\u0432\u0435\u0442\u043e\u0447\u0435\u043a",
+      "dutch": "bloemenparaplu",
+      "german": "Bl\u00fcmchenschirm",
+      "spanish": "paraguas florecitas",
+      "french": "parapluie imprim\u00e9 fleurettes",
+      "italian": "ombrello fiorellini"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Pink",
+      "White"
+    ]
+  },
+  {
+    "id": 36,
+    "pic_name": "Mint_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Mint Umbrella",
+      "chinese": "\u8584\u8377\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u8584\u8377\u7da0\u5609\u9813\u683c\u96e8\u5098",
+      "japanese": "\u30df\u30f3\u30c8\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055",
+      "korean": "\ubbfc\ud2b8 \uae45\uc5c4 \uc6b0\uc0b0",
+      "russian": "\u043c\u044f\u0442\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "groen-zwartgeruite paraplu",
+      "german": "Minzschirm",
+      "spanish": "paraguas menta",
+      "french": "parapluie vichy menthe",
+      "italian": "ombrello menta"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Brown",
+      "Green"
+    ]
+  },
+  {
+    "id": 37,
+    "pic_name": "Mush_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Mush Umbrella",
+      "chinese": "\u8611\u83c7\u96e8\u4f1e",
+      "t_chinese": "\u8611\u83c7\u96e8\u5098",
+      "japanese": "\u30ad\u30ce\u30b3\u306e\u304b\u3055",
+      "korean": "\ubc84\uc12f \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u0433\u0440\u0438\u0431",
+      "dutch": "paddenstoelparaplu",
+      "german": "Pilzregenschirm",
+      "spanish": "parasol seta",
+      "french": "parapluie champi",
+      "italian": "ombrello fungo"
+    },
+    "buy": "Not for sale",
+    "sell": "1,200 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Brown",
+      "Beige"
+    ]
+  },
+  {
+    "id": 38,
+    "pic_name": "Nook_Inc._Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Nook Inc. Umbrella",
+      "chinese": "Nook Inc.\u96e8\u4f1e",
+      "t_chinese": "Nook Inc.\u96e8\u5098",
+      "japanese": "\u305f\u306c\u304d\u304b\u3044\u306f\u3064\u306e\u304b\u3055",
+      "korean": "Nook Inc. \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 Nook Inc.",
+      "dutch": "Nook Inc.-paraplu",
+      "german": "Nook-Inc.-Schirm",
+      "spanish": "paraguas de Nook Inc.",
+      "french": "parapluie Nook Inc.",
+      "italian": "ombrello Nook Inc."
+    },
+    "buy": "700 Miles",
+    "sell": "3,500 Bells",
+    "source": {
+      "english": "Nook Miles Shop",
+      "chinese": "\u72f8\u7aef\u673a",
+      "japanese": "\u30de\u30a4\u30eb\u4ea4\u63db"
+    },
+    "colors": [
+      "Green",
+      "White"
+    ]
+  },
+  {
+    "id": 39,
+    "pic_name": "Orange_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Orange Umbrella",
+      "chinese": "\u6a58\u5b50\u96e8\u4f1e",
+      "t_chinese": "\u6a58\u5b50\u96e8\u5098",
+      "japanese": "\u30aa\u30ec\u30f3\u30b8\u306e\u304b\u3055",
+      "korean": "\uc624\ub80c\uc9c0 \uc6b0\uc0b0",
+      "russian": "\u0430\u043f\u0435\u043b\u044c\u0441\u0438\u043d\u043e\u0432\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "sinaasappelparaplu",
+      "german": "Orangenschirm",
+      "spanish": "paraguas naranja",
+      "french": "parapluie orange",
+      "italian": "ombrello arancia"
+    },
+    "buy": "Not for sale",
+    "sell": "1,400 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Orange",
+      "Yellow"
+    ]
+  },
+  {
+    "id": 40,
+    "pic_name": "Panda_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Panda Umbrella",
+      "chinese": "\u718a\u732b\u96e8\u4f1e",
+      "t_chinese": "\u718a\u8c93\u96e8\u5098",
+      "japanese": "\u30d1\u30f3\u30c0\u306e\u304b\u3055",
+      "korean": "\ud32c\ub354 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043f\u0430\u043d\u0434\u043e\u0439",
+      "dutch": "pandaparaplu",
+      "german": "Pandaschirm",
+      "spanish": "paraguas panda",
+      "french": "parapluie panda",
+      "italian": "ombrello panda"
+    },
+    "buy": "1,570 Bells",
+    "sell": "392 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "Black"
+    ]
+  },
+  {
+    "id": 41,
+    "pic_name": "Paper_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Paper Parasol",
+      "chinese": "\u6cb9\u7eb8\u4f1e",
+      "t_chinese": "\u6cb9\u7d19\u5098",
+      "japanese": "\u3070\u3093\u304c\u3055",
+      "korean": "\ub300\ub098\ubb34 \uc6b0\uc0b0",
+      "russian": "\u0431\u0443\u043c\u0430\u0436\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "papieren parasol",
+      "german": "Papierschirmchen",
+      "spanish": "sombrilla de papel",
+      "french": "ombrelle papier",
+      "italian": "parasole cinese"
+    },
+    "buy": "870 Bells",
+    "sell": "217 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Brown",
+      "Green"
+    ]
+  },
+  {
+    "id": 42,
+    "pic_name": "Paradise_Planning_Umbrella_NH_Icon.png",
     "name": {
       "english": "Paradise Planning Umbrella",
       "chinese": "\u5de7\u7f8e\u751f\u6d3b\u96e8\u4f1e",
-      "japanese": "\u30bf\u30af\u30df\u30e9\u30a4\u30d5\u306e\u304b\u3055"
+      "t_chinese": "\u5de7\u7f8e\u751f\u6d3b\u96e8\u5098",
+      "japanese": "\u30bf\u30af\u30df\u30e9\u30a4\u30d5\u306e\u304b\u3055",
+      "korean": "\ud30c\ub77c\ub2e4\uc774\uc2a4 \ud50c\ub798\ub2dd \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u043a\u0443\u0440\u043e\u0440\u0442\u043d\u043e\u0433\u043e \u0431\u044e\u0440\u043e",
+      "dutch": "resortplanbureauparaplu",
+      "german": "FHA-Schirm",
+      "spanish": "parasol Archipi\u00e9lago",
+      "french": "ombrelle Les Villas de Lou",
+      "italian": "ombrello Casimira vacanze"
     },
+    "buy": "1,800 Poki",
+    "sell": "500 Bells",
     "source": {
       "english": "Wardell",
       "chinese": "\u7eb3\u63d0",
       "japanese": "\u30ca\u30c3\u30c6\u30a3\u30fc"
     },
-    "own_flag": 0
+    "colors": [
+      "Red",
+      "Red"
+    ]
+  },
+  {
+    "id": 43,
+    "pic_name": "Patterned_Vinyl_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Patterned Vinyl Umbrella",
+      "chinese": "\u82b1\u7eb9\u900f\u660e\u96e8\u4f1e",
+      "t_chinese": "\u82b1\u7d0b\u900f\u660e\u96e8\u5098",
+      "japanese": "\u30ac\u30e9\u3044\u308a\u30d3\u30cb\u30fc\u30eb\u304c\u3055",
+      "korean": "\ub3c4\ud2b8 \ubb34\ub2ac \ube44\ub2d0 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0438\u0437 \u0432\u0438\u043d\u0438\u043b\u0430 \u0441 \u0443\u0437\u043e\u0440\u043e\u043c",
+      "dutch": "vinylparaplu met patroon",
+      "german": "P\u00fcnktchen-Plastikschirm",
+      "spanish": "paraguas de vinilo a topos",
+      "french": "parapluie vinyle \u00e0 motifs",
+      "italian": "ombrello plastica decorato"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "White"
+    ]
+  },
+  {
+    "id": 44,
+    "pic_name": "Peach_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Peach Umbrella",
+      "chinese": "\u6843\u5b50\u96e8\u4f1e",
+      "t_chinese": "\u6843\u5b50\u96e8\u5098",
+      "japanese": "\u30e2\u30e2\u306e\u304b\u3055",
+      "korean": "\ubcf5\uc22d\uc544 \uc6b0\uc0b0",
+      "russian": "\u043f\u0435\u0440\u0441\u0438\u043a\u043e\u0432\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "perzikparaplu",
+      "german": "Pfirsichschirm",
+      "spanish": "paraguas melocot\u00f3n",
+      "french": "parapluie p\u00eache",
+      "italian": "ombrello pesca"
+    },
+    "buy": "Not for sale",
+    "sell": "1,400 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Pink",
+      "Green"
+    ]
+  },
+  {
+    "id": 45,
+    "pic_name": "Pear_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Pear Umbrella",
+      "chinese": "\u68a8\u5b50\u96e8\u4f1e",
+      "t_chinese": "\u68a8\u5b50\u96e8\u5098",
+      "japanese": "\u30ca\u30b7\u306e\u304b\u3055",
+      "korean": "\ubc30 \uc6b0\uc0b0",
+      "russian": "\u0433\u0440\u0443\u0448\u0435\u0432\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "perenparaplu",
+      "german": "Birnenschirm",
+      "spanish": "paraguas pera",
+      "french": "parapluie poire",
+      "italian": "ombrello pera"
+    },
+    "buy": "Not for sale",
+    "sell": "1,400 Bells",
+    "source": {
+      "english": "Crafting",
+      "chinese": "\u5236\u4f5c\u53f0",
+      "japanese": "\u3053\u3093\u306a\u3082\u306e\u307e\u3067DIY"
+    },
+    "colors": [
+      "Yellow",
+      "Green"
+    ]
+  },
+  {
+    "id": 46,
+    "pic_name": "Petal_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Petal Parasol",
+      "chinese": "\u5c0f\u96cf\u83ca\u96e8\u4f1e",
+      "t_chinese": "\u5c0f\u96db\u83ca\u96e8\u5098",
+      "japanese": "\u30de\u30fc\u30ac\u30ec\u30c3\u30c8\u306e\u304b\u3055",
+      "korean": "\uad6d\ud654\uaf43 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u0440\u043e\u043c\u0430\u0448\u043a\u0430",
+      "dutch": "margrietparasol",
+      "german": "Margeritenschirm",
+      "spanish": "parasol margarita",
+      "french": "ombrelle marguerite",
+      "italian": "parasole petalo"
+    },
+    "buy": "1,590 Bells",
+    "sell": "397 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "Yellow"
+    ]
+  },
+  {
+    "id": 47,
+    "pic_name": "Picnic_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Picnic Umbrella",
+      "chinese": "\u8393\u679c\u5609\u987f\u683c\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u8393\u679c\u5609\u9813\u683c\u96e8\u5098",
+      "japanese": "\u30d9\u30ea\u30fc\u30ae\u30f3\u30ac\u30e0\u306e\u304b\u3055",
+      "korean": "\ubca0\ub9ac \uae45\uc5c4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0434\u043b\u044f \u043f\u0438\u043a\u043d\u0438\u043a\u0430",
+      "dutch": "paarsgeruite paraplu",
+      "german": "Picknickschirm",
+      "spanish": "paraguas p\u00edcnic",
+      "french": "parapluie vichy cassis",
+      "italian": "ombrello picnic"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Purple",
+      "Pink"
+    ]
+  },
+  {
+    "id": 48,
+    "pic_name": "Pineapple_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Pineapple Umbrella",
+      "chinese": "\u51e4\u68a8\u96e8\u4f1e",
+      "t_chinese": "\u9cf3\u68a8\u96e8\u5098",
+      "japanese": "\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u306e\u304b\u3055",
+      "korean": "\ud30c\uc778\uc560\ud50c \uc6b0\uc0b0",
+      "russian": "\u0430\u043d\u0430\u043d\u0430\u0441\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "ananasparaplu",
+      "german": "Ananasschirm",
+      "spanish": "paraguas pi\u00f1a",
+      "french": "parapluie ananas",
+      "italian": "ombrello ananas"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Yellow",
+      "Green"
+    ]
+  },
+  {
+    "id": 49,
+    "pic_name": "Pink_Shiny-Bows_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Pink Shiny-Bows Parasol",
+      "chinese": "\u7c89\u7ea2\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
+      "t_chinese": "\u7c89\u7d05\u8272\u863f\u8389\u5854\u96e8\u5098",
+      "japanese": "\u30d4\u30f3\u30af\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055",
+      "korean": "\ud551\ud06c \ub9ac\ubcf8 \ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u0440\u043e\u0437\u043e\u0432. \u0431\u0430\u043d\u0442\u0438\u043a\u0430\u043c\u0438",
+      "dutch": "roze strikjesparasol",
+      "german": "Pink-Niedlich-Schirm",
+      "spanish": "parasol mu\u00f1equita rosa",
+      "french": "ombrelle \u00e0 rubans rose",
+      "italian": "parasole bambolina rosa"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Pink",
+      "White"
+    ]
+  },
+  {
+    "id": 50,
+    "pic_name": "Pink_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Pink Umbrella",
+      "chinese": "\u7c89\u7ea2\u8272\u7eaf\u8272\u96e8\u4f1e",
+      "t_chinese": "\u7c89\u7d05\u8272\u7121\u5716\u6848\u96e8\u5098",
+      "japanese": "\u30d4\u30f3\u30af\u306e\u3080\u3058\u306e\u304b\u3055",
+      "korean": "\ud551\ud06c \uc6b0\uc0b0",
+      "russian": "\u0440\u043e\u0437\u043e\u0432\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "roze paraplu",
+      "german": "Pink-Schirm",
+      "spanish": "paraguas rosa",
+      "french": "parapluie rose",
+      "italian": "ombrello rosa"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Pink",
+      "Pink"
+    ]
+  },
+  {
+    "id": 51,
+    "pic_name": "Purple_Chic_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Purple Chic Umbrella",
+      "chinese": "\u7d2b\u8272\u5178\u96c5\u96e8\u4f1e",
+      "t_chinese": "\u7d2b\u8272\u5178\u96c5\u96e8\u5098",
+      "japanese": "\u3080\u3089\u3055\u304d\u306e\u30b7\u30c3\u30af\u306a\u304b\u3055",
+      "korean": "\ubcf4\ub77c \uc2dc\ud06c \uc6b0\uc0b0",
+      "russian": "\u0448\u0438\u043a\u0430\u0440\u043d\u044b\u0439 \u0444\u0438\u043e\u043b\u0435\u0442. \u0437\u043e\u043d\u0442",
+      "dutch": "paarse chique paraplu",
+      "german": "Violett-Klassikschirm",
+      "spanish": "parasol g\u00f3tico morado",
+      "french": "ombrelle chic violette",
+      "italian": "ombrello viola chic"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Purple",
+      "Black"
+    ]
+  },
+  {
+    "id": 52,
+    "pic_name": "Purple_Shiny-Bows_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Purple Shiny-Bows Parasol",
+      "chinese": "\u7d2b\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
+      "t_chinese": "\u7d2b\u8272\u863f\u8389\u5854\u96e8\u5098",
+      "japanese": "\u30d1\u30fc\u30d7\u30eb\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055",
+      "korean": "\ud37c\ud50c \ub9ac\ubcf8 \ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u0444\u0438\u043e\u043b\u0435\u0442. \u0431\u0430\u043d\u0442\u0438\u043a\u0430\u043c\u0438",
+      "dutch": "paarse strikjesparasol",
+      "german": "Lila-Niedlich-Schirm",
+      "spanish": "parasol mu\u00f1equita lila",
+      "french": "ombrelle \u00e0 rubans violette",
+      "italian": "parasole bambolina viola"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Purple",
+      "White"
+    ]
+  },
+  {
+    "id": 53,
+    "pic_name": "Rainbow_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Rainbow Umbrella",
+      "chinese": "\u5f69\u8679\u96e8\u4f1e",
+      "t_chinese": "\u5f69\u8679\u96e8\u5098",
+      "japanese": "\u30ec\u30a4\u30f3\u30dc\u30fc\u306a\u304b\u3055",
+      "korean": "\ubb34\uc9c0\uac1c \uc6b0\uc0b0",
+      "russian": "\u0440\u0430\u0434\u0443\u0436\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "regenboogparaplu",
+      "german": "Regenbogenschirm",
+      "spanish": "parasol arco\u00edris",
+      "french": "parapluie arc-en-ciel",
+      "italian": "ombrello arcobaleno"
+    },
+    "buy": "840 Bells",
+    "sell": "210 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Colorful",
+      "Colorful"
+    ]
+  },
+  {
+    "id": 54,
+    "pic_name": "Raindrop_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Raindrop Umbrella",
+      "chinese": "\u96e8\u70b9\u96e8\u4f1e",
+      "t_chinese": "\u96e8\u9ede\u96e8\u5098",
+      "japanese": "\u30ec\u30a4\u30cb\u30fc\u306a\u304b\u3055",
+      "korean": "\ube44 \ub0b4\ub9ac\ub294 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043a\u0430\u043f\u043b\u044f\u043c\u0438",
+      "dutch": "regendruppelsparaplu",
+      "german": "Tropfenschirm",
+      "spanish": "paraguas gotas de lluvia",
+      "french": "parapluie motif pluie",
+      "italian": "ombrello gocce di pioggia"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Yellow",
+      "Aqua"
+    ]
+  },
+  {
+    "id": 55,
+    "pic_name": "Red_Chic_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Red Chic Umbrella",
+      "chinese": "\u7ea2\u8272\u5178\u96c5\u96e8\u4f1e",
+      "t_chinese": "\u7d05\u8272\u5178\u96c5\u96e8\u5098",
+      "japanese": "\u3042\u304b\u3044\u30b7\u30c3\u30af\u306a\u304b\u3055",
+      "korean": "\ube68\uac04 \uc2dc\ud06c \uc6b0\uc0b0",
+      "russian": "\u0448\u0438\u043a\u0430\u0440\u043d\u044b\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "rode chique paraplu",
+      "german": "Rot-Klassikschirm",
+      "spanish": "parasol g\u00f3tico rojo",
+      "french": "ombrelle chic rouge",
+      "italian": "ombrello rosso chic"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "Black"
+    ]
+  },
+  {
+    "id": 56,
+    "pic_name": "Red_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Red Umbrella",
+      "chinese": "\u7ea2\u8272\u7eaf\u8272\u96e8\u4f1e",
+      "t_chinese": "\u7d05\u8272\u7121\u5716\u6848\u96e8\u5098",
+      "japanese": "\u3042\u304b\u3044\u3080\u3058\u306e\u304b\u3055",
+      "korean": "\ube68\uac04 \uc6b0\uc0b0",
+      "russian": "\u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "rode paraplu",
+      "german": "Rubinschirm",
+      "spanish": "paraguas rojo",
+      "french": "parapluie rouge",
+      "italian": "ombrello rosso"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "Red"
+    ]
+  },
+  {
+    "id": 57,
+    "pic_name": "Snowflake_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Snowflake Umbrella",
+      "chinese": "\u96ea\u82b1\u96e8\u4f1e",
+      "t_chinese": "\u96ea\u82b1\u96e8\u5098",
+      "japanese": "\u30b9\u30ce\u30fc\u30d5\u30ec\u30fc\u30af\u306e\u304b\u3055",
+      "korean": "\ub208\uaf43 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442-\u0441\u043d\u0435\u0436\u0438\u043d\u043a\u0430",
+      "dutch": "sneeuwvlokparaplu",
+      "german": "Schneeflockenschirm",
+      "spanish": "paraguas nevada",
+      "french": "parapluie flocon",
+      "italian": "ombrello fiocco di neve"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Aqua",
+      "Aqua"
+    ]
+  },
+  {
+    "id": 58,
+    "pic_name": "Spider_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Spider Umbrella",
+      "chinese": "\u8718\u86db\u7f51\u96e8\u4f1e",
+      "t_chinese": "\u8718\u86db\u7db2\u96e8\u5098",
+      "japanese": "\u30b9\u30d1\u30a4\u30c0\u30fc\u306a\u304b\u3055",
+      "korean": "\uc2a4\ud30c\uc774\ub354 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043f\u0430\u0443\u0442\u0438\u043d\u043e\u0439",
+      "dutch": "spinnenwebparaplu",
+      "german": "Spinnwebenschirm",
+      "spanish": "parasol telara\u00f1a",
+      "french": "parapluie arachnide",
+      "italian": "ombrello ragnatela"
+    },
+    "buy": "840 Bells",
+    "sell": "210 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": 59,
+    "pic_name": "Strawberry_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Strawberry Umbrella",
+      "chinese": "\u8349\u8393\u96e8\u4f1e",
+      "t_chinese": "\u8349\u8393\u96e8\u5098",
+      "japanese": "\u3044\u3061\u3054\u306e\u304b\u3055",
+      "korean": "\ub538\uae30 \uc6b0\uc0b0",
+      "russian": "\u043a\u043b\u0443\u0431\u043d\u0438\u0447\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "aardbeiparaplu",
+      "german": "Erdbeerschirm",
+      "spanish": "paraguas fresa",
+      "french": "parapluie fraise",
+      "italian": "ombrello fragola"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Pink",
+      "Green"
+    ]
+  },
+  {
+    "id": 60,
+    "pic_name": "Striped_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Striped Umbrella",
+      "chinese": "\u6761\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u689d\u7d0b\u96e8\u5098",
+      "japanese": "\u30b9\u30c8\u30e9\u30a4\u30d7\u306e\u304b\u3055",
+      "korean": "\uc904\ubb34\ub2ac \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0432 \u043f\u043e\u043b\u043e\u0441\u043a\u0443",
+      "dutch": "gestreepte paraplu",
+      "german": "Streifenschirm",
+      "spanish": "paraguas rayas",
+      "french": "parapluie \u00e0 rayures",
+      "italian": "ombrello a righe"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Gray",
+      "White"
+    ]
+  },
+  {
+    "id": 61,
+    "pic_name": "Sunny_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Sunny Parasol",
+      "chinese": "\u5411\u65e5\u8475\u96e8\u4f1e",
+      "t_chinese": "\u5411\u65e5\u8475\u96e8\u5098",
+      "japanese": "\u3072\u307e\u308f\u308a\u306e\u304b\u3055",
+      "korean": "\ud574\ubc14\ub77c\uae30 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u043f\u043e\u0434\u0441\u043e\u043b\u043d\u0443\u0445\u0430\u043c\u0438",
+      "dutch": "zonnige parasol",
+      "german": "Sommerschirm",
+      "spanish": "paraguas girasoles",
+      "french": "parapluie tournesols",
+      "italian": "parasole gioioso"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Yellow",
+      "White"
+    ]
+  },
+  {
+    "id": 62,
+    "pic_name": "Tartan-Check_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Tartan-Check Umbrella",
+      "chinese": "\u82cf\u683c\u5170\u683c\u7eb9\u96e8\u4f1e",
+      "t_chinese": "\u8607\u683c\u862d\u683c\u7d0b\u96e8\u5098",
+      "japanese": "\u30bf\u30fc\u30bf\u30f3\u30c1\u30a7\u30c3\u30af\u306e\u304b\u3055",
+      "korean": "\ud0c0\ud0c4 \uccb4\ud06c \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0432 \u043a\u043b\u0435\u0442\u043a\u0443",
+      "dutch": "tartanparaplu",
+      "german": "Schottenmusterschirm",
+      "spanish": "paraguas tart\u00e1n",
+      "french": "parapluie tartan",
+      "italian": "ombrello tartan"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "Green"
+    ]
+  },
+  {
+    "id": 63,
+    "pic_name": "Toad_Parasol_NH_Icon.png",
+    "name": {
+      "english": "Toad Parasol",
+      "chinese": "\u7ea2\u8272\u70b9\u70b9\u96e8\u4f1e",
+      "t_chinese": "\u7d05\u8272\u5713\u9ede\u96e8\u5098",
+      "japanese": "\u3042\u304b\u3044\u307f\u305a\u305f\u307e\u306e\u304b\u3055",
+      "korean": "\ube68\uac04 \ubb3c\ubc29\uc6b8 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0442\u043e\u0430\u0434\u0430",
+      "dutch": "rode parasol met stippen",
+      "german": "Punkteschirm",
+      "spanish": "parasol de lunares",
+      "french": "parapluie \u00e0 pois rouge",
+      "italian": "parasole rosso"
+    },
+    "buy": "750 Bells",
+    "sell": "187 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "White"
+    ]
+  },
+  {
+    "id": 64,
+    "pic_name": "Two-Tone_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Two-Tone Umbrella",
+      "chinese": "\u649e\u8272\u96e8\u4f1e",
+      "t_chinese": "\u649e\u8272\u96e8\u5098",
+      "japanese": "\u30c4\u30fc\u30c8\u30f3\u306a\u304b\u3055",
+      "korean": "\ud22c\ud1a4 \uc6b0\uc0b0",
+      "russian": "\u0434\u0432\u0443\u0446\u0432\u0435\u0442\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "tweekleurige paraplu",
+      "german": "Zweifarbschirm",
+      "spanish": "paraguas bicolor",
+      "french": "parapluie bicolore",
+      "italian": "ombrello bicolore"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "Yellow"
+    ]
+  },
+  {
+    "id": 65,
+    "pic_name": "Vinyl_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Vinyl Umbrella",
+      "chinese": "\u900f\u660e\u96e8\u4f1e",
+      "t_chinese": "\u900f\u660e\u96e8\u5098",
+      "japanese": "\u30d3\u30cb\u30fc\u30eb\u304c\u3055",
+      "korean": "\ube44\ub2d0 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0438\u0437 \u0432\u0438\u043d\u0438\u043b\u0430",
+      "dutch": "vinylparaplu",
+      "german": "Plastikschirm",
+      "spanish": "paraguas de vinilo",
+      "french": "parapluie vinyle",
+      "italian": "ombrello di plastica"
+    },
+    "buy": "770 Bells",
+    "sell": "192 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "White"
+    ]
+  },
+  {
+    "id": 66,
+    "pic_name": "Watermelon_Umbrella_NH_Icon.png",
+    "name": {
+      "english": "Watermelon Umbrella",
+      "chinese": "\u897f\u74dc\u96e8\u4f1e",
+      "t_chinese": "\u897f\u74dc\u96e8\u5098",
+      "japanese": "\u30b9\u30a4\u30ab\u306e\u304b\u3055",
+      "korean": "\uc218\ubc15 \uc6b0\uc0b0",
+      "russian": "\u0430\u0440\u0431\u0443\u0437\u043d\u044b\u0439 \u0437\u043e\u043d\u0442",
+      "dutch": "watermeloenparaplu",
+      "german": "Wassermelonenschirm",
+      "spanish": "paraguas sand\u00eda",
+      "french": "parapluie past\u00e8que",
+      "italian": "ombrello anguria"
+    },
+    "buy": "1,550 Bells",
+    "sell": "387 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "Red",
+      "Green"
+    ]
+  },
+  {
+    "id": 67,
+    "pic_name": "White_Shiny-Bows_Parasol_NH_Icon.png",
+    "name": {
+      "english": "White Shiny-Bows Parasol",
+      "chinese": "\u767d\u8272\u6d1b\u4e3d\u5854\u96e8\u4f1e",
+      "t_chinese": "\u767d\u8272\u863f\u8389\u5854\u96e8\u5098",
+      "japanese": "\u30db\u30ef\u30a4\u30c8\u306e\u30ed\u30ea\u30fc\u30bf\u304c\u3055",
+      "korean": "\ud654\uc774\ud2b8 \ub9ac\ubcf8 \ub808\uc774\uc2a4 \uc6b0\uc0b0",
+      "russian": "\u0437\u043e\u043d\u0442 \u0441 \u0431\u0435\u043b\u044b\u043c\u0438 \u0431\u0430\u043d\u0442\u0438\u043a\u0430\u043c\u0438",
+      "dutch": "witte strikjesparasol",
+      "german": "Wei\u00df-Niedlich-Schirm",
+      "spanish": "parasol mu\u00f1equita blanco",
+      "french": "ombrelle \u00e0 rubans blanche",
+      "italian": "parasole bambolina bianco"
+    },
+    "buy": "1,620 Bells",
+    "sell": "405 Bells",
+    "source": {
+      "english": "Nook's Cranny",
+      "chinese": "Nook\u5546\u5e97",
+      "japanese": "\u30bf\u30cc\u30ad\u5546\u5e97"
+    },
+    "colors": [
+      "White",
+      "White"
+    ]
   }
 ]
