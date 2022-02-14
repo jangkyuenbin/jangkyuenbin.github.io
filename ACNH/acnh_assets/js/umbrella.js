@@ -20,7 +20,7 @@ function umbrella_page_onload() {
     document.onclick = function () {
         if (multi_select_content.style.display !== "none") {
             multi_select_content.style.display = "none";
-            onSearch(null);
+            onUmbrellaSearch(null);
         }
     }
 
@@ -57,7 +57,7 @@ function change_own_flag(id) {
         return a - b
     });
     savePageJson('umbrella', page_json)
-    onSearch(null);
+    onUmbrellaSearch(null);
 }
 
 function get_img_div(url) {
@@ -142,14 +142,14 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check) {
 
         var text = '';
         if (checkbox_select_list.length > 1) {
-            umbrella_category.classList.remove("umbrella_category_all_text")
+            umbrella_category.classList.remove("category_all_text")
             text = checkbox_select_list[0] + ", ...";
             umbrella_category.textContent = text;
         } else if (checkbox_select_list.length === 0) {
-            umbrella_category.classList.add("umbrella_category_all_text")
+            umbrella_category.classList.add("category_all_text")
             umbrella_category.textContent = tmp_inner_text;
         } else {
-            umbrella_category.classList.remove("umbrella_category_all_text")
+            umbrella_category.classList.remove("category_all_text")
             umbrella_category.textContent = checkbox_select_list[0];
         }
         umbrella_category.appendChild(span);
@@ -163,63 +163,8 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check) {
     return checkBox_div;
 }
 
-function getPrevDiv() {
-    var prev_btn = document.createElement('span');
-    prev_btn.classList.add("button")
-    prev_btn.classList.add("small")
-    prev_btn.classList.add("prev_text")
-    if (current_page === 1) {
-        prev_btn.classList.add("disabled")
-    }
-    var prev_li = document.createElement('li');
-    prev_li.onclick = function () {
-        if (current_page > 1) {
-            current_page = current_page - 1;
-            onSearch(null);
-        }
-    };
-    prev_li.appendChild(prev_btn)
-    return prev_li
-}
-
-function getNextDiv() {
-    var next_btn = document.createElement('span');
-    next_btn.classList.add("button")
-    next_btn.classList.add("small")
-    next_btn.classList.add("next_text")
-    if (current_page === max_page) {
-        next_btn.classList.add("disabled")
-    }
-    var next_li = document.createElement('li');
-    next_li.onclick = function () {
-        if (current_page < max_page) {
-            current_page = current_page + 1;
-            onSearch(null);
-        }
-    };
-    next_li.appendChild(next_btn)
-    return next_li
-}
-
-function getNavPageDiv(page_id) {
-    var a = document.createElement('a');
-    a.classList.add('page');
-    a.textContent = page_id;
-    if (page_id === current_page) {
-        a.classList.add("active");
-    }
-    var li = document.createElement('li');
-    li.onclick = function () {
-        if (page_id <= max_page && page_id >= 1) {
-            current_page = page_id;
-            onSearch(null);
-        }
-    };
-    li.appendChild(a);
-    return li
-}
-
 function filter_umbrella_data() {
+    var i;
     if (umbrella_data != null) {
         var page_json = getPageJson('umbrella')
         for (i = 0; i < umbrella_data.length; i++) {
@@ -340,28 +285,20 @@ function update_umbrella_page() {
 
         // update pagination
         max_page = Math.ceil(j / max_item);
-        var pagination = document.getElementById('pagination');
-        if (pagination != null) {
-            while (pagination.firstChild) {
-                pagination.removeChild(pagination.firstChild);
+        update_pagination(onUmbrellaSearch);
+        // input
+        var input = document.getElementById("umbrella_name");
+        input.addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("umbrella_search_btn").click();
             }
-            if (max_page > 1) {
-                var prev = getPrevDiv();
-                var next = getNextDiv();
-                pagination.appendChild(prev);
-                for (i = 0; i < max_page; i++) {
-                    var nav_page = getNavPageDiv(i + 1);
-                    pagination.appendChild(nav_page);
-                }
-                pagination.appendChild(next);
-            }
-        }
+        });
     }
-
 }
 
 
-function onSearch(element) {
+function onUmbrellaSearch(element) {
     var umbrella_name = document.getElementById('umbrella_name');
     var radio_01 = document.getElementById('umbrella_radio_01');
     var radio_02 = document.getElementById('umbrella_radio_02');
@@ -395,7 +332,7 @@ function onSearch(element) {
     }
 }
 
-function onReset() {
+function onUmbrellaReset() {
     var umbrella_name = document.getElementById('umbrella_name');
     var umbrella_radio_00 = document.getElementById('umbrella_radio_00');
     var umbrella_category = document.getElementById('umbrella_category');
@@ -403,7 +340,7 @@ function onReset() {
     umbrella_radio_00.checked = true;
     checkbox_select_list = [];
     current_page = 1;
-    umbrella_category.classList.add("umbrella_category_all_text");
+    umbrella_category.classList.add("category_all_text");
     umbrella_page_onload();
 }
 
@@ -412,7 +349,6 @@ function load_umbrella_db() {
         filter_umbrella_data();
         update_umbrella_page();
         init_language();
-        window.location.href = "#two"
     } else {
         var request = new XMLHttpRequest();
         request.open("get", 'db/json/umbrella.json');
