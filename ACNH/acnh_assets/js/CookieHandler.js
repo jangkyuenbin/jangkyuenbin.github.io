@@ -202,6 +202,22 @@ function getLanguage() {
     }
 }
 
+function getHemisphere() {
+    var global_json = getGlobalJson();
+    if (global_json != null) {
+        if (global_json['hemisphere'] != null) {
+            return global_json['hemisphere']
+        }
+        global_json['hemisphere'] = 'north'
+        saveGlobalJson(global_json);
+        return global_json['hemisphere'];
+    } else {
+        global_json = {'hemisphere': 'north'}
+        saveGlobalJson(global_json);
+        return global_json['hemisphere'];
+    }
+}
+
 function getPageJson(page_name) {
     const current_user_json = getSelectedUserJson();
     return current_user_json.page[page_name]
