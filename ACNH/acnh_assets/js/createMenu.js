@@ -8,10 +8,10 @@ function createMenu_li(name, href, c) {
     return li
 }
 
-function createMenu_option(value, text) {
+function createMenu_option(value, text, flag_c) {
     var option = document.createElement('option');
     option.value = value;
-    option.textContent = text;
+    option.innerHTML += text;
     return option
 }
 
@@ -22,9 +22,17 @@ function createMenu_lan_form() {
     var select = document.createElement('select');
     select.name = "language";
     select.id = "language-category";
-    select.appendChild(createMenu_option('english', 'English'));
-    select.appendChild(createMenu_option('chinese', '中文(简体)'));
-    select.appendChild(createMenu_option('japanese', '日本語'));
+    select.appendChild(createMenu_option('english', 'English', null));
+    select.appendChild(createMenu_option('chinese', '中文(简体)', null));
+    select.appendChild(createMenu_option('japanese', '日本語', null));
+    select.appendChild(createMenu_option('t_chinese', '中文(繁體)', null));
+    select.appendChild(createMenu_option('korean', '한국인', null));
+    select.appendChild(createMenu_option('russian', 'русский', null));
+    select.appendChild(createMenu_option('dutch', 'Nederlands', null));
+    select.appendChild(createMenu_option('german', 'Deutsch', null));
+    select.appendChild(createMenu_option('spanish', 'español', null));
+    select.appendChild(createMenu_option('french', 'français', null));
+    select.appendChild(createMenu_option('italian', 'italiano', null));
 
     div2.classList.add("col-12");
     div2.appendChild(select);
@@ -73,7 +81,7 @@ function createMenu_user_form() {
 
     select.name = "user";
     select.id = "user-category";
-    select.appendChild(createMenu_option('none', '-未注册-'));
+    select.appendChild(createMenu_option('none', '-未注册-', null));
 
     div2.classList.add("col-12");
     div2.appendChild(select);
