@@ -50,31 +50,15 @@
                         </div>
                         <div class="col-3 col-12-xsmall" id="multi_select">
                             <div class="col-6 col-12-xsmall" style="height: 100%">
-                                <div class="fit multi_select2 umbrella_category_all_text" id="umbrella_category">
+                                <div class="fit multi_select2 category_all_text" id="umbrella_category">
                                     <span class="icon_more"></span>
                                 </div>
                             </div>
                             <div class="col-6 col-12-xsmall multi_select">
-                                <div id="multi_select_content" class="multi_select_content">
+                                <div id="multi_select_content" class="multi_select_content" style="display: none">
                                     <div class="col-12 col-12-small multi_select_item">
                                         <input type="checkbox" id="demo_01" name="demo-copy">
                                         <label for="demo_01">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_02" name="demo-copy">
-                                        <label for="demo_02">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_03" name="demo-copy">
-                                        <label for="demo_03">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_04" name="demo-copy">
-                                        <label for="demo_04">Email me a copy</label>
-                                    </div>
-                                    <div class="col-12 col-12-small multi_select_item">
-                                        <input type="checkbox" id="demo_05" name="demo-copy">
-                                        <label for="demo_05">Email me a copy</label>
                                     </div>
                                 </div>
                             </div>
@@ -84,26 +68,27 @@
                         <div class="col-3 col-12-xsmall">
                             <ul class="actions">
                                 <li>
-                                    <a href="#" class="button primary fit search_btn_text"
-                                       onclick="onSearch(this)">搜索</a>
+                                    <a id="umbrella_search_btn"
+                                       href="#" class="button primary fit search_btn_text"
+                                       onclick="onUmbrellaSearch(this)">搜索</a>
                                 </li>
-                                <li><a href="#" class="button fit reset_btn_text" onclick="onReset()">重置</a></li>
+                                <li><a href="#" class="button fit reset_btn_text" onclick="onUmbrellaReset()">重置</a></li>
                             </ul>
                         </div>
 
                         <div class="col-4 col-12-small">
                             <input type="radio" id="umbrella_radio_00" name="demo-priority" value="0" checked>
-                            <label class="all_label_text" for="umbrella_radio_00" onclick="onSearch(this)">全部</label>
+                            <label class="all_label_text" for="umbrella_radio_00" onclick="onUmbrellaSearch(this)">全部</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="umbrella_radio_01" name="demo-priority" value="1">
                             <label class="owned_label_text" for="umbrella_radio_01"
-                                   onclick="onSearch(this)">已拥有</label>
+                                   onclick="onUmbrellaSearch(this)">已拥有</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="umbrella_radio_02" name="demo-priority" value="2">
                             <label class="not_owned_label_text" for="umbrella_radio_02"
-                                   onclick="onSearch(this)">未拥有</label>
+                                   onclick="onUmbrellaSearch(this)">未拥有</label>
                         </div>
 
 
@@ -140,28 +125,14 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li><a href="mailto:jangkyuenbin@163.com" class="icon solid alt fa-envelope"><span
-                        class="label">Email</span></a></li>
-                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/jangkyuenbin" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
-                </li>
-                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Animal Crossing Book</li>
-                <li>Design: <a href="https://jangkyuenbin.github.io">Jang</a></li>
-            </ul>
-        </div>
+
     </footer>
 
 </div>
 
 <!-- Scripts -->
 <script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./acnh_assets/js/createFooter.js"></script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/jquery.scrolly.min.js"></script>
 <script src="./assets/js/jquery.scrollex.min.js"></script>
