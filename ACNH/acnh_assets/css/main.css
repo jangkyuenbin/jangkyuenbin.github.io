@@ -50,7 +50,7 @@ ul.nav_ul li {
 
 div.multi_select2 {
     width: 100%;
-    height: 100%;
+    height: 115%;
     background-color: rgba(212, 212, 255, 0.035);
     padding-top: 4%;
     padding-right: 15px;
@@ -190,4 +190,15 @@ div.multi_select2:checked .icon_more {
     display: none
 }
 
-.img_dec_txtShow .img_dec_mask,.img_dec_txtShow .img_dec_sub{ display:block;}
+.img_dec_txtShow .img_dec_mask, .img_dec_txtShow .img_dec_sub {
+    display: block;
+}
+
+option.avatar {
+    background-repeat: no-repeat !important;
+    padding-left: 20px;
+}
+
+.avatar .ui-icon {
+    background-position: left top;
+}
