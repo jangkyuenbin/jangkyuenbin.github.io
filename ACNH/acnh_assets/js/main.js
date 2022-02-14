@@ -10,10 +10,10 @@ function isIntNum(val) {
     }
 }
 
-function isPositiveInteger(s){//是否为正整数
-     var re = /^[0-9]+$/ ;
-     return re.test(s)
- }
+function isPositiveInteger(s) {//是否为正整数
+    var re = /^[0-9]+$/;
+    return re.test(s)
+}
 
 function arrayRemove(arr, value) {
     return arr.filter(function (ele) {
@@ -135,7 +135,6 @@ function menu_form_change() {
     } else {
         global_json = {'language': select.options[index].value}
     }
-    console.log(global_json);
     saveGlobalJson(global_json);
     location.reload();
 }
@@ -251,7 +250,7 @@ function assign_element_language() {
                 text = name_v[language];
                 if (objs[i].tagName === "INPUT") {
                     objs[i].placeholder = text;
-                } else if (name_k === "umbrella_category_all_text") {
+                } else if (name_k === "category_all_text") {
                     var span = document.createElement('span');
                     span.classList.add('icon_more');
                     objs[i].textContent = text;
