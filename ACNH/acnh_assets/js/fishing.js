@@ -109,12 +109,13 @@ function onFishingReset() {
     fishing_dradio_all.checked = true;
     fishing_sradio_all.checked = true;
     month_select_list = [];
+    month_select_name_list = [];
     loc_select_list = [];
     shadow_select_list = [];
     current_page = 1;
-    fishing_month_category.classList.add("category_all_text");
-    fishing_loc_category.classList.add("category_all_text");
-    fishing_shadow_category.classList.add("category_all_text");
+    fishing_month_category.classList.add("month_category_all_text");
+    fishing_loc_category.classList.add("loc_category_all_text");
+    fishing_shadow_category.classList.add("shadow_category_all_text");
     fishing_page_onload();
 }
 
@@ -185,15 +186,76 @@ function multi_select_onload() {
     }
 }
 
+function update_hemisphere_radio() {
+    if (hemisphere_flag === null) {
+        var fishing_hradio_north = document.getElementById('fishing_hradio_north');
+        var fishing_hradio_south = document.getElementById('fishing_hradio_south');
+        if (getHemisphere() === 'north') {
+            hemisphere_flag = true;
+            fishing_hradio_north.checked = true;
+        } else {
+            hemisphere_flag = false;
+            fishing_hradio_south.checked = true;
+        }
+    }
+}
+
 function filter_fishing_data() {
     var i;
     if (fishing_data != null) {
         var donate_json = getPageJson('fishing_donate')
         var statue_json = getPageJson('fishing_statue')
+        var now_month = getGameMonths();
+        var next_month = now_month === 12 ? 1 : now_month + 1;
+        var prev_month = now_month === 1 ? 12 : now_month - 1;
+        var now_hour = getGameHours();
         for (i = 0; i < fishing_data.length; i++) {
             fishing_data[i].show_flag = 1;
             fishing_data[i].donate_flag = 0;
             fishing_data[i].statue_flag = 0;
+            fishing_data[i].this_month_flag = 0;
+            fishing_data[i].coming_month_flag = 0;
+            fishing_data[i].last_month_flag = 0;
+            fishing_data[i].new_month_flag = 0;
+            fishing_data[i].catchable_flag = 0;
+
+            if (hemisphere_flag != null) {
+                if (hemisphere_flag) {
+                    if (Object.keys(fishing_data[i].north_time).includes(now_month.toString())) {
+                        fishing_data[i].this_month_flag = 1;
+                        if (fishing_data[i].north_time[now_month.toString()].includes(now_hour)) {
+                            fishing_data[i].catchable_flag = 1;
+                        }
+                        if (!Object.keys(fishing_data[i].north_time).includes(next_month.toString())) {
+                            fishing_data[i].last_month_flag = 1;
+                        }
+                        if (!Object.keys(fishing_data[i].north_time).includes(prev_month.toString())) {
+                            fishing_data[i].new_month_flag = 1;
+                        }
+                    } else {
+                        if (Object.keys(fishing_data[i].north_time).includes(next_month.toString())) {
+                            fishing_data[i].coming_month_flag = 1;
+                        }
+                    }
+                } else {
+                    if (Object.keys(fishing_data[i].south_time).includes(now_month.toString())) {
+                        fishing_data[i].this_month_flag = 1;
+                        if (fishing_data[i].south_time[now_month.toString()].includes(now_hour)) {
+                            fishing_data[i].catchable_flag = 1;
+                        }
+                        if (!Object.keys(fishing_data[i].south_time).includes(next_month.toString())) {
+                            fishing_data[i].last_month_flag = 1;
+                        }
+                        if (!Object.keys(fishing_data[i].south_time).includes(prev_month.toString())) {
+                            fishing_data[i].new_month_flag = 1;
+                        }
+                    } else {
+                        if (Object.keys(fishing_data[i].south_time).includes(next_month.toString())) {
+                            fishing_data[i].coming_month_flag = 1;
+                        }
+                    }
+                }
+            }
         }
 
         if (donate_json != null) {
@@ -293,7 +355,6 @@ function filter_fishing_data() {
             for (i = 0; i < fishing_data.length; i++) {
                 if (fishing_data[i].show_flag === 1) {
                     fishing_data[i].show_flag = 0
-                    console.log(hemisphere_flag)
                     if (hemisphere_flag != null) {
                         if (hemisphere_flag) {
                             for (var p in fishing_data[i].north_time) {
@@ -314,7 +375,6 @@ function filter_fishing_data() {
                         fishing_data[i].show_flag = 1
                     }
                 }
-
             }
         }
     }
@@ -351,18 +411,18 @@ function get_month_checkbox_div(checkBox_id, checkBox_class, i, is_check) {
 
         var text = '';
         if (month_select_name_list.length > max_show) {
-            category.classList.remove("category_all_text")
+            category.classList.remove("month_category_all_text")
             text = month_select_name_list.slice(0, max_show).join(", ") + ", ...";
             category.textContent = text;
         } else if (month_select_name_list.length > 1) {
-            category.classList.remove("category_all_text")
+            category.classList.remove("month_category_all_text")
             text = month_select_name_list.join(", ");
             category.textContent = text;
         } else if (month_select_name_list.length === 0) {
-            category.classList.add("category_all_text")
+            category.classList.add("month_category_all_text")
             category.textContent = tmp_inner_text;
         } else {
-            category.classList.remove("category_all_text")
+            category.classList.remove("month_category_all_text")
             category.textContent = month_select_name_list[0];
         }
         category.appendChild(span);
@@ -405,18 +465,18 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check, category_name) 
 
             var text = '';
             if (loc_select_list.length > max_show) {
-                category.classList.remove("category_all_text")
+                category.classList.remove("loc_category_all_text")
                 text = loc_select_list.slice(0, max_show).join(", ") + ", ...";
                 category.textContent = text;
             } else if (loc_select_list.length > 1) {
-                category.classList.remove("category_all_text")
+                category.classList.remove("loc_category_all_text")
                 text = loc_select_list.join(", ");
                 category.textContent = text;
             } else if (loc_select_list.length === 0) {
-                category.classList.add("category_all_text")
+                category.classList.add("loc_category_all_text")
                 category.textContent = tmp_inner_text;
             } else {
-                category.classList.remove("category_all_text")
+                category.classList.remove("loc_category_all_text")
                 category.textContent = loc_select_list[0];
             }
             category.appendChild(span);
@@ -437,18 +497,18 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check, category_name) 
 
             var text = '';
             if (shadow_select_list.length > max_show) {
-                category.classList.remove("category_all_text")
+                category.classList.remove("shadow_category_all_text")
                 text = shadow_select_list.slice(0, max_show).join(", ") + ", ...";
                 category.textContent = text;
             } else if (shadow_select_list.length > 1) {
-                category.classList.remove("category_all_text")
+                category.classList.remove("shadow_category_all_text")
                 text = shadow_select_list.join(", ");
                 category.textContent = text;
             } else if (shadow_select_list.length === 0) {
-                category.classList.add("category_all_text")
+                category.classList.add("shadow_category_all_text")
                 category.textContent = tmp_inner_text;
             } else {
-                category.classList.remove("category_all_text")
+                category.classList.remove("shadow_category_all_text")
                 category.textContent = shadow_select_list[0];
             }
             category.appendChild(span);
@@ -465,17 +525,93 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check, category_name) 
     return checkBox_div;
 }
 
-function get_fishing_img_div(url) {
+function get_new_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/new.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_pass_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/pass.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.right = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_fishable_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/fishable.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.bottom = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_coming_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/coming.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_shadow_img(shadow_url){
+    var img = document.createElement('img');
+    img.src = shadow_url
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.right = "0px";
+    img.style.bottom = "0px";
+    img.style.width = "20%";
+    img.style.filter = "invert(1)";
+    return img
+}
+
+
+function get_fishing_img_div(url, shadow_url, now_month_flag, new_flag, pass_flag, fishable_flag, coming_flag) {
     var div = document.createElement('div');
     var img = document.createElement('img');
-    img.style = "border-radius: 10px";
-    img.className = "one";
+
+    img.style.borderRadius = "10px";
+    img.classList.add("one");
     img.src = url;
     img.width = "100%";
-    img.alt = "test"
-    div.className = "border_tr";
-    div.style = "width: 100%;";
+    if (now_month_flag) {
+        div.className = "border_tr_red";
+    } else {
+        div.className = "border_tr";
+    }
+    div.style.width = "100%";
+    div.style.position = "relative";
+
     div.appendChild(img);
+    div.appendChild(get_shadow_img(shadow_url));
+    if (new_flag) {
+        div.appendChild(get_new_flag_img());
+    }
+    if (pass_flag) {
+        div.appendChild(get_pass_flag_img());
+    }
+    if (fishable_flag) {
+        div.appendChild(get_fishable_flag_img());
+    }
+    if (coming_flag) {
+        div.appendChild(get_coming_flag_img());
+    }
     return div
 }
 
@@ -523,10 +659,15 @@ function change_fishing_statued_flag(id) {
     onFishingSearch(null);
 }
 
-function get_fishing_node_div(id, url, name, donated_flag, statue_flag) {
-    var img_div = get_fishing_img_div(url);
+function get_fishing_node_div(id, url, shadow_url, name, donated_flag, statue_flag, catchable_flag, new_flag, pass_flag, fishable_flag, coming_flag) {
+    var img_div = get_fishing_img_div(url, shadow_url, catchable_flag, new_flag, pass_flag, fishable_flag, coming_flag);
     var name_div = document.createElement('div');
-    name_div.classList.add('border_b');
+    if (catchable_flag) {
+        name_div.classList.add('border_b_red');
+    } else {
+        name_div.classList.add('border_b');
+    }
+
     name_div.style = "width: 100%;text-align: center;";
     if (name === "") {
         name_div.classList.add('not_translated_text');
@@ -535,7 +676,11 @@ function get_fishing_node_div(id, url, name, donated_flag, statue_flag) {
     }
 
     var donated_flag_div = document.createElement('div');
-    donated_flag_div.classList.add('border_b');
+    if (catchable_flag) {
+        donated_flag_div.classList.add('border_b_red');
+    } else {
+        donated_flag_div.classList.add('border_b');
+    }
     if (donated_flag === 0) {
         donated_flag_div.classList.add('not_donated_label_text');
     } else {
@@ -547,7 +692,11 @@ function get_fishing_node_div(id, url, name, donated_flag, statue_flag) {
     }
 
     var statue_flag_div = document.createElement('div');
-    statue_flag_div.classList.add('border_b');
+    if (catchable_flag) {
+        statue_flag_div.classList.add('border_b_red');
+    } else {
+        statue_flag_div.classList.add('border_b');
+    }
     if (statue_flag === 0) {
         statue_flag_div.classList.add('not_statued_label_text');
     } else {
@@ -559,7 +708,12 @@ function get_fishing_node_div(id, url, name, donated_flag, statue_flag) {
     }
 
     var div2 = document.createElement('div');
-    div2.className = "row out_border";
+    if (catchable_flag) {
+        div2.classList.add('out_border_red');
+    } else {
+        div2.classList.add('out_border');
+    }
+    div2.classList.add("row");
     div2.appendChild(img_div);
     div2.appendChild(name_div);
     div2.appendChild(donated_flag_div);
@@ -572,18 +726,6 @@ function get_fishing_node_div(id, url, name, donated_flag, statue_flag) {
 }
 
 function update_fishing_page() {
-    if (hemisphere_flag === null) {
-        var fishing_hradio_north = document.getElementById('fishing_hradio_north');
-        var fishing_hradio_south = document.getElementById('fishing_hradio_south');
-        if (getHemisphere() === 'north') {
-            hemisphere_flag = true;
-            fishing_hradio_north.checked = true;
-        } else {
-            hemisphere_flag = false;
-            fishing_hradio_south.checked = true;
-        }
-    }
-
     if (fishing_data != null) {
         var language = getLanguage();
         var fishing_loc_category_array = [];
@@ -598,8 +740,8 @@ function update_fishing_page() {
         var end_i = current_page * max_item;
 
         fishing_data.sort(function (a, b) {
-            var nameA = a['name'][language];
-            var nameB = b['name'][language];
+            var nameA = a['id'];
+            var nameB = b['id'];
             if (nameA < nameB) {
                 return -1;
             }
@@ -615,9 +757,15 @@ function update_fishing_page() {
                     var node_div = get_fishing_node_div(
                         id = fishing_data[i].id,
                         url = './images/fish_png/' + fishing_data[i].pic_name,
+                        shadow_url='./images/fish_png/' + fishing_data[i].shadow_pic_name,
                         name = fishing_data[i]['name'][language],
-                        source = fishing_data[i].donate_flag,
-                        flag = fishing_data[i].statue_flag)
+                        donate_flag = fishing_data[i].donate_flag,
+                        statue_flag = fishing_data[i].statue_flag,
+                        catchable_flag = fishing_data[i].this_month_flag,
+                        new_flag = fishing_data[i].new_month_flag,
+                        pass_flag = fishing_data[i].last_month_flag,
+                        fishable_flag = fishing_data[i].catchable_flag,
+                        coming_flag = fishing_data[i].coming_month_flag)
                     items_div.appendChild(node_div);
                 }
                 j++;
@@ -717,6 +865,7 @@ function update_fishing_page() {
 
 function load_fishing_db() {
     if (fishing_data != null) {
+        update_hemisphere_radio();
         filter_fishing_data();
         update_fishing_page();
         init_language();
@@ -727,6 +876,7 @@ function load_fishing_db() {
         request.onload = function () {
             if (request.status === 200) {
                 fishing_data = JSON.parse(request.responseText);
+                update_hemisphere_radio();
                 filter_fishing_data();
                 update_fishing_page();
                 init_language();

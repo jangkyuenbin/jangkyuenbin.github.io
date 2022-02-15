@@ -250,7 +250,7 @@ function assign_element_language() {
                 text = name_v[language];
                 if (objs[i].tagName === "INPUT") {
                     objs[i].placeholder = text;
-                } else if (name_k === "category_all_text") {
+                } else if (name_k.indexOf("category_all_text") > -1) {
                     var span = document.createElement('span');
                     span.classList.add('icon_more');
                     objs[i].textContent = text;

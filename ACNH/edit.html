@@ -35,29 +35,83 @@
                     <h1 class="edit_h1_text">账户设置</h1>
                 </header>
 
-                <form method="post" action="#" id="info_form" onchange="onChangeUserName()">
-                    <div class="row gtr-uniform">
+                <form method="post" action="#" id="info_form">
+                    <div class="row" style="padding-top: 10px">
                         <div class="col-6 col-12-xsmall">
-                            <input type="text" name="info_name" id="info_name" value=""/>
+                            <input type="text" name="info_name" id="info_name" value="" onchange="onChangeUserName()"/>
                         </div>
-                        <div class="col-6 col-12-xsmall">
-                            <ul class="actions">
-                                <li><a id="edit_btn" href="#" class="button primary edit_a_text"
-                                       onclick="activate_intput()">修改</a></li>
-                                <li><a id="edit_dbtn" href="#" class="button edit_default_a_text"
-                                       onclick="setDefaultUser()">设置为默认用户</a></li>
-                            </ul>
+                        <div class="col-3 col-12-xsmall">
+                            <a id="edit_btn" href="#" class="button primary edit_a_text"
+                               onclick="activate_intput()">修改</a>
                         </div>
+                        <div class="col-3 col-12-xsmall">
+                            <a id="edit_dbtn" href="#" class="button edit_default_a_text"
+                               onclick="setDefaultUser()">设置为默认用户</a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 20px">
+                        <div class="col-3 col-12-xsmall">
+                            <h4 class="hemisphere_radio_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="edit_hradio_north" name="hradio" value="0" checked>
+                            <label class="north_label_text" for="edit_hradio_north"
+                                   onclick="onChangeHemisphere(true)"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="edit_hradio_south" name="hradio" value="1">
+                            <label class="south_label_text" for="edit_hradio_south"
+                                   onclick="onChangeHemisphere(false)"></label>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 20px">
+                        <div class="col-3 col-12-xsmall">
+                            <h4 class="isRealTime_radio_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="edit_rtradio_true" name="rtradio" value="0" checked>
+                            <label class="isRealTime_true_label_text" for="edit_rtradio_true"
+                                   onclick="hiddedDeltaTimeDiv()"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="edit_rtradio_false" name="rtradio" value="1">
+                            <label class="isRealTime_false_label_text" for="edit_rtradio_false"
+                                   onclick="showDeltaTimeDiv()"></label>
+                        </div>
+                    </div>
+                    <div id="delta_time_div" class="row" style="padding-top: 20px; display: none">
+                        <div class="col-3 col-12-xsmall">
+                            <h4 class="DeltaTime_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <div class="row">
+                                <div style="width: 70%;">
+                                    <input id="offset_input" type="number" step=1 onchange="onChangeOffset(this)"
+                                           style="width: 100%;background-color: rgba(212, 212, 255, 0.035);border: solid;border-color: white;border-width: 2px">
+                                </div>
+                                <div style="width: 25%;" class="Minute_text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input id="date_input" type="datetime-local" step="01" name="user_date"
+                                   onchange="onChangeDate(this)"
+                                   style="background-color: rgba(212, 212, 255, 0.035);border: solid;border-color: white;border-width: 2px">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px">
 
-                        <div class="col-6 col-12-xsmall">
-                            <ul class="actions">
-                                <li><a href="#" class="button primary create_user_a_text"
-                                       onclick="onCreateUser()">创建新用户</a></li>
-                                <li><a href="#" class="button reset_cuser_a_text"
-                                       onclick="onResetUser()">重置当前用户</a></li>
-                                <li><a href="#" class="button delete_cuser_a_text"
-                                       onclick="onDeleteUser()">删除当前用户</a></li>
-                            </ul>
+                        <div class="col-3 col-12-xsmall">
+                            <a href="#" class="button primary create_user_a_text"
+                               onclick="onCreateUser()">创建新用户</a>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <a href="#" class="button reset_cuser_a_text"
+                               onclick="onResetUser()">重置当前用户</a>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <a href="#" class="button delete_cuser_a_text"
+                               onclick="onDeleteUser()">删除当前用户</a>
                         </div>
 
                     </div>

@@ -44,6 +44,34 @@ function onChangeUserName() {
 
 function edit_page_onload() {
     all_page_onload();
+    var edit_hradio_north = document.getElementById('edit_hradio_north');
+    var edit_hradio_south = document.getElementById('edit_hradio_south');
+    if (getHemisphere() === 'north') {
+        edit_hradio_north.checked = true;
+    } else {
+        edit_hradio_south.checked = true;
+    }
+    var edit_rtradio_true = document.getElementById('edit_rtradio_true');
+    var edit_rtradio_false = document.getElementById('edit_rtradio_false');
+    var div = document.getElementById("delta_time_div");
+    if (getRealTimeFlag()) {
+        edit_rtradio_true.checked = true;
+        div.style.display = "none";
+    } else {
+        edit_rtradio_false.checked = true;
+        div.style.display = "";
+    }
+
+    var time_offset = getTimeOffset();
+
+    var real_now_time = new Date();
+    var now_time = new Date(real_now_time.getTime() + time_offset * 60000);
+    now_time.setMinutes(now_time.getMinutes() - now_time.getTimezoneOffset());
+    var date_input = document.getElementById("date_input");
+    var offset_input = document.getElementById("offset_input");
+    date_input.value = now_time.toISOString().slice(0, 16);
+    offset_input.value = time_offset;
+
     var info_name = document.getElementById('info_name');
     var edit_dbtn = document.getElementById('edit_dbtn');
     const current_user_json = getSelectedUserJson();
@@ -79,12 +107,132 @@ function onSaveUser() {
     var create_name = document.getElementById('create_name');
     var usernames = getAllUserName();
     if (create_name.value != null && create_name.value !== '') {
-        if (usernames.includes(create_name.value)){
+        if (usernames.includes(create_name.value)) {
             create_name.placeholder = '用户名已存在: [' + create_name.value + ']';
             create_name.value = '';
-        }else{
+        } else {
             createUser(create_name.value, {});
             location.reload();
         }
     }
+}
+
+function onChangeHemisphere(flag) {
+    var global_json = getGlobalJson();
+    var change_flag = false;
+    if (global_json != null) {
+        if (global_json['hemisphere'] != null) {
+            if (flag && global_json['hemisphere'] !== 'north') {
+                global_json['hemisphere'] = 'north';
+                change_flag = true;
+            } else if (!flag && global_json['hemisphere'] !== 'south') {
+                global_json['hemisphere'] = 'south';
+                change_flag = true;
+            }
+        } else {
+            if (flag) {
+                global_json['hemisphere'] = 'north';
+                change_flag = true;
+            } else {
+                global_json['hemisphere'] = 'south';
+                change_flag = true;
+            }
+        }
+    } else {
+        if (flag) {
+            global_json = {'hemisphere': 'north'}
+            change_flag = true;
+        } else {
+            global_json = {'hemisphere': 'south'}
+            change_flag = true;
+        }
+    }
+    if (change_flag) {
+        saveGlobalJson(global_json);
+        location.reload();
+    }
+}
+
+function showDeltaTimeDiv() {
+    var div = document.getElementById("delta_time_div");
+    div.style.display = "";
+    onChangeIsRealTimeFlag(false);
+}
+
+function hiddedDeltaTimeDiv() {
+    var div = document.getElementById("delta_time_div");
+    div.style.display = "none";
+    onChangeIsRealTimeFlag(true);
+}
+
+function onChangeIsRealTimeFlag(flag) {
+    var global_json = getGlobalJson();
+    var change_flag = false;
+    if (global_json != null) {
+        if (global_json['is_real_time_flag'] != null) {
+            if (flag && !global_json['is_real_time_flag']) {
+                global_json['is_real_time_flag'] = true;
+                change_flag = true;
+            } else if (!flag && global_json['is_real_time_flag']) {
+                global_json['is_real_time_flag'] = false;
+                change_flag = true;
+            }
+        } else {
+            global_json['is_real_time_flag'] = flag;
+            change_flag = true;
+        }
+    } else {
+        global_json = {'is_real_time_flag': flag}
+        change_flag = true;
+    }
+    if (change_flag) {
+        if (global_json['is_real_time_flag']) {
+            delete global_json["time_offset"];
+        }
+        saveGlobalJson(global_json);
+        if (!global_json['is_real_time_flag']) {
+            var time_offset = getTimeOffset();
+            var real_now_time = new Date();
+            var now_time = new Date(real_now_time.getTime() + time_offset * 60000);
+            now_time.setMinutes(now_time.getMinutes() - now_time.getTimezoneOffset());
+            var date_input = document.getElementById("date_input");
+            var offset_input = document.getElementById("offset_input");
+            date_input.value = now_time.toISOString().slice(0, 16);
+            offset_input.value = time_offset;
+        }
+    }
+}
+
+function onChangeDate(ele) {
+    var new_time = new Date(ele.value)
+    var now_time = new Date()
+    var time_offset = getTimeOffset();
+    var new_offset = parseInt((new_time - now_time) / 1000 / 60)
+    var global_json = getGlobalJson();
+    if (time_offset !== new_offset) {
+        if (global_json != null) {
+            global_json['time_offset'] = new_offset
+        } else {
+            global_json = {'time_offset': new_offset}
+        }
+        saveGlobalJson(global_json);
+        var offset_input = document.getElementById("offset_input");
+        offset_input.value = new_offset;
+    }
+}
+
+function onChangeOffset(ele) {
+    var new_time_offset = parseInt(ele.value)
+    var global_json = getGlobalJson();
+    if (global_json != null) {
+        global_json['time_offset'] = new_time_offset
+    } else {
+        global_json = {'time_offset': new_time_offset}
+    }
+    saveGlobalJson(global_json);
+    var real_now_time = new Date();
+    var now_time = new Date(real_now_time.getTime() + new_time_offset * 60000);
+    now_time.setMinutes(now_time.getMinutes() - now_time.getTimezoneOffset());
+    var date_input = document.getElementById("date_input");
+    date_input.value = now_time.toISOString().slice(0, 16);
 }

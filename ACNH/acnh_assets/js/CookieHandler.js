@@ -202,6 +202,27 @@ function getLanguage() {
     }
 }
 
+function getGameTime() {
+    var time_offset = getTimeOffset();
+    var real_now_time = new Date();
+    var now_time = new Date(real_now_time.getTime() + time_offset * 60000);
+    return now_time
+}
+
+function getGameMonths() {
+    var time_offset = getTimeOffset();
+    var real_now_time = new Date();
+    var now_time = new Date(real_now_time.getTime() + time_offset * 60000);
+    return now_time.getMonth() + 1
+}
+
+function getGameHours() {
+    var time_offset = getTimeOffset();
+    var real_now_time = new Date();
+    var now_time = new Date(real_now_time.getTime() + time_offset * 60000);
+    return now_time.getHours()
+}
+
 function getHemisphere() {
     var global_json = getGlobalJson();
     if (global_json != null) {
@@ -215,6 +236,38 @@ function getHemisphere() {
         global_json = {'hemisphere': 'north'}
         saveGlobalJson(global_json);
         return global_json['hemisphere'];
+    }
+}
+
+function getRealTimeFlag() {
+    var global_json = getGlobalJson();
+    if (global_json != null) {
+        if (global_json['is_real_time_flag'] != null) {
+            return global_json['is_real_time_flag']
+        }
+        global_json['is_real_time_flag'] = true
+        saveGlobalJson(global_json);
+        return global_json['is_real_time_flag'];
+    } else {
+        global_json = {'is_real_time_flag': true}
+        saveGlobalJson(global_json);
+        return global_json['is_real_time_flag'];
+    }
+}
+
+function getTimeOffset() {
+    var global_json = getGlobalJson();
+    if (global_json != null) {
+        if (global_json['time_offset'] != null) {
+            return global_json['time_offset']
+        }
+        global_json['time_offset'] = 0
+        saveGlobalJson(global_json);
+        return global_json['time_offset'];
+    } else {
+        global_json = {'time_offset': 0}
+        saveGlobalJson(global_json);
+        return global_json['time_offset'];
     }
 }
 
@@ -236,7 +289,6 @@ function getGlobalJson() {
 
 function saveGlobalJson(json) {
     const current_user_json = getSelectedUserJson();
-    console.log(current_user_json);
     current_user_json.global = json;
     saveUserJson(current_user_json.info.name, current_user_json)
 }
