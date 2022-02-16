@@ -525,63 +525,6 @@ function get_checkbox_div(checkBox_id, checkBox_label, is_check, category_name) 
     return checkBox_div;
 }
 
-function get_new_flag_img() {
-    var img = document.createElement('img');
-    img.src = "./images/flag_png/new.png"
-    img.style.borderRadius = "10px";
-    img.style.position = "absolute";
-    img.style.left = "0px";
-    img.style.top = "0px";
-    img.style.width = "20%";
-    return img
-}
-
-function get_pass_flag_img() {
-    var img = document.createElement('img');
-    img.src = "./images/flag_png/pass.png"
-    img.style.borderRadius = "10px";
-    img.style.position = "absolute";
-    img.style.right = "0px";
-    img.style.top = "0px";
-    img.style.width = "20%";
-    return img
-}
-
-function get_fishable_flag_img() {
-    var img = document.createElement('img');
-    img.src = "./images/flag_png/fishable.png"
-    img.style.borderRadius = "10px";
-    img.style.position = "absolute";
-    img.style.left = "0px";
-    img.style.bottom = "0px";
-    img.style.width = "20%";
-    return img
-}
-
-function get_coming_flag_img() {
-    var img = document.createElement('img');
-    img.src = "./images/flag_png/coming.png"
-    img.style.borderRadius = "10px";
-    img.style.position = "absolute";
-    img.style.left = "0px";
-    img.style.top = "0px";
-    img.style.width = "20%";
-    return img
-}
-
-function get_shadow_img(shadow_url){
-    var img = document.createElement('img');
-    img.src = shadow_url
-    img.style.borderRadius = "10px";
-    img.style.position = "absolute";
-    img.style.right = "0px";
-    img.style.bottom = "0px";
-    img.style.width = "20%";
-    img.style.filter = "invert(1)";
-    return img
-}
-
-
 function get_fishing_img_div(url, shadow_url, now_month_flag, new_flag, pass_flag, fishable_flag, coming_flag) {
     var div = document.createElement('div');
     var img = document.createElement('img');

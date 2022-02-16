@@ -150,6 +150,73 @@ function change_user() {
     location.reload();
 }
 
+function get_new_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/new.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_pass_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/pass.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.right = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_fishable_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/fishable.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.bottom = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_bugsable_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/catch.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.bottom = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_coming_flag_img() {
+    var img = document.createElement('img');
+    img.src = "./images/flag_png/coming.png"
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.left = "0px";
+    img.style.top = "0px";
+    img.style.width = "20%";
+    return img
+}
+
+function get_shadow_img(shadow_url) {
+    var img = document.createElement('img');
+    img.src = shadow_url
+    img.style.borderRadius = "10px";
+    img.style.position = "absolute";
+    img.style.right = "0px";
+    img.style.bottom = "0px";
+    img.style.width = "20%";
+    img.style.filter = "invert(1)";
+    return img
+}
+
 function getPrevDiv(onPageSearch) {
     var prev_btn = document.createElement('span');
     prev_btn.classList.add("button")

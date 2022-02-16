@@ -93,6 +93,7 @@ function get_img_box(img_url, text, p_class) {
 
     var img = document.createElement('img');
     img.src = './images/artwork_png/' + img_url;
+    img.style.width = "200px";
     var p1 = document.createElement('p');
     p1.classList.add(p_class);
     var div2 = document.createElement('div');
