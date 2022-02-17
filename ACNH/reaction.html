@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>REACTION</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./acnh_assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css"/>
+    </noscript>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <a href="./index.html" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
+        <nav>
+            <a class="menu_name_text" href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1 class="reaction_page_text">反应图鉴</h1>
+                </header>
+                <div class="row">
+                    <div class="col-3 col-12-medium">
+                        <div class="row">
+                            <div class="col-12 col-12-xsmall"
+                                 style="justify-content: center;align-items: center;display: flex">
+                                <img style="border-radius: 10px; align-self: center; height: 220px" id="selected_reaction_pic"
+                                     src="./images/reaction_png/Act_Natural_NH_Reaction_Icon.png"/>
+
+                            </div>
+                            <div class="col-12 col-12-xsmall" style="display: flex;justify-content: center">
+                                <h5 id="selected_reaction_name"></h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-9 col-12-medium"
+                         style="align-items: flex-end;display: flex;margin-bottom: 10px;">
+                        <form method="post" id="reaction_form" action="#" style="margin-bottom: 0; width: 100%">
+                            <div class="row" style="margin-bottom: 4%">
+                                <div class="col-6 col-12-xsmall">
+                                    <input class="reaction_input_text" type="text" name="reaction_name" id="reaction_name"
+                                           value="" placeholder=""/>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <div class="row">
+                                        <div class="col-6 col-12-xsmall">
+                                            <a id="reaction_search_btn" href="#"
+                                               class="button primary fit search_btn_text"
+                                               onclick="onReactionSearch(this)">搜索</a>
+                                        </div>
+                                        <div class="col-6 col-12-xsmall">
+                                            <a href="#" class="button fit reset_btn_text"
+                                               onclick="onReactionReset()">重置</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="reaction_dradio_all" name="reaction_dradio" value="0"
+                                           checked>
+                                    <label class="all_label_text" for="reaction_dradio_all"
+                                           onclick="onReactionSearch(this)">全部</label>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="reaction_dradio_true" name="reaction_dradio" value="1">
+                                    <label class="owned_label_text" for="reaction_dradio_true"
+                                           onclick="onReactionSearch(this)">已拥有</label>
+                                </div>
+                                <div class="col-4 col-12-small">
+                                    <input type="radio" id="reaction_dradio_false" name="reaction_dradio" value="2">
+                                    <label class="not_owned_label_text" for="reaction_dradio_false"
+                                           onclick="onReactionSearch(this)">未拥有</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="two">
+            <div class="inner">
+                <div class="row" id="items_div">
+
+                </div>
+                <div class="col-12 col-12-small">
+                    <ul class="pagination" id="pagination">
+                        <li><span class="button small disabled">Prev</span></li>
+                        <li><a href="#" class="page active">1</a></li>
+                        <li><a href="#" class="page">2</a></li>
+                        <li><a href="#" class="page">3</a></li>
+                        <li><span>…</span></li>
+                        <li><a href="#" class="page">8</a></li>
+                        <li><a href="#" class="page">9</a></li>
+                        <li><a href="#" class="page">10</a></li>
+                        <li><a href="#" class="button small">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./acnh_assets/js/createFooter.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script src="./acnh_assets/js/main.js"></script>
+<script src="./acnh_assets/js/reaction.js"></script>
+<script src="./acnh_assets/js/CookieHandler.js"></script>
+<script>
+    reaction_page_onload();
+</script>
+</body>
+</html>

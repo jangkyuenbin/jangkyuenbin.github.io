@@ -1,0 +1,2642 @@
+[
+  {
+    "id": 0,
+    "pic_name": "Act_Natural_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Act Natural",
+      "japanese": "\u3057\u306a\u3084\u304b\u306b\u30ad\u30e1\u308b",
+      "chinese": "\u4f18\u96c5\u59ff\u52bf",
+      "french": "Poses naturelles",
+      "spanish": "Pose natural",
+      "italian": "Pose naturali",
+      "russian": "\u0415\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u043f\u043e\u0437\u0430",
+      "korean": "\ubd80\ub4dc\ub7ec\uc6b4 \ud3ec\uc988",
+      "t_chinese": "\u512a\u96c5\u59ff\u52e2",
+      "german": "Nat\u00fcrliches Posieren",
+      "dutch": "Ontspannen poses"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 1,
+    "pic_name": "Emotion_Aggravation_NH_Icon.png",
+    "name": {
+      "english": "Aggravation",
+      "japanese": "\u30e0\u30ab\u30c3",
+      "chinese": "\u751f\u6c14",
+      "french": "Fureur",
+      "spanish": "Cabreo",
+      "italian": "Rabbia",
+      "russian": "\u042f\u0440\u043e\u0441\u0442\u044c",
+      "korean": "\ubc84\ub7ed",
+      "t_chinese": "\u751f\u6c23",
+      "german": "Wut",
+      "dutch": "Woede"
+    },
+    "source": {
+      "english": "Peppy villagers",
+      "chinese": "\u6d3b\u6cfc\u7684\u6751\u6c11",
+      "t_chinese": "\u6d3b\u6f51\u7684\u6751\u6c11",
+      "japanese": "\u5143\u6c17\u3044\u3063\u3071\u3044\u306e\u6751\u4eba",
+      "korean": "\ud65c\uae30\ucc2c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0411\u043e\u0434\u0440\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Peppy dorpelingen",
+      "german": "Peppige Dorfbewohner",
+      "spanish": "Aldeanos llenos de vida",
+      "french": "Villageois \u00e9nergiques",
+      "italian": "Paesani vivaci"
+    }
+  },
+  {
+    "id": 2,
+    "pic_name": "Emotion_Agreement_NH_Icon.png",
+    "name": {
+      "english": "Agreement",
+      "japanese": "\u3046\u3093\u3046\u3093",
+      "chinese": "\u70b9\u5934",
+      "french": "Acquiescement",
+      "spanish": "Asentimiento",
+      "italian": "Approvazione",
+      "russian": "\u0421\u043e\u0433\u043b\u0430\u0441\u0438\u0435",
+      "korean": "\ub044\ub355\ub044\ub355",
+      "t_chinese": "\u9ede\u982d",
+      "german": "Zustimmung",
+      "dutch": "Knikken"
+    },
+    "source": {
+      "english": "Cranky villagers",
+      "chinese": "\u813e\u6c14\u66b4\u8e81\u7684\u6751\u6c11",
+      "t_chinese": "\u813e\u6c23\u66b4\u8e81\u7684\u6751\u6c11",
+      "japanese": "\u4e0d\u6a5f\u5acc\u305d\u3046\u306a\u6751\u4eba",
+      "korean": "\uae4c\uce60\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041a\u0430\u043f\u0440\u0438\u0437\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Chagrijnig dorpelingen",
+      "german": "Schrullige Dorfbewohner",
+      "spanish": "Aldeanos malhumorados",
+      "french": "Villageois grincheux",
+      "italian": "Paesani irritabili"
+    }
+  },
+  {
+    "id": 3,
+    "pic_name": "Airplane_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Airplane",
+      "japanese": "\u3072\u3053\u3046\u304d\u30c0\u30f3\u30b9",
+      "chinese": "\u98de\u673a\u7ffc\u821e\u52a8",
+      "french": "Avion",
+      "spanish": "Avi\u00f3n",
+      "italian": "Aeroplano",
+      "russian": "\u0421\u0430\u043c\u043e\u043b\u0435\u0442\u0438\u043a",
+      "korean": "\ube44\ud589\uae30 \ub304\uc2a4",
+      "t_chinese": "\u98db\u6a5f\u7ffc\u821e\u52d5",
+      "german": "Flugzeugtanz",
+      "dutch": "Vliegtuig"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 4,
+    "pic_name": "Emotion_Amazed_NH_Icon.png",
+    "name": {
+      "english": "Amazed",
+      "japanese": "\u30cf\u30c3\uff01",
+      "chinese": "\u60ca\uff01",
+      "french": "Stup\u00e9faction",
+      "spanish": "Fascinaci\u00f3n",
+      "italian": "Stupore",
+      "russian": "\u0418\u0437\u0443\u043c\u043b\u0435\u043d\u0438\u0435",
+      "korean": "\uae5c\uc9dd!",
+      "t_chinese": "\u9a5a\uff01",
+      "german": "Erstaunen",
+      "dutch": "Verbazing"
+    },
+    "source": {
+      "english": "Snooty villagers",
+      "chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "t_chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "japanese": "\u30b9\u30cc\u30fc\u30c6\u30a3\u30fc\u306a\u6751\u4eba",
+      "korean": "\uc2a4\ub204\ud2f0 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0412\u044b\u0441\u043e\u043a\u043e\u043c\u0435\u0440\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Verwaande dorpelingen",
+      "german": "Hochn\u00e4sige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois pr\u00e9tentieux",
+      "italian": "Paesani altezzosi"
+    }
+  },
+  {
+    "id": 5,
+    "pic_name": "Emotion_Apologetic_NH_Icon.png",
+    "name": {
+      "english": "Apologetic",
+      "japanese": "\u30da\u30b3\u30ea",
+      "chinese": "\u97a0\u8eac",
+      "french": "Excuse",
+      "spanish": "Disculpa",
+      "italian": "Scusa",
+      "russian": "\u0418\u0437\u0432\u0438\u043d\u0435\u043d\u0438\u0435",
+      "korean": "\uafb8\ubc85",
+      "t_chinese": "\u97a0\u8eac",
+      "german": "Entschuldigung",
+      "dutch": "Buigen"
+    },
+    "source": {
+      "english": "Big Sister villagers",
+      "chinese": "\u5927\u59d0\u6751\u6c11",
+      "t_chinese": "\u5927\u59d0\u6751\u6c11",
+      "japanese": "\u59c9\u306e\u6751\u4eba",
+      "korean": "\ud070 \uc790\ub9e4 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0421\u0442\u0430\u0440\u0448\u0430\u044f \u0441\u0435\u0441\u0442\u0440\u0430",
+      "dutch": "Grote zus dorpelingen",
+      "german": "Dorfbewohner der Big Sister",
+      "spanish": "Aldeanos de la hermana mayor",
+      "french": "Villageois de Grande S\u0153ur",
+      "italian": "Gli abitanti del villaggio della Grande Sorella"
+    }
+  },
+  {
+    "id": 6,
+    "pic_name": "Arm_Circles_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Arm Circles",
+      "japanese": "\u3046\u3067\u307e\u308f\u3057",
+      "chinese": "\u8f6c\u52a8\u624b\u81c2",
+      "french": "Cercles avec les bras",
+      "spanish": "Mariposa",
+      "italian": "Rotazioni delle braccia",
+      "russian": "\u0412\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0440\u0443\u043a\u0430\u043c\u0438",
+      "korean": "\ud314 \ub3cc\ub9ac\uae30",
+      "t_chinese": "\u8f49\u52d5\u524d\u81c2",
+      "german": "Armkreisen",
+      "dutch": "Armcirkels"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 7,
+    "pic_name": "Arm-Swing_Dance_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Arm-Swing Dance",
+      "japanese": "\u3046\u3067\u3075\u308a\u30c0\u30f3\u30b9",
+      "chinese": "\u6446\u624b\u821e\u52a8",
+      "french": "Battements de bras",
+      "spanish": "Braceo alterno",
+      "italian": "Danza delle braccia",
+      "russian": "\u041c\u0430\u0445\u0438 \u0440\u0443\u043a\u0430\u043c\u0438",
+      "korean": "\ud314 \ud754\ub4e4\uae30 \ub304\uc2a4",
+      "t_chinese": "\u64fa\u624b\u821e\u52d5",
+      "german": "Armschwenke-Tanz",
+      "dutch": "Armzwaaien"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 8,
+    "pic_name": "Emotion_Bashfulness_NH_Icon.png",
+    "name": {
+      "english": "Bashfulness",
+      "japanese": "\u30c6\u30ec\u308b",
+      "chinese": "\u5bb3\u7f9e",
+      "french": "Embarras",
+      "spanish": "Sonrojo",
+      "italian": "Imbarazzo",
+      "russian": "\u0420\u043e\u0431\u043e\u0441\u0442\u044c",
+      "korean": "\ubd80\ub044\ub7fc",
+      "t_chinese": "\u5bb3\u7f9e",
+      "german": "Sch\u00fcchternheit",
+      "dutch": "Blozen"
+    },
+    "source": {
+      "english": "Lazy villagers",
+      "chinese": "\u61d2\u60f0\u7684\u6751\u6c11",
+      "t_chinese": "\u61f6\u60f0\u7684\u6751\u6c11",
+      "japanese": "\u6020\u60f0\u306a\u6751\u4eba",
+      "korean": "\uac8c\uc73c\ub978 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041b\u0435\u043d\u0438\u0432\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Luie dorpelingen",
+      "german": "Faule Dorfbewohner",
+      "spanish": "Aldeanos perezosos",
+      "french": "Villageois paresseux",
+      "italian": "Paesani pigri"
+    }
+  },
+  {
+    "id": 9,
+    "pic_name": "Behold_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Behold",
+      "japanese": "\u30b3\u30c1\u30e9\u3067\u3059",
+      "chinese": "\u5728\u8fd9\u91cc",
+      "french": "Admirez\u00a0!",
+      "spanish": "Indicaci\u00f3n",
+      "italian": "Ammirate!",
+      "russian": "\u0413\u043b\u044f\u0434\u0438-\u043a\u0430!",
+      "korean": "\uc774\ucabd\uc774\uc57c!",
+      "t_chinese": "\u5728\u9019\u88e1",
+      "german": "Pr\u00e4sentieren",
+      "dutch": "Presenteren"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 10,
+    "pic_name": "Emotion_Bewilderment_NH_Icon.png",
+    "name": {
+      "english": "Bewilderment",
+      "japanese": "\u3048\u3063\uff1f",
+      "chinese": "\u55ef\uff1f",
+      "french": "Perplexit\u00e9",
+      "spanish": "Incredulidad",
+      "italian": "Incredulit\u00e0",
+      "russian": "\u041d\u0435\u0434\u043e\u0443\u043c\u0435\u043d\u0438\u0435",
+      "korean": "\ubb50?",
+      "t_chinese": "\u55ef\uff1f",
+      "german": "\u00dcberraschung",
+      "dutch": "Nadruk"
+    },
+    "source": {
+      "english": "Cranky villagers",
+      "chinese": "\u813e\u6c14\u66b4\u8e81\u7684\u6751\u6c11",
+      "t_chinese": "\u813e\u6c23\u66b4\u8e81\u7684\u6751\u6c11",
+      "japanese": "\u4e0d\u6a5f\u5acc\u305d\u3046\u306a\u6751\u4eba",
+      "korean": "\uae4c\uce60\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041a\u0430\u043f\u0440\u0438\u0437\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Chagrijnig dorpelingen",
+      "german": "Schrullige Dorfbewohner",
+      "spanish": "Aldeanos malhumorados",
+      "french": "Villageois grincheux",
+      "italian": "Paesani irritabili"
+    }
+  },
+  {
+    "id": 11,
+    "pic_name": "Body_Twists_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Body Twists",
+      "japanese": "\u304b\u3089\u3060\u3072\u306d\u308a",
+      "chinese": "\u626d\u8f6c\u8eab\u4f53",
+      "french": "Souplesse du tronc",
+      "spanish": "Caderas",
+      "italian": "Rotazioni del corpo",
+      "russian": "\u041f\u043e\u0432\u043e\u0440\u043e\u0442\u044b \u0442\u0443\u043b\u043e\u0432\u0438\u0449\u0430",
+      "korean": "\ubab8\ud1b5 \uc6b4\ub3d9",
+      "t_chinese": "\u626d\u8f49\u8eab\u9ad4",
+      "german": "Rumpfdrehen",
+      "dutch": "Staande draai"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 12,
+    "pic_name": "Emotion_Cold_Chill_NH_Icon.png",
+    "name": {
+      "english": "Cold Chill",
+      "japanese": "\u30d2\u30e5\u30fc",
+      "chinese": "\u54bb\uff5e",
+      "french": "Vent glacial",
+      "spanish": "Escalofr\u00edo",
+      "italian": "Gelo",
+      "russian": "\u041e\u0437\u043d\u043e\u0431",
+      "korean": "\uc501\uc4f8",
+      "t_chinese": "\u54bb\uff5e",
+      "german": "Schaudern",
+      "dutch": "Bibberen"
+    },
+    "source": {
+      "english": "Big Sister villagers",
+      "chinese": "\u5927\u59d0\u6751\u6c11",
+      "t_chinese": "\u5927\u59d0\u6751\u6c11",
+      "japanese": "\u59c9\u306e\u6751\u4eba",
+      "korean": "\ud070 \uc790\ub9e4 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0421\u0442\u0430\u0440\u0448\u0430\u044f \u0441\u0435\u0441\u0442\u0440\u0430",
+      "dutch": "Grote zus dorpelingen",
+      "german": "Dorfbewohner der Big Sister",
+      "spanish": "Aldeanos de la hermana mayor",
+      "french": "Villageois de Grande S\u0153ur",
+      "italian": "Gli abitanti del villaggio della Grande Sorella"
+    }
+  },
+  {
+    "id": 13,
+    "pic_name": "Confetti_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Confetti",
+      "japanese": "\u304b\u307f\u3075\u3076\u304d",
+      "chinese": "\u6492\u7eb8\u7247",
+      "french": "Confettis",
+      "spanish": "Confeti",
+      "italian": "Coriandoli",
+      "russian": "\u041a\u043e\u043d\u0444\u0435\u0442\u0442\u0438",
+      "korean": "\uc885\uc774 \uaf43\uac00\ub8e8",
+      "t_chinese": "\u6492\u7d19\u7247",
+      "german": "Konfetti",
+      "dutch": "Confetti"
+    },
+    "source": {
+      "english": "Viva Festivale Reaction Set",
+      "chinese": "Viva Festivale \u53cd\u5e94\u5957\u88c5",
+      "t_chinese": "Viva Festivale \u53cd\u61c9\u5957\u88dd",
+      "japanese": "\u30d3\u30d0\u30d5\u30a7\u30b9\u30c6\u30a3\u30d0\u30eb\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30bb\u30c3\u30c8",
+      "korean": "\ube44\ubc14 \ud398\uc2a4\ud2f0\ubc8c \ub9ac\uc561\uc158 \uc138\ud2b8",
+      "russian": "\u041d\u0430\u0431\u043e\u0440 \u0440\u0435\u0430\u043a\u0446\u0438\u0439 Viva Festivale",
+      "dutch": "Viva Festivale-reactieset",
+      "german": "Viva Festivale Reaktionsset",
+      "spanish": "Conjunto de reacci\u00f3n Viva Festivale",
+      "french": "Ensemble de r\u00e9action Viva Festivale",
+      "italian": "Viva Festivale Reaction Set"
+    }
+  },
+  {
+    "id": 14,
+    "pic_name": "Emotion_Confident_NH_Icon.png",
+    "name": {
+      "english": "Confident",
+      "japanese": "\u307e\u304b\u305b\u3066\uff01",
+      "chinese": "\u4ea4\u7ed9\u6211",
+      "french": "Confiance en soi",
+      "spanish": "Confianza",
+      "italian": "Autostima",
+      "russian": "\u0420\u0435\u0448\u0438\u043c\u043e\u0441\u0442\u044c",
+      "korean": "\ub9e1\uaca8\uc918!",
+      "t_chinese": "\u4ea4\u7d66\u6211",
+      "german": "Verl\u00e4sslichkeit",
+      "dutch": "Zelfvertrouwen"
+    },
+    "source": {
+      "english": "Big Sister villagers(with high friendship)",
+      "chinese": "\u5927\u59d0\u6751\u6c11\uff08\u597d\u611f\u5ea6\uff09",
+      "t_chinese": "\u5927\u59d0\u6751\u6c11\uff08\u597d\u611f\u5ea6\uff09",
+      "japanese": "\u59c9\u306e\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\ube45\uc2dc\uc2a4\ud130\ub9c8\uc744\uc8fc\ubbfc(\uc6b0\uc815\uc774 \ub192\uc74c)",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0421\u0442\u0430\u0440\u0448\u0435\u0439 \u0421\u0435\u0441\u0442\u0440\u044b (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Big Sister dorpelingen (met hoge vriendschap)",
+      "german": "Dorfbewohner der gro\u00dfen Schwester (mit hoher Freundschaft)",
+      "spanish": "Aldeanos de Big Sister (con gran amistad)",
+      "french": "Villageois de Big Sister (avec une grande amiti\u00e9)",
+      "italian": "Big Sister abitanti del villaggio (con grande amicizia)"
+    }
+  },
+  {
+    "id": 15,
+    "pic_name": "Emotion_Curiosity_NH_Icon.png",
+    "name": {
+      "english": "Curiosity",
+      "japanese": "\u306f\u3066\uff1f",
+      "chinese": "\u4ec0\u4e48\uff1f",
+      "french": "Curiosit\u00e9",
+      "spanish": "Curiosidad",
+      "italian": "Curiosit\u00e0",
+      "russian": "\u041b\u044e\u0431\u043e\u043f\u044b\u0442\u0441\u0442\u0432\u043e",
+      "korean": "\uc751?",
+      "t_chinese": "\u4ec0\u9ebc\uff1f",
+      "german": "Neugier",
+      "dutch": "Nieuwsgierigheid"
+    },
+    "source": {
+      "english": "Peppy villagers",
+      "chinese": "\u6d3b\u6cfc\u7684\u6751\u6c11",
+      "t_chinese": "\u6d3b\u6f51\u7684\u6751\u6c11",
+      "japanese": "\u5143\u6c17\u3044\u3063\u3071\u3044\u306e\u6751\u4eba",
+      "korean": "\ud65c\uae30\ucc2c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0411\u043e\u0434\u0440\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Peppy dorpelingen",
+      "german": "Peppige Dorfbewohner",
+      "spanish": "Aldeanos llenos de vida",
+      "french": "Villageois \u00e9nergiques",
+      "italian": "Paesani vivaci"
+    }
+  },
+  {
+    "id": 16,
+    "pic_name": "Emotion_Daydreaming_NH_Icon.png",
+    "name": {
+      "english": "Daydreaming",
+      "japanese": "\u305d\u3046\u305e\u3046\u3061\u3085\u3046",
+      "chinese": "\u60f3\u8c61\u4e2d",
+      "french": "R\u00eaverie",
+      "spanish": "Enso\u00f1aci\u00f3n",
+      "italian": "Sogno ad occhi aperti",
+      "russian": "\u041c\u0435\u0447\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c",
+      "korean": "\uc0c1\uc0c1",
+      "t_chinese": "\u60f3\u50cf\u4e2d",
+      "german": "Tagtraum",
+      "dutch": "Dromen"
+    },
+    "source": {
+      "english": "Normal villagers(with high friendship)",
+      "chinese": "\u666e\u901a\u6751\u6c11\uff08\u597d\u611f\u5ea6\uff09",
+      "t_chinese": "\u666e\u901a\u6751\u6c11\uff08\u597d\u611f\u5ea6\uff09",
+      "japanese": "\u666e\u901a\u306e\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\ud3c9\ubc94\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\uc6b0\ud638\ub3c4\uac00 \ub192\uc74c)",
+      "russian": "\u041e\u0431\u044b\u0447\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Normale dorpelingen (met hoge vriendschap)",
+      "german": "Normale Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos normales (con mucha amistad)",
+      "french": "Villageois normaux (avec une grande amiti\u00e9)",
+      "italian": "Normali abitanti del villaggio (con alta amicizia)"
+    }
+  },
+  {
+    "id": 17,
+    "pic_name": "Emotion_Delight_NH_Icon.png",
+    "name": {
+      "english": "Delight",
+      "japanese": "\u30d1\u30c1\u30d1\u30c1",
+      "chinese": "\u62cd\u624b",
+      "french": "Applaudissements",
+      "spanish": "Aplauso",
+      "italian": "Applauso",
+      "russian": "\u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435",
+      "korean": "\ubc15\uc218",
+      "t_chinese": "\u62cd\u624b",
+      "german": "Entz\u00fccken",
+      "dutch": "Applaudisseren"
+    },
+    "source": {
+      "english": "Default reaction",
+      "chinese": "\u9ed8\u8ba4\u53cd\u5e94",
+      "t_chinese": "\u9ed8\u8a8d\u53cd\u61c9",
+      "japanese": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u53cd\u5fdc",
+      "korean": "\uae30\ubcf8 \ubc18\uc751",
+      "russian": "\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "dutch": "Standaard reactie",
+      "german": "Standardreaktion",
+      "spanish": "Reacci\u00f3n predeterminada",
+      "french": "R\u00e9action par d\u00e9faut",
+      "italian": "Reazione predefinita"
+    }
+  },
+  {
+    "id": 18,
+    "pic_name": "Emotion_Disagreement_NH_Icon.png",
+    "name": {
+      "english": "Disagreement",
+      "japanese": "\u30a4\u30e4\u30a4\u30e4",
+      "chinese": "\u4e0d\u884c\u4e0d\u884c",
+      "french": "D\u00e9saccord",
+      "spanish": "Desacuerdo",
+      "italian": "Disaccordo",
+      "russian": "\u041d\u0435\u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435",
+      "korean": "\uc808\ub808\uc808\ub808",
+      "t_chinese": "\u4e0d\u8981",
+      "german": "Ablehnung",
+      "dutch": "Weigeren"
+    },
+    "source": {
+      "english": "Big Sister villagers",
+      "chinese": "\u5927\u59d0\u6751\u6c11",
+      "t_chinese": "\u5927\u59d0\u6751\u6c11",
+      "japanese": "\u59c9\u306e\u6751\u4eba",
+      "korean": "\ud070 \uc790\ub9e4 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0421\u0442\u0430\u0440\u0448\u0430\u044f \u0441\u0435\u0441\u0442\u0440\u0430",
+      "dutch": "Grote zus dorpelingen",
+      "german": "Dorfbewohner der Big Sister",
+      "spanish": "Aldeanos de la hermana mayor",
+      "french": "Villageois de Grande S\u0153ur",
+      "italian": "Gli abitanti del villaggio della Grande Sorella"
+    }
+  },
+  {
+    "id": 19,
+    "pic_name": "Emotion_Distress_NH_Icon.png",
+    "name": {
+      "english": "Distress",
+      "japanese": "\u3042\u305b\u308b",
+      "chinese": "\u7d27\u5f20",
+      "french": "D\u00e9tresse",
+      "spanish": "Apuro",
+      "italian": "Agitazione",
+      "russian": "\u0411\u0435\u0441\u043f\u043e\u043a\u043e\u0439\u0441\u0442\u0432\u043e",
+      "korean": "\ub2f9\ud669",
+      "t_chinese": "\u7dca\u5f35",
+      "german": "Panik",
+      "dutch": "Paniek"
+    },
+    "source": {
+      "english": "Jock villagers",
+      "chinese": "\u4e54\u514b\u6751\u6c11",
+      "t_chinese": "\u55ac\u514b\u6751\u6c11",
+      "japanese": "\u30b8\u30e7\u30c3\u30af\u6751\u4eba",
+      "korean": "\uc870\ud06c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0414\u0436\u043e\u043a",
+      "dutch": "Jock dorpelingen",
+      "german": "Jock-Dorfbewohner",
+      "spanish": "deportistas aldeanos",
+      "french": "Villageois sportifs",
+      "italian": "Jock abitanti del villaggio"
+    }
+  },
+  {
+    "id": 20,
+    "pic_name": "Double_Wave_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Double Wave",
+      "japanese": "\u308a\u3087\u3046\u3066\u30d0\u30a4\u30d0\u30a4",
+      "chinese": "\u6325\u624b\u518d\u89c1",
+      "french": "Au revoir \u00e0 deux mains",
+      "spanish": "Doble saludo",
+      "italian": "Doppio saluto",
+      "russian": "\u0414\u0432\u043e\u0439\u043d\u0430\u044f \u0432\u043e\u043b\u043d\u0430",
+      "korean": "\uc591\uc190 \ubc14\uc774\ubc14\uc774",
+      "t_chinese": "\u5169\u624b\u63b0\u63b0",
+      "german": "Tsch\u00fcssi",
+      "dutch": "Enthousiast groeten"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 21,
+    "pic_name": "Emotion_Dozing_NH_Icon.png",
+    "name": {
+      "english": "Dozing",
+      "japanese": "\u3059\u3084\u3059\u3084",
+      "chinese": "\u7761\u7740\u4e86",
+      "french": "Somnolence",
+      "spanish": "Sue\u00f1o",
+      "italian": "Sonnolenza",
+      "russian": "\u0414\u0440\u0435\u043c\u043e\u0442\u0430",
+      "korean": "\ucfe8\ucfe8",
+      "t_chinese": "\u7761\u8457\u4e86",
+      "german": "Einnicken",
+      "dutch": "Slapen"
+    },
+    "source": {
+      "english": "Smug villagers",
+      "chinese": "\u81ea\u9e23\u5f97\u610f\u7684\u6751\u6c11",
+      "t_chinese": "\u81ea\u9cf4\u5f97\u610f\u7684\u6751\u6c11",
+      "japanese": "\u6751\u4eba\u3092\u6c5a\u3059",
+      "korean": "\uad50\ud65c\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0421\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Zelfvoldane dorpelingen",
+      "german": "Selbstgef\u00e4llige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois suffisants",
+      "italian": "Paesani compiaciuti"
+    }
+  },
+  {
+    "id": 22,
+    "pic_name": "Eager_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Eager",
+      "japanese": "\u304c\u3093\u3070\u308b\u305e",
+      "chinese": "\u6211\u4f1a\u52a0\u6cb9\u7684",
+      "french": "Motivation",
+      "spanish": "Motivaci\u00f3n",
+      "italian": "Ci penso io!",
+      "russian": "\u041f\u043e\u043b\u043d\u0430\u044f \u0433\u043e\u0442\u043e\u0432\u043d\u043e\u0441\u0442\u044c",
+      "korean": "\ud30c\uc774\ud305!",
+      "t_chinese": "\u6211\u6703\u52a0\u6cb9\u7684",
+      "german": "Zu Befehl",
+      "dutch": "Gemotiveerd"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 23,
+    "pic_name": "Emotion_Encouraging_NH_Icon.png",
+    "name": {
+      "english": "Encouraging",
+      "japanese": "\u30ac\u30f3\u30d0\u30ec\u30fc\uff01",
+      "chinese": "\u52a0\u6cb9\uff5e\uff01",
+      "french": "Encouragement",
+      "spanish": "\u00c1nimo",
+      "italian": "Incoraggiamento",
+      "russian": "\u041e\u0431\u043e\u0434\u0440\u0435\u043d\u0438\u0435",
+      "korean": "\ud798\ub0b4!",
+      "t_chinese": "\u52a0\u6cb9\uff5e\uff01",
+      "german": "Anfeuern",
+      "dutch": "Aanmoedigen"
+    },
+    "source": {
+      "english": "Jock villagers",
+      "chinese": "\u4e54\u514b\u6751\u6c11",
+      "t_chinese": "\u55ac\u514b\u6751\u6c11",
+      "japanese": "\u30b8\u30e7\u30c3\u30af\u6751\u4eba",
+      "korean": "\uc870\ud06c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0414\u0436\u043e\u043a",
+      "dutch": "Jock dorpelingen",
+      "german": "Jock-Dorfbewohner",
+      "spanish": "deportistas aldeanos",
+      "french": "Villageois sportifs",
+      "italian": "Jock abitanti del villaggio"
+    }
+  },
+  {
+    "id": 24,
+    "pic_name": "Excited_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Excited",
+      "japanese": "\u30ef\u30af\u30ef\u30af",
+      "chinese": "\u671f\u5f85",
+      "french": "Enthousiasme",
+      "spanish": "Alegr\u00eda",
+      "italian": "Entusiasmo",
+      "russian": "\u041f\u0440\u0435\u0434\u0432\u043a\u0443\u0448\u0435\u043d\u0438\u0435",
+      "korean": "\ub450\uadfc\ub450\uadfc",
+      "t_chinese": "\u671f\u5f85",
+      "german": "Aufregung",
+      "dutch": "Voorpret"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 25,
+    "pic_name": "Emotion_Fearful_NH_Icon.png",
+    "name": {
+      "english": "Fearful",
+      "japanese": "\u30d6\u30eb\u30d6\u30eb",
+      "chinese": "\u745f\u745f\u53d1\u6296",
+      "french": "Frisson",
+      "spanish": "Tembleque",
+      "italian": "Brivido",
+      "russian": "\u041f\u0440\u0435\u0434\u0432\u043a\u0443\u0448\u0435\u043d\u0438\u0435",
+      "korean": "\ub35c\ub35c\ub35c",
+      "t_chinese": "\u986b\u6296",
+      "german": "Angst",
+      "dutch": "Angst"
+    },
+    "source": {
+      "english": "Normal villagers",
+      "chinese": "\u666e\u901a\u6751\u6c11",
+      "t_chinese": "\u666e\u901a\u6751\u6c11",
+      "japanese": "\u666e\u901a\u306e\u6751\u4eba",
+      "korean": "\ud3c9\ubc94\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041e\u0431\u044b\u0447\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Normale dorpelingen",
+      "german": "Normale Dorfbewohner",
+      "spanish": "aldeanos normales",
+      "french": "Villageois normaux",
+      "italian": "Normali abitanti del villaggio"
+    }
+  },
+  {
+    "id": 26,
+    "pic_name": "Feelin_It_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Feelin' It",
+      "japanese": "\u30ea\u30ba\u30e0\u306b\u306e\u308b",
+      "chinese": "\u8ddf\u7740\u8282\u594f",
+      "french": "Samba",
+      "spanish": "Coreograf\u00eda",
+      "italian": "Ritmo nel sangue",
+      "russian": "\u0412 \u0440\u0438\u0442\u043c\u0435",
+      "korean": "\ub9ac\ub4ec \ud0c0\uae30",
+      "t_chinese": "\u8ddf\u8457\u7bc0\u594f",
+      "german": "Rhythmus im Blut",
+      "dutch": "Swingende heupenpas"
+    },
+    "source": {
+      "english": "Viva Festivale Reaction Set",
+      "chinese": "Viva Festivale \u53cd\u5e94\u5957\u88c5",
+      "t_chinese": "Viva Festivale \u53cd\u61c9\u5957\u88dd",
+      "japanese": "\u30d3\u30d0\u30d5\u30a7\u30b9\u30c6\u30a3\u30d0\u30eb\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30bb\u30c3\u30c8",
+      "korean": "\ube44\ubc14 \ud398\uc2a4\ud2f0\ubc8c \ub9ac\uc561\uc158 \uc138\ud2b8",
+      "russian": "\u041d\u0430\u0431\u043e\u0440 \u0440\u0435\u0430\u043a\u0446\u0438\u0439 Viva Festivale",
+      "dutch": "Viva Festivale-reactieset",
+      "german": "Viva Festivale Reaktionsset",
+      "spanish": "Conjunto de reacci\u00f3n Viva Festivale",
+      "french": "Ensemble de r\u00e9action Viva Festivale",
+      "italian": "Viva Festivale Reaction Set"
+    }
+  },
+  {
+    "id": 27,
+    "pic_name": "Flex_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Flex",
+      "japanese": "\u30e0\u30ad\u30e0\u30ad",
+      "chinese": "\u5065\u7f8e\u59ff\u52bf",
+      "french": "Biscotos",
+      "spanish": "Musculitos",
+      "italian": "Muscoli in mostra",
+      "russian": "\u041d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u0435 \u043c\u044b\u0448\u0446",
+      "korean": "\ubd88\ub048\ubd88\ub048",
+      "t_chinese": "\u5065\u7f8e\u59ff\u52e2",
+      "german": "Muskelspielen",
+      "dutch": "Spierbundel"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 28,
+    "pic_name": "Emotion_Flourish_NH_Icon.png",
+    "name": {
+      "english": "Flourish",
+      "japanese": "\u30af\u30eb\u30ea\u30f3\u30d1",
+      "chinese": "\u821e\u52a8",
+      "french": "Pirouette",
+      "spanish": "Pirueta",
+      "italian": "Piroetta",
+      "russian": "\u0425\u0432\u0430\u0441\u0442\u043e\u0432\u0441\u0442\u0432\u043e",
+      "korean": "\ub304\uc2a4",
+      "t_chinese": "\u8f49\u8f49\uff5e\u5c07\uff01",
+      "german": "Pirouette",
+      "dutch": "Pirouette"
+    },
+    "source": {
+      "english": "Jock villagers(with high friendship)",
+      "chinese": "\u4e54\u514b\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u55ac\u514b\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u30b8\u30e7\u30c3\u30af\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\uc870\ud06c \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\uc6b0\ud638\ub3c4\uac00 \ub192\uc74c)",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0414\u0436\u043e\u043a (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Jock dorpelingen (met hoge vriendschap)",
+      "german": "Jock-Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Jock aldeanos (con gran amistad)",
+      "french": "Jock villageois (avec une grande amiti\u00e9)",
+      "italian": "Jock abitanti del villaggio (con grande amicizia)"
+    }
+  },
+  {
+    "id": 29,
+    "pic_name": "Emotion_Glee_NH_Icon.png",
+    "name": {
+      "english": "Glee",
+      "japanese": "\u30a6\u30ad\u30a6\u30ad",
+      "chinese": "\u5174\u9ad8\u91c7\u70c8",
+      "french": "Euphorie",
+      "spanish": "J\u00fabilo",
+      "italian": "Allegria",
+      "russian": "\u041b\u0438\u043a\u043e\u0432\u0430\u043d\u0438\u0435",
+      "korean": "\uc2e0\ubc14\ub78c",
+      "t_chinese": "\u9ad8\u8208",
+      "german": "Begeisterung",
+      "dutch": "Enthousiasme"
+    },
+    "source": {
+      "english": "Normal villagers",
+      "chinese": "\u666e\u901a\u6751\u6c11",
+      "t_chinese": "\u666e\u901a\u6751\u6c11",
+      "japanese": "\u666e\u901a\u306e\u6751\u4eba",
+      "korean": "\ud3c9\ubc94\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041e\u0431\u044b\u0447\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Normale dorpelingen",
+      "german": "Normale Dorfbewohner",
+      "spanish": "aldeanos normales",
+      "french": "Villageois normaux",
+      "italian": "Normali abitanti del villaggio"
+    }
+  },
+  {
+    "id": 30,
+    "pic_name": "Emotion_Greetings_NH_Icon.png",
+    "name": {
+      "english": "Greetings",
+      "japanese": "\u3084\u3041\uff01",
+      "chinese": "\u4f60\u597d\uff01",
+      "french": "Salut",
+      "spanish": "Saludo",
+      "italian": "Saluto",
+      "russian": "\u041f\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435",
+      "korean": "\uc548\ub155!",
+      "t_chinese": "\u55e8\uff01",
+      "german": "Winken",
+      "dutch": "Zwaaien"
+    },
+    "source": {
+      "english": "Default reaction",
+      "chinese": "\u9ed8\u8ba4\u53cd\u5e94",
+      "t_chinese": "\u9ed8\u8a8d\u53cd\u61c9",
+      "japanese": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u53cd\u5fdc",
+      "korean": "\uae30\ubcf8 \ubc18\uc751",
+      "russian": "\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "dutch": "Standaard reactie",
+      "german": "Standardreaktion",
+      "spanish": "Reacci\u00f3n predeterminada",
+      "french": "R\u00e9action par d\u00e9faut",
+      "italian": "Reazione predefinita"
+    }
+  },
+  {
+    "id": 31,
+    "pic_name": "Groove_Left_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Groove Left",
+      "japanese": "\u3072\u3060\u308a\u3080\u304d\u30c0\u30f3\u30b9",
+      "chinese": "\u5411\u5de6\u821e\u52a8",
+      "french": "Groove \u00e0 gauche",
+      "spanish": "Braceo izquierdo",
+      "italian": "Danza a sinistra",
+      "russian": "\u041f\u043e\u0434\u0441\u043a\u043e\u043a\u0438 \u0432\u043b\u0435\u0432\u043e \u0432 \u0440\u0438\u0442\u043c",
+      "korean": "\uc67c\ucabd \ub304\uc2a4",
+      "t_chinese": "\u5411\u5de6\u821e\u52d5",
+      "german": "Seitw\u00e4rtstanz rechts",
+      "dutch": "Dans naar links"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 32,
+    "pic_name": "Groove_Right_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Groove Right",
+      "japanese": "\u307f\u304e\u3080\u304d\u30c0\u30f3\u30b9",
+      "chinese": "\u5411\u53f3\u821e\u52a8",
+      "french": "Groove \u00e0 droite",
+      "spanish": "Braceo derecho",
+      "italian": "Danza a destra",
+      "russian": "\u041f\u043e\u0434\u0441\u043a\u043e\u043a\u0438 \u0432\u043f\u0440\u0430\u0432\u043e \u0432 \u0440\u0438\u0442\u043c",
+      "korean": "\uc624\ub978\ucabd \ub304\uc2a4",
+      "t_chinese": "\u5411\u53f3\u821e\u52d5",
+      "german": "Seitw\u00e4rtstanz links",
+      "dutch": "Dans naar rechts"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 33,
+    "pic_name": "Grooving_Hop_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Grooving Hop",
+      "japanese": "\u30bf\u30c6\u306e\u308a\u30b8\u30e3\u30f3\u30d7",
+      "chinese": "\u4e0a\u4e0b\u8df3\u52a8",
+      "french": "Poing en l'air",
+      "spanish": "Salto r\u00edtmico",
+      "italian": "Salto ritmato",
+      "russian": "\u041f\u043e\u0434\u0441\u043a\u043e\u043a\u0438 \u0432 \u0440\u0438\u0442\u043c",
+      "korean": "\uc81c\uc790\ub9ac \uc810\ud504",
+      "t_chinese": "\u4e0a\u4e0b\u8df3\u52d5",
+      "german": "H\u00fcpftanz",
+      "dutch": "Vuist in de lucht"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 34,
+    "pic_name": "Emotion_Happiness_NH_Icon.png",
+    "name": {
+      "english": "Happiness",
+      "japanese": "\u30cb\u30b3\u30cb\u30b3",
+      "chinese": "\u7b11\u772f\u772f",
+      "french": "Sourire",
+      "spanish": "Sonrisa",
+      "italian": "Felicit\u00e0",
+      "russian": "\u0421\u0447\u0430\u0441\u0442\u044c\u0435",
+      "korean": "\uc2f1\uae00\ubc99\uae00",
+      "t_chinese": "\u7b11\u7787\u7787",
+      "german": "Zufriedenheit",
+      "dutch": "Glimlachen"
+    },
+    "source": {
+      "english": "Peppy villagers",
+      "chinese": "\u6d3b\u6cfc\u7684\u6751\u6c11",
+      "t_chinese": "\u6d3b\u6f51\u7684\u6751\u6c11",
+      "japanese": "\u5143\u6c17\u3044\u3063\u3071\u3044\u306e\u6751\u4eba",
+      "korean": "\ud65c\uae30\ucc2c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0411\u043e\u0434\u0440\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Peppy dorpelingen",
+      "german": "Peppige Dorfbewohner",
+      "spanish": "Aldeanos llenos de vida",
+      "french": "Villageois \u00e9nergiques",
+      "italian": "Paesani vivaci"
+    }
+  },
+  {
+    "id": 35,
+    "pic_name": "Haunt_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Haunt",
+      "japanese": "\u3053\u308f\u304c\u3089\u305b\u308b",
+      "chinese": "\u60ca\u5413",
+      "french": "Envo\u00fbtement",
+      "spanish": "Espanto",
+      "italian": "Terrore",
+      "russian": "\u0418\u0441\u043f\u0443\u0433",
+      "korean": "\uac81\uc8fc\uae30",
+      "t_chinese": "\u5687\u4eba",
+      "german": "Schocken",
+      "dutch": "Spoken"
+    },
+    "source": {
+      "english": "Jack if given Candy",
+      "chinese": "\u6770\u514b\u5982\u679c\u7ed9\u7cd6\u679c",
+      "t_chinese": "\u5091\u514b\u5982\u679c\u7d66\u7cd6\u679c",
+      "japanese": "\u30ad\u30e3\u30f3\u30c7\u30a3\u30fc\u3092\u4e0e\u3048\u3089\u308c\u305f\u3089\u30b8\u30e3\u30c3\u30af",
+      "korean": "\uc0ac\ud0d5\uc744 \uc8fc\uba74 \uc7ad",
+      "russian": "\u0414\u0436\u0435\u043a, \u0435\u0441\u043b\u0438 \u0434\u0430\u0442\u044c \u043a\u043e\u043d\u0444\u0435\u0442\u0443",
+      "dutch": "Jack als hij Candy krijgt",
+      "german": "Jack, wenn er Candy bekommt",
+      "spanish": "Jack si le dan Candy",
+      "french": "Jack si on lui donne Candy",
+      "italian": "Jack se gli viene data Candy"
+    }
+  },
+  {
+    "id": 36,
+    "pic_name": "Emotion_Heartbreak_NH_Icon.png",
+    "name": {
+      "english": "Heartbreak",
+      "japanese": "\u3057\u3064\u308c\u3093",
+      "chinese": "\u5fc3\u788e",
+      "french": "C\u0153ur bris\u00e9",
+      "spanish": "Decepci\u00f3n",
+      "italian": "Cuore infranto",
+      "russian": "\u0420\u0430\u0437\u0431\u0438\u0442\u043e\u0435 \u0441\u0435\u0440\u0434\u0446\u0435",
+      "korean": "\uc2e4\uc5f0",
+      "t_chinese": "\u5fc3\u788e",
+      "german": "Herzschmerz",
+      "dutch": "Gebroken hart"
+    },
+    "source": {
+      "english": "Smug villagers",
+      "chinese": "\u81ea\u9e23\u5f97\u610f\u7684\u6751\u6c11",
+      "t_chinese": "\u81ea\u9cf4\u5f97\u610f\u7684\u6751\u6c11",
+      "japanese": "\u6751\u4eba\u3092\u6c5a\u3059",
+      "korean": "\uad50\ud65c\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0421\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Zelfvoldane dorpelingen",
+      "german": "Selbstgef\u00e4llige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois suffisants",
+      "italian": "Paesani compiaciuti"
+    }
+  },
+  {
+    "id": 37,
+    "pic_name": "Here_You_Go_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Here You Go",
+      "japanese": "\u3055\u3041\u3069\u3046\u305e",
+      "chinese": "\u8bf7",
+      "french": "Et voil\u00e0\u00a0!",
+      "spanish": "Para ti",
+      "italian": "Ecco qua",
+      "russian": "\u0412\u0443\u0430\u043b\u044f",
+      "korean": "\uc790 \uc5ec\uae30!",
+      "t_chinese": "\u8acb",
+      "german": "Bitte sch\u00f6n",
+      "dutch": "Alsjeblieft"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 38,
+    "pic_name": "Hula_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Hula",
+      "japanese": "\u30d5\u30e9\u30c0\u30f3\u30b9",
+      "chinese": "\u8349\u88d9\u821e",
+      "french": "Hula",
+      "spanish": "Hula",
+      "italian": "Hula",
+      "russian": "\u0425\u0443\u043b\u0430",
+      "korean": "\ud6cc\ub77c \ub304\uc2a4",
+      "t_chinese": "\u8349\u88d9\u821e",
+      "german": "Hula",
+      "dutch": "Hoelahoela"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 39,
+    "pic_name": "Emotion_Inspiration_NH_Icon.png",
+    "name": {
+      "english": "Inspiration",
+      "japanese": "\u3072\u3089\u3081\u304f",
+      "chinese": "\u7075\u5149\u4e00\u95ea",
+      "french": "Trouvaille",
+      "spanish": "Inspiraci\u00f3n",
+      "italian": "Ispirazione",
+      "russian": "\u0412\u0434\u043e\u0445\u043d\u043e\u0432\u0435\u043d\u0438\u0435",
+      "korean": "\ubc88\ub729",
+      "t_chinese": "\u9748\u5149\u4e4d\u73fe",
+      "german": "Inspiration",
+      "dutch": "Inspiratie"
+    },
+    "source": {
+      "english": "Cranky villagers(with high friendship)",
+      "chinese": "\u813e\u6c14\u66b4\u8e81\u7684\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u813e\u6c23\u66b4\u8e81\u7684\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u4e0d\u6a5f\u5acc\u305d\u3046\u306a\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\uae4c\uce60\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\uc6b0\ud638\ub3c4\uac00 \ub192\uc74c)",
+      "russian": "\u0420\u0430\u0437\u0434\u0440\u0430\u0436\u0435\u043d\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Chagrijnige dorpelingen (met hoge vriendschap)",
+      "german": "Schrullige Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos malhumorados (con mucha amistad)",
+      "french": "Villageois grincheux (avec une grande amiti\u00e9)",
+      "italian": "Abitanti del villaggio irritabili (con grande amicizia)"
+    }
+  },
+  {
+    "id": 40,
+    "pic_name": "Emotion_Intense_NH_Icon.png",
+    "name": {
+      "english": "Intense",
+      "japanese": "\u30b8\u30ed\u30c3",
+      "chinese": "\u77aa",
+      "french": "Regard intense",
+      "spanish": "Impasibilidad",
+      "italian": "Occhiataccia",
+      "russian": "\u041d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u0435",
+      "korean": "\uc870\uc6a9",
+      "t_chinese": "\u77aa",
+      "german": "Starren",
+      "dutch": "Staren"
+    },
+    "source": {
+      "english": "Snooty villagers",
+      "chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "t_chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "japanese": "\u30b9\u30cc\u30fc\u30c6\u30a3\u30fc\u306a\u6751\u4eba",
+      "korean": "\uc2a4\ub204\ud2f0 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0412\u044b\u0441\u043e\u043a\u043e\u043c\u0435\u0440\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Verwaande dorpelingen",
+      "german": "Hochn\u00e4sige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois pr\u00e9tentieux",
+      "italian": "Paesani altezzosi"
+    }
+  },
+  {
+    "id": 41,
+    "pic_name": "Island_Stomp_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Island Stomp",
+      "japanese": "\u3042\u3057\u3076\u307f\u30c0\u30f3\u30b9",
+      "chinese": "\u8e0f\u811a\u821e\u52a8",
+      "french": "Marche sur place",
+      "spanish": "Venid a m\u00ed",
+      "italian": "Marcia sul posto",
+      "russian": "\u041e\u0441\u0442\u0440\u043e\u0432\u043d\u043e\u0439 \u043f\u0440\u0438\u0442\u043e\u043f",
+      "korean": "\uc81c\uc790\ub9ac \uc2a4\ud15d",
+      "t_chinese": "\u8e0f\u8173\u821e\u52d5",
+      "german": "Stepper-Tanz",
+      "dutch": "Pas op de plaats"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 42,
+    "pic_name": "Jammin_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Jammin'",
+      "japanese": "\u304a\u3093\u304c\u304f\u306b\u306e\u308b",
+      "chinese": "\u542c\u97f3\u4e50\u6447\u6446",
+      "french": "En rythme",
+      "spanish": "Vaiv\u00e9n",
+      "italian": "A ritmo",
+      "russian": "\u0420\u0438\u0442\u043c\u0438\u0447\u043d\u043e",
+      "korean": "\uc5b4\uae68\ucda4",
+      "t_chinese": "\u807d\u97f3\u6a02\u6416\u64fa",
+      "german": "Mitwippen",
+      "dutch": "Op het ritme"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 43,
+    "pic_name": "Emotion_Joy_NH_Icon.png",
+    "name": {
+      "english": "Joy",
+      "japanese": "\u30cf\u30c3\u30d4\u30fc",
+      "chinese": "\u5f00\u5fc3",
+      "french": "Joie",
+      "spanish": "Dicha",
+      "italian": "Gioia",
+      "russian": "\u0420\u0430\u0434\u043e\u0441\u0442\u044c",
+      "korean": "\ud574\ud53c",
+      "t_chinese": "\u958b\u5fc3",
+      "german": "Freude",
+      "dutch": "Blijdschap"
+    },
+    "source": {
+      "english": "Default reaction",
+      "chinese": "\u9ed8\u8ba4\u53cd\u5e94",
+      "t_chinese": "\u9ed8\u8a8d\u53cd\u61c9",
+      "japanese": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u53cd\u5fdc",
+      "korean": "\uae30\ubcf8 \ubc18\uc751",
+      "russian": "\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "dutch": "Standaard reactie",
+      "german": "Standardreaktion",
+      "spanish": "Reacci\u00f3n predeterminada",
+      "french": "R\u00e9action par d\u00e9faut",
+      "italian": "Reazione predefinita"
+    }
+  },
+  {
+    "id": 44,
+    "pic_name": "Jump_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Jump",
+      "japanese": "\u308a\u3087\u3046\u3042\u3057\u3068\u3073",
+      "chinese": "\u53cc\u811a\u8df3",
+      "french": "Sauts sur place",
+      "spanish": "Salto",
+      "italian": "Salti",
+      "russian": "\u041f\u0440\u044b\u0436\u043e\u043a",
+      "korean": "\ub700\ub6f0\uae30",
+      "t_chinese": "\u96d9\u8173\u8df3",
+      "german": "Springen",
+      "dutch": "Springen"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 45,
+    "pic_name": "Emotion_Laughter_NH_Icon.png",
+    "name": {
+      "english": "Laughter",
+      "japanese": "\u308f\u3089\u3046",
+      "chinese": "\u7b11\u54c8\u54c8",
+      "french": "Rire",
+      "spanish": "Risa",
+      "italian": "Riso",
+      "russian": "\u0421\u043c\u0435\u0445",
+      "korean": "\uc6c3\uae30",
+      "t_chinese": "\u7b11\u54c8\u54c8",
+      "german": "Lachen",
+      "dutch": "Lachen"
+    },
+    "source": {
+      "english": "Big Sister villagers",
+      "chinese": "\u5927\u59d0\u6751\u6c11",
+      "t_chinese": "\u5927\u59d0\u6751\u6c11",
+      "japanese": "\u59c9\u306e\u6751\u4eba",
+      "korean": "\ud070 \uc790\ub9e4 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0421\u0442\u0430\u0440\u0448\u0430\u044f \u0441\u0435\u0441\u0442\u0440\u0430",
+      "dutch": "Grote zus dorpelingen",
+      "german": "Dorfbewohner der Big Sister",
+      "spanish": "Aldeanos de la hermana mayor",
+      "french": "Villageois de Grande S\u0153ur",
+      "italian": "Gli abitanti del villaggio della Grande Sorella"
+    }
+  },
+  {
+    "id": 46,
+    "pic_name": "Lets_Go_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Let's Go",
+      "japanese": "\u3082\u308a\u3042\u3052\u308b",
+      "chinese": "\u7092\u70ed\u6c14\u6c1b",
+      "french": "Avec moi\u00a0!",
+      "spanish": "Vamos",
+      "italian": "Coinvolgimento",
+      "russian": "\u0422\u0430\u043d\u0446\u0443\u0435\u043c!",
+      "korean": "\ubd84\uc704\uae30 \uc5c5",
+      "t_chinese": "\u7092\u71b1\u6c23\u6c1b",
+      "german": "Aufforderung zum Tanz",
+      "dutch": "Swingende hinkpas"
+    },
+    "source": {
+      "english": "Viva Festivale Reaction Set",
+      "chinese": "Viva Festivale \u53cd\u5e94\u5957\u88c5",
+      "t_chinese": "Viva Festivale \u53cd\u61c9\u5957\u88dd",
+      "japanese": "\u30d3\u30d0\u30d5\u30a7\u30b9\u30c6\u30a3\u30d0\u30eb\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30bb\u30c3\u30c8",
+      "korean": "\ube44\ubc14 \ud398\uc2a4\ud2f0\ubc8c \ub9ac\uc561\uc158 \uc138\ud2b8",
+      "russian": "\u041d\u0430\u0431\u043e\u0440 \u0440\u0435\u0430\u043a\u0446\u0438\u0439 Viva Festivale",
+      "dutch": "Viva Festivale-reactieset",
+      "german": "Viva Festivale Reaktionsset",
+      "spanish": "Conjunto de reacci\u00f3n Viva Festivale",
+      "french": "Ensemble de r\u00e9action Viva Festivale",
+      "italian": "Viva Festivale Reaction Set"
+    }
+  },
+  {
+    "id": 47,
+    "pic_name": "Listening_Ears_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Listening Ears",
+      "japanese": "\u307f\u307f\u3092\u3059\u307e\u3059",
+      "chinese": "\u8046\u542c",
+      "french": "Oreilles attentives",
+      "spanish": "Escucha",
+      "italian": "In ascolto",
+      "russian": "\u0412\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0443\u0448\u0438",
+      "korean": "\uadc0 \uae30\uc6b8\uc774\uae30",
+      "t_chinese": "\u8046\u807d",
+      "german": "Wahrnehmung",
+      "dutch": "Luisteren"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 48,
+    "pic_name": "Emotion_Love_NH_Icon.png",
+    "name": {
+      "english": "Love",
+      "japanese": "\u30e9\u30d6",
+      "chinese": "\u559c\u6b22",
+      "french": "Amour",
+      "spanish": "Amor",
+      "italian": "Amore",
+      "russian": "\u041e\u0431\u043e\u0436\u0430\u043d\u0438\u0435",
+      "korean": "\ub7ec\ube0c",
+      "t_chinese": "\u559c\u6b61",
+      "german": "Liebe",
+      "dutch": "Liefde"
+    },
+    "source": {
+      "english": "Snooty villagers(with high friendship)",
+      "chinese": "\u50b2\u6162\u7684\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u50b2\u6162\u7684\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u30b9\u30cc\u30fc\u30c6\u30a3\u30fc\u306a\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\uc2a4\ub204\ud2f0 \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\ub192\uc740 \uc6b0\uc815)",
+      "russian": "\u041d\u0430\u0434\u043c\u0435\u043d\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Verwaande dorpelingen (met hoge vriendschap)",
+      "german": "Hochn\u00e4sige Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos presumidos (con mucha amistad)",
+      "french": "Villageois pr\u00e9tentieux (avec une grande amiti\u00e9)",
+      "italian": "Abitanti del villaggio altezzosi (con grande amicizia)"
+    }
+  },
+  {
+    "id": 49,
+    "pic_name": "Emotion_Mischief_NH_Icon.png",
+    "name": {
+      "english": "Mischief",
+      "japanese": "\u308f\u308b\u3060\u304f\u307f",
+      "chinese": "\u574f\u7b11",
+      "french": "Malice",
+      "spanish": "Maquinaci\u00f3n",
+      "italian": "Malizia",
+      "russian": "\u041e\u0437\u043e\u0440\u0441\u0442\u0432\u043e",
+      "korean": "\uafcd\uafcd\uc774",
+      "t_chinese": "\u5978\u7b11",
+      "german": "Hinterh\u00e4ltigkeit",
+      "dutch": "Kattenkwaad"
+    },
+    "source": {
+      "english": "Peppy villagers(with high friendship)",
+      "chinese": "\u6d3b\u6cfc\u7684\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u6d3b\u6f51\u7684\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u5143\u6c17\u3044\u3063\u3071\u3044\u306e\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\ud65c\uae30\ucc2c \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\uc6b0\ud638\ub3c4\uac00 \ub192\uc74c)",
+      "russian": "\u0411\u043e\u0434\u0440\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Peppy dorpelingen (met hoge vriendschap)",
+      "german": "Schwungvolle Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos llenos de vida (con gran amistad)",
+      "french": "Villageois \u00e9nergiques (avec une grande amiti\u00e9)",
+      "italian": "Peppy abitanti del villaggio (con grande amicizia)"
+    }
+  },
+  {
+    "id": 50,
+    "pic_name": "Emotion_Mistaken_NH_Icon.png",
+    "name": {
+      "english": "Mistaken",
+      "japanese": "\u3057\u307e\u3063\u305f\uff01",
+      "chinese": "\u7cdf\u7cd5\uff01",
+      "french": "Gaffe",
+      "spanish": "Equivocaci\u00f3n",
+      "italian": "Goffaggine",
+      "russian": "\u041e\u043f\u043b\u043e\u0448\u043d\u043e\u0441\u0442\u044c",
+      "korean": "\uc544\ucc28!",
+      "t_chinese": "\u7cdf\u4e86\uff01",
+      "german": "Missgeschick",
+      "dutch": "Vergissing"
+    },
+    "source": {
+      "english": "Lazy villagers",
+      "chinese": "\u61d2\u60f0\u7684\u6751\u6c11",
+      "t_chinese": "\u61f6\u60f0\u7684\u6751\u6c11",
+      "japanese": "\u6020\u60f0\u306a\u6751\u4eba",
+      "korean": "\uac8c\uc73c\ub978 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041b\u0435\u043d\u0438\u0432\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Luie dorpelingen",
+      "german": "Faule Dorfbewohner",
+      "spanish": "Aldeanos perezosos",
+      "french": "Villageois paresseux",
+      "italian": "Paesani pigri"
+    }
+  },
+  {
+    "id": 51,
+    "pic_name": "Emotion_Pleased_NH_Icon.png",
+    "name": {
+      "english": "Pleased",
+      "japanese": "\u306d\u3063",
+      "chinese": "\u5bf9\u5427\uff01",
+      "french": "Enthousiasme",
+      "spanish": "Agrado",
+      "italian": "Contentezza",
+      "russian": "\u0423\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0438\u0435",
+      "korean": "\uae4c\ub531",
+      "t_chinese": "\u5c0d\u5427\uff01",
+      "german": "Begr\u00fc\u00dfung",
+      "dutch": "Groeten"
+    },
+    "source": {
+      "english": "Normal villagers",
+      "chinese": "\u666e\u901a\u6751\u6c11",
+      "t_chinese": "\u666e\u901a\u6751\u6c11",
+      "japanese": "\u666e\u901a\u306e\u6751\u4eba",
+      "korean": "\ud3c9\ubc94\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041e\u0431\u044b\u0447\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Normale dorpelingen",
+      "german": "Normale Dorfbewohner",
+      "spanish": "aldeanos normales",
+      "french": "Villageois normaux",
+      "italian": "Normali abitanti del villaggio"
+    }
+  },
+  {
+    "id": 52,
+    "pic_name": "Posture_Warm-Up_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Posture Warm-Up",
+      "japanese": "\u305b\u3059\u3058\u306e\u3070\u3057",
+      "chinese": "\u4f38\u5c55\u80cc\u90e8",
+      "french": "\u00c9chauffement",
+      "spanish": "Brazos",
+      "italian": "Riscaldamento",
+      "russian": "\u0420\u0430\u0437\u043c\u0438\u043d\u043a\u0430",
+      "korean": "\uc228\uc26c\uae30 \uc6b4\ub3d9",
+      "t_chinese": "\u4f38\u5c55\u80cc\u90e8",
+      "german": "Aufw\u00e4rmen",
+      "dutch": "Warming-up"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 53,
+    "pic_name": "Emotion_Pride_NH_Icon.png",
+    "name": {
+      "english": "Pride",
+      "japanese": "\u30c9\u30e4\uff01",
+      "chinese": "\u5f97\u610f\uff01",
+      "french": "Fiert\u00e9",
+      "spanish": "Orgullo",
+      "italian": "Orgoglio",
+      "russian": "\u0413\u043e\u0440\u0434\u043e\u0441\u0442\u044c",
+      "korean": "\uc798\ub09c\uccb4",
+      "t_chinese": "\u5f97\u610f\uff01",
+      "german": "Stolz",
+      "dutch": "Trots"
+    },
+    "source": {
+      "english": "Lazy villagers(with high friendship)",
+      "chinese": "\u61d2\u60f0\u7684\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u61f6\u60f0\u7684\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u6020\u60f0\u306a\u6751\u4eba\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\uac8c\uc73c\ub978 \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\ub192\uc740 \uc6b0\uc815)",
+      "russian": "\u041b\u0435\u043d\u0438\u0432\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Luie dorpelingen (met hoge vriendschap)",
+      "german": "Faule Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos perezosos (con mucha amistad)",
+      "french": "Villageois paresseux (avec une grande amiti\u00e9)",
+      "italian": "Paesani pigri (con alta amicizia)"
+    }
+  },
+  {
+    "id": 54,
+    "pic_name": "Emotion_Resignation_NH_Icon.png",
+    "name": {
+      "english": "Resignation",
+      "japanese": "\u30e4\u30ec\u30e4\u30ec",
+      "chinese": "\u597d\u4e86\u597d\u4e86",
+      "french": "D\u00e9pit",
+      "spanish": "Resignaci\u00f3n",
+      "italian": "Rassegnazione",
+      "russian": "\u0421\u043c\u0438\u0440\u0435\u043d\u0438\u0435",
+      "korean": "\ub098\ucc38\u2026",
+      "t_chinese": "\u7b97\u4e86",
+      "german": "Resignation",
+      "dutch": "Opgeven"
+    },
+    "source": {
+      "english": "Smug villagers",
+      "chinese": "\u81ea\u9e23\u5f97\u610f\u7684\u6751\u6c11",
+      "t_chinese": "\u81ea\u9cf4\u5f97\u610f\u7684\u6751\u6c11",
+      "japanese": "\u6751\u4eba\u3092\u6c5a\u3059",
+      "korean": "\uad50\ud65c\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0421\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Zelfvoldane dorpelingen",
+      "german": "Selbstgef\u00e4llige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois suffisants",
+      "italian": "Paesani compiaciuti"
+    }
+  },
+  {
+    "id": 55,
+    "pic_name": "Emotion_Sadness_NH_Icon.png",
+    "name": {
+      "english": "Sadness",
+      "japanese": "\u304c\u3063\u304f\u308a",
+      "chinese": "\u5931\u843d",
+      "french": "D\u00e9prime",
+      "spanish": "Tristeza",
+      "italian": "Sconforto",
+      "russian": "\u0413\u0440\u0443\u0441\u0442\u044c",
+      "korean": "\uc2e4\ub9dd",
+      "t_chinese": "\u5931\u843d",
+      "german": "Traurigkeit",
+      "dutch": "Verdriet"
+    },
+    "source": {
+      "english": "Normal villagers",
+      "chinese": "\u666e\u901a\u6751\u6c11",
+      "t_chinese": "\u666e\u901a\u6751\u6c11",
+      "japanese": "\u666e\u901a\u306e\u6751\u4eba",
+      "korean": "\ud3c9\ubc94\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041e\u0431\u044b\u0447\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Normale dorpelingen",
+      "german": "Normale Dorfbewohner",
+      "spanish": "aldeanos normales",
+      "french": "Villageois normaux",
+      "italian": "Normali abitanti del villaggio"
+    }
+  },
+  {
+    "id": 56,
+    "pic_name": "Say_Cheese_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Say Cheese",
+      "japanese": "\u306f\u3044\u30c1\u30fc\u30ba",
+      "chinese": "\u7b11\u4e00\u4e2a",
+      "french": "Ouistiti\u00a0!",
+      "spanish": "Patataaa",
+      "italian": "Un bel sorriso!",
+      "russian": "\u0423\u043b\u044b\u0431\u043a\u0430 \u0432 \u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0432",
+      "korean": "\uae40\uce58\uff5e!",
+      "t_chinese": "\u7b11\u4e00\u500b",
+      "german": "Bitte l\u00e4cheln",
+      "dutch": "Lach naar het vogeltje"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 57,
+    "pic_name": "Scare_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Scare",
+      "japanese": "\u304a\u3069\u304b\u3059",
+      "chinese": "\u5413\u552c",
+      "french": "\u00c9pouvante",
+      "spanish": "Susto",
+      "italian": "Spavento",
+      "russian": "\u0423\u0441\u0442\u0440\u0430\u0448\u0435\u043d\u0438\u0435",
+      "korean": "\uc641!",
+      "t_chinese": "\u9a5a\u5687",
+      "german": "Erschrecken",
+      "dutch": "Bang maken"
+    },
+    "source": {
+      "english": "Any villager if given Candy",
+      "chinese": "\u4efb\u4f55\u6751\u6c11\u5982\u679c\u7ed9\u4e88\u7cd6\u679c",
+      "t_chinese": "\u4efb\u4f55\u6751\u6c11\u5982\u679c\u7d66\u4e88\u7cd6\u679c",
+      "japanese": "\u30ad\u30e3\u30f3\u30c7\u30a3\u3092\u4e0e\u3048\u3089\u308c\u308c\u3070\u3069\u3093\u306a\u6751\u4eba\u3082",
+      "korean": "\uc0ac\ud0d5\uc744 \uc8fc\uba74 \ubaa8\ub4e0 \uc8fc\ubbfc",
+      "russian": "\u041b\u044e\u0431\u043e\u0439 \u0436\u0438\u0442\u0435\u043b\u044c, \u0435\u0441\u043b\u0438 \u0435\u043c\u0443 \u0434\u0430\u0442\u044c \u043a\u043e\u043d\u0444\u0435\u0442\u0443",
+      "dutch": "Elke dorpeling als hij Candy krijgt",
+      "german": "Jeder Dorfbewohner, wenn ihm S\u00fc\u00dfigkeiten gegeben werden",
+      "spanish": "Cualquier aldeano si le dan Candy",
+      "french": "N'importe quel villageois si on lui donne Candy",
+      "italian": "Qualsiasi abitante del villaggio se gli viene data Candy"
+    }
+  },
+  {
+    "id": 58,
+    "pic_name": "Emotion_Sheepishness_NH_Icon.png",
+    "name": {
+      "english": "Sheepishness",
+      "japanese": "\u306b\u304c\u308f\u3089\u3044",
+      "chinese": "\u82e6\u7b11",
+      "french": "D\u00e9rision",
+      "spanish": "Sonrisa p\u00edcara",
+      "italian": "Sarcasmo",
+      "russian": "\u041d\u0430\u0441\u043c\u0435\u0448\u043a\u0430",
+      "korean": "\uc4f4\uc6c3\uc74c",
+      "t_chinese": "\u82e6\u7b11",
+      "german": "Schmunzeln",
+      "dutch": "Spotten"
+    },
+    "source": {
+      "english": "Cranky villagers",
+      "chinese": "\u813e\u6c14\u66b4\u8e81\u7684\u6751\u6c11",
+      "t_chinese": "\u813e\u6c23\u66b4\u8e81\u7684\u6751\u6c11",
+      "japanese": "\u4e0d\u6a5f\u5acc\u305d\u3046\u306a\u6751\u4eba",
+      "korean": "\uae4c\uce60\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041a\u0430\u043f\u0440\u0438\u0437\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Chagrijnig dorpelingen",
+      "german": "Schrullige Dorfbewohner",
+      "spanish": "Aldeanos malhumorados",
+      "french": "Villageois grincheux",
+      "italian": "Paesani irritabili"
+    }
+  },
+  {
+    "id": 59,
+    "pic_name": "Shimmy_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Shimmy",
+      "japanese": "\u307f\u304e\u3072\u3060\u308a\u30c0\u30f3\u30b9",
+      "chinese": "\u5de6\u53f3\u821e\u52a8",
+      "french": "Gauche-droite",
+      "spanish": "Contoneo",
+      "italian": "Destra-sinistra",
+      "russian": "\u0428\u0438\u043c\u043c\u0438",
+      "korean": "\uc88c\uc6b0 \ub304\uc2a4",
+      "t_chinese": "\u5de6\u53f3\u821e\u52d5",
+      "german": "Chill-Tanz",
+      "dutch": "Links-rechts"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 60,
+    "pic_name": "Emotion_Shocked_NH_Icon.png",
+    "name": {
+      "english": "Shocked",
+      "japanese": "\u30ac\u30fc\u30f3\uff01",
+      "chinese": "\u5413\u4e00\u8df3\uff01",
+      "french": "Surprise",
+      "spanish": "Sorpresa",
+      "italian": "Shock",
+      "russian": "\u0428\u043e\u043a",
+      "korean": "\ub728\uc545!",
+      "t_chinese": "\u5687\u4e00\u8df3\uff01",
+      "german": "Schock",
+      "dutch": "Verbijstering"
+    },
+    "source": {
+      "english": "Jock villagers",
+      "chinese": "\u4e54\u514b\u6751\u6c11",
+      "t_chinese": "\u55ac\u514b\u6751\u6c11",
+      "japanese": "\u30b8\u30e7\u30c3\u30af\u6751\u4eba",
+      "korean": "\uc870\ud06c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0414\u0436\u043e\u043a",
+      "dutch": "Jock dorpelingen",
+      "german": "Jock-Dorfbewohner",
+      "spanish": "deportistas aldeanos",
+      "french": "Villageois sportifs",
+      "italian": "Jock abitanti del villaggio"
+    }
+  },
+  {
+    "id": 61,
+    "pic_name": "Emotion_Showmanship_NH_Icon.png",
+    "name": {
+      "english": "Showmanship",
+      "japanese": "\u30b7\u30e3\u30ad\u30fc\u30f3",
+      "chinese": "\u770b\u6211\u7684",
+      "french": "Esbroufe",
+      "spanish": "Descaro",
+      "italian": "Spavalderia",
+      "russian": "\u0411\u0430\u0445\u0432\u0430\u043b\u044c\u0441\u0442\u0432\u043e",
+      "korean": "\uc9dc\uc794!",
+      "t_chinese": "\u770b\u6211\u7684",
+      "german": "Angeberei",
+      "dutch": "Pronken"
+    },
+    "source": {
+      "english": "Smug villagers(with high friendship)",
+      "chinese": "\u81ea\u9e23\u5f97\u610f\u7684\u6751\u6c11\uff08\u53cb\u8c0a\u9ad8\uff09",
+      "t_chinese": "\u81ea\u9cf4\u5f97\u610f\u7684\u6751\u6c11\uff08\u53cb\u8abc\u9ad8\uff09",
+      "japanese": "\u6751\u4eba\u3092\u6c5a\u3059\uff08\u53cb\u60c5\u304c\u9ad8\u3044\uff09",
+      "korean": "\uad50\ud65c\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4(\uc6b0\ud638\ub3c4\uac00 \ub192\uc74c)",
+      "russian": "\u0421\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438 (\u0441 \u0432\u044b\u0441\u043e\u043a\u043e\u0439 \u0434\u0440\u0443\u0436\u0431\u043e\u0439)",
+      "dutch": "Zelfvoldane dorpelingen (met hoge vriendschap)",
+      "german": "Selbstgef\u00e4llige Dorfbewohner (mit hoher Freundschaft)",
+      "spanish": "Aldeanos presumidos (con mucha amistad)",
+      "french": "Villageois suffisants (avec une grande amiti\u00e9)",
+      "italian": "Abitanti del villaggio compiaciuti (con grande amicizia)"
+    }
+  },
+  {
+    "id": 62,
+    "pic_name": "Emotion_Shyness_NH_Icon.png",
+    "name": {
+      "english": "Shyness",
+      "japanese": "\u3082\u3058\u3082\u3058",
+      "chinese": "\u4e0d\u597d\u610f\u601d",
+      "french": "Timidit\u00e9",
+      "spanish": "Timidez",
+      "italian": "Timidezza",
+      "russian": "\u0417\u0430\u0441\u0442\u0435\u043d\u0447\u0438\u0432\u043e\u0441\u0442\u044c",
+      "korean": "\uba38\ubb47",
+      "t_chinese": "\u4e0d\u597d\u610f\u601d",
+      "german": "Verlegenheit",
+      "dutch": "Verlegenheid"
+    },
+    "source": {
+      "english": "Lazy villagers",
+      "chinese": "\u61d2\u60f0\u7684\u6751\u6c11",
+      "t_chinese": "\u61f6\u60f0\u7684\u6751\u6c11",
+      "japanese": "\u6020\u60f0\u306a\u6751\u4eba",
+      "korean": "\uac8c\uc73c\ub978 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041b\u0435\u043d\u0438\u0432\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Luie dorpelingen",
+      "german": "Faule Dorfbewohner",
+      "spanish": "Aldeanos perezosos",
+      "french": "Villageois paresseux",
+      "italian": "Paesani pigri"
+    }
+  },
+  {
+    "id": 63,
+    "pic_name": "Side_Bends_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Side Bends",
+      "japanese": "\u3088\u3053\u306e\u3070\u3057",
+      "chinese": "\u4f53\u4fa7\u4f38\u5c55",
+      "french": "Souplesse lat\u00e9rale",
+      "spanish": "Estiramiento",
+      "italian": "Piegamenti laterali",
+      "russian": "\u041d\u0430\u043a\u043b\u043e\u043d\u044b \u0432 \u0441\u0442\u043e\u0440\u043e\u043d\u044b",
+      "korean": "\uc606\uad6c\ub9ac \uc6b4\ub3d9",
+      "t_chinese": "\u5074\u908a\u4f38\u5c55",
+      "german": "Seitbeugen",
+      "dutch": "Zijwaarts rekken"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 64,
+    "pic_name": "Side-to-Side_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Side-to-Side",
+      "japanese": "\u30b9\u30c6\u30c3\u30d7\u30c0\u30f3\u30b9",
+      "chinese": "\u5de6\u53f3\u8e0f\u6b65\u821e\u52a8",
+      "french": "Pas de c\u00f4t\u00e9",
+      "spanish": "Balanceo",
+      "italian": "Passi di lato",
+      "russian": "\u0421\u0430\u0439\u0434-\u0442\u0443-\u0441\u0430\u0439\u0434",
+      "korean": "\uc88c\uc6b0 \uc2a4\ud15d",
+      "t_chinese": "\u5de6\u53f3\u8e0f\u6b65\u821e\u52d5",
+      "german": "Tip-Tap-Tanz",
+      "dutch": "Zijwaartse stappen"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 65,
+    "pic_name": "Emotion_Sighing_NH_Icon.png",
+    "name": {
+      "english": "Sighing",
+      "japanese": "\u305f\u3081\u3044\u304d",
+      "chinese": "\u53f9\u6c14",
+      "french": "Soupir",
+      "spanish": "Suspiro",
+      "italian": "Delusione",
+      "russian": "\u0412\u0437\u0434\u043e\u0445",
+      "korean": "\ud55c\uc228",
+      "t_chinese": "\u5606\u6c23",
+      "german": "Entt\u00e4uschung",
+      "dutch": "Zuchten"
+    },
+    "source": {
+      "english": "Snooty villagers",
+      "chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "t_chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "japanese": "\u30b9\u30cc\u30fc\u30c6\u30a3\u30fc\u306a\u6751\u4eba",
+      "korean": "\uc2a4\ub204\ud2f0 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0412\u044b\u0441\u043e\u043a\u043e\u043c\u0435\u0440\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Verwaande dorpelingen",
+      "german": "Hochn\u00e4sige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois pr\u00e9tentieux",
+      "italian": "Paesani altezzosi"
+    }
+  },
+  {
+    "id": 66,
+    "pic_name": "Sit_Down_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Sit Down",
+      "japanese": "\u3059\u308f\u308b",
+      "chinese": "\u5750",
+      "french": "S'asseoir",
+      "spanish": "Asiento",
+      "italian": "Sedersi",
+      "russian": "\u0421\u0438\u0434\u0435\u043d\u0438\u0435",
+      "korean": "\uc549\uae30",
+      "t_chinese": "\u5750",
+      "german": "Hinsetzen",
+      "dutch": "Zitten"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 67,
+    "pic_name": "Emotion_Sleepy_NH_Icon.png",
+    "name": {
+      "english": "Sleepy",
+      "japanese": "\u3042\u304f\u3073",
+      "chinese": "\u6253\u54c8\u6b20",
+      "french": "Sommeil",
+      "spanish": "Bostezo",
+      "italian": "Sonno",
+      "russian": "\u0421\u043e\u043d\u043b\u0438\u0432\u043e\u0441\u0442\u044c",
+      "korean": "\ud558\ud488",
+      "t_chinese": "\u6253\u5475\u6b20",
+      "german": "Erm\u00fcdung",
+      "dutch": "Gapen"
+    },
+    "source": {
+      "english": "Peppy villagers",
+      "chinese": "\u6d3b\u6cfc\u7684\u6751\u6c11",
+      "t_chinese": "\u6d3b\u6f51\u7684\u6751\u6c11",
+      "japanese": "\u5143\u6c17\u3044\u3063\u3071\u3044\u306e\u6751\u4eba",
+      "korean": "\ud65c\uae30\ucc2c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0411\u043e\u0434\u0440\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Peppy dorpelingen",
+      "german": "Peppige Dorfbewohner",
+      "spanish": "Aldeanos llenos de vida",
+      "french": "Villageois \u00e9nergiques",
+      "italian": "Paesani vivaci"
+    }
+  },
+  {
+    "id": 68,
+    "pic_name": "Emotion_Smirking_NH_Icon.png",
+    "name": {
+      "english": "Smirking",
+      "japanese": "\u30cb\u30e4\u30ea",
+      "chinese": "\u5fae\u7b11",
+      "french": "Rire suffisant",
+      "spanish": "Sonrisa socarrona",
+      "italian": "Sogghigno",
+      "russian": "\u0423\u0445\u043c\u044b\u043b\u043a\u0430",
+      "korean": "\uc528\uc775",
+      "t_chinese": "\u5fae\u7b11",
+      "german": "Grinsen",
+      "dutch": "Grinniken"
+    },
+    "source": {
+      "english": "Smug villagers",
+      "chinese": "\u81ea\u9e23\u5f97\u610f\u7684\u6751\u6c11",
+      "t_chinese": "\u81ea\u9cf4\u5f97\u610f\u7684\u6751\u6c11",
+      "japanese": "\u6751\u4eba\u3092\u6c5a\u3059",
+      "korean": "\uad50\ud65c\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0421\u0430\u043c\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Zelfvoldane dorpelingen",
+      "german": "Selbstgef\u00e4llige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois suffisants",
+      "italian": "Paesani compiaciuti"
+    }
+  },
+  {
+    "id": 69,
+    "pic_name": "Sniff_Sniff_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Sniff Sniff",
+      "japanese": "\u30af\u30f3\u30af\u30f3",
+      "chinese": "\u95fb\u95fb",
+      "french": "Snif snif",
+      "spanish": "Olfateo",
+      "italian": "Annusare",
+      "russian": "\u041f\u0440\u0438\u043d\u044e\u0445\u0438\u0432\u0430\u043d\u0438\u0435",
+      "korean": "\ud081\ud081",
+      "t_chinese": "\u805e",
+      "german": "Schn\u00fcffeln",
+      "dutch": "Ruiken"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 70,
+    "pic_name": "Emotion_Sneezing_NH_Icon.png",
+    "name": {
+      "english": "Sneezing",
+      "japanese": "\u304f\u3057\u3083\u307f",
+      "chinese": "\u963f\u568f",
+      "french": "\u00c9ternuement",
+      "spanish": "Estornudo",
+      "italian": "Starnuto",
+      "russian": "\u0427\u0438\u0445\u0430\u043d\u0438\u0435",
+      "korean": "\uc7ac\ucc44\uae30",
+      "t_chinese": "\u6253\u5674\u568f",
+      "german": "Niesen",
+      "dutch": "Niezen"
+    },
+    "source": {
+      "english": "Jock villagers",
+      "chinese": "\u4e54\u514b\u6751\u6c11",
+      "t_chinese": "\u55ac\u514b\u6751\u6c11",
+      "japanese": "\u30b8\u30e7\u30c3\u30af\u6751\u4eba",
+      "korean": "\uc870\ud06c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0416\u0438\u0442\u0435\u043b\u0438 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0414\u0436\u043e\u043a",
+      "dutch": "Jock dorpelingen",
+      "german": "Jock-Dorfbewohner",
+      "spanish": "deportistas aldeanos",
+      "french": "Villageois sportifs",
+      "italian": "Jock abitanti del villaggio"
+    }
+  },
+  {
+    "id": 71,
+    "pic_name": "Soak_It_In_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Soak It In",
+      "japanese": "\u3042\u3073\u308b",
+      "chinese": "\u4eab\u53d7",
+      "french": "Bras en l'air",
+      "spanish": "Deleite",
+      "italian": "Relax",
+      "russian": "\u041f\u043e\u0433\u0440\u0443\u0436\u0435\u043d\u0438\u0435",
+      "korean": "\uc8fc\ubaa9!",
+      "t_chinese": "\u4eab\u53d7",
+      "german": "Relax-Tanz",
+      "dutch": "Een met de wereld"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 72,
+    "pic_name": "Emotion_Sorrow_NH_Icon.png",
+    "name": {
+      "english": "Sorrow",
+      "japanese": "\u308f\u30fc\u3093",
+      "chinese": "\u5927\u54ed",
+      "french": "Pleurs",
+      "spanish": "Llanto",
+      "italian": "Tristezza",
+      "russian": "\u041f\u043b\u0430\u0447",
+      "korean": "\uc6b8\uae30",
+      "t_chinese": "\u5927\u54ed",
+      "german": "Leid",
+      "dutch": "Huilen"
+    },
+    "source": {
+      "english": "",
+      "chinese": "",
+      "t_chinese": "",
+      "japanese": "",
+      "korean": "",
+      "russian": "",
+      "dutch": "",
+      "german": "",
+      "spanish": "",
+      "french": "",
+      "italian": ""
+    }
+  },
+  {
+    "id": 73,
+    "pic_name": "Stretch_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Stretch",
+      "japanese": "\u306e\u3073\u3092\u3059\u308b",
+      "chinese": "\u4f38\u61d2\u8170",
+      "french": "\u00c9tirement",
+      "spanish": "Desperezo",
+      "italian": "Stretching",
+      "russian": "\u0420\u0430\u0441\u0442\u044f\u0436\u043a\u0430",
+      "korean": "\uae30\uc9c0\uac1c",
+      "t_chinese": "\u4f38\u61f6\u8170",
+      "german": "Strecken",
+      "dutch": "Uitrekken"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 74,
+    "pic_name": "Emotion_Surprise_NH_Icon.png",
+    "name": {
+      "english": "Surprise",
+      "japanese": "\u3042\u3063\uff01",
+      "chinese": "\u554a\uff01",
+      "french": "\u00c9tonnement",
+      "spanish": "Asombro",
+      "italian": "Sorpresa",
+      "russian": "\u0423\u0434\u0438\u0432\u043b\u0435\u043d\u0438\u0435",
+      "korean": "\uc544\ud558!",
+      "t_chinese": "\u554a\uff01",
+      "german": "Unglaube",
+      "dutch": "Verrassing"
+    },
+    "source": {
+      "english": "Default reaction",
+      "chinese": "\u9ed8\u8ba4\u53cd\u5e94",
+      "t_chinese": "\u9ed8\u8a8d\u53cd\u61c9",
+      "japanese": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u53cd\u5fdc",
+      "korean": "\uae30\ubcf8 \ubc18\uc751",
+      "russian": "\u0420\u0435\u0430\u043a\u0446\u0438\u044f \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "dutch": "Standaard reactie",
+      "german": "Standardreaktion",
+      "spanish": "Reacci\u00f3n predeterminada",
+      "french": "R\u00e9action par d\u00e9faut",
+      "italian": "Reazione predefinita"
+    }
+  },
+  {
+    "id": 75,
+    "pic_name": "Ta-da_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Ta-da",
+      "japanese": "\u305f\u305f\u3048\u308b",
+      "chinese": "\u5938\u5956",
+      "french": "Ta-daaa\u00a0!",
+      "spanish": "Entusiasmo",
+      "italian": "Lode",
+      "russian": "\u041f\u043e\u0445\u0432\u0430\u043b\u0430",
+      "korean": "\ub300\ub2e8\ud574!",
+      "t_chinese": "\u8a87\u734e",
+      "german": "Loben",
+      "dutch": "Prijzen"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 76,
+    "pic_name": "Take_a_Picture_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Take a Picture",
+      "japanese": "\u30d1\u30b7\u30e3\u30ea",
+      "chinese": "\u62cd\u7167",
+      "french": "Photo",
+      "spanish": "Fotograf\u00edas",
+      "italian": "Foto",
+      "russian": "\u0424\u043e\u0442\u043e\u0441\u044a\u0435\u043c\u043a\u0430",
+      "korean": "\ucc30\uce75!",
+      "t_chinese": "\u62cd\u7167",
+      "german": "Fotografieren",
+      "dutch": "Foto's maken"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 77,
+    "pic_name": "Emotion_Thought_NH_Icon.png",
+    "name": {
+      "english": "Thought",
+      "japanese": "\u3046\u30fc\u3093",
+      "chinese": "\u601d\u8003",
+      "french": "R\u00e9flexion",
+      "spanish": "Cavilaci\u00f3n",
+      "italian": "Riflessione",
+      "russian": "\u0420\u0430\u0437\u043c\u044b\u0448\u043b\u0435\u043d\u0438\u0435",
+      "korean": "\uace0\ubbfc",
+      "t_chinese": "\u601d\u8003\u4e2d",
+      "german": "Denken",
+      "dutch": "Nadenken"
+    },
+    "source": {
+      "english": "Snooty villagers",
+      "chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "t_chinese": "\u50b2\u6162\u7684\u6751\u6c11",
+      "japanese": "\u30b9\u30cc\u30fc\u30c6\u30a3\u30fc\u306a\u6751\u4eba",
+      "korean": "\uc2a4\ub204\ud2f0 \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u0412\u044b\u0441\u043e\u043a\u043e\u043c\u0435\u0440\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Verwaande dorpelingen",
+      "german": "Hochn\u00e4sige Dorfbewohner",
+      "spanish": "Aldeanos presumidos",
+      "french": "Villageois pr\u00e9tentieux",
+      "italian": "Paesani altezzosi"
+    }
+  },
+  {
+    "id": 78,
+    "pic_name": "Turnip_Patch_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Turnip Patch",
+      "japanese": "\u3046\u3067\u306e\u3070\u3057\u30c0\u30f3\u30b9",
+      "chinese": "\u4f38\u624b\u81c2\u821e\u52a8",
+      "french": "Rameur",
+      "spanish": "Lados alternos",
+      "italian": "Avanti-indietro",
+      "russian": "\u0420\u0435\u043f\u043a\u0430",
+      "korean": "\ucb49\ucb49 \ub304\uc2a4",
+      "t_chinese": "\u4f38\u624b\u81c2\u821e\u52d5",
+      "german": "R\u00fcbenfeld-Tanz",
+      "dutch": "Strekdans"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 79,
+    "pic_name": "Twisty_Dance_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Twisty Dance",
+      "japanese": "\u30c4\u30a4\u30b9\u30c8\u30c0\u30f3\u30b9",
+      "chinese": "\u626d\u626d\u821e",
+      "french": "Twist",
+      "spanish": "Twist",
+      "italian": "Twist",
+      "russian": "\u0422\u0432\u0438\u0441\u0442",
+      "korean": "\ud2b8\uc704\uc2a4\ud2b8 \ub304\uc2a4",
+      "t_chinese": "\u626d\u626d\u821e",
+      "german": "Twist",
+      "dutch": "Twist"
+    },
+    "source": {
+      "english": "DJ KK's concert after completing the Apparel Shop (exclusive to Happy Home Paradise)",
+      "chinese": "DJ KK\u5b8c\u6210\u670d\u9970\u5e97\u540e\u7684\u6f14\u5531\u4f1a\uff08\u6b22\u4e50\u5bb6\u56ed\u4e50\u56ed\u4e13\u5c5e\uff09",
+      "t_chinese": "DJ KK\u5b8c\u6210\u670d\u98fe\u5e97\u5f8c\u7684\u6f14\u5531\u6703\uff08\u6b61\u6a02\u5bb6\u5712\u6a02\u5712\u5c08\u5c6c\uff09",
+      "japanese": "\u30a2\u30d1\u30ec\u30eb\u30b7\u30e7\u30c3\u30d7\u7d42\u4e86\u5f8c\u306eDJKK\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\uff08\u30cf\u30c3\u30d4\u30fc\u30db\u30fc\u30e0\u30d1\u30e9\u30c0\u30a4\u30b9\u9650\u5b9a\uff09",
+      "korean": "Apparel Shop \uc218\ub8cc \ud6c4 DJ KK \ucf58\uc11c\ud2b8 (\ud574\ud53c\ud648 \ud30c\ub77c\ub2e4\uc774\uc2a4 \uc804\uc6a9)",
+      "russian": "\u041a\u043e\u043d\u0446\u0435\u0440\u0442 DJ KK \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 \u043e\u0434\u0435\u0436\u0434\u044b (\u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u043e \u0434\u043b\u044f Happy Home Paradise)",
+      "dutch": "DJ KK's concert na voltooiing van de Apparel Shop (exclusief bij Happy Home Paradise)",
+      "german": "Konzert von DJ KK nach Abschluss des Bekleidungsshops (exklusiv bei Happy Home Paradise)",
+      "spanish": "Concierto de DJ KK despu\u00e9s de completar la tienda de ropa (exclusivo de Happy Home Paradise)",
+      "french": "Concert de DJ KK apr\u00e8s avoir termin\u00e9 la boutique de v\u00eatements (exclusif \u00e0 Happy Home Paradise)",
+      "italian": "Il concerto di DJ KK dopo aver completato il negozio di abbigliamento (in esclusiva per Happy Home Paradise)"
+    }
+  },
+  {
+    "id": 80,
+    "pic_name": "Upper-Body_Circles_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Upper-Body Circles",
+      "japanese": "\u3058\u3087\u3046\u305f\u3044\u307e\u308f\u3057",
+      "chinese": "\u8f6c\u52a8\u4e0a\u534a\u8eab",
+      "french": "Rotation du tronc",
+      "spanish": "C\u00edrculos",
+      "italian": "Rotazioni del busto",
+      "russian": "\u0412\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0442\u0443\u043b\u043e\u0432\u0438\u0449\u0430",
+      "korean": "\uc0c1\uccb4 \ub3cc\ub9ac\uae30",
+      "t_chinese": "\u8f49\u52d5\u4e0a\u534a\u8eab",
+      "german": "Oberk\u00f6rperkreisen",
+      "dutch": "Grote cirkels"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 81,
+    "pic_name": "Viva_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Viva",
+      "japanese": "\u30d3\u30d0\uff01",
+      "chinese": "\u6b22\u4e50\uff01",
+      "french": "Viva",
+      "spanish": "Viva",
+      "italian": "Viva",
+      "russian": "\u0412\u0438\u0432\u0430!",
+      "korean": "\ube44\ubc14!",
+      "t_chinese": "\u6b61\u6a02\uff01",
+      "german": "Viva",
+      "dutch": "Pav\u00e9-pas"
+    },
+    "source": {
+      "english": "Viva Festivale Reaction Set",
+      "chinese": "Viva Festivale \u53cd\u5e94\u5957\u88c5",
+      "t_chinese": "Viva Festivale \u53cd\u61c9\u5957\u88dd",
+      "japanese": "\u30d3\u30d0\u30d5\u30a7\u30b9\u30c6\u30a3\u30d0\u30eb\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30bb\u30c3\u30c8",
+      "korean": "\ube44\ubc14 \ud398\uc2a4\ud2f0\ubc8c \ub9ac\uc561\uc158 \uc138\ud2b8",
+      "russian": "\u041d\u0430\u0431\u043e\u0440 \u0440\u0435\u0430\u043a\u0446\u0438\u0439 Viva Festivale",
+      "dutch": "Viva Festivale-reactieset",
+      "german": "Viva Festivale Reaktionsset",
+      "spanish": "Conjunto de reacci\u00f3n Viva Festivale",
+      "french": "Ensemble de r\u00e9action Viva Festivale",
+      "italian": "Viva Festivale Reaction Set"
+    }
+  },
+  {
+    "id": 82,
+    "pic_name": "Wave_Goodbye_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Wave Goodbye",
+      "japanese": "\u30d0\u30a4\u30d0\u30a4",
+      "chinese": "\u518d\u89c1",
+      "french": "Bye bye",
+      "spanish": "Despedida",
+      "italian": "Arrivederci",
+      "russian": "\u041f\u0440\u043e\u0449\u0430\u043d\u0438\u0435",
+      "korean": "\ubc14\uc774\ubc14\uc774",
+      "t_chinese": "\u63b0\u63b0",
+      "german": "Verabschieden",
+      "dutch": "Uitzwaaien"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 83,
+    "pic_name": "Wide_Arm_Stretch_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Wide Arm Stretch",
+      "japanese": "\u3080\u306d\u305d\u3089\u3057",
+      "chinese": "\u6269\u80f8",
+      "french": "Expansion du thorax",
+      "spanish": "Inclinaci\u00f3n",
+      "italian": "Apertura del torace",
+      "russian": "\u041d\u0430\u043a\u043b\u043e\u043d\u044b / \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0440\u0443\u043a",
+      "korean": "\ub4f1\ubc30 \uc6b4\ub3d9",
+      "t_chinese": "\u5c55\u958b\u80f8\u53e3",
+      "german": "Armstrecken",
+      "dutch": "Diagonaal strekken"
+    },
+    "source": {
+      "english": "Group stretching once for 50 days",
+      "chinese": "\u56e2\u4f53\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7eed50\u5929",
+      "t_chinese": "\u5718\u9ad4\u62c9\u4f38\u4e00\u6b21\uff0c\u6301\u7e8c50\u5929",
+      "japanese": "50\u65e5\u95931\u56de\u306e\u30b0\u30eb\u30fc\u30d7\u30b9\u30c8\u30ec\u30c3\u30c1",
+      "korean": "50\uc77c \ub3d9\uc548 1\ud68c \uadf8\ub8f9 \uc2a4\ud2b8\ub808\uce6d",
+      "russian": "\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u0430\u044f \u0440\u0430\u0441\u0442\u044f\u0436\u043a\u0430 \u043e\u0434\u0438\u043d \u0440\u0430\u0437 \u043d\u0430 50 \u0434\u043d\u0435\u0439",
+      "dutch": "Groepsstrekking \u00e9\u00e9n keer gedurende 50 dagen",
+      "german": "Gruppendehnung einmal f\u00fcr 50 Tage",
+      "spanish": "Estiramiento en grupo una vez durante 50 d\u00edas",
+      "french": "Groupe d'\u00e9tirements une fois pendant 50 jours",
+      "italian": "Stretching di gruppo una volta per 50 giorni"
+    }
+  },
+  {
+    "id": 84,
+    "pic_name": "Work_It_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Work It",
+      "japanese": "\u30af\u30fc\u30eb\u306b\u30ad\u30e1\u308b",
+      "chinese": "\u9177\u611f\u59ff\u52bf",
+      "french": "Poses tendance",
+      "spanish": "Pose de modelo",
+      "italian": "Pose fashion",
+      "russian": "\u041f\u043e\u0437\u0438\u0440\u0443\u0435\u043c!",
+      "korean": "\ucfe8\ud55c \ud3ec\uc988",
+      "t_chinese": "\u9177\u611f\u59ff\u52e2",
+      "german": "Cooles Posieren",
+      "dutch": "Coole poses"
+    },
+    "source": {
+      "english": "New Reactions Notebook",
+      "chinese": "\u65b0\u53cd\u5e94\u7b14\u8bb0\u672c",
+      "t_chinese": "\u65b0\u53cd\u61c9\u7b46\u8a18\u672c",
+      "japanese": "\u65b0\u3057\u3044\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30ce\u30fc\u30c8\u30d6\u30c3\u30af",
+      "korean": "\uc0c8\ub85c\uc6b4 \ubc18\uc751 \ub178\ud2b8\ubd81",
+      "russian": "\u0411\u043b\u043e\u043a\u043d\u043e\u0442 \u043d\u043e\u0432\u044b\u0445 \u0440\u0435\u0430\u043a\u0446\u0438\u0439",
+      "dutch": "Nieuw Reacties Notebook",
+      "german": "Neues Reaktionsnotizbuch",
+      "spanish": "Nuevo cuaderno de reacciones",
+      "french": "Nouveau carnet de r\u00e9actions",
+      "italian": "Nuovo quaderno di reazioni"
+    }
+  },
+  {
+    "id": 85,
+    "pic_name": "Work_Out_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Work Out",
+      "japanese": "\u305f\u3044\u305d\u3046",
+      "chinese": "\u4f53\u64cd",
+      "french": "Gymnastique",
+      "spanish": "Gimnasia",
+      "italian": "Arrivederci",
+      "russian": "\u0422\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043a\u0430",
+      "korean": "\uccb4\uc870",
+      "t_chinese": "\u9ad4\u64cd",
+      "german": "Trainieren",
+      "dutch": "Rekken en strekken"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  },
+  {
+    "id": 86,
+    "pic_name": "Emotion_Worry_NH_Icon.png",
+    "name": {
+      "english": "Worry",
+      "japanese": "\u3053\u307e\u308b",
+      "chinese": "\u70e6\u607c",
+      "french": "Tracas",
+      "spanish": "Preocupaci\u00f3n",
+      "italian": "Preoccupazione",
+      "russian": "\u0420\u0430\u0441\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e",
+      "korean": "\uace4\ub780",
+      "t_chinese": "\u7169\u60f1",
+      "german": "Sorge",
+      "dutch": "Bezorgdheid"
+    },
+    "source": {
+      "english": "Cranky villagers",
+      "chinese": "\u813e\u6c14\u66b4\u8e81\u7684\u6751\u6c11",
+      "t_chinese": "\u813e\u6c23\u66b4\u8e81\u7684\u6751\u6c11",
+      "japanese": "\u4e0d\u6a5f\u5acc\u305d\u3046\u306a\u6751\u4eba",
+      "korean": "\uae4c\uce60\ud55c \ub9c8\uc744 \uc0ac\ub78c\ub4e4",
+      "russian": "\u041a\u0430\u043f\u0440\u0438\u0437\u043d\u044b\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0436\u0438\u0442\u0435\u043b\u0438",
+      "dutch": "Chagrijnig dorpelingen",
+      "german": "Schrullige Dorfbewohner",
+      "spanish": "Aldeanos malhumorados",
+      "french": "Villageois grincheux",
+      "italian": "Paesani irritabili"
+    }
+  },
+  {
+    "id": 87,
+    "pic_name": "Yoga_NH_Reaction_Icon.png",
+    "name": {
+      "english": "Yoga",
+      "japanese": "\u30e8\u30ac\u306e\u30dd\u30fc\u30ba",
+      "chinese": "\u745c\u4f3d\u59ff\u52bf",
+      "french": "Yoga",
+      "spanish": "Yoga",
+      "italian": "Yoga",
+      "russian": "\u0419\u043e\u0433\u0430",
+      "korean": "\uc694\uac00",
+      "t_chinese": "\u745c\u73c8\u59ff\u52e2",
+      "german": "Yoga",
+      "dutch": "Yoga"
+    },
+    "source": {
+      "english": "Hip Reaction Collection",
+      "chinese": "\u9acb\u5173\u8282\u53cd\u5e94\u96c6\u5408",
+      "t_chinese": "\u9ad6\u95dc\u7bc0\u53cd\u61c9\u96c6\u5408",
+      "japanese": "\u30d2\u30c3\u30d7\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
+      "korean": "\ud799 \ub9ac\uc561\uc158 \uceec\ub809\uc158",
+      "russian": "\u041a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u0445\u0438\u043f-\u0440\u0435\u0430\u043a\u0446\u0438\u0438",
+      "dutch": "Hip Reaction Collectie",
+      "german": "H\u00fcftreaktionssammlung",
+      "spanish": "Colecci\u00f3n Hip Reaction",
+      "french": "Collection R\u00e9action de la hanche",
+      "italian": "Collezione di reazioni dell'anca"
+    }
+  }
+]
