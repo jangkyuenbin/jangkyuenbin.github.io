@@ -1,5 +1,6 @@
 var fishing_data = null;
 
+var selected_id = null;
 var month_select_list = [];
 var month_select_name_list = [];
 var loc_select_list = [];
@@ -22,10 +23,68 @@ function fishing_page_onload() {
     donate_flag = null;
     statue_flag = null;
     hemisphere_flag = null;
+    selected_id = null;
 
     all_page_onload();
     load_fishing_db();
     multi_select_onload();
+}
+
+function onChangeSelectedFish() {
+    var i = 0;
+    if (fishing_data != null) {
+        if (selected_id == null) {
+            selected_id = fishing_data[0].id;
+        }
+        var language = getLanguage();
+        var fishing_selected_pic = document.getElementById("fishing_selected_pic");
+        var fishing_selected_name = document.getElementById("fishing_selected_name");
+        var fishing_selected_dialog = document.getElementById("fishing_selected_dialog");
+        var fishing_selected_loc_td = document.getElementById("fishing_selected_loc_td");
+        var fishing_selected_shadow_b = document.getElementById("fishing_selected_shadow_b");
+        var fishing_selected_shadow_td = document.getElementById("fishing_selected_shadow_td");
+        var fishing_selected_sell_td = document.getElementById("fishing_selected_sell_td");
+        var shadow_arr = ["Tiny", "Small", "Medium", "Large", "Very large", "Huge", "Long & Thin", "Very large (finned)"];
+
+        for (i = 0; i < fishing_data.length; i++) {
+            if (fishing_data[i].id === selected_id) {
+                fishing_selected_pic.src = './images/fish_png/' + fishing_data[i].pic_name;
+                fishing_selected_name.innerText = fishing_data[i]['name'][language];
+                fishing_selected_dialog.innerText = fishing_data[i]['dialogue'][language];
+                fishing_selected_loc_td.innerText = fishing_data[i]['location'][language];
+                fishing_selected_shadow_b.innerText = fishing_data[i]['shadow'][language];
+                fishing_selected_sell_td.innerText = fishing_data[i]['sell'];
+                if (hemisphere_flag) {
+                    update_new_month_span(Object.keys(fishing_data[i].north_time), "fish_month_span")
+                } else {
+                    update_new_month_span(Object.keys(fishing_data[i].south_time), "fish_month_span")
+                }
+                if (hemisphere_flag) {
+                    update_new_day_span(fishing_data[i].north_time, "fish_am_span", "fish_pm_span")
+                } else {
+                    update_new_day_span(fishing_data[i].south_time, "fish_am_span", "fish_pm_span")
+                }
+                var j = 0;
+                for (let k = 0; k < fishing_selected_shadow_td.childNodes.length; k++) {
+                    if (fishing_selected_shadow_td.childNodes[k].nodeName === "IMG") {
+                        var img = fishing_selected_shadow_td.childNodes[k];
+                        if (fishing_data[i]['shadow']['english'] === shadow_arr[j]) {
+                            img.style.border = "solid";
+                            img.style.borderWidth = "1px";
+                            img.style.borderRadius = "5px";
+                            img.style.borderColor = "#50b3d4";
+                        } else {
+                            img.style.border = "none";
+                        }
+                        j = j + 1;
+                    }
+                }
+                window.location.href = "#two"
+                break
+            }
+        }
+
+    }
 }
 
 function onFishingSearch(element) {
@@ -113,6 +172,7 @@ function onFishingReset() {
     loc_select_list = [];
     shadow_select_list = [];
     current_page = 1;
+    selected_id = null;
     fishing_month_category.classList.add("month_category_all_text");
     fishing_loc_category.classList.add("loc_category_all_text");
     fishing_shadow_category.classList.add("shadow_category_all_text");
@@ -604,6 +664,12 @@ function change_fishing_statued_flag(id) {
 
 function get_fishing_node_div(id, url, shadow_url, name, donated_flag, statue_flag, catchable_flag, new_flag, pass_flag, fishable_flag, coming_flag) {
     var img_div = get_fishing_img_div(url, shadow_url, catchable_flag, new_flag, pass_flag, fishable_flag, coming_flag);
+
+    img_div.onclick = function () {
+        selected_id = id;
+        onChangeSelectedFish();
+    }
+
     var name_div = document.createElement('div');
     if (catchable_flag) {
         name_div.classList.add('border_b_red');
@@ -663,7 +729,7 @@ function get_fishing_node_div(id, url, shadow_url, name, donated_flag, statue_fl
     div2.appendChild(statue_flag_div);
 
     var node_div = document.createElement('div');
-    node_div.className = "col-2 col-6-small pd";
+    node_div.className = "col-2 col-4-small pd";
     node_div.appendChild(div2);
     return node_div
 }
@@ -700,7 +766,7 @@ function update_fishing_page() {
                     var node_div = get_fishing_node_div(
                         id = fishing_data[i].id,
                         url = './images/fish_png/' + fishing_data[i].pic_name,
-                        shadow_url='./images/fish_png/' + fishing_data[i].shadow_pic_name,
+                        shadow_url = './images/fish_png/' + fishing_data[i].shadow_pic_name,
                         name = fishing_data[i]['name'][language],
                         donate_flag = fishing_data[i].donate_flag,
                         statue_flag = fishing_data[i].statue_flag,
@@ -811,6 +877,7 @@ function load_fishing_db() {
         update_hemisphere_radio();
         filter_fishing_data();
         update_fishing_page();
+        onChangeSelectedFish();
         init_language();
     } else {
         var request = new XMLHttpRequest();
@@ -822,6 +889,7 @@ function load_fishing_db() {
                 update_hemisphere_radio();
                 filter_fishing_data();
                 update_fishing_page();
+                onChangeSelectedFish();
                 init_language();
             } else {
                 window.alert("load data Error!");

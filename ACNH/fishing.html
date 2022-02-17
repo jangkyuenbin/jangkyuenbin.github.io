@@ -165,26 +165,115 @@
                                    onclick="onFishingSearch(this)"></label>
                         </div>
                     </div>
+                    <div class="row" style="padding-top: 25px">
+                        <div class="col-3 col-12-xsmall text_center">
+                            <h4 class="detailcard_radio_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="fishing_dcradio_true" name="dcradio" value="0">
+                            <label class="show_label_text" for="fishing_dcradio_true"
+                                   onclick="change_detail_card(true)"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="fishing_dcradio_false" name="dcradio" value="1" checked>
+                            <label class="hide_label_text" for="fishing_dcradio_false"
+                                   onclick="change_detail_card(false)"></label>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
 
-        <section id="two">
+        <section id="two" style="display: none">
             <div class="inner">
-                <div class="row" id="items_div">
+                <div class="detail_card_row">
+                    <div class="detail_card_img">
+                        <div class="row">
+                            <div class="col-12 col-12-xsmall"
+                                 style="justify-content: center;align-items: center;display: flex">
+                                <img class="detail_img_size"
+                                     id="fishing_selected_pic"
+                                     src="./images/fish_png/Anchovy_(Fish)_NH_Icon.png"/>
+
+                            </div>
+                            <div class="col-12 col-12-xsmall" style="display: flex;justify-content: center">
+                                <h5 id="fishing_selected_name">123</h5>
+                            </div>
+                            <div class="col-12 col-12-xsmall" style="display: flex;justify-content: center">
+                                <p style="margin: 10px" id="fishing_selected_dialog">456</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="detail_card_table">
+                        <table>
+                            <tbody id="fishing_table_body">
+                            <tr>
+                                <td class="text_center time_of_year_text">Time of year</td>
+                                <td class="text_center">
+                                    <span style="color: #DFDFDF;" id="fish_month_span">
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center time_of_day_text">Time of day</td>
+                                <td class="text_center">
+                                    <span style="color: #DFDFDF;" id="fish_am_span">
+
+                                    </span><br>
+                                    <span style="color: #DFDFDF;" id="fish_pm_span">
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center location_text">Location</td>
+                                <td class="text_center" id="fishing_selected_loc_td">1</td>
+                            </tr>
+                            <tr>
+                                <td class="text_center shadow_text">Shadow size</td>
+                                <td class="text_center" id="fishing_selected_shadow_td">
+                                    <img class="shadow_img_size" id="shadow_0"
+                                         src="./images/fish_png/Tiny_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_1"
+                                         src="./images/fish_png/Small_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_2"
+                                         src="./images/fish_png/Medium_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_3"
+                                         src="./images/fish_png/Large_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_4"
+                                         src="./images/fish_png/Very_large_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_5"
+                                         src="./images/fish_png/Huge_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_6"
+                                         src="./images/fish_png/Long_NH_Fish_Shadow.png"/>
+                                    <img class="shadow_img_size" id="shadow_7"
+                                         src="./images/fish_png/Very_large_(finned)_NH_Fish_Shadow.png"/>
+                                    <br>
+                                    <b id="fishing_selected_shadow_b">123</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center selling_text">Selling prices</td>
+                                <td class="text_center" id="fishing_selected_sell_td">1</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="three">
+            <div class="inner">
+                <div class="row" id="items_div" style="padding-left: 6%">
 
                 </div>
-                <div class="col-12 col-12-small">
+                <div class="col-12 col-12-small" style="padding-left: 4%">
                     <ul class="pagination" id="pagination">
-                        <li><span class="button small disabled">Prev</span></li>
-                        <li><a href="#" class="page active">1</a></li>
-                        <li><a href="#" class="page">2</a></li>
-                        <li><a href="#" class="page">3</a></li>
-                        <li><span>…</span></li>
-                        <li><a href="#" class="page">8</a></li>
-                        <li><a href="#" class="page">9</a></li>
-                        <li><a href="#" class="page">10</a></li>
-                        <li><a href="#" class="button small">Next</a></li>
+
                     </ul>
                 </div>
             </div>

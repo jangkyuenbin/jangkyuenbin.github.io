@@ -1,5 +1,6 @@
 var sea_data = null;
 
+var selected_id = null;
 var month_select_list = [];
 var month_select_name_list = [];
 var speed_select_list = [];
@@ -21,10 +22,68 @@ function sea_page_onload() {
     donate_flag = null;
     statue_flag = null;
     hemisphere_flag = null;
+    selected_id = null;
 
     all_page_onload();
     load_sea_db();
     multi_select_onload();
+}
+
+function onChangeSelectedSea() {
+    var i = 0;
+    if (sea_data != null) {
+        if (selected_id == null) {
+            selected_id = sea_data[0].id;
+        }
+        var language = getLanguage();
+        var sea_selected_pic = document.getElementById("sea_selected_pic");
+        var sea_selected_name = document.getElementById("sea_selected_name");
+        var sea_selected_dialog = document.getElementById("sea_selected_dialog");
+        var sea_selected_speed_td = document.getElementById("sea_selected_speed_td");
+        var sea_selected_shadow_b = document.getElementById("sea_selected_shadow_b");
+        var sea_selected_shadow_td = document.getElementById("sea_selected_shadow_td");
+        var sea_selected_sell_td = document.getElementById("sea_selected_sell_td");
+        var shadow_arr = ["Tiny", "Small", "Medium", "Large", "Very large", "Huge", "Long & Thin", "Very large (finned)"];
+
+        for (i = 0; i < sea_data.length; i++) {
+            if (sea_data[i].id === selected_id) {
+                sea_selected_pic.src = './images/sea_png/' + sea_data[i].pic_name;
+                sea_selected_name.innerText = sea_data[i]['name'][language];
+                sea_selected_dialog.innerText = sea_data[i]['dialogue'][language];
+                sea_selected_speed_td.innerText = sea_data[i]['speed'][language];
+                sea_selected_shadow_b.innerText = sea_data[i]['shadow'][language];
+                sea_selected_sell_td.innerText = sea_data[i]['sell'];
+                if (hemisphere_flag) {
+                    update_new_month_span(Object.keys(sea_data[i].north_time), "sea_month_span")
+                } else {
+                    update_new_month_span(Object.keys(sea_data[i].south_time), "sea_month_span")
+                }
+                if (hemisphere_flag) {
+                    update_new_day_span(sea_data[i].north_time, "sea_am_span", "sea_pm_span")
+                } else {
+                    update_new_day_span(sea_data[i].south_time, "sea_am_span", "sea_pm_span")
+                }
+                var j = 0;
+                for (let k = 0; k < sea_selected_shadow_td.childNodes.length; k++) {
+                    if (sea_selected_shadow_td.childNodes[k].nodeName === "IMG") {
+                        var img = sea_selected_shadow_td.childNodes[k];
+                        if (sea_data[i]['shadow']['english'] === shadow_arr[j]) {
+                            img.style.border = "solid";
+                            img.style.borderWidth = "1px";
+                            img.style.borderRadius = "5px";
+                            img.style.borderColor = "#50b3d4";
+                        } else {
+                            img.style.border = "none";
+                        }
+                        j = j + 1;
+                    }
+                }
+                window.location.href = "#two"
+                break
+            }
+        }
+
+    }
 }
 
 function multi_select_onload() {
@@ -172,6 +231,10 @@ function get_sea_img_div(url, now_month_flag, new_flag, pass_flag, bugsable_flag
 
 function get_sea_node_div(id, url, name, donated_flag, statue_flag, catchable_flag, new_flag, pass_flag, bugsable_flag, coming_flag) {
     var img_div = get_sea_img_div(url, catchable_flag, new_flag, pass_flag, bugsable_flag, coming_flag);
+    img_div.onclick = function (){
+        selected_id = id;
+        onChangeSelectedSea();
+    }
     var name_div = document.createElement('div');
     if (catchable_flag) {
         name_div.classList.add('border_b_red');
@@ -808,6 +871,7 @@ function load_sea_db() {
         update_hemisphere_radio();
         filter_sea_data();
         update_sea_page();
+        onChangeSelectedSea();
         init_language();
     } else {
         var request = new XMLHttpRequest();
@@ -819,6 +883,7 @@ function load_sea_db() {
                 update_hemisphere_radio();
                 filter_sea_data();
                 update_sea_page();
+                onChangeSelectedSea()
                 init_language();
             } else {
                 window.alert("load data Error!");

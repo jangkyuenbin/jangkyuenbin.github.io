@@ -15,16 +15,75 @@ var max_page = 10;
 var max_item = 18;
 var tmp_inner_text = '';
 var max_show = 3;
+var selected_id = null;
 
 function insect_page_onload() {
     name_flag = null;
     donate_flag = null;
     statue_flag = null;
     hemisphere_flag = null;
+    selected_id = null;
 
     all_page_onload();
     load_insect_db();
     multi_select_onload();
+}
+
+function onChangeSelectedInsect() {
+    var i = 0;
+    if (insect_data != null) {
+        if (selected_id == null) {
+            selected_id = insect_data[0].id;
+        }
+        var language = getLanguage();
+        var insect_selected_pic = document.getElementById("insect_selected_pic");
+        var insect_selected_name = document.getElementById("insect_selected_name");
+        var insect_selected_dialog = document.getElementById("insect_selected_dialog");
+        var insect_selected_loc_td = document.getElementById("insect_selected_loc_td");
+        var insect_selected_weather_b = document.getElementById("insect_selected_weather_b");
+        var insect_selected_weather_td = document.getElementById("insect_selected_weather_td");
+        var insect_selected_sell_td = document.getElementById("insect_selected_sell_td");
+        var weather_arr = ["Any except rain", "Rain only", "Any weather"];
+
+        for (i = 0; i < insect_data.length; i++) {
+            if (insect_data[i].id === selected_id) {
+                insect_selected_pic.src = './images/insect_png/' + insect_data[i].pic_name;
+                insect_selected_name.innerText = insect_data[i]['name'][language];
+                insect_selected_dialog.innerText = insect_data[i]['dialogue'][language];
+                insect_selected_loc_td.innerText = insect_data[i]['location'][language];
+                insect_selected_weather_b.innerText = insect_data[i]['weather'][language];
+                insect_selected_sell_td.innerText = insect_data[i]['sell'];
+                if (hemisphere_flag) {
+                    update_new_month_span(Object.keys(insect_data[i].north_time), "insect_month_span")
+                } else {
+                    update_new_month_span(Object.keys(insect_data[i].south_time), "insect_month_span")
+                }
+                if (hemisphere_flag) {
+                    update_new_day_span(insect_data[i].north_time, "insect_am_span", "insect_pm_span")
+                } else {
+                    update_new_day_span(insect_data[i].south_time, "insect_am_span", "insect_pm_span")
+                }
+                var j = 0;
+                for (let k = 0; k < insect_selected_weather_td.childNodes.length; k++) {
+                    if (insect_selected_weather_td.childNodes[k].nodeName === "IMG") {
+                        var img = insect_selected_weather_td.childNodes[k];
+                        if (insect_data[i]['weather']['english'] === weather_arr[j]) {
+                            img.style.border = "solid";
+                            img.style.borderWidth = "1px";
+                            img.style.borderRadius = "5px";
+                            img.style.borderColor = "#50b3d4";
+                        } else {
+                            img.style.border = "none";
+                        }
+                        j = j + 1;
+                    }
+                }
+                window.location.href = "#two"
+                break
+            }
+        }
+
+    }
 }
 
 function multi_select_onload() {
@@ -172,6 +231,10 @@ function get_insect_img_div(url, now_month_flag, new_flag, pass_flag, bugsable_f
 
 function get_insect_node_div(id, url, name, donated_flag, statue_flag, catchable_flag, new_flag, pass_flag, bugsable_flag, coming_flag) {
     var img_div = get_insect_img_div(url, catchable_flag, new_flag, pass_flag, bugsable_flag, coming_flag);
+    img_div.onclick = function () {
+        selected_id = id;
+        onChangeSelectedInsect();
+    }
     var name_div = document.createElement('div');
     if (catchable_flag) {
         name_div.classList.add('border_b_red');
@@ -231,7 +294,7 @@ function get_insect_node_div(id, url, name, donated_flag, statue_flag, catchable
     div2.appendChild(statue_flag_div);
 
     var node_div = document.createElement('div');
-    node_div.className = "col-2 col-6-small pd";
+    node_div.className = "col-2 col-4-small pd";
     node_div.appendChild(div2);
     return node_div
 }
@@ -808,6 +871,7 @@ function load_insect_db() {
         update_hemisphere_radio();
         filter_insect_data();
         update_insect_page();
+        onChangeSelectedInsect();
         init_language();
     } else {
         var request = new XMLHttpRequest();
@@ -819,6 +883,7 @@ function load_insect_db() {
                 update_hemisphere_radio();
                 filter_insect_data();
                 update_insect_page();
+                onChangeSelectedInsect();
                 init_language();
             } else {
                 window.alert("load data Error!");

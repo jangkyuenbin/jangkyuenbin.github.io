@@ -273,6 +273,108 @@ function getNavPageDiv(onPageSearch, page_id) {
     return li
 }
 
+function update_new_month_span(month_list, month_span_id) {
+    var arr = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+    var now_month = getGameMonths();
+    var month_spans = document.getElementById(month_span_id);
+    while (month_spans.firstChild) {
+        month_spans.removeChild(month_spans.firstChild);
+    }
+    var b = document.createElement("b")
+    b.innerText = "Month: ";
+    month_spans.appendChild(b);
+
+    for (let i = 0; i < arr.length; ++i) {
+        var span = document.createElement("span");
+        span.innerText = arr[i];
+        if (i + 1 === now_month) {
+            span.classList.add("current_span")
+        } else {
+            span.classList.add("not_current_span")
+        }
+        if (month_list.includes((i + 1).toString())) {
+            span.classList.add("blue_span");
+        } else {
+            span.classList.add("gray_span");
+        }
+        month_spans.appendChild(span);
+    }
+}
+
+function update_new_day_span(time_dict, am_span_id, pm_span_id) {
+    var am_spans = document.getElementById(am_span_id);
+    var pm_spans = document.getElementById(pm_span_id);
+    var arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
+    var am_b = document.createElement("b");
+    var pm_b = document.createElement("b");
+
+    var now_month = getGameMonths();
+    var now_hour = getGameHours();
+
+    while (am_spans.firstChild) {
+        am_spans.removeChild(am_spans.firstChild);
+    }
+    while (pm_spans.firstChild) {
+        pm_spans.removeChild(pm_spans.firstChild);
+    }
+
+    am_b.innerText = "AM: ";
+    pm_b.innerText = "PM: ";
+    am_spans.appendChild(am_b);
+    pm_spans.appendChild(pm_b);
+
+    for (let i = 0; i < arr.length; ++i) {
+        var am_span = document.createElement("span");
+        var pm_span = document.createElement("span");
+        am_span.innerText = arr[i];
+        pm_span.innerText = arr[i];
+        if (now_hour > 11) {
+            if (i === now_hour - 12) {
+                pm_span.classList.add("current_span");
+            } else {
+                pm_span.classList.add("not_current_span");
+            }
+            am_span.classList.add("not_current_span");
+        } else {
+            if (i === now_hour) {
+                am_span.classList.add("current_span");
+            } else {
+                am_span.classList.add("not_current_span");
+            }
+            pm_span.classList.add("not_current_span");
+        }
+        if (Object.keys(time_dict).includes(now_month.toString())) {
+            if (time_dict[now_month.toString()].includes(i)) {
+                am_span.classList.add("blue_span");
+            } else {
+                am_span.classList.add("gray_span");
+            }
+
+            if (time_dict[now_month.toString()].includes(i + 12)) {
+                pm_span.classList.add("blue_span");
+            } else {
+                pm_span.classList.add("gray_span");
+            }
+        } else {
+            am_span.classList.add("gray_span");
+            pm_span.classList.add("gray_span");
+        }
+        am_spans.appendChild(am_span);
+        pm_spans.appendChild(pm_span);
+    }
+}
+
+function change_detail_card(flag) {
+    var section = document.getElementById("two");
+    if (section != null) {
+        if (flag) {
+            section.style.display = "";
+        } else {
+            section.style.display = "none";
+        }
+    }
+}
+
 function update_pagination(onPageSearch) {
     // update pagination
     var i = 0;

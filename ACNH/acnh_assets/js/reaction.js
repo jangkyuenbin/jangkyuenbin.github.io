@@ -122,7 +122,7 @@ function get_reaction_node_div(id, url, name, flag) {
 
     img_div.onclick = function () {
         selected_id = id;
-        onChangeSelectedReaction(null);
+        onChangeSelectedReaction();
     }
 
     var name_div = document.createElement('div');
