@@ -300,6 +300,7 @@ div.menu_mask_pop {
     border: 2px solid;
     border-radius: 25px;
     border-color: #8aa7ff;
+    background-color: rgba(0, 0, 0, 0.78);
 }
 
 @media screen and (max-width: 2048px) {

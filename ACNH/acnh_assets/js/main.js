@@ -1,5 +1,15 @@
 var language_data = null;
 
+function isJSON(str) {
+    try {
+        if (typeof JSON.parse(str) == "object") {
+            return true;
+        }
+    } catch (e) {
+    }
+    return false;
+}
+
 function isIntNum(val) {
     var regPos = / ^\d+$/; // 非负整数
     var regNeg = /^\-[1-9][0-9]*$/; // 负整数
@@ -104,7 +114,7 @@ function setMenufunc() {
             var div = document.createElement("div");
             div.id = "loadingMessage";
             div.innerText = "🎥 Unable to access video stream (please make sure you have a webcam enabled)";
-            myoutputMessage.innerText = "No QR code detected.";
+            // myoutputMessage.innerText = "No QR code detected.";
             pop.appendChild(mycanvas)
             pop.appendChild(div)
             pop.appendChild(myoutputMessage)
@@ -126,12 +136,21 @@ function setMenufunc() {
                 canvas.stroke();
             }
 
+            function drawMessage(text, x, y) {
+                canvas.font = "48px serif";
+                canvas.textBaseline = "hanging";
+                canvas.strokeText(text, x, y);
+            }
+
             // Use facingMode: environment to attemt to get the front camera on phones
+
             navigator.mediaDevices.getUserMedia({video: {facingMode: "environment"}}).then(function (stream) {
                 video.srcObject = stream;
                 video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
                 video.play();
                 requestAnimationFrame(tick);
+            }).catch(function (e) {
+
             });
 
             function tick() {
@@ -153,12 +172,37 @@ function setMenufunc() {
                         drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
                         drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
                         drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
-                        outputMessage.innerText = code.data;
-                        // outputData.parentElement.hidden = false;
-                        // outputData.innerText = code.data;
+                        // outputMessage.innerText = code.data;
+                        if (isJSON(code.data)) {
+                            var json = JSON.parse(code.data);
+                            if (json.info.name != null) {
+                                var usernames = getAllUserName();
+                                if (usernames.includes(json.info.name)) {
+                                    var r = window.confirm("是否覆盖已有用户: " + json.info.name);
+                                    if (r === true) {
+                                        json.is_default = false;
+                                        createUser(json.info.name, json)
+                                        location.reload();
+                                    } else {
+                                        console.log("取消覆盖!");
+                                    }
+                                } else {
+                                    json.is_default = false;
+                                    createUser(json.info.name, json)
+                                    location.reload();
+                                }
+                            } else {
+                                var x = Math.floor(0.5 * code.location.topLeftCorner.x + 0.5 * code.location.bottomLeftCorner.x);
+                                var y = Math.floor(0.5 * code.location.topLeftCorner.y + 0.5 * code.location.bottomLeftCorner.y);
+                                drawMessage("Not User Data!", x, y);
+                            }
+                        } else {
+                            var x = Math.floor(0.5 * code.location.topLeftCorner.x + 0.5 * code.location.bottomLeftCorner.x);
+                            var y = Math.floor(0.5 * code.location.topLeftCorner.y + 0.5 * code.location.bottomLeftCorner.y);
+                            drawMessage("Not User Data!", x, y);
+                        }
                     } else {
-                        outputMessage.innerText = "No QR code detected.";
-                        // outputData.parentElement.hidden = true;
+                        // outputMessage.innerText = "No QR code detected.";
                     }
                 }
                 requestAnimationFrame(tick);
