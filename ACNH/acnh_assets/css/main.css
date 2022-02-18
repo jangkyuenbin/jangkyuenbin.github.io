@@ -266,6 +266,41 @@ span.gray_span {
     border-color: #DFDFDF;
 }
 
+@media screen and (max-width: 2048px) {
+    div.detail_card_row {
+        display: flex;
+        margin-left: 4%;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px
+    }
+
+    div.detail_card_img {
+        width: 25%;
+
+    }
+
+    div.detail_card_table {
+        width: 75%;
+        border-left: solid;
+        border-top: none;
+    }
+
+    div.detail_card_table > table {
+        margin: 0px;
+    }
+
+    img.detail_img_size {
+        height: 220px;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+    img.shadow_img_size {
+        height: 64px;
+    }
+
+}
 
 @media screen and (max-width: 1680px) {
     div.detail_card_row {
