@@ -53,6 +53,8 @@ function setMenufunc() {
     var import_btn_text = document.getElementById("import_btn_text");
     var reset_btn_text = document.getElementById("reset_btn_text");
     var download_btn_text = document.getElementById("download_btn_text");
+    var import_qrcode_btn_text = document.getElementById("import_qrcode_btn_text");
+    var download_qrcode_btn_text = document.getElementById("download_qrcode_btn_text");
 
     if (menu_form != null) {
         menu_form.onchange = function () {
@@ -78,6 +80,117 @@ function setMenufunc() {
     if (download_btn_text != null) {
         download_btn_text.onclick = function () {
             downloadCurrentUserJson();
+        }
+    }
+    if (import_qrcode_btn_text != null) {
+        import_qrcode_btn_text.onclick = function () {
+            var menu_x = document.getElementsByClassName("close")[0];
+            if (menu_x != null) {
+                menu_x.style.display = "none";
+            }
+            var bg = document.getElementById("menu_mask_bg");
+            var pop = document.getElementById("menu_mask_pop");
+            while (pop.firstChild) {
+                pop.removeChild(pop.firstChild);
+            }
+            if (bg != null) {
+                bg.style.display = "block";
+            }
+            var mycanvas = document.createElement("canvas");
+            var myoutputMessage = document.createElement("div");
+            myoutputMessage.id = "outputMessage";
+            mycanvas.id = "canvas";
+            mycanvas.hidden = true;
+            var div = document.createElement("div");
+            div.id = "loadingMessage";
+            div.innerText = "🎥 Unable to access video stream (please make sure you have a webcam enabled)";
+            myoutputMessage.innerText = "No QR code detected.";
+            pop.appendChild(mycanvas)
+            pop.appendChild(div)
+            pop.appendChild(myoutputMessage)
+
+            var video = document.createElement("video");
+            var canvasElement = document.getElementById("canvas");
+            var canvas = canvasElement.getContext("2d");
+            var loadingMessage = document.getElementById("loadingMessage");
+            var outputContainer = document.getElementById("output");
+            var outputMessage = document.getElementById("outputMessage");
+            var outputData = document.getElementById("outputData");
+
+            function drawLine(begin, end, color) {
+                canvas.beginPath();
+                canvas.moveTo(begin.x, begin.y);
+                canvas.lineTo(end.x, end.y);
+                canvas.lineWidth = 4;
+                canvas.strokeStyle = color;
+                canvas.stroke();
+            }
+
+            // Use facingMode: environment to attemt to get the front camera on phones
+            navigator.mediaDevices.getUserMedia({video: {facingMode: "environment"}}).then(function (stream) {
+                video.srcObject = stream;
+                video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
+                video.play();
+                requestAnimationFrame(tick);
+            });
+
+            function tick() {
+                loadingMessage.innerText = "⌛ Loading video..."
+                if (video.readyState === video.HAVE_ENOUGH_DATA) {
+                    loadingMessage.hidden = true;
+                    canvasElement.hidden = false;
+                    // outputContainer.hidden = false;
+
+                    canvasElement.height = video.videoHeight;
+                    canvasElement.width = video.videoWidth;
+                    canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+                    var imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+                    var code = jsQR(imageData.data, imageData.width, imageData.height, {
+                        inversionAttempts: "dontInvert",
+                    });
+                    if (code) {
+                        drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+                        drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+                        drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+                        drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+                        outputMessage.innerText = code.data;
+                        // outputData.parentElement.hidden = false;
+                        // outputData.innerText = code.data;
+                    } else {
+                        outputMessage.innerText = "No QR code detected.";
+                        // outputData.parentElement.hidden = true;
+                    }
+                }
+                requestAnimationFrame(tick);
+            }
+        }
+    }
+    if (download_qrcode_btn_text != null) {
+        download_qrcode_btn_text.onclick = function () {
+            var menu_x = document.getElementsByClassName("close")[0];
+            if (menu_x != null) {
+                menu_x.style.display = "none";
+            }
+            var bg = document.getElementById("menu_mask_bg");
+            var pop = document.getElementById("menu_mask_pop");
+            while (pop.firstChild) {
+                pop.removeChild(pop.firstChild);
+            }
+            if (bg != null) {
+                bg.style.display = "block";
+            }
+            const current_user_json = getSelectedUserJson();
+            var canvas = document.createElement("canvas");
+            canvas.id = "canvas";
+            pop.appendChild(canvas)
+            QRCode.toCanvas(document.getElementById('canvas'), JSON.stringify(current_user_json), function (error) {
+                if (error) console.error(error)
+                var canvas1 = document.getElementById('canvas');
+                canvas1.style.height = "100%";
+                canvas1.style.width = "100%";
+                canvas1.style.padding = "20px";
+                canvas1.style.borderRadius = "25px";
+            })
         }
     }
 }

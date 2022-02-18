@@ -51,6 +51,28 @@ function createMenu_lan_form() {
 
 }
 
+function createMenu_div_btn(c1, c2, text){
+    var li = document.createElement('li');
+    var a = document.createElement('div');
+    if (c1 === "download_btn_text") {
+        a.classList.add("icon");
+        a.classList.add("solid");
+        a.classList.add("fa-download");
+    } else {
+        a.classList.add("primary");
+    }
+    a.classList.add("button");
+    a.classList.add("small");
+    a.classList.add("fit");
+    a.id = c1;
+    a.classList.add(c1);
+    a.textContent = text;
+
+    li.classList.add(c2);
+    li.appendChild(a);
+    return li
+}
+
 function createMenu_btn(c1, c2, text) {
     var li = document.createElement('li');
     var a = document.createElement('a');
@@ -100,6 +122,33 @@ function createMenu_user_form() {
     return form
 }
 
+function createQRMaskDiv() {
+    var bg = document.createElement("div");
+    var point = document.createElement("div");
+    var pop = document.createElement("div");
+    var exit_buttom = document.createElement("img");
+    bg.classList.add("menu_mask_bg");
+    bg.id = "menu_mask_bg";
+    point.classList.add("menu_mask_point");
+    pop.classList.add("menu_mask_pop");
+    pop.id = "menu_mask_pop";
+    exit_buttom.classList.add("menu_mask_exit");
+    exit_buttom.src = "./images/flag_png/delete.png";
+    exit_buttom.style.height = "50px";
+    exit_buttom.onclick = function () {
+        var bg = document.getElementById("menu_mask_bg");
+        bg.style.display = "none";
+        var menu_x = document.getElementsByClassName("close")[0];
+        if (menu_x != null) {
+            menu_x.style.display = "block";
+        }
+    }
+    point.appendChild(pop);
+    point.appendChild(exit_buttom);
+    bg.appendChild(point);
+    return bg
+}
+
 function createMenu() {
     var nav = document.getElementById("menu");
     if (nav != null) {
@@ -119,11 +168,18 @@ function createMenu() {
 
         var ul2 = document.createElement("ul");
         ul2.classList.add("nav_ul");
-        ul2.appendChild(createMenu_btn("import_btn_text", "nav_li_left_4", "导入"));
-        ul2.appendChild(createMenu_btn("reset_btn_text", "nav_li_center_4", "重置"));
-        ul2.appendChild(createMenu_btn("download_btn_text", "nav_li_right_4", "导出"));
+        ul2.appendChild(createMenu_div_btn("import_btn_text", "nav_li_left_4", "导入"));
+        ul2.appendChild(createMenu_div_btn("reset_btn_text", "nav_li_center_4", "重置"));
+        ul2.appendChild(createMenu_div_btn("download_btn_text", "nav_li_right_4", "导出"));
 
         nav.appendChild(ul2);
+
+        var ul_qrcode = document.createElement("ul");
+        ul_qrcode.classList.add("nav_ul");
+        ul_qrcode.appendChild(createMenu_div_btn("import_qrcode_btn_text", "nav_li_left_5", "导入"));
+        ul_qrcode.appendChild(createMenu_div_btn("download_qrcode_btn_text", "nav_li_right_5", "导出"));
+
+        nav.appendChild(ul_qrcode);
 
         var div = document.createElement("div");
         div.style.width = "0";
@@ -154,6 +210,8 @@ function createMenu() {
         ul3.appendChild(li);
 
         nav.appendChild(ul3);
+        var bg = createQRMaskDiv();
+        nav.appendChild(bg)
     }
 }
 
