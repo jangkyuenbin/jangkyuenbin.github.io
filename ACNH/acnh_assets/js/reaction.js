@@ -28,6 +28,7 @@ function onChangeSelectedReaction() {
         var selected_reaction_name = document.getElementById("selected_reaction_name");
         for (i = 0; i < reaction_data.length; i++) {
             if (reaction_data[i].id === selected_id) {
+                selected_reaction_pic.src = './images/reaction_png/' + reaction_data[i].pic_name;
                 selected_reaction_pic.src = './images/reaction_gif/' + reaction_data[i].name.english + ".gif";
                 selected_reaction_name.innerText = reaction_data[i]['name'][language];
                 window.location.href = "#one"
