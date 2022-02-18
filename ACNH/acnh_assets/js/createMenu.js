@@ -142,6 +142,7 @@ function createQRMaskDiv() {
         if (menu_x != null) {
             menu_x.style.display = "block";
         }
+        location.reload();
     }
     point.appendChild(pop);
     point.appendChild(exit_buttom);

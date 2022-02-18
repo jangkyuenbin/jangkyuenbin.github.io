@@ -167,6 +167,10 @@ function setMenufunc() {
                     var code = jsQR(imageData.data, imageData.width, imageData.height, {
                         inversionAttempts: "dontInvert",
                     });
+                    canvasElement.style.height = "100%";
+                    canvasElement.style.width = "100%";
+                    canvasElement.style.padding = "20px";
+                    canvasElement.style.borderRadius = "25px";
                     if (code) {
                         drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
                         drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
