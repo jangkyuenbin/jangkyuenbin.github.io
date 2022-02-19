@@ -645,5 +645,27 @@ function init_language() {
             }
         }
     }
+}
 
+function get_first_login_flag() {
+    var global_json = getGlobalJson();
+    if (global_json != null) {
+        if (global_json['first_login_flag'] != null) {
+            return global_json['first_login_flag']
+        }
+        global_json['first_login_flag'] = true;
+        saveGlobalJson(global_json);
+        return global_json['first_login_flag'];
+    } else {
+        global_json = {'first_login_flag': true}
+        saveGlobalJson(global_json);
+        return global_json['first_login_flag'];
+    }
+}
+
+function init_help_box() {
+    var first_login_flag = get_first_login_flag();
+    if (first_login_flag){
+
+    }
 }

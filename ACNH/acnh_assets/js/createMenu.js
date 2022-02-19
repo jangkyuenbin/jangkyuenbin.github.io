@@ -58,6 +58,14 @@ function createMenu_div_btn(c1, c2, text){
         a.classList.add("icon");
         a.classList.add("solid");
         a.classList.add("fa-download");
+    }else if (c1 === "import_qrcode_btn_text") {
+        a.classList.add("icon");
+        a.classList.add("solid");
+        a.classList.add("fa-upload");
+    }else if (c1 === "download_qrcode_btn_text") {
+        a.classList.add("icon");
+        a.classList.add("solid");
+        a.classList.add("fa-download");
     } else {
         a.classList.add("primary");
     }
