@@ -57,6 +57,55 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
+function computeTextRect(
+    ctx,
+    text,
+    x = 0,
+    y = 0
+) {
+    const {width, actualBoundingBoxAscent, actualBoundingBoxDescent} =
+        ctx.measureText(text);
+    const height = actualBoundingBoxAscent + actualBoundingBoxDescent;
+    y = y - actualBoundingBoxAscent;
+    return {
+        x, y, width, height,
+    }
+}
+
+function genTextPicture(
+    ctx,
+    targetCtx,
+    text,
+    rect
+) {
+    const {width, height} = rect;
+
+    ctx.clearRect(0, 0, width, height);
+    ctx.canvas.width = width;
+    ctx.canvas.height = height;
+    ctx.font = targetCtx.font;
+    ctx.textBaseline = targetCtx.textBaseline;
+    ctx.fillStyle = targetCtx.fillStyle;
+    ctx.beginPath();
+    ctx.fillText(text, 0, 0);
+    return new Promise((resolve) => {
+        ctx.canvas.toBlob((blob) => {
+            resolve(createImageBitmap(blob));
+        });
+    }).catch((err) => console.error(err));
+}
+
+function draw3DMessage(ctx, pa, pb, pc, pd, text) {
+    const hiddenCtx = document
+        .createElement('canvas')
+        .getContext('2d');
+    ctx.font = "48px serif";
+    ctx.textBaseline = "hanging";
+    const textRect = computeTextRect(ctx, text, drawPoint.x, drawPoint.y);
+    const textPicture = genTextPicture(hiddenCtx, ctx, text, textRect);
+
+}
+
 function setMenufunc() {
     var menu_form = document.getElementById('menu_form');
     var user_form = document.getElementById("user_form");
@@ -229,8 +278,11 @@ function setMenufunc() {
             }
             const current_user_json = getSelectedUserJson();
             var canvas = document.createElement("canvas");
+            var div = document.createElement("div");
             canvas.id = "canvas";
-            pop.appendChild(canvas)
+            div.id = "qrcode_show_div";
+            pop.appendChild(canvas);
+            pop.appendChild(div);
             QRCode.toCanvas(document.getElementById('canvas'), JSON.stringify(current_user_json), function (error) {
                 if (error) console.error(error)
                 var canvas1 = document.getElementById('canvas');
@@ -585,8 +637,20 @@ function assign_element_language() {
                     span.classList.add('icon_more');
                     objs[i].textContent = text;
                     objs[i].appendChild(span);
+                } else if (name_k.indexOf("page") > -1 && objs[i].tagName === "H1") {
+                    var img = document.createElement('img');
+                    img.src = "./images/flag_png/que.png";
+                    img.style.width = "32px";
+                    img.style.marginLeft = "10px";
+                    img.classList.add("que_img");
+                    var tmp = name_k;
+                    img.onclick = function () {
+                        window.location.href = "./help.html#" + tmp.split("_page")[0];
+                    }
+                    objs[i].innerText = text;
+                    objs[i].appendChild(img);
                 } else {
-                    objs[i].textContent = text;
+                    objs[i].innerText = text;
                 }
 
             }
@@ -663,9 +727,118 @@ function get_first_login_flag() {
     }
 }
 
+function get_float_box() {
+    var bg = document.createElement("div");
+    var point = document.createElement("div");
+    var pop = document.createElement("div");
+    var exit_buttom = document.createElement("img");
+    bg.classList.add("float_box_mask_bg");
+    bg.id = "float_box_mask_bg";
+    point.classList.add("float_box_mask_point");
+    pop.classList.add("float_box_mask_pop");
+    pop.id = "float_box_mask_pop";
+    exit_buttom.classList.add("float_box_mask_exit");
+    exit_buttom.src = "./images/flag_png/delete.png";
+    exit_buttom.style.height = "50px";
+    exit_buttom.onclick = function () {
+        var bg = document.getElementById("float_box_mask_bg");
+        var bg_parent = bg.parentNode;
+        bg_parent.removeChild(bg);
+    }
+    point.appendChild(pop);
+    point.appendChild(exit_buttom);
+    bg.appendChild(point);
+    return bg
+}
+
+function get_new_box(name, name_text_c, name_url, infos, infocs) {
+    var d1 = document.createElement("div");
+    var d_name = document.createElement("a");
+    var d_info = document.createElement("div");
+    var info_ul = document.createElement("ul");
+    d1.style.paddingBottom = "10px";
+    d_name.innerText = name;
+    d_name.href = name_url;
+    d_name.style.fontWeight = "bold";
+    d_name.style.fontSize = "28px";
+    if (name_text_c != null) {
+        d_name.classList.add(name_text_c)
+    }
+    d_info.style.marginLeft = "20px";
+    for (var i = 0; i < infos.length; i++) {
+        var li = document.createElement("li");
+        li.classList.add(infocs[i])
+        li.innerText = infos[i];
+        info_ul.appendChild(li);
+    }
+    info_ul.style.marginBottom = "5px";
+    d_info.appendChild(info_ul)
+    d1.appendChild(d_name);
+    d1.appendChild(d_info);
+    return d1;
+}
+
 function init_help_box() {
     var first_login_flag = get_first_login_flag();
-    if (first_login_flag){
+    if (first_login_flag) {
+        var message_div = get_float_box();
+        var wrapper = document.getElementById("wrapper");
+        wrapper.appendChild(message_div);
 
+        var pop = document.getElementById("float_box_mask_pop");
+        while (pop.firstChild) {
+            pop.removeChild(pop.firstChild);
+        }
+        var title_div = document.createElement("div");
+        var content_div = document.createElement("div");
+        title_div.classList.add("float_box_title")
+        title_div.classList.add("updates_title_text")
+        title_div.innerText = "What's New"
+
+        content_div.classList.add("float_box_content")
+        content_div.appendChild(get_new_box("0.0.0 (Base)", null, "./updates.html#v0_0_0",
+            ["", "", "", ""],
+            ["v0_0_0_012222_base_li_01_text", "v0_0_1_012222_base_li_01_text", "v0_0_2_012222_base_li_01_text", "v0_0_3_012222_base_li_01_text"]));
+        content_div.appendChild(get_new_box("more", "update_more_text", "./updates.html", [], []));
+
+        var dont_show_div = document.createElement("div");
+        var click_div = document.createElement("div");
+        var input = document.createElement("input");
+        input.type = "checkbox";
+        input.id = "float_box_checkbox"
+        var label = document.createElement("label");
+        label.htmlFor = "float_box_checkbox";
+        label.classList.add("not_show_text")
+        click_div.appendChild(input);
+        click_div.appendChild(label);
+        click_div.style.width = "fit-content";
+        dont_show_div.style.marginLeft = "40px";
+        dont_show_div.style.marginBottom = "20px";
+        dont_show_div.appendChild(click_div);
+
+        label.onclick = function () {
+            var global_json = getGlobalJson();
+            var cb = document.getElementById("float_box_checkbox");
+            if (global_json != null) {
+                if (global_json['first_login_flag'] != null) {
+                    global_json['first_login_flag'] = !global_json['first_login_flag'];
+                } else {
+                    global_json['first_login_flag'] = true;
+                }
+                saveGlobalJson(global_json);
+            } else {
+                global_json = {'first_login_flag': true}
+                saveGlobalJson(global_json);
+            }
+        }
+
+        pop.appendChild(title_div);
+        pop.appendChild(content_div);
+        pop.appendChild(dont_show_div);
+        $('#float_box_mask_bg').bind('mousewheel', function (event) {
+            if (!event) event = window.event;
+            // this.scrollTop = this.scrollTop - (event.wheelDelta ? event.wheelDelta : -event.detail * 10);
+            return false;
+        });
     }
 }
