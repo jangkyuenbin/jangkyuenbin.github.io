@@ -150,7 +150,10 @@ function createQRMaskDiv() {
         if (menu_x != null) {
             menu_x.style.display = "block";
         }
-        location.reload();
+        var div_flag = document.getElementById("qrcode_show_div");
+        if (div_flag === null){
+            location.reload();
+        }
     }
     point.appendChild(pop);
     point.appendChild(exit_buttom);
