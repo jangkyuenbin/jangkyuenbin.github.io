@@ -12,6 +12,18 @@ function music_page_onload() {
     own_flag = null;
     playing_id = null;
     load_music_db();
+    document.addEventListener("load", function () {
+        play_music();
+    });
+}
+
+function play_music() {
+    var player = document.getElementById("player");
+    if (player) {
+        player.play().catch(function () {
+            // do something
+        });
+    }
 }
 
 function onMusicSearch(element) {
@@ -97,8 +109,10 @@ function onChangePlayerMusic(element) {
                 var old_src = player.src.split('/').pop();
                 if (old_src !== new_name) {
                     player.src = new_src;
+                    player.play().catch(function () {
+                        // do something
+                    });
                 }
-
             }
         }
     }
