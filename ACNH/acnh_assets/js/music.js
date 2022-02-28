@@ -100,7 +100,7 @@ function onChangePlayerMusic(element) {
                 var new_src;
                 var new_name;
                 if (flag) {
-                    new_src = './music/live/' + music_data[i].live_name;
+                    new_src = './music/live/' + music_data[i].live_name.split(".")[0] + ".mp3";
                     new_name = music_data[i].live_name;
                 } else {
                     new_src = './music/aircheck/' + music_data[i].aircheck_name;
