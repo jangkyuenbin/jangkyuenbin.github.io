@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>CLOTHING</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./acnh_assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/noscript.css"/>
+    </noscript>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html#clothing" class="logo"><strong>Animal Crossing</strong> <span>by Jang</span></a>
+        <nav>
+            <a class="menu_name_text" href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1 class="clothing_page_text">服饰</h1>
+                </header>
+                <form method="post" id="clothing_form" action="#">
+                    <div class="row gtr-uniform">
+                        <div class="col-6 col-12-xsmall">
+                            <input class="clothing_input_text" type="text" name="clothing_name" id="clothing_name"
+                                   value="" placeholder=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <a id="clothing_search_btn" href="#"
+                                       class="button primary fit search_btn_text"
+                                       onclick="onClothingSearch(this)">搜索</a>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <a href="#" class="button fit reset_btn_text"
+                                       onclick="onClothingReset()">重置</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 25px">
+                        <div class="col-3 col-12-xsmall text_center">
+                            <h4 class="obtain_text"></h4>
+                        </div>
+                        <div class="col-9 col-12-xsmall" id="multi_select">
+                            <div class="col-6 col-12-xsmall multi_select3">
+                                <div class="fit multi_select2 category_all_text" id="clothing_category">
+                                    <span class="icon_more"></span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-12-xsmall multi_select">
+                                <div id="clothing_msc" class="multi_select_content" style="display: none">
+                                    <div class="col-12 col-12-small multi_select_item">
+                                        <input type="checkbox" id="demo_01" name="demo-copy">
+                                        <label for="demo_01">Email me a copy</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 25px">
+                        <div class="col-3 col-12-xsmall text_center">
+                            <h4 class="clothing_type_text"></h4>
+                        </div>
+                        <div class="col-9 col-12-xsmall">
+                            <div class="row">
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Top_NH_Inv_Icon.png" width="100%"
+                                         id="tops_img"
+                                         onclick="change_clothing_search_space('tops')"
+                                         ondblclick="change_clothing_search_space_dc('tops')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Bottoms_NH_Inv_Icon.png" width="100%"
+                                         id="bottoms_img"
+                                         onclick="change_clothing_search_space('bottoms')"
+                                         ondblclick="change_clothing_search_space_dc('bottoms')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Dress-Up_NH_Inv_Icon.png" width="100%"
+                                         id="dressup_img"
+                                         onclick="change_clothing_search_space('dressup')"
+                                         ondblclick="change_clothing_search_space_dc('dressup')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Headwear_NH_Inv_Icon.png" width="100%"
+                                         id="headwear_img"
+                                         onclick="change_clothing_search_space('headwear')"
+                                         ondblclick="change_clothing_search_space_dc('headwear')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Accessory_NH_Inv_Icon.png" width="100%"
+                                         id="accessories_img"
+                                         onclick="change_clothing_search_space('accessories')"
+                                         ondblclick="change_clothing_search_space_dc('accessories')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Socks_NH_Inv_Icon.png" width="100%"
+                                         id="socks_img"
+                                         onclick="change_clothing_search_space('socks')"
+                                         ondblclick="change_clothing_search_space_dc('socks')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Shoes_NH_Inv_Icon.png" width="100%"
+                                         id="shoes_img"
+                                         onclick="change_clothing_search_space('shoes')"
+                                         ondblclick="change_clothing_search_space_dc('shoes')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Bag_NH_Inv_Icon.png" width="100%"
+                                         id="bags_img"
+                                         onclick="change_clothing_search_space('bags')"
+                                         ondblclick="change_clothing_search_space_dc('bags')">
+                                </div>
+                                <div class="img_col">
+                                    <img src="./images/clothing_png/120px-Umbrella_NH_Inv_Icon.png" width="100%"
+                                         id="umbrellas_img"
+                                         onclick="change_clothing_search_space('umbrellas')"
+                                         ondblclick="change_clothing_search_space_dc('umbrellas')">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="padding-top: 25px">
+                        <div class="col-3 col-12-xsmall text_center">
+                            <h4 class="donate_radio_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="clothing_oradio_all" name="dradio" value="0" checked>
+                            <label class="all_label_text" for="clothing_oradio_all"
+                                   onclick="onClothingSearch(this)"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="clothing_oradio_true" name="dradio" value="1">
+                            <label class="owned_label_text" for="clothing_oradio_true"
+                                   onclick="onClothingSearch(this)"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="clothing_oradio_false" name="dradio" value="2">
+                            <label class="not_owned_label_text" for="clothing_oradio_false"
+                                   onclick="onClothingSearch(this)"></label>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 25px">
+                        <div class="col-3 col-12-xsmall text_center">
+                            <h4 class="detailcard_radio_text"></h4>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="clothing_dcradio_true" name="dcradio" value="0">
+                            <label class="show_label_text" for="clothing_dcradio_true"
+                                   onclick="change_detail_card(true)"></label>
+                        </div>
+                        <div class="col-3 col-12-xsmall">
+                            <input type="radio" id="clothing_dcradio_false" name="dcradio" value="1" checked>
+                            <label class="hide_label_text" for="clothing_dcradio_false"
+                                   onclick="change_detail_card(false)"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="two" style="display: none">
+            <div class="inner">
+                <div class="detail_card_row">
+                    <div class="detail_card_img">
+                        <div class="row">
+                            <div class="col-12 col-12-xsmall"
+                                 style="justify-content: center;align-items: center;display: flex; margin-top: 15%">
+                                <img class="detail_img_size"
+                                     id="clothing_selected_pic"
+                                     src=""/>
+
+                            </div>
+                            <div class="col-12 col-12-xsmall" style="display: flex;justify-content: center">
+                                <h5 id="clothing_selected_name">123</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_card_table">
+                        <table>
+                            <tbody id="clothing_table_body">
+                            <tr>
+                                <td class="text_center buy_text">Buy prices</td>
+                                <td class="text_center">
+                                    <div class="row" id="clothing_selected_buy_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center selling_text">Selling prices</td>
+                                <td class="text_center" id="clothing_selected_sell_td">1</td>
+                            </tr>
+                            <tr>
+                                <td class="text_center obtain_text">Obtain</td>
+                                <td class="text_center">
+                                    <div class="row" id="clothing_selected_obtain_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center styles_text">Styles</td>
+                                <td class="text_center">
+                                    <div class="row" id="clothing_selected_styles_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center themes_text">Themes</td>
+                                <td class="text_center">
+                                    <div class="row" id="clothing_selected_themes_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center colors_text">Colors</td>
+                                <td class="text_center">
+                                    <div class="row" id="clothing_selected_colors_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_center variations_text">Variations</td>
+                                <td class="text_center" style="height: 100%">
+                                    <div class="row" id="clothing_selected_variations_td"
+                                         style="display: flex;justify-content: center">
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="three">
+            <div class="inner">
+                <div class="row" id="items_div" style="padding-left: 6%">
+
+                </div>
+                <div class="col-12 col-12-small" style="padding-left: 4%">
+                    <ul class="pagination" id="pagination">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="./acnh_assets/js/createMenu.js"></script>
+<script src="./acnh_assets/js/createFooter.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.scrolly.min.js"></script>
+<script src="./assets/js/jquery.scrollex.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/util.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/qrcode.min.js"></script>
+<script src="./assets/js/jsQR.js"></script>
+
+<script src="./acnh_assets/js/main.js"></script>
+<script src="./acnh_assets/js/clothing.js"></script>
+<script src="./acnh_assets/js/CookieHandler.js"></script>
+<script>
+    clothing_page_onload();
+</script>
+</body>
+</html>

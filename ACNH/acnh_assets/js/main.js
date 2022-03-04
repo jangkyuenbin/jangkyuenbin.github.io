@@ -20,6 +20,14 @@ function isIntNum(val) {
     }
 }
 
+function sumArray(arr) {
+    var s = 0;
+    for (var i = arr.length - 1; i >= 0; i--) {
+        s += arr[i];
+    }
+    return s;
+}
+
 function isPositiveInteger(s) {//是否为正整数
     var re = /^[0-9]+$/;
     return re.test(s)
@@ -486,6 +494,15 @@ function getNavPageDiv(onPageSearch, page_id) {
     return li
 }
 
+function getEmptyNavPageDiv() {
+    var a = document.createElement('a');
+    a.classList.add('page');
+    a.textContent = "...";
+    var li = document.createElement('li');
+    li.appendChild(a);
+    return li
+}
+
 function update_new_month_span(month_list, month_span_id) {
     var arr = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
     var now_month = getGameMonths();
@@ -605,12 +622,33 @@ function update_pagination(onPageSearch) {
                     pagination.appendChild(nav_page);
                 }
             } else {
-                for (i = 1; i <= 7; i++) {
-                    if (current_page + 3 <= max_page) {
-                        nav_page = getNavPageDiv(onPageSearch, Math.max([current_page - 4 + i, 1]));
-                    } else {
-                        nav_page = getNavPageDiv(onPageSearch, max_page - 7 + i);
+                if (current_page <= 3 || current_page + 3 > max_page) {
+                    for (i = 1; i <= 3; i++) {
+                        nav_page = getNavPageDiv(onPageSearch, i);
+                        pagination.appendChild(nav_page);
                     }
+                    nav_page = getEmptyNavPageDiv();
+                    pagination.appendChild(nav_page);
+                    for (i = max_page - 2; i <= max_page; i++) {
+                        nav_page = getNavPageDiv(onPageSearch, i);
+                        pagination.appendChild(nav_page);
+                    }
+                } else {
+                    nav_page = getNavPageDiv(onPageSearch, 1);
+                    pagination.appendChild(nav_page);
+                    nav_page = getEmptyNavPageDiv();
+                    pagination.appendChild(nav_page);
+
+                    nav_page = getNavPageDiv(onPageSearch, current_page - 1);
+                    pagination.appendChild(nav_page);
+                    nav_page = getNavPageDiv(onPageSearch, current_page);
+                    pagination.appendChild(nav_page);
+                    nav_page = getNavPageDiv(onPageSearch, current_page + 1);
+                    pagination.appendChild(nav_page);
+
+                    nav_page = getEmptyNavPageDiv();
+                    pagination.appendChild(nav_page);
+                    nav_page = getNavPageDiv(onPageSearch, max_page);
                     pagination.appendChild(nav_page);
                 }
             }
