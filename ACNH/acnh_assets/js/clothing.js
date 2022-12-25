@@ -259,13 +259,53 @@ function onChangeSelectedClothing() {
                 if (selected_data[i].id === selected_id) {
                     clothing_selected_pic.src = './images/clothing_png/' + selected_type + '/' + selected_data[i].pic_name;
                     clothing_selected_name.innerText = selected_data[i]['name'][language];
-                    clothing_selected_sell_td.innerText = selected_data[i]['sell'];
+
+                    clothing_selected_sell_td.innerHTML = ""
+                    var div = document.createElement("div");
+                    var img = document.createElement("img")
+                    var new_text = "";
+                    div.classList.add("capsule_box");
+                    if (selected_data[i]['sell'].includes("B")) {
+                        new_text = selected_data[i]['sell'].replaceAll(" Bells", "")
+                        img.src = "./images/flag_png/Bells_NH_Inv_Icon.png"
+                    } else {
+                        new_text = selected_data[i]['sell'].replaceAll(" Poki", "")
+                        img.src = "./images/flag_png/Poki_NH_Inv_Icon.png"
+                    }
+                    div.style.display = "flex";
+                    div.style.flexDirection = "row";
+                    div.style.flexWrap = "wrap";
+                    div.style.alignContent = "center";
+                    div.style.justifyContent = "center";
+                    div.innerText = new_text;
+                    img.style.width = "25px";
+                    img.style.height = "25px";
+                    div.appendChild(img);
+                    clothing_selected_sell_td.appendChild(div)
+
                     var buy_list = selected_data[i]['buy'].split("\n ")
                     clothing_selected_buy_td.innerHTML = ""
                     for (var j = 0; j < buy_list.length; j++) {
                         var div = document.createElement("div");
+                        var img = document.createElement("img")
+                        var new_text = "";
                         div.classList.add("capsule_box");
-                        div.innerText = buy_list[j];
+                        if (buy_list[j].includes("B")) {
+                            new_text = buy_list[j].replaceAll(" Bells", "")
+                            img.src = "./images/flag_png/Bells_NH_Inv_Icon.png"
+                        } else {
+                            new_text = buy_list[j].replaceAll(" Poki", "")
+                            img.src = "./images/flag_png/Poki_NH_Inv_Icon.png"
+                        }
+                        div.style.display = "flex";
+                        div.style.flexDirection = "row";
+                        div.style.flexWrap = "wrap";
+                        div.style.alignContent = "center";
+                        div.style.justifyContent = "center";
+                        div.innerText = new_text;
+                        img.style.width = "25px";
+                        img.style.height = "25px";
+                        div.appendChild(img);
                         clothing_selected_buy_td.appendChild(div)
                     }
                     var obtain_list = selected_data[i]['obtain'][language].split(" / ")
@@ -696,6 +736,12 @@ function update_clothing_page() {
         var nameB = b['name'][language];
         var idA = a['id'];
         var idB = b['id'];
+        if (nameA[0] < nameB[0]) {
+            return -1;
+        }
+        if (nameA[0] > nameB[0]) {
+            return 1;
+        }
         if (idA < idB) {
             return -1;
         }

@@ -51,13 +51,12 @@
                         <div class="col-6 col-12-xsmall">
                             <div class="row">
                                 <div class="col-6 col-12-xsmall">
-                                    <a id="celeste_search_btn" href="#"
+                                    <a id="search_btn" href="#"
                                        class="button primary fit search_btn_text"
                                        onclick="onCelesteSearch(this)">搜索</a>
                                 </div>
                                 <div class="col-6 col-12-xsmall">
-                                    <a href="#" class="button fit reset_btn_text"
-                                       onclick="onCelesteReset()">重置</a>
+                                    <a id="reset_btn" href="#" class="button fit reset_btn_text">重置</a>
                                 </div>
                             </div>
                         </div>
@@ -65,18 +64,15 @@
                     <div class="row">
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_00" name="demo-priority" value="0" checked>
-                            <label class="all_label_text" for="celeste_radio_00"
-                                   onclick="onCelesteSearch(this)">全部</label>
+                            <label id="all_own_btn" class="all_label_text" for="celeste_radio_00">全部</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_01" name="demo-priority" value="1">
-                            <label class="owned_label_text" for="celeste_radio_01"
-                                   onclick="onCelesteSearch(this)">已拥有</label>
+                            <label id="is_own_btn" class="owned_label_text" for="celeste_radio_01">已拥有</label>
                         </div>
                         <div class="col-4 col-12-small">
                             <input type="radio" id="celeste_radio_02" name="demo-priority" value="2">
-                            <label class="not_owned_label_text" for="celeste_radio_02"
-                                   onclick="onCelesteSearch(this)">未拥有</label>
+                            <label id="not_own_btn" class="not_owned_label_text" for="celeste_radio_02">未拥有</label>
                         </div>
                     </div>
 
@@ -121,7 +117,8 @@
 <script src="./acnh_assets/js/celeste.js"></script>
 <script src="./acnh_assets/js/CookieHandler.js"></script>
 <script>
-    celeste_page_onload();
+    <!-- celeste_page_onload(); -->
+    let page = new CelestePage();
 </script>
 </body>
 </html>
