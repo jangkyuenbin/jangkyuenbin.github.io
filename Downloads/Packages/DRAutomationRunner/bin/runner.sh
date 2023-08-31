@@ -98,7 +98,7 @@ do
 				PRE_MODLE_NAME=${array[0]}
 				for((i=1;i<${#array[@]} - 1;i++)) 
 				do
-					PRE_MODLE_NAME="$PRE_MODLE_NAME#${array[i]}"
+					PRE_MODLE_NAME="${PRE_MODLE_NAME}_${array[i]}"
 				done
 				echo 启动接续训练模式!接续模型参数位于: "${WL_MODEL_PREFIX}${PRE_MODLE_NAME}"
 				echo 检查是否有对应模型文件！
