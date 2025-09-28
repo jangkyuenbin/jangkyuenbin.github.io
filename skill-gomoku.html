@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能五子棋 - 飞沙走石，力拔山兮，时光倒流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .theme-song {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        .theme-song h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .theme-song p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .game-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .board-section {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(16, 35px);
+            grid-template-rows: repeat(16, 35px);
+            gap: 1px;
+            background: #8B4513;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .cell {
+            background: #DEB887;
+            border: 1px solid #8B4513;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .cell:hover {
+            background: #F4A460;
+            transform: scale(1.05);
+        }
+
+        .cell.black::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle at 30% 30%, #555, #000);
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .cell.white::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle at 30% 30%, #fff, #ddd);
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cell.removing {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .control-panel {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            min-width: 300px;
+        }
+
+        .player-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .current-player {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        .skill-button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-button:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .skill-button:hover:before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .skill-sand {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .skill-sand:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+
+        .skill-strength {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        .skill-strength:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(254, 225, 64, 0.4);
+        }
+
+        .skill-time {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+            color: white;
+        }
+
+        .skill-time:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(48, 207, 208, 0.4);
+        }
+
+        .skill-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .skill-count {
+            display: inline-block;
+            background: rgba(0,0,0,0.2);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        .game-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .reset-button {
+            padding: 10px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .reset-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(118, 75, 162, 0.4);
+        }
+
+        .winner-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            text-align: center;
+            z-index: 1000;
+            animation: bounceIn 0.6s ease-out;
+        }
+
+        .winner-message h2 {
+            font-size: 2.5em;
+            color: #764ba2;
+            margin-bottom: 20px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+            50% { transform: translate(-50%, -50%) scale(1.05); }
+            70% { transform: translate(-50%, -50%) scale(0.9); }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        .skill-description {
+            background: rgba(0,0,0,0.05);
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .skill-description h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .skill-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-description li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-description li:before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>技能五子棋</h1>
+        <div class="theme-song">
+            <h2>🎵 游戏主题曲 🎵</h2>
+            <p>🎮 传统的五子棋就是把五个子连成一条线，好无趣，好无聊，而技能五子棋就是在传统的五子棋，加入技能，好好玩，要爆啦！ 🚀</p>
+            <p>⚡ 技能五子棋，飞沙走石，技能五子棋，力拔山兮。 💪</p>
+            <p>⏰ 技能五子棋，飞沙走石，技能五子棋，时光倒流。 🌟</p>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <section class="board-section">
+            <div class="board" id="board"></div>
+        </section>
+
+        <aside class="control-panel">
+            <div class="player-info">
+                <div class="current-player" id="currentPlayer">当前玩家：⚫ 黑棋</div>
+            </div>
+
+            <div class="skills">
+                <button class="skill-button skill-sand" id="sandSkill" onclick="useSkill('sand')">
+                    🌪️ 飞沙走石 <span class="skill-count" id="sandCount">3</span>
+                </button>
+                <button class="skill-button skill-strength" id="strengthSkill" onclick="useSkill('strength')">
+                    💪 力拔山兮 <span class="skill-count" id="strengthCount">2</span>
+                </button>
+                <button class="skill-button skill-time" id="timeSkill" onclick="useSkill('time')">
+                    ⏰ 时光倒流 <span class="skill-count" id="timeCount">1</span>
+                </button>
+            </div>
+
+            <div class="skill-description">
+                <h3>技能说明</h3>
+                <ul>
+                    <li><strong>飞沙走石</strong>：移除对方一颗棋子</li>
+                    <li><strong>力拔山兮</strong>：重新开始，棋子随机散落</li>
+                    <li><strong>时光倒流</strong>：回退到10步之前</li>
+                </ul>
+            </div>
+
+            <div class="game-info">
+                <button class="reset-button" onclick="resetGame()">重新开始</button>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        const BOARD_SIZE = 16;
+        let board = [];
+        let currentPlayer = 'black';
+        let gameHistory = [];
+        let skillMode = null;
+        let gameOver = false;
+
+        // 技能使用次数
+        const skillCounts = {
+            black: { sand: 3, strength: 2, time: 1 },
+            white: { sand: 3, strength: 2, time: 1 }
+        };
+
+        // 初始化游戏
+        function initGame() {
+            board = Array(BOARD_SIZE).fill(null).map(() => Array(BOARD_SIZE).fill(null));
+            gameHistory = [];
+            currentPlayer = 'black';
+            skillMode = null;
+            gameOver = false;
+            renderBoard();
+            updatePlayerDisplay();
+            updateSkillCounts();
+        }
+
+        // 渲染棋盘
+        function renderBoard() {
+            const boardElement = document.getElementById('board');
+            boardElement.innerHTML = '';
+            
+            for (let i = 0; i < BOARD_SIZE; i++) {
+                for (let j = 0; j < BOARD_SIZE; j++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.dataset.row = i;
+                    cell.dataset.col = j;
+                    
+                    if (board[i][j]) {
+                        cell.classList.add(board[i][j]);
+                    }
+                    
+                    cell.addEventListener('click', handleCellClick);
+                    boardElement.appendChild(cell);
+                }
+            }
+        }
+
+        // 处理格子点击
+        function handleCellClick(e) {
+            if (gameOver) return;
+            
+            const row = parseInt(e.target.dataset.row);
+            const col = parseInt(e.target.dataset.col);
+            
+            if (skillMode === 'sand') {
+                // 飞沙走石技能模式
+                if (board[row][col] && board[row][col] !== currentPlayer) {
+                    removePiece(row, col);
+                }
+            } else if (!board[row][col]) {
+                // 正常下棋
+                placePiece(row, col);
+            }
+        }
+
+        // 放置棋子
+        function placePiece(row, col) {
+            // 保存历史记录
+            gameHistory.push({
+                board: board.map(row => [...row]),
+                player: currentPlayer
+            });
+            
+            board[row][col] = currentPlayer;
+            renderBoard();
+            
+            if (checkWin(row, col)) {
+                endGame();
+                return;
+            }
+            
+            // 切换玩家
+            currentPlayer = currentPlayer === 'black' ? 'white' : 'black';
+            updatePlayerDisplay();
+            updateSkillCounts();
+        }
+
+        // 移除棋子（飞沙走石技能）
+        function removePiece(row, col) {
+            const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+            cell.classList.add('removing');
+            
+            setTimeout(() => {
+                board[row][col] = null;
+                skillMode = null;
+                renderBoard();
+                updateSkillCounts();
+            }, 500);
+        }
+
+        // 使用技能
+        function useSkill(skillType) {
+            if (gameOver || skillCounts[currentPlayer][skillType] <= 0) return;
+            
+            switch (skillType) {
+                case 'sand':
+                    skillMode = 'sand';
+                    showMessage('点击对方的棋子来移除它！');
+                    break;
+                    
+                case 'strength':
+                    // 力拔山兮：重新开始，随机散落棋子
+                    const pieces = [];
+                    for (let i = 0; i < BOARD_SIZE; i++) {
+                        for (let j = 0; j < BOARD_SIZE; j++) {
+                            if (board[i][j]) {
+                                pieces.push(board[i][j]);
+                            }
+                        }
+                    }
+                    
+                    board = Array(BOARD_SIZE).fill(null).map(() => Array(BOARD_SIZE).fill(null));
+                    
+                    // 随机放置棋子
+                    pieces.forEach(piece => {
+                        let placed = false;
+                        while (!placed) {
+                            const row = Math.floor(Math.random() * BOARD_SIZE);
+                            const col = Math.floor(Math.random() * BOARD_SIZE);
+                            if (!board[row][col]) {
+                                board[row][col] = piece;
+                                placed = true;
+                            }
+                        }
+                    });
+                    
+                    skillCounts[currentPlayer].strength--;
+                    renderBoard();
+                    updateSkillCounts();
+                    break;
+                    
+                case 'time':
+                    // 时光倒流：回退10步
+                    if (gameHistory.length >= 10) {
+                        const historyState = gameHistory[gameHistory.length - 10];
+                        board = historyState.board.map(row => [...row]);
+                        currentPlayer = historyState.player;
+                        gameHistory = gameHistory.slice(0, -10);
+                        
+                        skillCounts[currentPlayer].time--;
+                        renderBoard();
+                        updatePlayerDisplay();
+                        updateSkillCounts();
+                    } else {
+                        showMessage('历史记录不足10步，无法使用时光倒流！');
+                    }
+                    break;
+            }
+        }
+
+        // 检查获胜
+        function checkWin(row, col) {
+            const directions = [
+                [[0, 1], [0, -1]],   // 水平
+                [[1, 0], [-1, 0]],   // 垂直
+                [[1, 1], [-1, -1]],  // 对角线1
+                [[1, -1], [-1, 1]]   // 对角线2
+            ];
+            
+            for (const direction of directions) {
+                let count = 1;
+                
+                for (const [dr, dc] of direction) {
+                    let r = row + dr;
+                    let c = col + dc;
+                    
+                    while (r >= 0 && r < BOARD_SIZE && c >= 0 && c < BOARD_SIZE && 
+                           board[r][c] === currentPlayer) {
+                        count++;
+                        r += dr;
+                        c += dc;
+                    }
+                }
+                
+                if (count >= 5) return true;
+            }
+            
+            return false;
+        }
+
+        // 游戏结束
+        function endGame() {
+            gameOver = true;
+            const winner = currentPlayer === 'black' ? '⚫ 黑棋' : '⚪ 白棋';
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            
+            const message = document.createElement('div');
+            message.className = 'winner-message';
+            message.innerHTML = `
+                <h2>🎉 游戏结束！ 🎉</h2>
+                <p style="font-size: 1.5em; margin-bottom: 20px;">${winner} 获胜！</p>
+                <button class="reset-button" onclick="closeWinnerMessage()">再来一局</button>
+            `;
+            
+            document.body.appendChild(overlay);
+            document.body.appendChild(message);
+        }
+
+        // 关闭获胜消息
+        function closeWinnerMessage() {
+            document.querySelector('.overlay')?.remove();
+            document.querySelector('.winner-message')?.remove();
+            resetGame();
+        }
+
+        // 更新当前玩家显示
+        function updatePlayerDisplay() {
+            const display = document.getElementById('currentPlayer');
+            display.textContent = `当前玩家：${currentPlayer === 'black' ? '⚫ 黑棋' : '⚪ 白棋'}`;
+        }
+
+        // 更新技能次数显示
+        function updateSkillCounts() {
+            document.getElementById('sandCount').textContent = skillCounts[currentPlayer].sand;
+            document.getElementById('strengthCount').textContent = skillCounts[currentPlayer].strength;
+            document.getElementById('timeCount').textContent = skillCounts[currentPlayer].time;
+            
+            // 更新按钮状态
+            document.getElementById('sandSkill').disabled = skillCounts[currentPlayer].sand <= 0;
+            document.getElementById('strengthSkill').disabled = skillCounts[currentPlayer].strength <= 0;
+            document.getElementById('timeSkill').disabled = skillCounts[currentPlayer].time <= 0;
+        }
+
+        // 显示消息
+        function showMessage(msg) {
+            const messageDiv = document.createElement('div');
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(0,0,0,0.8);
+                color: white;
+                padding: 15px 30px;
+                border-radius: 25px;
+                z-index: 1000;
+                animation: fadeIn 0.3s ease-out;
+            `;
+            messageDiv.textContent = msg;
+            document.body.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 2000);
+        }
+
+        // 重置游戏
+        function resetGame() {
+            // 重置技能次数
+            skillCounts.black = { sand: 3, strength: 2, time: 1 };
+            skillCounts.white = { sand: 3, strength: 2, time: 1 };
+            initGame();
+        }
+
+        // 初始化
+        initGame();
+    </script>
+</body>
+</html>
