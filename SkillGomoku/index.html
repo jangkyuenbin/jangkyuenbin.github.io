@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能五子棋 - 超级好玩的五子棋游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .game-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 1200px;
+            width: 95%;
+        }
+
+        .game-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .game-title {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-song {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-song h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .theme-song p {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .game-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .board-section {
+            flex: 1;
+            min-width: 400px;
+        }
+
+        .board {
+            background: #f4d03f;
+            border: 3px solid #8b4513;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .board-grid {
+            display: grid;
+            gap: 1px;
+            background: #8b4513;
+            padding: 1px;
+        }
+
+        .cell {
+            background: #f4d03f;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .cell:hover {
+            background: #f7dc6f;
+        }
+
+        .cell.disabled {
+            cursor: not-allowed;
+        }
+
+        .piece {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .piece:hover {
+            transform: scale(1.1);
+        }
+
+        .piece.black {
+            background: radial-gradient(circle at 30% 30%, #555, #000);
+        }
+
+        .piece.white {
+            background: radial-gradient(circle at 30% 30%, #fff, #ddd);
+        }
+
+        .piece.removable {
+            cursor: not-allowed;
+            position: relative;
+        }
+
+        .piece.removable::after {
+            content: '🚫';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .piece.removable:hover::after {
+            opacity: 1;
+        }
+
+        .control-section {
+            flex: 0 0 300px;
+        }
+
+        .player-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .current-player {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .player-indicator {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .skill-count {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .settings-btn, .restart-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .settings-btn:hover, .restart-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal h2 {
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .setting-item {
+            margin-bottom: 20px;
+        }
+
+        .setting-item label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .setting-item input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .btn-cancel {
+            background: #6c757d;
+        }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+        }
+
+        .message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .music-control:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .game-content {
+                flex-direction: column;
+            }
+
+            .control-section {
+                flex: 1;
+                width: 100%;
+            }
+
+            .game-title {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">技能五子棋</h1>
+            <div class="theme-song">
+                <h3>🎵 游戏主题曲 🎵</h3>
+                <p>传统的五子棋就是把五个子连成一条线，好无趣，好无聊。😴</p>
+                <p>而技能五子棋就是在传统的五子棋，加入技能，好好玩，要爆啦！🎉</p>
+                <p>技能五子棋~，飞沙走石⚡，技能五子棋~，力拔山兮💪。</p>
+                <p>技能五子棋~，飞沙走石⚡，技能五子棋~，时光倒流⏰。</p>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="board-section">
+                <div class="board">
+                    <div class="board-grid" id="board"></div>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <div class="player-info">
+                    <div class="current-player">
+                        <span class="player-indicator" id="playerIndicator"></span>
+                        <span id="currentPlayerText">黑方回合</span>
+                    </div>
+                    <div class="skills">
+                        <div class="skill" id="skill1" onclick="useSkill(1)">
+                            <div class="skill-name">⚡ 飞沙走石</div>
+                            <div class="skill-count">剩余: <span id="skill1Count">3</span> 次</div>
+                        </div>
+                        <div class="skill" id="skill2" onclick="useSkill(2)">
+                            <div class="skill-name">💪 力拔山兮</div>
+                            <div class="skill-count">剩余: <span id="skill2Count">2</span> 次</div>
+                        </div>
+                        <div class="skill" id="skill3" onclick="useSkill(3)">
+                            <div class="skill-name">⏰ 时光倒流</div>
+                            <div class="skill-count">剩余: <span id="skill3Count">2</span> 次</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="settings-btn" onclick="openSettings()">⚙️ 游戏设置</button>
+                <button class="restart-btn" onclick="restartGame()">🔄 重新开始</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <h2>游戏设置</h2>
+            <div class="setting-item">
+                <label for="boardSize">棋盘大小：</label>
+                <input type="number" id="boardSize" min="10" max="20" value="16">
+            </div>
+            <div class="setting-item">
+                <label for="skill1Count">飞沙走石初始次数：</label>
+                <input type="number" id="skill1Count" min="0" max="10" value="3">
+            </div>
+            <div class="setting-item">
+                <label for="skill2Count">力拔山兮初始次数：</label>
+                <input type="number" id="skill2Count" min="0" max="10" value="2">
+            </div>
+            <div class="setting-item">
+                <label for="skill3Count">时光倒流初始次数：</label>
+                <input type="number" id="skill3Count" min="0" max="10" value="2">
+            </div>
+            <div class="modal-buttons">
+                <button class="settings-btn btn-cancel" onclick="closeSettings()">取消</button>
+                <button class="settings-btn" onclick="saveSettings()">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <div class="music-control" id="musicControl" onclick="toggleMusic()">🎵</div>
+
+    <audio id="bgMusic" loop>
+        <source src="./data/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // 游戏状态
+        let gameState = {
+            board: [],
+            currentPlayer: 'black',
+            boardSize: 16,
+            skills: {
+                black: { skill1: 3, skill2: 2, skill3: 2 },
+                white: { skill1: 3, skill2: 2, skill3: 2 }
+            },
+            history: [],
+            activeSkill: null,
+            musicPlaying: false
+        };
+
+        // 初始化游戏
+        function initGame() {
+            gameState.board = Array(gameState.boardSize).fill(null).map(() => Array(gameState.boardSize).fill(null));
+            gameState.currentPlayer = 'black';
+            gameState.history = [];
+            gameState.activeSkill = null;
+            renderBoard();
+            updateUI();
+        }
+
+        // 渲染棋盘
+        function renderBoard() {
+            const boardElement = document.getElementById('board');
+            boardElement.innerHTML = '';
+            boardElement.style.gridTemplateColumns = `repeat(${gameState.boardSize}, 1fr)`;
+
+            for (let i = 0; i < gameState.boardSize; i++) {
+                for (let j = 0; j < gameState.boardSize; j++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.dataset.row = i;
+                    cell.dataset.col = j;
+                    cell.onclick = () => handleCellClick(i, j);
+
+                    if (gameState.board[i][j]) {
+                        const piece = document.createElement('div');
+                        piece.className = `piece ${gameState.board[i][j]}`;
+
+                        if (gameState.activeSkill === 1 && gameState.board[i][j] !== gameState.currentPlayer) {
+                            piece.classList.add('removable');
+                        }
+
+                        cell.appendChild(piece);
+                    }
+
+                    boardElement.appendChild(cell);
+                }
+            }
+        }
+
+        // 处理格子点击
+        function handleCellClick(row, col) {
+            if (gameState.activeSkill === 1) {
+                // 飞沙走石技能
+                if (gameState.board[row][col] && gameState.board[row][col] !== gameState.currentPlayer) {
+                    removePiece(row, col);
+                }
+            } else {
+                // 正常下棋
+                if (!gameState.board[row][col]) {
+                    placePiece(row, col);
+                }
+            }
+        }
+
+        // 放置棋子
+        function placePiece(row, col) {
+            gameState.board[row][col] = gameState.currentPlayer;
+            saveHistory();
+
+            if (checkWin(row, col)) {
+                showMessage(`${gameState.currentPlayer === 'black' ? '黑方' : '白方'}获胜！🎉`);
+                setTimeout(() => restartGame(), 3000);
+                return;
+            }
+
+            if (checkDraw()) {
+                showMessage('平局！🤝');
+                setTimeout(() => restartGame(), 3000);
+                return;
+            }
+
+            switchPlayer();
+            renderBoard();
+            updateUI();
+        }
+
+        // 移除棋子（飞沙走石）
+        function removePiece(row, col) {
+            gameState.board[row][col] = null;
+            gameState.skills[gameState.currentPlayer].skill1--;
+            gameState.activeSkill = null;
+            saveHistory();
+            renderBoard();
+            updateUI();
+            showMessage('飞沙走石！移除了对方一颗棋子！⚡');
+        }
+
+        // 使用技能
+        function useSkill(skillId) {
+            const skillKey = `skill${skillId}`;
+            if (gameState.skills[gameState.currentPlayer][skillKey] <= 0) {
+                showMessage('技能次数已用完！😅');
+                return;
+            }
+
+            switch (skillId) {
+                case 1:
+                    // 飞沙走石
+                    gameState.activeSkill = 1;
+                    renderBoard();
+                    showMessage('点击对方棋子将其移除！🎯');
+                    break;
+
+                case 2:
+                    // 力拔山兮
+                    reshuffleBoard();
+                    gameState.skills[gameState.currentPlayer].skill2--;
+                    saveHistory();
+                    renderBoard();
+                    updateUI();
+                    showMessage('力拔山兮！棋盘重新洗牌！💪');
+                    break;
+
+                case 3:
+                    // 时光倒流
+                    if (gameState.history.length < 10) {
+                        showMessage('历史记录不足10步！⏰');
+                        return;
+                    }
+                    timeTravel();
+                    gameState.skills[gameState.currentPlayer].skill3--;
+                    renderBoard();
+                    updateUI();
+                    showMessage('时光倒流！回到10步之前！⏰');
+                    break;
+            }
+        }
+
+        // 重新洗牌棋盘
+        function reshuffleBoard() {
+            const pieces = [];
+            for (let i = 0; i < gameState.boardSize; i++) {
+                for (let j = 0; j < gameState.boardSize; j++) {
+                    if (gameState.board[i][j]) {
+                        pieces.push(gameState.board[i][j]);
+                    }
+                }
+            }
+
+            // 清空棋盘
+            gameState.board = Array(gameState.boardSize).fill(null).map(() => Array(gameState.boardSize).fill(null));
+
+            // 随机放置棋子
+            const positions = [];
+            for (let i = 0; i < gameState.boardSize; i++) {
+                for (let j = 0; j < gameState.boardSize; j++) {
+                    positions.push([i, j]);
+                }
+            }
+
+            // 打乱位置
+            for (let i = positions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [positions[i], positions[j]] = [positions[j], positions[i]];
+            }
+
+            // 放置棋子
+            for (let i = 0; i < pieces.length && i < positions.length; i++) {
+                const [row, col] = positions[i];
+                gameState.board[row][col] = pieces[i];
+            }
+        }
+
+        // 时光倒流
+        function timeTravel() {
+            const targetIndex = Math.max(0, gameState.history.length - 10);
+            const targetState = gameState.history[targetIndex];
+            gameState.board = targetState.board.map(row => [...row]);
+            gameState.currentPlayer = targetState.currentPlayer;
+            gameState.history = gameState.history.slice(0, targetIndex);
+        }
+
+        // 保存历史
+        function saveHistory() {
+            gameState.history.push({
+                board: gameState.board.map(row => [...row]),
+                currentPlayer: gameState.currentPlayer
+            });
+
+            // 限制历史记录数量
+            if (gameState.history.length > 50) {
+                gameState.history.shift();
+            }
+        }
+
+        // 切换玩家
+        function switchPlayer() {
+            gameState.currentPlayer = gameState.currentPlayer === 'black' ? 'white' : 'black';
+        }
+
+        // 检查获胜
+        function checkWin(row, col) {
+            const player = gameState.board[row][col];
+            const directions = [
+                [[0, 1], [0, -1]],   // 横向
+                [[1, 0], [-1, 0]],   // 纵向
+                [[1, 1], [-1, -1]],  // 对角线1
+                [[1, -1], [-1, 1]]   // 对角线2
+            ];
+
+            for (const direction of directions) {
+                let count = 1;
+
+                for (const [dr, dc] of direction) {
+                    let r = row + dr;
+                    let c = col + dc;
+
+                    while (r >= 0 && r < gameState.boardSize && c >= 0 && c < gameState.boardSize &&
+                           gameState.board[r][c] === player) {
+                        count++;
+                        r += dr;
+                        c += dc;
+                    }
+                }
+
+                if (count >= 5) return true;
+            }
+
+            return false;
+        }
+
+        // 检查平局
+        function checkDraw() {
+            for (let i = 0; i < gameState.boardSize; i++) {
+                for (let j = 0; j < gameState.boardSize; j++) {
+                    if (!gameState.board[i][j]) return false;
+                }
+            }
+            return true;
+        }
+
+        // 更新UI
+        function updateUI() {
+            const indicator = document.getElementById('playerIndicator');
+            const playerText = document.getElementById('currentPlayerText');
+
+            indicator.style.background = gameState.currentPlayer === 'black' ?
+                'radial-gradient(circle at 30% 30%, #555, #000)' :
+                'radial-gradient(circle at 30% 30%, #fff, #ddd)';
+            playerText.textContent = `${gameState.currentPlayer === 'black' ? '黑方' : '白方'}回合`;
+
+            // 更新技能按钮
+            for (let i = 1; i <= 3; i++) {
+                const skillKey = `skill${i}`;
+                const count = gameState.skills[gameState.currentPlayer][skillKey];
+                document.getElementById(`skill${i}Count`).textContent = count;
+                document.getElementById(`skill${i}`).disabled = count <= 0;
+            }
+        }
+
+        // 显示消息
+        function showMessage(text) {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = text;
+            messageElement.style.display = 'block';
+
+            setTimeout(() => {
+                messageElement.style.display = 'none';
+            }, 3000);
+        }
+
+        // 重新开始游戏
+        function restartGame() {
+            gameState.skills = {
+                black: {
+                    skill1: parseInt(document.getElementById('skill1Count').value),
+                    skill2: parseInt(document.getElementById('skill2Count').value),
+                    skill3: parseInt(document.getElementById('skill3Count').value)
+                },
+                white: {
+                    skill1: parseInt(document.getElementById('skill1Count').value),
+                    skill2: parseInt(document.getElementById('skill2Count').value),
+                    skill3: parseInt(document.getElementById('skill3Count').value)
+                }
+            };
+            showMessage(parseInt(document.getElementById('skill2Count').value));
+            initGame();
+            showMessage('游戏重新开始！🎮');
+        }
+
+        // 打开设置
+        function openSettings() {
+            document.getElementById('settingsModal').style.display = 'flex';
+        }
+
+        // 关闭设置
+        function closeSettings() {
+            document.getElementById('settingsModal').style.display = 'none';
+        }
+
+        // 保存设置
+        function saveSettings() {
+            const newBoardSize = parseInt(document.getElementById('boardSize').value);
+            if (newBoardSize !== gameState.boardSize) {
+                gameState.boardSize = newBoardSize;
+            }
+            showMessage('设置已更新！📐');
+            restartGame();
+            closeSettings();
+        }
+
+        // 切换音乐
+        function toggleMusic() {
+            const music = document.getElementById('bgMusic');
+            const control = document.getElementById('musicControl');
+
+            if (gameState.musicPlaying) {
+                music.pause();
+                control.textContent = '🔇';
+                gameState.musicPlaying = false;
+            } else {
+                music.play().catch(e => {
+                    showMessage('音乐播放失败，请检查音乐文件路径！🎵');
+                });
+                control.textContent = '🎵';
+                gameState.musicPlaying = true;
+            }
+        }
+
+        // 初始化
+        window.onload = function() {
+            initGame();
+
+            // 尝试自动播放音乐
+            const music = document.getElementById('bgMusic');
+            music.volume = 0.3;
+
+            // 监听用户交互后播放音乐
+            document.addEventListener('click', function playMusic() {
+                if (!gameState.musicPlaying) {
+                    music.play().then(() => {
+                        gameState.musicPlaying = true;
+                        document.getElementById('musicControl').textContent = '🎵';
+                    }).catch(() => {});
+                    document.removeEventListener('click', playMusic);
+                }
+            }, { once: true });
+        };
+    </script>
+</body>
+</html>

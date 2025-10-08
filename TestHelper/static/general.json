@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1",
+    "question": {
+      "zhcn": "中国的首都是哪里？",
+      "enus": "What is the capital of China?"
+    },
+    "option": [
+      {
+        "option_text": {
+          "zhcn": "上海",
+          "enus": "Shanghai"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "北京",
+          "enus": "Beijing"
+        },
+        "option_flag": true
+      },
+      {
+        "option_text": {
+          "zhcn": "广州",
+          "enus": "Guangzhou"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "深圳",
+          "enus": "Shenzhen"
+        },
+        "option_flag": false
+      }
+    ],
+    "analysis": {
+      "zhcn": "北京是中华人民共和国的首都。",
+      "enus": "Beijing is the capital of the People's Republic of China."
+    }
+  },
+  {
+    "id": "2",
+    "question": {
+      "zhcn": "太阳系中最大的行星是？",
+      "enus": "What is the largest planet in the solar system?"
+    },
+    "option": [
+      {
+        "option_text": {
+          "zhcn": "地球",
+          "enus": "Earth"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "火星",
+          "enus": "Mars"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "木星",
+          "enus": "Jupiter"
+        },
+        "option_flag": true
+      },
+      {
+        "option_text": {
+          "zhcn": "土星",
+          "enus": "Saturn"
+        },
+        "option_flag": false
+      }
+    ],
+    "analysis": {
+      "zhcn": "木星是太阳系中最大的行星，其质量是其他所有行星质量总和的2.5倍。",
+      "enus": "Jupiter is the largest planet in the solar system, with a mass 2.5 times that of all other planets combined."
+    }
+  },
+  {
+    "id": "3",
+    "question": {
+      "zhcn": "太阳系中最大的行星是？",
+      "enus": "What is the largest planet in the solar system?"
+    },
+    "option": [
+      {
+        "option_text": {
+          "zhcn": "地球",
+          "enus": "Earth"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "火星",
+          "enus": "Mars"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "木星",
+          "enus": "Jupiter"
+        },
+        "option_flag": true
+      },
+      {
+        "option_text": {
+          "zhcn": "土星",
+          "enus": "Saturn"
+        },
+        "option_flag": true
+      }
+    ],
+    "analysis": {
+      "zhcn": "木星是太阳系中最大的行星，其质量是其他所有行星质量总和的2.5倍。",
+      "enus": "Jupiter is the largest planet in the solar system, with a mass 2.5 times that of all other planets combined."
+    }
+  },
+  {
+    "id": "4",
+    "question": {
+      "zhcn": "太阳系中最大的行星是？",
+      "enus": "What is the largest planet in the solar system?"
+    },
+    "option": [
+      {
+        "option_text": {
+          "zhcn": "地球",
+          "enus": "Earth"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "地球",
+          "enus": "Earth"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "火星",
+          "enus": "Mars"
+        },
+        "option_flag": false
+      },
+      {
+        "option_text": {
+          "zhcn": "木星",
+          "enus": "Jupiter"
+        },
+        "option_flag": true
+      },
+      {
+        "option_text": {
+          "zhcn": "土星",
+          "enus": "Saturn"
+        },
+        "option_flag": true
+      }
+    ],
+    "analysis": {
+      "zhcn": "木星是太阳系中最大的行星，其质量是其他所有行星质量总和的2.5倍。",
+      "enus": "Jupiter is the largest planet in the solar system, with a mass 2.5 times that of all other planets combined."
+    }
+  }
+]
