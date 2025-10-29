@@ -6,6 +6,50 @@
     <title>智能题库系统</title>
     <!-- 引入marked.js用于markdown解析 -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 引入KaTeX用于数学公式渲染 - 更新到最新稳定版本 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    
+    <!-- 公式渲染测试和初始化脚本 -->
+    <script>
+        // 页面加载完成后初始化公式渲染
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面加载完成，准备初始化KaTeX');
+            // 延迟一下以确保所有资源都已加载
+            setTimeout(function() {
+                console.log('检查KaTeX是否可用:', typeof renderMathInElement !== 'undefined');
+            }, 1000);
+        });
+        
+        // 手动测试公式渲染的函数
+        function testMathRendering() {
+            console.log('手动测试公式渲染');
+            const testDiv = document.createElement('div');
+            testDiv.innerHTML = '测试公式: $E=mc^2$ 和 $$\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$$';
+            testDiv.style.position = 'fixed';
+            testDiv.style.bottom = '20px';
+            testDiv.style.right = '20px';
+            testDiv.style.background = 'white';
+            testDiv.style.padding = '10px';
+            testDiv.style.border = '1px solid #ccc';
+            testDiv.id = 'testMathElement';
+            document.body.appendChild(testDiv);
+            
+            if (window.renderMathInElement) {
+                renderMathInElement(testDiv, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false}
+                    ],
+                    throwOnError: false
+                });
+                console.log('测试公式渲染完成');
+            } else {
+                console.error('KaTeX未加载');
+            }
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -709,10 +753,13 @@
                 <label for="bankSelect">📚 选择题库:</label>
                 <select id="bankSelect" onchange="loadBank()">
                     <option value="general">综合题库</option>
-                    <option value="aws_mls_c01_example">AWS-MLS(C01) Example</option>
+                    <option value="acp_ai_pro_single">ACP 人工智能高级(单选题)</option>
+                    <option value="acp_ai_pro_multi">ACP 人工智能高级(多选题)</option>
+                    <option value="aws_mls_c01_all_deepseek">AWS-MLS(C01) DeepSeek</option>
                     <option value="aws_mls_c01_all">AWS-MLS(C01) ALL</option>
                     <option value="aws_mls_c01_all_doubao">AWS-MLS(C01) DouBao</option>
-                    <option value="aws_mls_c01_all_deepseek">AWS-MLS(C01) DeepSeek</option>
+                    <option value="acp_ai_pro_single_example">ACP 人工智能高级(单选题) Example</option>
+                    <option value="aws_mls_c01_example">AWS-MLS(C01) Example</option>
                 </select>
             </div>
             <div class="setting-item">
