@@ -680,7 +680,23 @@ function displayQuestion(index) {
             }
         }, 50); // 增加一点延迟，确保DOM完全更新
 
-    // 移除自动滚动到顶部的行为
+    // 直接定位到题目的标题部分，避免被顶部导航栏挡住，不使用滑动动画
+    setTimeout(() => {
+        const questionHeader = document.querySelector('.question-header');
+        if (questionHeader) {
+            // 获取顶部导航栏的高度
+            const navHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 60;
+            
+            // 计算需要滚动的位置
+            const targetPosition = questionHeader.getBoundingClientRect().top + window.pageYOffset - navHeight - 50; // 额外减去20px作为间距
+            
+            // 直接设置滚动位置，不使用动画
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'auto' // 禁用动画，直接跳转
+            });
+        }
+    }, 10); // 短暂延迟确保DOM已更新
 }
 
 // 检查答案是否正确
