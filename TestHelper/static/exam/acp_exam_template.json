@@ -1,0 +1,15 @@
+{
+	"exam_name": "ACP AI Pro Exam",
+	"exam_content": [
+		{
+			"question_bank_id": "acp_ai_pro_single",
+			"question_number": 70,
+			"question_score": 1
+		},
+		{
+			"question_bank_id": "acp_ai_pro_multi",
+			"question_number": 15,
+			"question_score": 2
+		}
+	]
+}
