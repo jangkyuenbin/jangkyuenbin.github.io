@@ -717,6 +717,45 @@
             box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
         }
 
+        /* 模式选择器样式 */
+        .mode-selector {
+            position: relative;
+            display: inline-block;
+        }
+
+        .mode-selector select {
+            cursor: pointer;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            min-width: 150px;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238c8c8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.7rem center;
+            background-size: 16px;
+            padding-right: 2.5rem;
+        }
+
+        .mode-selector select:hover {
+            border-color: var(--primary-color);
+            background-color: #f8f9fa;
+        }
+
+        .mode-selector select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+        }
+
+        .mode-selector select option {
+            padding: 0.5rem;
+        }
+
         /* 考试计时器样式 */
         .exam-timer {
             display: inline-block;
@@ -776,12 +815,13 @@
             <button class="btn btn-outline" onclick="toggleLanguage()">
                 🌐 <span id="langText">中/EN</span>
             </button>
-            <button class="btn btn-outline" id="currentModeDisplay" style="font-weight: 500; pointer-events: none;">
-                当前模式: ✏️ 练习模式
-            </button>
-            <button class="btn btn-primary" id="modeBtn" onclick="toggleMode()">
-                切换到 📖 背题模式
-            </button>
+            <div class="mode-selector">
+                <select class="btn btn-outline" id="modeSelect" onchange="changeMode()">
+                    <option value="practice">✏️ 练习模式</option>
+                    <option value="study">📖 背题模式</option>
+                    <option value="exam">📝 考试模式</option>
+                </select>
+            </div>
             <button class="btn btn-success" id="examBtn" onclick="openExamTemplateDialog()">
                 📝 开始考试
             </button>

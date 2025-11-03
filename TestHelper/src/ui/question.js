@@ -32,11 +32,14 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
 
     // 生成选项
     question.option.forEach((option, optIndex) => {
-        const isSelected = userAnswer && userAnswer.includes(optIndex);
+        // 处理新格式的用户答案
+        const userOptions = userAnswer && userAnswer.options ? userAnswer.options : userAnswer;
+        const isSelected = userOptions && userOptions.includes(optIndex);
         const isCorrect = option.option_flag;
         // 只有在背题模式或非考试模式下已经提交答案后才显示正确结果
         // 考试模式下不显示正确答案
-        const showResult = isStudyMode || (!isExamMode && userAnswer !== undefined && typeof userAnswer.isSubmitted !== 'undefined' && userAnswer.isSubmitted);
+        const isSubmitted = userAnswer && userAnswer.isSubmitted;
+        const showResult = isStudyMode || (!isExamMode && isSubmitted);
 
         let optionClass = 'option-item';
         if (showResult) {
@@ -65,7 +68,8 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
 
     // 显示解析（背题模式或非考试模式下已提交答案）
     // 考试模式下不显示解析
-    if (isStudyMode || (!isExamMode && userAnswer !== undefined && typeof userAnswer.isSubmitted !== 'undefined' && userAnswer.isSubmitted)) {
+    const isSubmitted = userAnswer && userAnswer.isSubmitted;
+    if (isStudyMode || (!isExamMode && isSubmitted)) {
         html += `
             <div class="analysis-section">
                 <div class="analysis-title">📝 解析</div>
@@ -89,7 +93,7 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
         if (isExamMode) {
             // 考试模式下，提交答案按钮的文本改为"提交试卷"
             html += '<button class="btn btn-primary" onclick="window.submitAnswer()">提交试卷</button>';
-        } else if (!userAnswer || typeof userAnswer.isSubmitted === 'undefined' || !userAnswer.isSubmitted) {
+        } else if (!userAnswer || !userAnswer.isSubmitted) {
             // 非考试模式下的正常提交答案按钮
             html += '<button class="btn btn-primary" onclick="window.submitAnswer()">提交答案</button>';
         }

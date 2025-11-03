@@ -22,7 +22,7 @@ export function getBankName(bankName) {
 /**
  * 检查答案是否正确
  * @param {Object} question 题目对象
- * @param {Array} userAnswer 用户答案
+ * @param {Array|Object} userAnswer 用户答案（可以是数组或包含options的对象）
  * @returns {boolean} 是否正确
  */
 export function isCorrectAnswer(question, userAnswer) {
@@ -32,8 +32,13 @@ export function isCorrectAnswer(question, userAnswer) {
         return false;
     }
     
-    // 验证用户答案
-    if (!Array.isArray(userAnswer)) {
+    // 处理新格式的用户答案
+    let userOptions;
+    if (Array.isArray(userAnswer)) {
+        userOptions = userAnswer;
+    } else if (userAnswer && userAnswer.options && Array.isArray(userAnswer.options)) {
+        userOptions = userAnswer.options;
+    } else {
         console.error('无效的用户答案:', userAnswer);
         return false;
     }
@@ -42,9 +47,9 @@ export function isCorrectAnswer(question, userAnswer) {
         .map((opt, index) => opt.option_flag ? index : -1)
         .filter(index => index !== -1);
 
-    if (correctAnswers.length !== userAnswer.length) return false;
+    if (correctAnswers.length !== userOptions.length) return false;
 
-    return correctAnswers.every(ans => userAnswer.includes(ans));
+    return correctAnswers.every(ans => userOptions.includes(ans));
 }
 
 /**

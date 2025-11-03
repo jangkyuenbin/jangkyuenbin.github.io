@@ -120,31 +120,50 @@ window.loadBank = async function(bankName) {
 
 // 选择选项
 window.selectOption = function(optionIndex) {
-    if (window.isStudyMode) return; // 背题模式不能选择
-
+    // 在背题模式下不允许选择答案
+    if (window.isStudyMode) {
+        showToast('背题模式下不允许选择答案');
+        return;
+    }
+    
+    // 检查当前题目是否已经提交过答案
+    const currentAnswer = window.userAnswers[window.currentQuestionIndex];
+    const currentIsSubmitted = currentAnswer && typeof currentAnswer === 'object' && currentAnswer.isSubmitted;
+    
+    // 如果已经提交过答案，不允许再次选择
+    if (currentIsSubmitted) {
+        showToast('该题目已提交答案，无法修改');
+        return;
+    }
+    
     const question = window.questions[window.currentQuestionIndex];
     const isMultiple = question.option.filter(o => o.option_flag).length > 1;
-
-    // 创建一个数组来存储用户的选择，如果之前有isSubmitted状态则保留
-    const currentIsSubmitted = window.userAnswers[window.currentQuestionIndex] && window.userAnswers[window.currentQuestionIndex].isSubmitted;
+    
+    // 初始化用户答案数组，确保使用对象格式
     if (!window.userAnswers[window.currentQuestionIndex]) {
-        window.userAnswers[window.currentQuestionIndex] = [];
-    } else if (currentIsSubmitted) {
-        // 如果已经提交过答案，清除提交状态
-        delete window.userAnswers[window.currentQuestionIndex].isSubmitted;
+        window.userAnswers[window.currentQuestionIndex] = {
+            options: [],
+            isSubmitted: false
+        };
+    } else if (typeof window.userAnswers[window.currentQuestionIndex] !== 'object' || Array.isArray(window.userAnswers[window.currentQuestionIndex])) {
+        // 如果是数组格式，转换为对象格式
+        window.userAnswers[window.currentQuestionIndex] = {
+            options: window.userAnswers[window.currentQuestionIndex] || [],
+            isSubmitted: false
+        };
     }
 
     if (isMultiple) {
         // 多选题
-        const index = window.userAnswers[window.currentQuestionIndex].indexOf(optionIndex);
+        const index = window.userAnswers[window.currentQuestionIndex].options.indexOf(optionIndex);
         if (index > -1) {
-            window.userAnswers[window.currentQuestionIndex].splice(index, 1);
+            window.userAnswers[window.currentQuestionIndex].options.splice(index, 1);
         } else {
-            window.userAnswers[window.currentQuestionIndex].push(optionIndex);
+            window.userAnswers[window.currentQuestionIndex].options.push(optionIndex);
         }
     } else {
         // 单选题
-        window.userAnswers[window.currentQuestionIndex] = [optionIndex];
+        window.userAnswers[window.currentQuestionIndex].options = [optionIndex];
         
         // 如果启用了自动提交单选题答案
         if (window.autoSubmitSingle) {
@@ -206,8 +225,21 @@ window.submitAnswer = function() {
         }
     } else {
         // 非考试模式的正常处理
-        // 标记答案为已提交
-        window.userAnswers[window.currentQuestionIndex].isSubmitted = true;
+        // 确保用户答案是一个对象，包含选项和提交信息
+        const currentAnswer = window.userAnswers[window.currentQuestionIndex];
+        
+        // 如果当前答案不是对象格式，转换为对象格式
+        if (!currentAnswer || typeof currentAnswer !== 'object' || Array.isArray(currentAnswer)) {
+            window.userAnswers[window.currentQuestionIndex] = {
+                options: currentAnswer || [],
+                isSubmitted: true,
+                submittedDate: new Date().toISOString()
+            };
+        } else {
+            // 已经是对象格式，更新提交状态和日期
+            window.userAnswers[window.currentQuestionIndex].isSubmitted = true;
+            window.userAnswers[window.currentQuestionIndex].submittedDate = new Date().toISOString();
+        }
 
         // 更新统计
         updateStatsDisplay(window.userAnswers, window.questions);
@@ -229,7 +261,7 @@ window.submitAnswer = function() {
         }
 
         // 显示提示
-        const isCorrect = window.isCorrectAnswer(window.currentQuestionIndex, window.userAnswers[window.currentQuestionIndex]);
+        const isCorrect = window.isCorrectAnswer(window.questions[window.currentQuestionIndex], window.userAnswers[window.currentQuestionIndex]);
         showToast(isCorrect ? '✅ 回答正确！' : '❌ 回答错误，请查看解析');
         
         // 保存状态
@@ -245,37 +277,63 @@ window.submitAnswer = function() {
 };
 
 // 切换模式
-window.toggleMode = function() {
-    // 在考试模式下禁止切换模式
-    if (window.isExamMode) {
-        showToast('考试模式下不允许切换模式');
+window.changeMode = function() {
+    const modeSelect = document.getElementById('modeSelect');
+    const selectedMode = modeSelect.value;
+    
+    // 如果当前已经是考试模式，且用户选择的是考试模式，不做任何操作
+    if (window.isExamMode && selectedMode === 'exam') {
         return;
     }
     
-    window.isStudyMode = !window.isStudyMode;
-    const btn = document.getElementById('modeBtn');
-
+    // 如果当前是考试模式，且用户选择其他模式，需要先结束考试
+    if (window.isExamMode && selectedMode !== 'exam') {
+        showToast('请先结束当前考试才能切换模式');
+        // 重置选择框到考试模式
+        modeSelect.value = 'exam';
+        return;
+    }
+    
     // 清空历史选择
     window.userAnswers = {};
     
+    // 根据选择的模式设置状态
+    if (selectedMode === 'practice') {
+        window.isStudyMode = false;
+        window.isExamMode = false;
+        document.getElementById('statsPanel').style.display = 'block';
+        
+        // 启用相关按钮
+        document.getElementById('bankSelect').disabled = false;
+        document.getElementById('settingsBtn').disabled = false;
+        document.getElementById('resetBtn').disabled = false;
+        document.getElementById('examBtn').disabled = false;
+        
+    } else if (selectedMode === 'study') {
+        window.isStudyMode = true;
+        window.isExamMode = false;
+        document.getElementById('statsPanel').style.display = 'none';
+        
+        // 启用相关按钮
+        document.getElementById('bankSelect').disabled = false;
+        document.getElementById('settingsBtn').disabled = false;
+        document.getElementById('resetBtn').disabled = false;
+        document.getElementById('examBtn').disabled = false;
+        
+    } else if (selectedMode === 'exam') {
+        // 考试模式需要通过专门的考试按钮开始
+        showToast('请点击"开始考试"按钮选择考试模板');
+        // 重置选择框到当前模式
+        if (window.isStudyMode) {
+            modeSelect.value = 'study';
+        } else {
+            modeSelect.value = 'practice';
+        }
+        return;
+    }
+    
     // 保存模式切换状态，但保持当前题目索引不变
     window.saveStateToCookie();
-
-    if (window.isStudyMode) {
-        btn.textContent = '切换到 ✏️ 练习模式';
-        btn.classList.remove('btn-primary');
-        btn.classList.add('btn-warning');
-        document.getElementById('statsPanel').style.display = 'none';
-        // 更新当前模式显示
-        document.getElementById('currentModeDisplay').textContent = '当前模式: 📖 背题模式';
-    } else {
-        btn.textContent = '切换到 📖 背题模式';
-        btn.classList.remove('btn-warning');
-        btn.classList.add('btn-primary');
-        document.getElementById('statsPanel').style.display = 'block';
-        // 更新当前模式显示
-        document.getElementById('currentModeDisplay').textContent = '当前模式: ✏️ 练习模式';
-    }
     
     // 更新统计信息
     updateStatsDisplay(window.userAnswers, window.questions);
@@ -514,7 +572,7 @@ window.viewExamDetails = function() {
     window.questions.forEach((question, index) => {
         const userAnswer = window.userAnswers[index];
         const isAnswered = userAnswer && userAnswer.isSubmitted;
-        const isCorrect = isAnswered && window.isCorrectAnswer(index, userAnswer);
+        const isCorrect = isAnswered && window.isCorrectAnswer(window.questions[index], userAnswer);
         
         html += `
             <div class="detail-item ${isCorrect ? 'correct' : isAnswered ? 'incorrect' : 'unanswered'}">
@@ -692,7 +750,17 @@ document.addEventListener('keydown', function (e) {
             break;
         case 'm':
         case 'M':
-            window.toggleMode();
+            // 切换模式快捷键 - 由于现在是下拉菜单，需要特殊处理
+            if (window.isExamMode) {
+                showToast('考试模式下不允许切换模式');
+            } else {
+                const modeSelect = document.getElementById('modeSelect');
+                if (modeSelect) {
+                    // 在练习模式和背题模式之间切换
+                    modeSelect.value = window.isStudyMode ? 'practice' : 'study';
+                    window.changeMode();
+                }
+            }
             break;
         case 'l':
         case 'L':
@@ -757,11 +825,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     const savedAnswer = savedState.userAnswers[index];
                     if (savedAnswer && typeof savedAnswer === 'object' && 'options' in savedAnswer) {
                         // 新格式：对象包含options和isSubmitted
-                        window.userAnswers[index] = savedAnswer.options;
-                        window.userAnswers[index].isSubmitted = savedAnswer.isSubmitted || false;
+                        window.userAnswers[index] = {
+                            options: savedAnswer.options || [],
+                            isSubmitted: savedAnswer.isSubmitted || false,
+                            submittedDate: savedAnswer.submittedDate
+                        };
                     } else {
-                        // 旧格式：直接是数组
-                        window.userAnswers[index] = JSON.parse(JSON.stringify(savedAnswer));
+                        // 旧格式：直接是数组，转换为新格式
+                        window.userAnswers[index] = {
+                            options: JSON.parse(JSON.stringify(savedAnswer)) || [],
+                            isSubmitted: false
+                        };
                     }
                 });
             }
@@ -788,51 +862,34 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('🔍 初始化: 没有保存的题库或下拉菜单不存在');
     }
     
-    // 创建并添加考试模式按钮
-    const examBtn = document.createElement('button');
-    examBtn.id = 'examBtn';
-    examBtn.className = 'btn btn-info';
-    examBtn.textContent = '📝 考试模式';
-    examBtn.onclick = window.openExamTemplateDialog;
-    
-    // 将考试按钮添加到适当的位置（例如模式按钮旁边）
-    const modeBtn = document.getElementById('modeBtn');
-    if (modeBtn && modeBtn.parentNode) {
-        modeBtn.parentNode.appendChild(examBtn);
-    }
-    
-    // 更新模式按钮状态
-    if (window.isExamMode) {
-        // 考试模式特殊处理
-        modeBtn.disabled = true;
-        document.getElementById('statsPanel').style.display = 'none';
-        document.getElementById('currentModeDisplay').textContent = `当前模式: 📝 考试模式 - ${window.currentExamTemplate?.exam_name || '考试'}`;
-        
-        // 恢复考试计时器
-        if (window.examStartTime) {
-            window.startExamTimer();
-        }
-        
-        // 如果有考试题目，重新生成导航和显示当前题目
-        if (window.questions.length > 0) {
-            generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
-            displayQuestion(window.currentQuestionIndex);
+    // 更新模式选择器状态
+    const modeSelect = document.getElementById('modeSelect');
+    if (modeSelect) {
+        if (window.isExamMode) {
+            // 考试模式特殊处理
+            modeSelect.value = 'exam';
+            document.getElementById('statsPanel').style.display = 'none';
+            
+            // 恢复考试计时器
+            if (window.examStartTime) {
+                window.startExamTimer();
+            }
+            
+            // 如果有考试题目，重新生成导航和显示当前题目
+            if (window.questions.length > 0) {
+                generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
+                displayQuestion(window.currentQuestionIndex);
+            } else {
+                // 没有题目则退出考试模式
+                window.exitExam();
+            }
+        } else if (window.isStudyMode) {
+            modeSelect.value = 'study';
+            document.getElementById('statsPanel').style.display = 'none';
         } else {
-            // 没有题目则退出考试模式
-            window.exitExam();
+            modeSelect.value = 'practice';
+            document.getElementById('statsPanel').style.display = 'block';
         }
-    } else if (window.isStudyMode) {
-        modeBtn.textContent = '切换到 ✏️ 练习模式';
-        modeBtn.classList.remove('btn-primary');
-        modeBtn.classList.add('btn-warning');
-        document.getElementById('statsPanel').style.display = 'none';
-        document.getElementById('currentModeDisplay').textContent = '当前模式: 📖 背题模式';
-    } else {
-        modeBtn.textContent = '切换到 📖 背题模式';
-        modeBtn.classList.remove('btn-warning');
-        modeBtn.classList.add('btn-primary');
-        document.getElementById('statsPanel').style.display = 'block';
-        document.getElementById('currentModeDisplay').textContent = '当前模式: ✏️ 练习模式';
     }
     
     // 如果不是考试模式且有保存的题库，则加载它

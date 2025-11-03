@@ -17,13 +17,17 @@ export function generateQuestionNav(questions, userAnswers, isStudyMode, contain
         item.onclick = () => window.displayQuestion(index);
 
         // 检查答题状态 - 只有已提交的答案才标记正确/错误
-        if (userAnswers[index] !== undefined && typeof userAnswers[index].isSubmitted !== 'undefined' && userAnswers[index].isSubmitted) {
-            if (window.isCorrectAnswer(index, userAnswers[index])) {
+        const userAnswer = userAnswers[index];
+        const isSubmitted = userAnswer && userAnswer.isSubmitted;
+        const hasOptions = userAnswer && userAnswer.options && userAnswer.options.length > 0;
+        
+        if (isSubmitted) {
+            if (window.isCorrectAnswer(questions[index], userAnswer.options || userAnswer)) {
                 item.classList.add('correct');
             } else {
                 item.classList.add('incorrect');
             }
-        } else if (!isStudyMode && userAnswers[index] !== undefined && userAnswers[index].length > 0) {
+        } else if (!isStudyMode && hasOptions) {
             // 在练习模式下，已选择但未提交答案的题目显示为橙色
             item.classList.add('pending');
         }
@@ -56,8 +60,11 @@ export function updateStatsDisplay(userAnswers, questions) {
 
     Object.keys(userAnswers).forEach(index => {
         const answer = userAnswers[index];
-        if (answer && answer.isSubmitted === true && window.isCorrectAnswer(parseInt(index), answer)) {
-            correct++;
+        if (answer && answer.isSubmitted === true) {
+            const userOptions = answer.options || answer;
+            if (window.isCorrectAnswer(questions[parseInt(index)], userOptions)) {
+                correct++;
+            }
         }
     });
 
