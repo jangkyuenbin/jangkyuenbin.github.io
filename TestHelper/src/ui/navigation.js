@@ -70,7 +70,19 @@ export function updateStatsDisplay(userAnswers, questions) {
 
     const accuracy = answered > 0 ? Math.round((correct / answered) * 100) : 0;
 
-    document.getElementById('answeredQuestions').textContent = answered;
-    document.getElementById('correctQuestions').textContent = correct;
-    document.getElementById('accuracy').textContent = accuracy + '%';
+    // 添加DOM元素存在性检查，防止出现Cannot set properties of null错误
+    const answeredQuestionsElement = document.getElementById('answeredQuestions');
+    if (answeredQuestionsElement) {
+        answeredQuestionsElement.textContent = answered;
+    }
+    
+    const correctQuestionsElement = document.getElementById('correctQuestions');
+    if (correctQuestionsElement) {
+        correctQuestionsElement.textContent = correct;
+    }
+    
+    const accuracyElement = document.getElementById('accuracy');
+    if (accuracyElement) {
+        accuracyElement.textContent = accuracy + '%';
+    }
 }

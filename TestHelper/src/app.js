@@ -276,6 +276,43 @@ window.submitAnswer = function() {
     }
 };
 
+// 提交单题答案（考试模式下使用）
+window.submitSingleAnswer = function() {
+    // 检查是否已选择答案
+    if (!window.userAnswers[window.currentQuestionIndex] || window.userAnswers[window.currentQuestionIndex].length === 0) {
+        showToast('请先选择答案');
+        return;
+    }
+
+    // 确保用户答案是一个对象，包含选项和提交信息
+    const currentAnswer = window.userAnswers[window.currentQuestionIndex];
+    
+    // 如果当前答案不是对象格式，转换为对象格式
+    if (!currentAnswer || typeof currentAnswer !== 'object' || Array.isArray(currentAnswer)) {
+        window.userAnswers[window.currentQuestionIndex] = {
+            options: currentAnswer || [],
+            isSubmitted: true,
+            submittedDate: new Date().toISOString()
+        };
+    } else {
+        // 已经是对象格式，更新提交状态和日期
+        window.userAnswers[window.currentQuestionIndex].isSubmitted = true;
+        window.userAnswers[window.currentQuestionIndex].submittedDate = new Date().toISOString();
+    }
+
+    // 更新导航
+    generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
+
+    // 显示结果
+    displayQuestion(window.currentQuestionIndex);
+
+    // 显示提示
+    showToast('✅ 答案已提交');
+    
+    // 保存状态（考试模式下不保存到cookie，但这里仍然调用以保持一致性）
+    window.saveStateToCookie();
+};
+
 // 切换模式
 window.changeMode = function() {
     const modeSelect = document.getElementById('modeSelect');
@@ -411,11 +448,17 @@ window.startExam = function(template) {
     window.examStartTime = new Date();
     
     // 隐藏不需要的UI元素
+    document.getElementById('statsPanel').style.display = 'none';
     document.getElementById('bankSelect').disabled = true;
-    document.getElementById('modeBtn').disabled = true;
     document.getElementById('settingsBtn').disabled = true;
     document.getElementById('resetBtn').disabled = true;
-    document.getElementById('examBtn').disabled = true;
+    
+    // 更新考试按钮为结束考试
+    const examBtn = document.getElementById('examBtn');
+    examBtn.textContent = '🚫 结束考试';
+    examBtn.className = 'btn btn-danger';
+    examBtn.onclick = window.confirmEndExam;
+    examBtn.disabled = false;
     
     // 更新UI显示，在模式显示中包含考试名称
     document.getElementById('currentModeDisplay').textContent = `当前模式: 📝 考试模式 - ${window.currentExamTemplate.exam_name}`;
@@ -503,8 +546,14 @@ window.endExam = function() {
     
     // 恢复UI元素
     document.getElementById('bankSelect').disabled = false;
-    document.getElementById('modeBtn').disabled = false;
     document.getElementById('resetBtn').disabled = false;
+    
+    // 恢复考试按钮为开始考试
+    const examBtn = document.getElementById('examBtn');
+    examBtn.textContent = '📝 开始考试';
+    examBtn.className = 'btn btn-success';
+    examBtn.onclick = window.openExamTemplateDialog;
+    examBtn.disabled = false;
     
     // 移除计时器显示
     const timerElement = document.getElementById('examTimer');
@@ -607,6 +656,19 @@ window.exitExam = function() {
     window.userAnswers = {};
     window.currentExamTemplate = null;
     
+    // 恢复UI元素
+    document.getElementById('statsPanel').style.display = window.isStudyMode ? 'none' : 'block';
+    document.getElementById('bankSelect').disabled = false;
+    document.getElementById('settingsBtn').disabled = false;
+    document.getElementById('resetBtn').disabled = false;
+    
+    // 恢复考试按钮为开始考试
+    const examBtn = document.getElementById('examBtn');
+    examBtn.textContent = '📝 开始考试';
+    examBtn.className = 'btn btn-success';
+    examBtn.onclick = window.openExamTemplateDialog;
+    examBtn.disabled = false;
+    
     // 恢复模式显示
     document.getElementById('currentModeDisplay').textContent = window.isStudyMode ? '当前模式: 📖 背题模式' : '当前模式: ✏️ 练习模式';
     
@@ -616,7 +678,25 @@ window.exitExam = function() {
 
 // 确认结束考试
 window.confirmEndExam = function() {
-    if (confirm('确定要终止考试吗？您的考试进度将被保存，但不会计算成绩。')) {
+    // 检查是否所有题目都已提交答案
+    let allSubmitted = true;
+    let unsubmittedCount = 0;
+    
+    for (let i = 0; i < window.questions.length; i++) {
+        const userAnswer = window.userAnswers[i];
+        if (!userAnswer || !userAnswer.isSubmitted) {
+            allSubmitted = false;
+            unsubmittedCount++;
+        }
+    }
+    
+    let message = '确定要结束考试吗？';
+    if (!allSubmitted) {
+        message += `\n\n您还有 ${unsubmittedCount} 道题目未提交答案，未提交的题目将被判定为错误。`;
+    }
+    message += '\n\n提交后将显示考试成绩。';
+    
+    if (confirm(message)) {
         window.endExam();
     }
 };
@@ -776,33 +856,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (savedState) {
         window.currentBank = savedState.currentBank !== undefined && savedState.currentBank !== null ? savedState.currentBank : window.currentBank;
         window.isStudyMode = savedState.isStudyMode !== undefined ? savedState.isStudyMode : window.isStudyMode;
-        window.isExamMode = savedState.isExamMode !== undefined ? savedState.isExamMode : window.isExamMode;
+        // 考试模式状态不进行持久化，刷新页面后强制退出考试模式
+        window.isExamMode = false;
         window.showTranslation = savedState.showTranslation !== undefined ? savedState.showTranslation : window.showTranslation;
         window.autoNext = savedState.autoNext !== undefined ? savedState.autoNext : window.autoNext;
         window.currentLanguage = savedState.currentLanguage || window.currentLanguage;
         
-        // 在考试模式下恢复考试状态
-        if (savedState.isExamMode) {
-            window.currentExamTemplate = savedState.currentExamTemplate;
-            window.examStartTime = savedState.examStartTime;
-            window.currentQuestionIndex = savedState.currentQuestionIndex || 0;
-            
-            // 恢复用户答案
-            if (savedState.userAnswers) {
-                window.userAnswers = {};
-                Object.keys(savedState.userAnswers).forEach(index => {
-                    const savedAnswer = savedState.userAnswers[index];
-                    if (savedAnswer && typeof savedAnswer === 'object' && 'options' in savedAnswer) {
-                        window.userAnswers[index] = savedAnswer.options;
-                        window.userAnswers[index].isSubmitted = savedAnswer.isSubmitted || false;
-                    } else {
-                        window.userAnswers[index] = JSON.parse(JSON.stringify(savedAnswer));
-                    }
-                });
-            }
-        }
+        // 清除考试相关状态，确保刷新页面后不恢复考试模式
+        window.currentExamTemplate = null;
+        window.examStartTime = null;
+        
         // 在背题模式下，恢复背题状态
-        else if (savedState.isStudyMode) {
+        if (savedState.isStudyMode) {
             window.currentQuestionIndex = savedState.currentQuestionIndex || window.currentQuestionIndex;
             
             // 背题模式下清空用户答案，但保留当前题目索引
@@ -840,6 +905,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         }
+        
+        // 清空考试模式下的用户答案，确保刷新页面后不保留考试答案
+        if (savedState.isExamMode) {
+            window.userAnswers = {};
+        }
     }
     
     // 加载设置
@@ -865,25 +935,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // 更新模式选择器状态
     const modeSelect = document.getElementById('modeSelect');
     if (modeSelect) {
-        if (window.isExamMode) {
-            // 考试模式特殊处理
-            modeSelect.value = 'exam';
-            document.getElementById('statsPanel').style.display = 'none';
-            
-            // 恢复考试计时器
-            if (window.examStartTime) {
-                window.startExamTimer();
-            }
-            
-            // 如果有考试题目，重新生成导航和显示当前题目
-            if (window.questions.length > 0) {
-                generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
-                displayQuestion(window.currentQuestionIndex);
-            } else {
-                // 没有题目则退出考试模式
-                window.exitExam();
-            }
-        } else if (window.isStudyMode) {
+        // 考试模式状态不进行持久化，刷新页面后强制设置为练习模式
+        if (window.isStudyMode) {
             modeSelect.value = 'study';
             document.getElementById('statsPanel').style.display = 'none';
         } else {

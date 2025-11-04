@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>智能题库系统</title>
     <!-- 引入marked.js用于markdown解析 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/third_part/marked.min.js"></script>
     <!-- 引入KaTeX用于数学公式渲染 - 更新到最新稳定版本 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="/static/third_part/katex.min.css">
+    <script src="/static/third_part/katex.min.js"></script>
+    <script src="/static/third_part/auto-render.min.js"></script>
     
     <!-- 公式渲染测试和初始化脚本 -->
     <script>
@@ -863,6 +863,7 @@
         <div class="nav-info">
             <span>题库: <strong id="currentBank">未加载</strong></span>
             <span>当前题目: <strong id="currentQuestion">0</strong> / <strong id="totalQuestionsNav">0</strong></span>
+            <span id="currentModeDisplay">当前模式: ✏️ 练习模式</span>
         </div>
         <div class="question-grid" id="questionGrid">
             <!-- 题目导航将动态生成 -->

@@ -27,15 +27,21 @@ export function saveStateToCookie(state) {
         if (window.currentQuestionIndex !== undefined) {
             state.currentQuestionIndex = window.currentQuestionIndex;
         }
-        if (window.userAnswers !== undefined && window.userAnswers !== null) {
+        
+        // 考试模式下不保存用户答案状态
+        if (window.userAnswers !== undefined && window.userAnswers !== null && !window.isExamMode) {
             state.userAnswers = window.userAnswers;
         }
+        
         if (window.isStudyMode !== undefined) {
             state.isStudyMode = window.isStudyMode;
         }
-        if (window.isExamMode !== undefined) {
+        
+        // 考试模式下不保存考试状态
+        if (window.isExamMode !== undefined && !window.isExamMode) {
             state.isExamMode = window.isExamMode;
         }
+        
         if (window.showTranslation !== undefined) {
             state.showTranslation = window.showTranslation;
         }
@@ -45,10 +51,12 @@ export function saveStateToCookie(state) {
         if (window.currentLanguage !== undefined) {
             state.currentLanguage = window.currentLanguage;
         }
-        if (window.currentExamTemplate !== undefined && window.currentExamTemplate !== null) {
+        
+        // 考试模式下不保存考试模板和开始时间
+        if (window.currentExamTemplate !== undefined && window.currentExamTemplate !== null && !window.isExamMode) {
             state.currentExamTemplate = window.currentExamTemplate;
         }
-        if (window.examStartTime !== undefined && window.examStartTime !== null) {
+        if (window.examStartTime !== undefined && window.examStartTime !== null && !window.isExamMode) {
             state.examStartTime = window.examStartTime;
         }
         

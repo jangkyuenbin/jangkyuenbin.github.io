@@ -91,8 +91,16 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
 
     if (!isStudyMode) {
         if (isExamMode) {
-            // 考试模式下，提交答案按钮的文本改为"提交试卷"
-            html += '<button class="btn btn-primary" onclick="window.submitAnswer()">提交试卷</button>';
+            // 考试模式下，添加单独的提交答案按钮来记录单题答案
+            const isSubmitted = userAnswer && userAnswer.isSubmitted;
+            if (!isSubmitted) {
+                html += '<button class="btn btn-primary" onclick="window.submitSingleAnswer()">提交答案</button>';
+            } else {
+                html += '<button class="btn btn-outline" disabled>已提交</button>';
+            }
+            
+            // 考试模式下仍然保留提交试卷按钮
+            html += '<button class="btn btn-warning" onclick="window.submitAnswer()">提交试卷</button>';
         } else if (!userAnswer || !userAnswer.isSubmitted) {
             // 非考试模式下的正常提交答案按钮
             html += '<button class="btn btn-primary" onclick="window.submitAnswer()">提交答案</button>';
@@ -103,9 +111,9 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
         html += `<button class="btn btn-outline" onclick="window.displayQuestion(${index + 1})">下一题 ➡</button>`;
     }
     
-    // 在考试模式下显示终止考试按钮（供随时退出）
+    // 在考试模式下显示结束考试按钮（供随时退出）
     if (isExamMode && window.questions.length > 0) {
-        html += '<button class="btn btn-danger" onclick="window.confirmEndExam()" style="margin-left: 10px;">终止考试</button>';
+        html += '<button class="btn btn-danger" onclick="window.confirmEndExam()" style="margin-left: 10px;">结束考试</button>';
     }
 
     html += '</div>';
@@ -124,11 +132,17 @@ export function displayQuestion(index, state) {
     window.currentQuestionIndex = index;
     const question = window.questions[index];
 
-    // 更新当前题目显示
-    document.getElementById('currentQuestion').textContent = index + 1;
+    // 更新当前题目显示 - 添加DOM元素存在性检查
+    const currentQuestionElement = document.getElementById('currentQuestion');
+    if (currentQuestionElement) {
+        currentQuestionElement.textContent = index + 1;
+    }
 
-    // 更新导航高亮
-    updateNavHighlight(index, document.getElementById('questionGrid'));
+    // 更新导航高亮 - 添加DOM元素存在性检查
+    const questionGridElement = document.getElementById('questionGrid');
+    if (questionGridElement) {
+        updateNavHighlight(index, questionGridElement);
+    }
     
     // 保存状态，确保在背题模式下也能保存当前题目
     window.saveStateToCookie();
@@ -144,7 +158,11 @@ export function displayQuestion(index, state) {
         window.currentLanguage
     );
 
-    document.getElementById('questionContent').innerHTML = html;
+    // 添加DOM元素存在性检查
+    const questionContentElement = document.getElementById('questionContent');
+    if (questionContentElement) {
+        questionContentElement.innerHTML = html;
+    }
         
     // 渲染数学公式 - 使用更可靠的方式
     setTimeout(() => {
@@ -157,7 +175,9 @@ export function displayQuestion(index, state) {
             if (!success) {
                 console.log('首次渲染失败，尝试重新渲染...');
                 setTimeout(() => {
-                    window.renderMathFormulas(questionContent);
+                    if (document.getElementById('questionContent')) {
+                        window.renderMathFormulas(document.getElementById('questionContent'));
+                    }
                 }, 100);
             }
         } else {
