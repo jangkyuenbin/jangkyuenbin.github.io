@@ -11,6 +11,210 @@
     <script src="./static/third_part/katex.min.js"></script>
     <script src="./static/third_part/auto-render.min.js"></script>
     
+    <!-- 引入Prism.js用于代码语法高亮 -->
+    <link rel="stylesheet" href="./static/third_part/prism.css">
+    <script src="./static/third_part/prism.min.js"></script>
+    
+    <!-- 自定义代码高亮样式 -->
+    <style>
+        /* 增强代码块样式 */
+        .question-content pre[class*="language-"] {
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .question-content pre[class*="language-"]::before {
+            content: attr(class);
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #4a90e2;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-bottom-left-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .question-content code[class*="language-"] {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            padding: 1.5rem !important;
+        }
+        
+        /* 行号样式 */
+        .question-content pre[class*="language-"].line-numbers {
+            padding-left: 3.8rem;
+        }
+        
+        .question-content .line-numbers-rows {
+            border-right: 1px solid #e1e8ed;
+            background: #f8f9fa;
+        }
+        
+        .question-content .line-numbers-rows > span:before {
+            color: #6c757d;
+            font-weight: 400;
+        }
+        
+        /* 代码块标题栏 */
+        .code-block-header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e1e8ed;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #495057;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .code-block-header .language-label {
+            background: #4a90e2;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .code-block-header .copy-button {
+            background: transparent;
+            border: 1px solid #dee2e6;
+            color: #6c757d;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .code-block-header .copy-button:hover {
+            background: #4a90e2;
+            color: white;
+            border-color: #4a90e2;
+        }
+        
+        /* 代码块容器 */
+        .code-block-container {
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+            margin: 1.5rem 0;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .question-content pre[class*="language-"] {
+                margin: 1rem 0;
+                border-radius: 6px;
+            }
+            
+            .question-content code[class*="language-"] {
+                font-size: 0.85rem;
+                padding: 1rem !important;
+            }
+            
+            .code-block-container {
+                margin: 1rem 0;
+            }
+        }
+        
+        /* 语法高亮颜色增强 */
+        .token.comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: #6a9955;
+            font-style: italic;
+        }
+        
+        .token.keyword,
+        .token.operator {
+            color: #d73a49;
+            font-weight: 600;
+        }
+        
+        .token.string,
+        .token.char,
+        .token.attr-value {
+            color: #032f62;
+        }
+        
+        .token.number,
+        .token.boolean {
+            color: #005cc5;
+        }
+        
+        .token.function,
+        .token.class-name {
+            color: #6f42c1;
+        }
+        
+        .token.variable {
+            color: #e36209;
+        }
+        
+        .token.punctuation {
+            color: #24292e;
+        }
+        
+        .token.selector {
+            color: #22863a;
+        }
+        
+        .token.property {
+            color: #005cc5;
+        }
+    </style>
+    
+    <script>
+        // 复制代码到剪贴板功能
+        function copyCodeToClipboard(button) {
+            const codeBlock = button.closest('.code-block-container').querySelector('code');
+            const codeText = codeBlock.textContent || codeBlock.innerText;
+            
+            navigator.clipboard.writeText(codeText).then(function() {
+                // 复制成功，更新按钮文本
+                const originalText = button.innerHTML;
+                button.innerHTML = '✅ 已复制';
+                button.style.background = '#28a745';
+                button.style.color = 'white';
+                button.style.borderColor = '#28a745';
+                
+                // 2秒后恢复原状
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.style.background = 'transparent';
+                    button.style.color = '#6c757d';
+                    button.style.borderColor = '#dee2e6';
+                }, 2000);
+                
+            }).catch(function(err) {
+                console.error('复制失败:', err);
+                button.innerHTML = '❌ 复制失败';
+                button.style.background = '#dc3545';
+                button.style.color = 'white';
+                button.style.borderColor = '#dc3545';
+                
+                setTimeout(function() {
+                    button.innerHTML = '📋 复制';
+                    button.style.background = 'transparent';
+                    button.style.color = '#6c757d';
+                    button.style.borderColor = '#dee2e6';
+                }, 2000);
+            });
+        }
+    </script>
+
     <!-- 公式渲染测试和初始化脚本 -->
     <script>
         // 页面加载完成后初始化公式渲染
@@ -21,7 +225,7 @@
                 console.log('检查KaTeX是否可用:', typeof renderMathInElement !== 'undefined');
             }, 1000);
         });
-        
+
         // 手动测试公式渲染的函数
         function testMathRendering() {
             console.log('手动测试公式渲染');
@@ -35,7 +239,7 @@
             testDiv.style.border = '1px solid #ccc';
             testDiv.id = 'testMathElement';
             document.body.appendChild(testDiv);
-            
+
             if (window.renderMathInElement) {
                 renderMathInElement(testDiv, {
                     delimiters: [
@@ -139,11 +343,11 @@
             background: var(--success-color);
             color: white;
         }
-        
+
         .btn-success:hover {
             background: #4caf50;
         }
-        
+
         /* 模态框背景样式 */
         .modal-backdrop {
             position: fixed;
@@ -157,7 +361,7 @@
             align-items: center;
             z-index: 1000;
         }
-        
+
         /* 考试模板对话框样式 */
         .exam-template-dialog {
             background: var(--card-bg);
@@ -169,20 +373,20 @@
             overflow-y: auto;
             box-shadow: var(--shadow);
         }
-        
+
         .exam-template-dialog h3 {
             margin-top: 0;
             margin-bottom: 1.5rem;
             color: var(--text-primary);
         }
-        
+
         .template-list {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .template-item {
             padding: 1rem;
             border: 2px solid var(--border-color);
@@ -190,25 +394,25 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .template-item:hover {
             border-color: var(--primary-color);
             background: #f0f8ff;
             transform: translateX(5px);
         }
-        
+
         .template-name {
             font-weight: bold;
             display: block;
             margin-bottom: 0.25rem;
             color: var(--text-primary);
         }
-        
+
         .template-desc {
             font-size: 0.9rem;
             color: var(--text-secondary);
         }
-        
+
         .dialog-actions {
             display: flex;
             justify-content: flex-end;
@@ -308,7 +512,7 @@
             color: white;
             border-color: var(--error-color);
         }
-        
+
         .question-item.pending {
             background: var(--warning-color);
             color: white;
@@ -525,7 +729,7 @@
             font-size: 0.9rem;
             margin-top: 0.25rem;
         }
-        
+
         /* 重置按钮容器 */
         .reset-container {
             margin-top: 1rem;
@@ -767,9 +971,64 @@
             margin-left: 1rem;
             white-space: nowrap;
         }
-        
-        /* 响应式设计 */
+
+        /* Markdown表格样式 */
+        .question-text table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-text table th,
+        .question-text table td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .question-text table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .question-text table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .question-text table tr:hover {
+            background-color: #f0f8ff;
+        }
+
+        .question-text table td:first-child,
+        .question-text table th:first-child {
+            border-left: 2px solid var(--primary-color);
+        }
+
+        .question-text table td:last-child,
+        .question-text table th:last-child {
+            border-right: 2px solid var(--primary-color);
+        }
+
+        .question-text table tr:last-child td {
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        /* 响应式表格 */
         @media (max-width: 768px) {
+            .question-text table {
+                font-size: 0.85rem;
+            }
+
+            .question-text table th,
+            .question-text table td {
+                padding: 0.5rem;
+            }
+
             .nav-container {
                 flex-direction: column;
                 align-items: stretch;
@@ -779,7 +1038,7 @@
                 justify-content: center;
                 flex-wrap: wrap;
             }
-            
+
             .exam-timer {
                 margin-left: 0;
                 margin-top: 0.5rem;

@@ -185,6 +185,27 @@ export function displayQuestion(index, state) {
         }
     }, 50); // 增加一点延迟，确保DOM完全更新
 
+    // 渲染代码高亮
+    setTimeout(() => {
+        const questionContent = document.getElementById('questionContent');
+        if (questionContent) {
+            console.log('准备渲染代码高亮，内容元素:', questionContent);
+            const success = window.renderCodeHighlight(questionContent);
+            
+            // 如果首次渲染失败，尝试再次渲染
+            if (!success) {
+                console.log('代码高亮首次渲染失败，尝试重新渲染...');
+                setTimeout(() => {
+                    if (document.getElementById('questionContent')) {
+                        window.renderCodeHighlight(document.getElementById('questionContent'));
+                    }
+                }, 200);
+            }
+        } else {
+            console.error('无法找到问题内容元素');
+        }
+    }, 100); // 在数学公式渲染后执行
+
     // 直接定位到题目的标题部分，避免被顶部导航栏挡住，不使用滑动动画
     setTimeout(() => {
         const questionHeader = document.querySelector('.question-header');
