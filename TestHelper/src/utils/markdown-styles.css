@@ -1,0 +1,395 @@
+/* Markdown渲染样式配置 */
+
+/* ===== 基础样式 ===== */
+.markdown-content {
+    line-height: 1.8;
+    color: #333;
+    font-size: 16px;
+}
+
+/* ===== 方案1: 现代简约风格 ===== */
+.markdown-modern {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+.markdown-modern h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.markdown-modern h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.markdown-modern h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.markdown-modern p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.markdown-modern code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+.markdown-modern pre {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.markdown-modern blockquote {
+    border-left: 4px solid #3498db;
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* ===== 方案2: 学术风格 ===== */
+.markdown-academic {
+    font-family: 'Times New Roman', 'SimSun', serif;
+    color: #2c3e50;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.markdown-academic h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin: 2rem 0 1.5rem 0;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 0.5rem;
+}
+
+.markdown-academic h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #34495e;
+    margin: 2rem 0 1rem 0;
+    border-left: 3px solid #95a5a6;
+    padding-left: 1rem;
+}
+
+.markdown-academic h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7f8c8d;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.markdown-academic p {
+    margin-bottom: 1.2rem;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.markdown-academic code {
+    background: #ecf0f1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #c0392b;
+}
+
+.markdown-academic pre {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #bdc3c7;
+}
+
+.markdown-academic blockquote {
+    border-left: 3px solid #95a5a6;
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* ===== 方案3: 深色主题 ===== */
+.markdown-dark {
+    background: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', 'PingFang SC', sans-serif;
+    line-height: 1.7;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.markdown-dark h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #64b5f6;
+    border-bottom: 2px solid #64b5f6;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.markdown-dark h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #90caf9;
+    margin: 2rem 0 1rem 0;
+}
+
+.markdown-dark h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #bb86fc;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.markdown-dark p {
+    margin-bottom: 1.2rem;
+    color: #e0e0e0;
+}
+
+.markdown-dark code {
+    background: #2d2d2d;
+    color: #f48fb1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 0.9em;
+}
+
+.markdown-dark pre {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-left: 4px solid #bb86fc;
+}
+
+.markdown-dark blockquote {
+    border-left: 4px solid #bb86fc;
+    background: #2d2d2d;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    color: #b0b0b0;
+}
+
+/* ===== 方案4: 卡片式设计 ===== */
+.markdown-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    border: 1px solid #e0e0e0;
+}
+
+.markdown-card h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a90e2;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.markdown-card h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5a9bd4;
+    margin: 1.5rem 0 1rem 0;
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.markdown-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.markdown-card p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.markdown-card code {
+    background: #f1f3f4;
+    color: #d32f2f;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 0.9em;
+}
+
+.markdown-card pre {
+    background: #f8f9fa;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #e0e0e0;
+}
+
+.markdown-card blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #4a90e2;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #666;
+}
+
+/* ===== 表格样式增强 ===== */
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-content table th,
+.markdown-content table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.markdown-content table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #4a90e2;
+}
+
+.markdown-content table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.markdown-content table tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* ===== 列表样式 ===== */
+.markdown-content ul,
+.markdown-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.markdown-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.markdown-content ul li {
+    list-style-type: disc;
+}
+
+.markdown-content ol li {
+    list-style-type: decimal;
+}
+
+/* ===== 链接样式 ===== */
+.markdown-content a {
+    color: #4a90e2;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.markdown-content a:hover {
+    color: #3a7bc8;
+    border-bottom-color: #3a7bc8;
+}
+
+/* ===== 图片样式 ===== */
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+/* ===== 数学公式样式 ===== */
+.markdown-content .katex {
+    font-size: 1.1em;
+}
+
+.markdown-content .katex-display {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* ===== 响应式设计 ===== */
+@media (max-width: 768px) {
+    .markdown-content {
+        font-size: 14px;
+        padding: 1rem;
+    }
+    
+    .markdown-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .markdown-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .markdown-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .markdown-content table {
+        font-size: 0.9rem;
+    }
+    
+    .markdown-content pre {
+        padding: 1rem;
+    }
+}
