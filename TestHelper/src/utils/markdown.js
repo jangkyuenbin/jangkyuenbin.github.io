@@ -1,46 +1,7 @@
 // Markdown解析和数学公式渲染工具
 
-// Markdown样式配置
-const MARKDOWN_STYLES = {
-    MODERN: 'markdown-modern',
-    ACADEMIC: 'markdown-academic',
-    DARK: 'markdown-dark',
-    CARD: 'markdown-card',
-    DEFAULT: 'markdown-content'
-};
-
 // 当前样式配置
-let currentStyle = MARKDOWN_STYLES.ACADEMIC;
-
-/**
- * 设置Markdown渲染样式
- * @param {string} styleName 样式名称
- */
-export function setMarkdownStyle(styleName) {
-    if (Object.values(MARKDOWN_STYLES).includes(styleName)) {
-        currentStyle = styleName;
-        console.log('Markdown样式已设置为:', styleName);
-    } else {
-        console.warn('未知的样式名称:', styleName, '，使用默认样式');
-        currentStyle = MARKDOWN_STYLES.DEFAULT;
-    }
-}
-
-/**
- * 获取当前样式配置
- * @returns {string} 当前样式类名
- */
-export function getCurrentStyle() {
-    return currentStyle;
-}
-
-/**
- * 获取所有可用样式
- * @returns {Object} 样式配置对象
- */
-export function getAvailableStyles() {
-    return { ...MARKDOWN_STYLES };
-}
+const currentStyle = 'markdown-academic';
 
 /**
  * 解析Markdown文本

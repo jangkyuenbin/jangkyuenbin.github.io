@@ -285,29 +285,129 @@
     margin: 1.5rem 0;
     font-size: 0.95rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .markdown-content table th,
 .markdown-content table td {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #c0c0c0;
     padding: 0.75rem;
     text-align: left;
     vertical-align: top;
 }
 
 .markdown-content table th {
-    background-color: #f8f9fa;
+    background-color: #4a90e2;
     font-weight: 600;
-    color: #2c3e50;
-    border-bottom: 2px solid #4a90e2;
+    color: white;
+    border-bottom: 2px solid #3a7bc8;
 }
 
 .markdown-content table tr:nth-child(even) {
-    background-color: #fafafa;
+    background-color: #f8f9fa;
 }
 
 .markdown-content table tr:hover {
-    background-color: #f0f8ff;
+    background-color: #e3f2fd;
+}
+
+/* 为每个样式方案添加特定的表格样式 */
+.markdown-modern table {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+.markdown-modern table th {
+    background-color: #3498db;
+    color: white;
+    border-bottom: 2px solid #2980b9;
+}
+
+.markdown-modern table th,
+.markdown-modern table td {
+    border: 1px solid #bdc3c7;
+}
+
+.markdown-modern table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.markdown-modern table tr:hover {
+    background-color: #e8f4fd;
+}
+
+.markdown-academic table {
+    border: 2px solid #95a5a6;
+    border-radius: 6px;
+}
+
+.markdown-academic table th {
+    background-color: #95a5a6;
+    color: white;
+    border-bottom: 2px solid #7f8c8d;
+}
+
+.markdown-academic table th,
+.markdown-academic table td {
+    border: 1px solid #bdc3c7;
+}
+
+.markdown-academic table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.markdown-academic table tr:hover {
+    background-color: #f0f3f4;
+}
+
+.markdown-dark table {
+    border: 2px solid #64b5f6;
+    border-radius: 8px;
+}
+
+.markdown-dark table th {
+    background-color: #64b5f6;
+    color: #1a1a1a;
+    border-bottom: 2px solid #42a5f5;
+}
+
+.markdown-dark table th,
+.markdown-dark table td {
+    border: 1px solid #555;
+}
+
+.markdown-dark table tr:nth-child(even) {
+    background-color: #2d2d2d;
+}
+
+.markdown-dark table tr:hover {
+    background-color: #3d3d3d;
+}
+
+.markdown-card table {
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+}
+
+.markdown-card table th {
+    background-color: #4a90e2;
+    color: white;
+    border-bottom: 2px solid #3a7bc8;
+}
+
+.markdown-card table th,
+.markdown-card table td {
+    border: 1px solid #e0e0e0;
+}
+
+.markdown-card table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.markdown-card table tr:hover {
+    background-color: #e3f2fd;
 }
 
 /* ===== 列表样式 ===== */
