@@ -17,7 +17,7 @@ window.examTimer = null; // 考试计时器
 
 // 导入工具函数
 import { setCookie, getCookie } from './utils/cookie.js';
-import { parseMarkdown, renderMathFormulas, renderCodeHighlight, setMarkdownStyle } from './utils/markdown.js';
+import { parseMarkdown, renderMathFormulas, renderCodeHighlight } from './utils/markdown.js';
 import { saveStateToCookie, loadStateFromCookie, saveSettings, loadSettings } from './utils/storage.js';
 
 // 导入服务模块
