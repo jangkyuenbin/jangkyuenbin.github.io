@@ -18,7 +18,11 @@
     <!-- 自定义代码高亮样式 -->
     <style>
         .markdown-academic ul {
-            padding-left: 25px;
+            padding-left: 20px;
+        }
+
+        .markdown-academic ol {
+            padding-left: 16px;
         }
 
         /* 增强代码块样式 */
@@ -1082,7 +1086,6 @@
                 <select class="btn btn-outline" id="modeSelect" onchange="changeMode()">
                     <option value="practice">✏️ 练习模式</option>
                     <option value="study">📖 背题模式</option>
-                    <option value="exam">📝 考试模式</option>
                 </select>
             </div>
             <button class="btn btn-success" id="examBtn" onclick="openExamTemplateDialog()">

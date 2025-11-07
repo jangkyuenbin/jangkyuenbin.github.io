@@ -370,6 +370,9 @@ window.changeMode = function() {
         return;
     }
     
+    // 更新模式显示
+    document.getElementById('currentModeDisplay').textContent = window.isStudyMode ? '当前模式: 📖 背题模式' : '当前模式: ✏️ 练习模式';
+    
     // 保存模式切换状态，但保持当前题目索引不变
     window.saveStateToCookie();
     
@@ -453,6 +456,12 @@ window.startExam = function(template) {
     document.getElementById('bankSelect').disabled = true;
     document.getElementById('settingsBtn').disabled = true;
     document.getElementById('resetBtn').disabled = true;
+    
+    // 隐藏模式选择框
+    const modeSelect = document.getElementById('modeSelect');
+    if (modeSelect) {
+        modeSelect.style.display = 'none';
+    }
     
     // 更新考试按钮为结束考试
     const examBtn = document.getElementById('examBtn');
@@ -548,6 +557,12 @@ window.endExam = function() {
     // 恢复UI元素
     document.getElementById('bankSelect').disabled = false;
     document.getElementById('resetBtn').disabled = false;
+    
+    // 重新显示模式选择框
+    const modeSelect = document.getElementById('modeSelect');
+    if (modeSelect) {
+        modeSelect.style.display = 'block';
+    }
     
     // 恢复考试按钮为开始考试
     const examBtn = document.getElementById('examBtn');
@@ -662,6 +677,12 @@ window.exitExam = function() {
     document.getElementById('bankSelect').disabled = false;
     document.getElementById('settingsBtn').disabled = false;
     document.getElementById('resetBtn').disabled = false;
+    
+    // 重新显示模式选择框
+    const modeSelect = document.getElementById('modeSelect');
+    if (modeSelect) {
+        modeSelect.style.display = 'block';
+    }
     
     // 恢复考试按钮为开始考试
     const examBtn = document.getElementById('examBtn');
