@@ -1275,7 +1275,7 @@
       }
     ],
     "analysis": {
-      "enus": "triplet loss 与二元交叉熵损失相比的优势是可以摆脱类别的限制，同时相比起cross-entropy loss，triplet loss能学习到样本之间细微的差异。因此人脸识别这种需要精确到是否是同一个人的任务，triplet loss会更合适",
+      "enus": "Triplet Loss 与二元交叉熵损失相比的优势是可以摆脱类别的限制，同时相比起cross-entropy loss，Triplet Loss能学习到样本之间细微的差异。因此人脸识别这种需要精确到是否是同一个人的任务，Triplet Loss会更合适",
       "zhcn": "我们来逐项分析这个题目。  \n\n**题目背景**  \nTriplet Loss 常用于人脸识别等度量学习任务，它通过拉近同一类样本（Anchor 和 Positive）的距离、拉远不同类样本（Anchor 和 Negative）的距离来学习特征表示。  \n二元交叉熵损失（Binary Cross-Entropy）通常用于二分类任务，在人脸识别中如果用它，一般是在训练一个分类层（比如最后的全连接层作为分类器），每个类别对应一个人。  \n\n---\n\n**选项分析**  \n\n**[A] 能学习到样本之间细微的差异**  \n- Triplet Loss 直接优化样本间的相对距离，对类内变化和类间相似性更敏感，可以学到更精细的区分特征，适合处理同一类别的不同个体间细微差异（比如不同人的人脸）。  \n- 二元交叉熵（用于分类）更关注样本是否被正确分类，可能对细微差异的学习不如 Triplet Loss 直接。  \n- ✅ 这一项正确。  \n\n**[B] 收敛速度快**  \n- Triplet Loss 训练时需要精心构造三元组（尤其是难例挖掘），训练过程通常比交叉熵分类更不稳定，收敛速度不一定更快，甚至更慢。  \n- ❌ 这一项不正确。  \n\n**[C] 能摆脱类别数量限制**  \n- Triplet Loss 不依赖固定的类别数，它学习的是一个度量空间，可以泛化到训练集中未出现过的新类别（零样本或开集识别）。  \n- 二元交叉熵在训练时类别数是固定的，增加新类别需要调整输出层并重新训练。  \n- ✅ 这一项正确。  \n\n**[D] 训练简单**  \n- Triplet Loss 需要采样三元组、难例挖掘等技巧，训练比简单的交叉熵分类更复杂。  \n- ❌ 这一项不正确。  \n\n---\n\n**最终答案**  \n✅ 正确选项是 **A 和 C**。  \n\n所以参考答案 AC 是正确的。"
     },
     "answer": "AC"
@@ -3222,8 +3222,8 @@
   {
     "id": "71",
     "question": {
-      "enus": "以下哪些场景可使用阿里云机器学习平台PAI Auto earning来实现?",
-      "zhcn": "以下哪些场景可使用阿里云机器学习平台PAI Auto earning来实现?"
+      "enus": "以下哪些场景可使用阿里云机器学习平台PAI Auto Learning来实现?",
+      "zhcn": "以下哪些场景可使用阿里云机器学习平台PAI Auto Learning来实现?"
     },
     "option": [
       {
@@ -3690,15 +3690,15 @@
       },
       {
         "option_text": {
-          "enus": "MYSQL",
-          "zhcn": "MYSQL"
+          "enus": "MySQL",
+          "zhcn": "MySQL"
         },
         "option_flag": true
       }
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "**正确答案：ABD**\n\n**详细解析如下：**\n\nPAI-Studio（阿里云机器学习平台）在设计时，为了与阿里云生态系统深度集成并保障数据处理的效率与安全，主要支持其自有的云原生数据存储服务。\n\n*   **A. MaxCompute（正确）**：MaxCompute 是阿里云提供的大规模数据仓库服务，是 PAI-Studio 最主要和最常用的数据源。平台内置了与 MaxCompute 的无缝连接，可以直接读取其中的表进行模型训练，处理海量数据的能力非常强。\n*   **B. OSS（正确）**：OSS 是阿里云的对象存储服务。PAI-Studio 支持从 OSS 中读取文件数据（如 CSV、图片、文本等）作为训练数据，同时也常将训练得到的模型文件、输出结果等保存到 OSS 中。\n*   **D. MYSQL（正确）**：PAI-Studio 支持连接阿里云上的 RDS for MySQL 数据库作为数据源。用户可以通过数据库连接配置，直接读取 MySQL 中的表数据用于实验。\n*   **C. Oracle（错误）**：虽然用户理论上可以通过一些自定义脚本或更复杂的方式（如先导出数据到OSS或MaxCompute）来间接使用 Oracle 数据，但 PAI-Studio **不直接提供** 对 Oracle 数据库的原生、标准化的数据源支持。其官方文档和操作界面中，通常不将 Oracle 列为可直接配置的数据源类型。\n\n因此，根据 PAI-Studio 官方支持的数据源类型，正确选项是 A、B 和 D。"
+      "zhcn": "**正确答案：ABD**\n\n**详细解析如下：**\n\nPAI-Studio（阿里云机器学习平台）在设计时，为了与阿里云生态系统深度集成并保障数据处理的效率与安全，主要支持其自有的云原生数据存储服务。\n\n*   **A. MaxCompute（正确）**：MaxCompute 是阿里云提供的大规模数据仓库服务，是 PAI-Studio 最主要和最常用的数据源。平台内置了与 MaxCompute 的无缝连接，可以直接读取其中的表进行模型训练，处理海量数据的能力非常强。\n*   **B. OSS（正确）**：OSS 是阿里云的对象存储服务。PAI-Studio 支持从 OSS 中读取文件数据（如 CSV、图片、文本等）作为训练数据，同时也常将训练得到的模型文件、输出结果等保存到 OSS 中。\n*   **D. MySQL（正确）**：PAI-Studio 支持连接阿里云上的 RDS for MySQL 数据库作为数据源。用户可以通过数据库连接配置，直接读取 MySQL 中的表数据用于实验。\n*   **C. Oracle（错误）**：虽然用户理论上可以通过一些自定义脚本或更复杂的方式（如先导出数据到OSS或MaxCompute）来间接使用 Oracle 数据，但 PAI-Studio **不直接提供** 对 Oracle 数据库的原生、标准化的数据源支持。其官方文档和操作界面中，通常不将 Oracle 列为可直接配置的数据源类型。\n\n因此，根据 PAI-Studio 官方支持的数据源类型，正确选项是 A、B 和 D。"
     },
     "answer": "ABD"
   },
@@ -3942,8 +3942,8 @@
       },
       {
         "option_text": {
-          "enus": "OSS PYthon API",
-          "zhcn": "OSS PYthon API"
+          "enus": "OSS Python API",
+          "zhcn": "OSS Python API"
         },
         "option_flag": true
       }
@@ -5265,8 +5265,8 @@
     "option": [
       {
         "option_text": {
-          "enus": "支持JavaSDK",
-          "zhcn": "支持JavaSDK"
+          "enus": "支持Java SDK",
+          "zhcn": "支持Java SDK"
         },
         "option_flag": true
       },
@@ -5279,8 +5279,8 @@
       },
       {
         "option_text": {
-          "enus": "支持IOSSDK",
-          "zhcn": "支持IOSSDK"
+          "enus": "支持iOS SDK",
+          "zhcn": "支持iOS SDK"
         },
         "option_flag": true
       },
@@ -5300,8 +5300,8 @@
       }
     ],
     "analysis": {
-      "enus": "SDK支持javaSDK，C++SDK，IOS SDK（swift）。Restful不是SDK，描述有误",
-      "zhcn": "根据常见的语音合成服务商（如阿里云、腾讯云、百度AI开放平台等）的官方SDK支持情况来看，这道题的正确答案分析如下：\n\n**核心分析：**\n\n语音合成服务为了让不同技术栈的开发者都能方便地集成，通常会提供多种主流编程语言的SDK。\n\n*   **[A] 支持Java SDK：** **正确**。Java是企业级应用和Android开发的主要语言，几乎所有云服务商都会提供Java SDK。\n*   **[B] 支持C++ SDK：** **正确**。C++性能高，常用于对实时性要求高的桌面应用、游戏等场景，主流服务商通常会提供C++ SDK。\n*   **[C] 支持IOS SDK：** **正确**。iOS开发主要使用Swift或Objective-C，服务商会提供专门的iOS SDK（通常是Objective-C库或Swift Package）以便在iPhone/iPad应用中集成。\n*   **[D] 支持PHP SDK：** **通常不正确**。PHP主要用于服务器端的Web开发，虽然一些服务商可能提供PHP的示例代码或封装，但它通常不是官方主力维护的、功能完整的SDK，更多是通过调用通用的Restful API来实现。因此，在标准的“支持的SDK”列表中，PHP通常不被列入。\n*   **[E] 支持Restful SDK：** **表述不当**。Restful是一种API设计风格，不是一种特定的SDK。任何语言都可以通过HTTP客户端调用Restful API。服务商提供的是基于各种语言的SDK来封装对Restful API的调用，而不是提供一个叫“Restful SDK”的东西。这个选项容易产生歧义，通常不被视为一个正确的SDK类别。\n\n**结论：**\n\n因此，题目中明确列出的、被主流云服务商广泛支持的SDK是Java、C++和iOS。所以参考答案 **ABC** 是正确的。\n\n**答案解析总结：**\n语音合成服务为了覆盖广泛的开发平台（如服务端、移动端、桌面端），会提供包括Java、C++、iOS、Android、Python等在内的多种官方SDK。对于PHP等语言，开发者通常直接使用HTTP请求调用Restful API，而非使用官方SDK。选项E的表述不准确。"
+      "enus": "SDK支持javaSDK，C++SDK，iOS SDK（swift）。Restful不是SDK，描述有误",
+      "zhcn": "根据常见的语音合成服务商（如阿里云、腾讯云、百度AI开放平台等）的官方SDK支持情况来看，这道题的正确答案分析如下：\n\n**核心分析：**\n\n语音合成服务为了让不同技术栈的开发者都能方便地集成，通常会提供多种主流编程语言的SDK。\n\n*   **[A] 支持Java SDK：** **正确**。Java是企业级应用和Android开发的主要语言，几乎所有云服务商都会提供Java SDK。\n*   **[B] 支持C++ SDK：** **正确**。C++性能高，常用于对实时性要求高的桌面应用、游戏等场景，主流服务商通常会提供C++ SDK。\n*   **[C] 支持iOS SDK：** **正确**。iOS开发主要使用Swift或Objective-C，服务商会提供专门的iOS SDK（通常是Objective-C库或Swift Package）以便在iPhone/iPad应用中集成。\n*   **[D] 支持PHP SDK：** **通常不正确**。PHP主要用于服务器端的Web开发，虽然一些服务商可能提供PHP的示例代码或封装，但它通常不是官方主力维护的、功能完整的SDK，更多是通过调用通用的Restful API来实现。因此，在标准的“支持的SDK”列表中，PHP通常不被列入。\n*   **[E] 支持Restful SDK：** **表述不当**。Restful是一种API设计风格，不是一种特定的SDK。任何语言都可以通过HTTP客户端调用Restful API。服务商提供的是基于各种语言的SDK来封装对Restful API的调用，而不是提供一个叫“Restful SDK”的东西。这个选项容易产生歧义，通常不被视为一个正确的SDK类别。\n\n**结论：**\n\n因此，题目中明确列出的、被主流云服务商广泛支持的SDK是Java、C++和iOS。所以参考答案 **ABC** 是正确的。\n\n**答案解析总结：**\n语音合成服务为了覆盖广泛的开发平台（如服务端、移动端、桌面端），会提供包括Java、C++、iOS、Android、Python等在内的多种官方SDK。对于PHP等语言，开发者通常直接使用HTTP请求调用Restful API，而非使用官方SDK。选项E的表述不准确。"
     },
     "answer": "ABC"
   },
@@ -6420,7 +6420,7 @@
       }
     ],
     "analysis": {
-      "enus": "解析：PPT-63页。PAI-Studio数据获取方式有：数据仓库输出，外部数据导入（MYSQL、OSS）、本地上传（PAI-Studio、DataWorks、MaxCompute Tunnel）",
+      "enus": "解析：PPT-63页。PAI-Studio数据获取方式有：数据仓库输出，外部数据导入（MySQL、OSS）、本地上传（PAI-Studio、DataWorks、MaxCompute Tunnel）",
       "zhcn": "在机器学习平台 PAI-Studio 的数据准备阶段，获取数据的方式主要包括以下几种：\n\n- **[A] 数据仓库的输出**：PAI-Studio 支持从阿里云 MaxCompute（原名 ODPS）等数据仓库中直接读取数据表作为输入源。\n- **[B] 外部数据库的导入**：平台支持连接外部数据库（如 MySQL、SQL Server 等），通过配置数据源来导入数据。\n- **[C] 本地上传**：用户可以将本地计算机上的数据文件（如 CSV、TXT 等格式）上传至 PAI-Studio 平台进行处理。\n\n因此，选项 A、B、C 都是 PAI-Studio 支持的数据获取方式。  \n\n**[参考答案]** ABC"
     },
     "answer": "ABC"
@@ -6652,8 +6652,8 @@
   {
     "id": "148",
     "question": {
-      "enus": "使用阿里云机器学习平台PAl的PAl-Studio可视化建模，以下哪些数据类型可以作为逻辑回归二分类模型的输入特征列?",
-      "zhcn": "使用阿里云机器学习平台PAl的PAl-Studio可视化建模，以下哪些数据类型可以作为逻辑回归二分类模型的输入特征列?"
+      "enus": "使用阿里云机器学习平台PAI的PAI-Studio可视化建模，以下哪些数据类型可以作为逻辑回归二分类模型的输入特征列?",
+      "zhcn": "使用阿里云机器学习平台PAI的PAI-Studio可视化建模，以下哪些数据类型可以作为逻辑回归二分类模型的输入特征列?"
     },
     "option": [
       {
@@ -6687,7 +6687,7 @@
     ],
     "analysis": {
       "enus": "只能是整数类型数据，排除法，string是字符，datatime是时间数据。",
-      "zhcn": "您提供的题目和答案是正确的。在阿里云机器学习平台PAI的PAl-Studio中，逻辑回归二分类模型对输入特征列的数据类型有明确要求。\n\n**正确答案是：A (int) 和 D (double)**\n\n### 详细答案解析如下：\n\n逻辑回归是一种基于数值计算的模型。其核心数学原理（如Sigmoid函数、梯度下降等）要求输入的特征必须是**数值型（Numeric）** 的，以便进行加权求和等数学运算。\n\n1.  **A (int) 和 D (double)**：\n    *   这两种类型都属于**数值型数据**。\n    *   `int`（整型）和 `double`（双精度浮点型）可以直接参与模型的数学计算，因此是逻辑回归模型的标准输入类型。\n\n2.  **B (string)**：\n    *   字符串类型属于**类别型数据（Categorical Data）**。\n    *   逻辑回归模型本身无法直接处理字符串（如“北京”、“上海”、“男”、“女”）。如果希望使用字符串作为特征，必须事先通过特征工程进行转换。\n    *   常见的转换方法包括：\n        *   **独热编码（One-Hot Encoding）**：将每个类别转换为一个二进制特征列。\n        *   **词袋模型（Bag of Words）或TF-IDF**：如果字符串是文本，可以使用这类方法转换为数值向量。\n    *   在经过这些转换之后，生成的**数值型结果**才可以作为逻辑回归的输入。原始的 `string` 列本身不能直接输入。\n\n3.  **C (datetime)**：\n    *   日期时间类型也不是直接的数值型。\n    *   与字符串类似，它需要经过特征工程提取出有意义的数值特征后才能使用。\n    *   常见的转换方法包括：\n        *   提取**年份**、**月份**、**日**、**小时**、**分钟**、**秒**等作为单独的数字特征。\n        *   提取**星期几**（转换为0-6的数字）。\n        *   计算相对于某个固定时间点的时间戳（一个大的整数）。\n        *   计算时间间隔等。\n    *   同样，原始的 `datetime` 列本身不能直接输入模型。\n\n### 总结：\n\n逻辑回归模型要求输入特征必须是**数值型**。题目中的 `int` 和 `double` 是符合要求的原生数值类型。而 `string` 和 `datetime` 属于非数值类型，必须经过特征工程转换为数值形式后，才能作为模型的特征输入。因此，本题的正确答案是 **A 和 D**。"
+      "zhcn": "您提供的题目和答案是正确的。在阿里云机器学习平台PAI的PAI-Studio中，逻辑回归二分类模型对输入特征列的数据类型有明确要求。\n\n**正确答案是：A (int) 和 D (double)**\n\n### 详细答案解析如下：\n\n逻辑回归是一种基于数值计算的模型。其核心数学原理（如Sigmoid函数、梯度下降等）要求输入的特征必须是**数值型（Numeric）** 的，以便进行加权求和等数学运算。\n\n1.  **A (int) 和 D (double)**：\n    *   这两种类型都属于**数值型数据**。\n    *   `int`（整型）和 `double`（双精度浮点型）可以直接参与模型的数学计算，因此是逻辑回归模型的标准输入类型。\n\n2.  **B (string)**：\n    *   字符串类型属于**类别型数据（Categorical Data）**。\n    *   逻辑回归模型本身无法直接处理字符串（如“北京”、“上海”、“男”、“女”）。如果希望使用字符串作为特征，必须事先通过特征工程进行转换。\n    *   常见的转换方法包括：\n        *   **独热编码（One-Hot Encoding）**：将每个类别转换为一个二进制特征列。\n        *   **词袋模型（Bag of Words）或TF-IDF**：如果字符串是文本，可以使用这类方法转换为数值向量。\n    *   在经过这些转换之后，生成的**数值型结果**才可以作为逻辑回归的输入。原始的 `string` 列本身不能直接输入。\n\n3.  **C (datetime)**：\n    *   日期时间类型也不是直接的数值型。\n    *   与字符串类似，它需要经过特征工程提取出有意义的数值特征后才能使用。\n    *   常见的转换方法包括：\n        *   提取**年份**、**月份**、**日**、**小时**、**分钟**、**秒**等作为单独的数字特征。\n        *   提取**星期几**（转换为0-6的数字）。\n        *   计算相对于某个固定时间点的时间戳（一个大的整数）。\n        *   计算时间间隔等。\n    *   同样，原始的 `datetime` 列本身不能直接输入模型。\n\n### 总结：\n\n逻辑回归模型要求输入特征必须是**数值型**。题目中的 `int` 和 `double` 是符合要求的原生数值类型。而 `string` 和 `datetime` 属于非数值类型，必须经过特征工程转换为数值形式后，才能作为模型的特征输入。因此，本题的正确答案是 **A 和 D**。"
     },
     "answer": "AD"
   },
@@ -6911,8 +6911,8 @@
   {
     "id": "154",
     "question": {
-      "enus": "阿里云机器学习平台PAlI模型在线服务PAI-EAS的主要功能，以下哪些描述是正确的?",
-      "zhcn": "阿里云机器学习平台PAlI模型在线服务PAI-EAS的主要功能，以下哪些描述是正确的?"
+      "enus": "阿里云机器学习平台PAI模型在线服务PAI-EAS的主要功能，以下哪些描述是正确的?",
+      "zhcn": "阿里云机器学习平台PAI模型在线服务PAI-EAS的主要功能，以下哪些描述是正确的?"
     },
     "option": [
       {
@@ -7317,8 +7317,8 @@
   {
     "id": "163",
     "question": {
-      "enus": "在使用阿里云机器学习平台PAl的Al-Studio可视化建模的二分类评估组件对模型进行评估时，在评估报告中可以查看以下哪些图表？",
-      "zhcn": "在使用阿里云机器学习平台PAl的Al-Studio可视化建模的二分类评估组件对模型进行评估时，在评估报告中可以查看以下哪些图表？"
+      "enus": "在使用阿里云机器学习平台PAI的PAI-Studio可视化建模的二分类评估组件对模型进行评估时，在评估报告中可以查看以下哪些图表？",
+      "zhcn": "在使用阿里云机器学习平台PAI的PAI-Studio可视化建模的二分类评估组件对模型进行评估时，在评估报告中可以查看以下哪些图表？"
     },
     "option": [
       {
@@ -7351,7 +7351,7 @@
       }
     ],
     "analysis": {
-      "enus": "在使用阿里云机器学习平台PAl的Al-Studio可视化建模的二分类评估组件对模型进行评估时，可通过计算AUC、KS及F1 Score指标，输出KS曲线、PR曲线、ROC曲线、LIFT Chart及Gain Chart。",
+      "enus": "在使用阿里云机器学习平台PAI的PAI-Studio可视化建模的二分类评估组件对模型进行评估时，可通过计算AUC、KS及F1 Score指标，输出KS曲线、PR曲线、ROC曲线、LIFT Chart及Gain Chart。",
       "zhcn": "您提出的问题非常好，这是一个关于阿里云PAI平台模型评估组件的典型考点。\n\n**正确答案是：C 和 D。**\n\n下面为您详细解释为什么：\n\n在阿里云PAI-Studio的可视化建模模块中，当您使用**二分类评估**组件对模型（如逻辑回归、GBDT等）进行评估后，生成的评估报告会包含一系列用于衡量二分类模型性能的图表和指标。\n\n*   **C. ROC曲线：** 这是二分类模型评估中**最核心、最常用**的图表之一。它描绘了模型在不同阈值下的**真正例率（TPR）** 和**假正例率（FPR）** 的变化情况。曲线下的面积（AUC）是衡量模型整体分类性能的重要指标。因此，ROC曲线是评估报告中的标准配置。\n*   **D. K-S曲线：** 这也是二分类评估中的一个重要图表。K-S（Kolmogorov-Smirnov）曲线用于衡量模型将正负样本区分开来的能力。它表示的是累积正例分布和累积负例分布之间的差异，K-S值越大，说明模型的区分能力越强。这也是二分类评估报告中的常见图表。\n\n---\n\n**为什么A和B不正确？**\n\n*   **A. 轮廓系数曲线：** 轮廓系数是用于评估**聚类算法**效果的一个指标，它衡量的是同一个簇内的样本的相似度以及不同簇样本的分离度。它**不属于**监督学习中的**二分类**模型的评估范畴。\n*   **B. 均方误差曲线：** 均方误差是评估**回归**模型性能最常用的指标之一，它计算的是预测值与真实值之间差异的平方的平均值。它**不适用于**评估输出为类别（如0/1）的**二分类**模型。\n\n**总结一下：**\n\n*   **ROC曲线**和**K-S曲线**是专门用于评估**二分类模型**性能的图表。\n*   **轮廓系数曲线**用于**聚类模型（无监督学习）**。\n*   **均方误差曲线**用于**回归模型**。\n\n所以，在二分类评估的语境下，正确答案是C和D。您的理解和参考答案是完全正确的。"
     },
     "answer": "CD"
@@ -7975,8 +7975,8 @@
   {
     "id": "178",
     "question": {
-      "enus": "在PAI-DSW开发环境中,如果希望对OSS进⾏数据读写,可以选⽤的⽅式有哪些⽅式()",
-      "zhcn": "在PAI-DSW开发环境中,如果希望对OSS进⾏数据读写,可以选⽤的⽅式有哪些⽅式()"
+      "enus": "在PAI-DSW开发环境中,如果希望对OSS进行数据读写,可以选用的⽅式有哪些⽅式()",
+      "zhcn": "在PAI-DSW开发环境中,如果希望对OSS进行数据读写,可以选用的⽅式有哪些⽅式()"
     },
     "option": [
       {
@@ -8002,8 +8002,8 @@
       },
       {
         "option_text": {
-          "enus": "OSS PYthon API",
-          "zhcn": "OSS PYthon API"
+          "enus": "OSS Python API",
+          "zhcn": "OSS Python API"
         },
         "option_flag": true
       }
@@ -8066,14 +8066,14 @@
   {
     "id": "180",
     "question": {
-      "enus": "阿⾥云智能语⾳识别服务的三个常⽤产品是⼀句话识别、实时语⾳识别、录⾳⽂件识别, 有关录⾳⽂件识别的相关描述不正确的有（）。",
-      "zhcn": "阿⾥云智能语⾳识别服务的三个常⽤产品是⼀句话识别、实时语⾳识别、录⾳⽂件识别, 有关录⾳⽂件识别的相关描述不正确的有（）。"
+      "enus": "阿里云智能语音识别服务的三个常用产品是一句话识别、实时语音识别、录音文件识别, 有关录音文件识别的相关描述不正确的有（）。",
+      "zhcn": "阿里云智能语音识别服务的三个常用产品是一句话识别、实时语音识别、录音文件识别, 有关录音文件识别的相关描述不正确的有（）。"
     },
     "option": [
       {
         "option_text": {
-          "enus": "适⽤于对⽤户上传的录⾳⽂件进⾏识别",
-          "zhcn": "适⽤于对⽤户上传的录⾳⽂件进⾏识别"
+          "enus": "适用于对用户上传的录音文件进行识别",
+          "zhcn": "适用于对用户上传的录音文件进行识别"
         },
         "option_flag": false
       },
@@ -8086,22 +8086,22 @@
       },
       {
         "option_text": {
-          "enus": "⽀持HTTP&amp;SDK多种技术接⼊",
-          "zhcn": "⽀持HTTP&amp;SDK多种技术接⼊"
+          "enus": "⽀持HTTP&SDK多种技术接⼊",
+          "zhcn": "⽀持HTTP&SDK多种技术接⼊"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "识别⽂件⽆⼤⼩要求",
-          "zhcn": "识别⽂件⽆⼤⼩要求"
+          "enus": "识别文件无大小要求",
+          "zhcn": "识别文件无大小要求"
         },
         "option_flag": true
       }
     ],
     "analysis": {
       "enus": "<p style=\"font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">https://help.aliyun.com/document_detail/119258.html?spm=a2c4g.30413.0.0.622038efJNx1wF\n<p style=\"font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">录音文件识别：对用户上传的录音文件进行识别，可用于呼叫中心语音质检、庭审数据库录入、会议记录总结、医院病历录入等场景。\n音频文件大小不超过512 MB，视频文件大小不超过2 GB。\n提交录音文件识别请求后，免费用户的识别任务在24小时内完成并返回识别文本。 付费用户的识别任务在3小时内完成并返回识别文本。识别结果在服务端可保存72小时。",
-      "zhcn": "好的，我们逐项分析题目中关于阿里云录音文件识别的描述。\n\n**题目要求：找出不正确的描述。**\n\n---\n\n**[A] 适⽤于对⽤户上传的录⾳⽂件进⾏识别**\n- **正确**。这正是录音文件识别（又称“录音文件识别-标准版”）的核心应用场景。用户上传完整的音频文件（如WAV、MP3等），服务端进行识别后返回完整的文本结果。\n\n**[B] 时效性(极速版)可实时返回结果**\n- **不正确**。这是对概念的混淆。\n    - **实时语音识别** 是“边说边返回”的流式识别，可以做到“实时返回”。\n    - **录音文件识别-极速版** 虽然比“标准版”快很多（通常在音频时长1/10到1/5的时间内返回结果），但它仍然是**异步处理**，即用户上传完整文件后需要等待一段时间才能拿到全部结果，并非像实时识别那样“实时返回”。因此，说“可实时返回结果”是不准确的。\n\n**[C] ⽀持HTTP&SDK多种技术接⼊**\n- **正确**。阿里云的语音识别服务通常都提供RESTful API（基于HTTP/HTTPS）和各种语言的SDK（如Java, Python, Go等）供开发者选择接入。\n\n**[D] 识别⽂件⽆⼤⼩要求**\n- **不正确**。任何云服务对单次请求的处理能力都有上限，录音文件识别服务对上传的音频文件在**时长、文件大小、编码格式**上都有明确限制。例如，标准版可能限制文件时长在几小时以内，文件大小在几百MB以内。不可能“无大小要求”。\n\n---\n\n**结论：** 不正确的描述是 **B** 和 **D**。\n\n**最终答案：BD**"
+      "zhcn": "好的，我们逐项分析题目中关于阿里云录音文件识别的描述。\n\n**题目要求：找出不正确的描述。**\n\n---\n\n**[A] 适用于对用户上传的录音文件进行识别**\n- **正确**。这正是录音文件识别（又称“录音文件识别-标准版”）的核心应用场景。用户上传完整的音频文件（如WAV、MP3等），服务端进行识别后返回完整的文本结果。\n\n**[B] 时效性(极速版)可实时返回结果**\n- **不正确**。这是对概念的混淆。\n    - **实时语音识别** 是“边说边返回”的流式识别，可以做到“实时返回”。\n    - **录音文件识别-极速版** 虽然比“标准版”快很多（通常在音频时长1/10到1/5的时间内返回结果），但它仍然是**异步处理**，即用户上传完整文件后需要等待一段时间才能拿到全部结果，并非像实时识别那样“实时返回”。因此，说“可实时返回结果”是不准确的。\n\n**[C] ⽀持HTTP&SDK多种技术接⼊**\n- **正确**。阿里云的语音识别服务通常都提供RESTful API（基于HTTP/HTTPS）和各种语言的SDK（如Java, Python, Go等）供开发者选择接入。\n\n**[D] 识别文件无大小要求**\n- **不正确**。任何云服务对单次请求的处理能力都有上限，录音文件识别服务对上传的音频文件在**时长、文件大小、编码格式**上都有明确限制。例如，标准版可能限制文件时长在几小时以内，文件大小在几百MB以内。不可能“无大小要求”。\n\n---\n\n**结论：** 不正确的描述是 **B** 和 **D**。\n\n**最终答案：BD**"
     },
     "answer": "BD"
   },
@@ -8135,8 +8135,8 @@
       },
       {
         "option_text": {
-          "enus": "两者都属于⾮监督学习",
-          "zhcn": "两者都属于⾮监督学习"
+          "enus": "两者都属于非监督学习",
+          "zhcn": "两者都属于非监督学习"
         },
         "option_flag": false
       },
@@ -8157,8 +8157,8 @@
   {
     "id": "182",
     "question": {
-      "enus": "阿⾥云⾃然语⾔处理服务API调⽤中⼼词提取服务,报 错误信息:SignatureDoesNotMatch.下列哪⼏个选项能导 致此错误信息出现?",
-      "zhcn": "阿⾥云⾃然语⾔处理服务API调⽤中⼼词提取服务,报 错误信息:SignatureDoesNotMatch.下列哪⼏个选项能导 致此错误信息出现?"
+      "enus": "阿里云自然语言处理服务API调用中心词提取服务,报错误信息:SignatureDoesNotMatch.下列哪几个选项能导致此错误信息出现?",
+      "zhcn": "阿里云自然语言处理服务API调用中心词提取服务,报错误信息:SignatureDoesNotMatch.下列哪几个选项能导致此错误信息出现?"
     },
     "option": [
       {
@@ -8177,8 +8177,8 @@
       },
       {
         "option_text": {
-          "enus": "签名使⽤的 AccessKeySecret有误",
-          "zhcn": "签名使⽤的 AccessKeySecret有误"
+          "enus": "签名使用的 AccessKeySecret有误",
+          "zhcn": "签名使用的 AccessKeySecret有误"
         },
         "option_flag": true
       },
@@ -8192,56 +8192,56 @@
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "好的，我们先来分析一下这个错误和各个选项。\n\n---\n\n**1. 错误原因分析**  \n`SignatureDoesNotMatch` 表示服务端计算的签名与客户端传过去的签名不一致。  \n可能的原因包括：\n\n- 签名字符串的构造方法不对（比如参数顺序未按字典序排序、哈希算法不对、编码方式不对等）。\n- 使用的 `AccessKeySecret` 错误，导致 HMAC 计算出的签名与服务端用正确 Secret 算出的签名不一致。\n- 请求中的某些参数在客户端计算签名时未包含，但服务端处理时包含在内（比如某些默认参数）。\n- 时间戳偏差过大也可能导致签名不匹配（但这里选项没涉及时间戳问题）。\n\n---\n\n**2. 选项逐一判断**\n\n**[A] 构造签名字符串时参数没有排序**  \n阿里云 API 要求签名字符串必须按参数名称字典序排序，如果没排序，服务端按字典序排序后计算的签名会与客户端不同 → 会导致 `SignatureDoesNotMatch`。  \n✅ 正确。\n\n**[B] 参数 AccessKeyId 有误**  \n如果 AccessKeyId 错误，服务端无法找到对应的 SecretKey，但通常错误码会是 `InvalidAccessKeyId.NotFound` 或类似，而不是 `SignatureDoesNotMatch`。  \n❌ 不会直接导致 SignatureDoesNotMatch。\n\n**[C] 签名使用的 AccessKeySecret 有误**  \nSecret 错误 → 签名一定与服务端预期不一致 → `SignatureDoesNotMatch`。  \n✅ 正确。\n\n**[D] 参数 Action 有误**  \n如果 Action 参数值错误（比如 `\"Centence\"` 而不是 `\"Sentence\"`），服务端可能返回 `InvalidAction` 或 `ApiNotFound`，而不是签名错误。  \n❌ 不会直接导致 SignatureDoesNotMatch。\n\n---\n\n**3. 结论**  \n正确选项是 **A 和 C**。\n\n---\n\n**最终答案：**\n```\n[A] 构造签名字符串时参数没有排序  \n[C] 签名使⽤的 AccessKeySecret有误\n```"
+      "zhcn": "好的，我们先来分析一下这个错误和各个选项。\n\n---\n\n**1. 错误原因分析**  \n`SignatureDoesNotMatch` 表示服务端计算的签名与客户端传过去的签名不一致。  \n可能的原因包括：\n\n- 签名字符串的构造方法不对（比如参数顺序未按字典序排序、哈希算法不对、编码方式不对等）。\n- 使用的 `AccessKeySecret` 错误，导致 HMAC 计算出的签名与服务端用正确 Secret 算出的签名不一致。\n- 请求中的某些参数在客户端计算签名时未包含，但服务端处理时包含在内（比如某些默认参数）。\n- 时间戳偏差过大也可能导致签名不匹配（但这里选项没涉及时间戳问题）。\n\n---\n\n**2. 选项逐一判断**\n\n**[A] 构造签名字符串时参数没有排序**  \n阿里云 API 要求签名字符串必须按参数名称字典序排序，如果没排序，服务端按字典序排序后计算的签名会与客户端不同 → 会导致 `SignatureDoesNotMatch`。  \n✅ 正确。\n\n**[B] 参数 AccessKeyId 有误**  \n如果 AccessKeyId 错误，服务端无法找到对应的 SecretKey，但通常错误码会是 `InvalidAccessKeyId.NotFound` 或类似，而不是 `SignatureDoesNotMatch`。  \n❌ 不会直接导致 SignatureDoesNotMatch。\n\n**[C] 签名使用的 AccessKeySecret 有误**  \nSecret 错误 → 签名一定与服务端预期不一致 → `SignatureDoesNotMatch`。  \n✅ 正确。\n\n**[D] 参数 Action 有误**  \n如果 Action 参数值错误（比如 `\"Centence\"` 而不是 `\"Sentence\"`），服务端可能返回 `InvalidAction` 或 `ApiNotFound`，而不是签名错误。  \n❌ 不会直接导致 SignatureDoesNotMatch。\n\n---\n\n**3. 结论**  \n正确选项是 **A 和 C**。\n\n---\n\n**最终答案：**\n```\n[A] 构造签名字符串时参数没有排序  \n[C] 签名使用的 AccessKeySecret有误\n```"
     },
     "answer": "AC"
   },
   {
     "id": "183",
     "question": {
-      "enus": "如下关于神经⽹络的描述选项中,描述错误的是?",
-      "zhcn": "如下关于神经⽹络的描述选项中,描述错误的是?"
+      "enus": "如下关于神经网络的描述选项中,描述错误的是?",
+      "zhcn": "如下关于神经网络的描述选项中,描述错误的是?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "神经⽹络是⼀种仿⽣的算法结果",
-          "zhcn": "神经⽹络是⼀种仿⽣的算法结果"
+          "enus": "神经网络是一种仿生的算法结果",
+          "zhcn": "神经网络是一种仿生的算法结果"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "神经⽹络可抽象为⼈⼯神经元结构，对输⼊数据处理之后进⾏求和，紧接着⽤激活函数丰富其线性特征，得到输出结果",
-          "zhcn": "神经⽹络可抽象为⼈⼯神经元结构，对输⼊数据处理之后进⾏求和，紧接着⽤激活函数丰富其线性特征，得到输出结果"
+          "enus": "神经网络可抽象为人工神经元结构，对输⼊数据处理之后进行求和，紧接着用激活函数丰富其线性特征，得到输出结果",
+          "zhcn": "神经网络可抽象为人工神经元结构，对输⼊数据处理之后进行求和，紧接着用激活函数丰富其线性特征，得到输出结果"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "神经⽹络是通过模仿⼈类神经组织⾏为特征实现串⾏信息处理",
-          "zhcn": "神经⽹络是通过模仿⼈类神经组织⾏为特征实现串⾏信息处理"
+          "enus": "神经网络是通过模仿人类神经组织行为特征实现串行信息处理",
+          "zhcn": "神经网络是通过模仿人类神经组织行为特征实现串行信息处理"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "激活函数的主要作⽤是给神经⽹络加⼊些⾮线性因素使得神经⽹络可以更好地解决较为复杂的问题",
-          "zhcn": "激活函数的主要作⽤是给神经⽹络加⼊些⾮线性因素使得神经⽹络可以更好地解决较为复杂的问题"
+          "enus": "激活函数的主要作用是给神经网络加⼊些非线性因素使得神经网络可以更好地解决较为复杂的问题",
+          "zhcn": "激活函数的主要作用是给神经网络加⼊些非线性因素使得神经网络可以更好地解决较为复杂的问题"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "如果神经⽹络参数数量过多,训练速度会⽐较慢",
-          "zhcn": "如果神经⽹络参数数量过多,训练速度会⽐较慢"
+          "enus": "如果神经网络参数数量过多,训练速度会比较慢",
+          "zhcn": "如果神经网络参数数量过多,训练速度会比较慢"
         },
         "option_flag": false
       }
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "我们逐条分析：  \n\n**[A] 神经⽹络是⼀种仿⽣的算法结果**  \n正确。神经网络最初是受生物神经元启发设计的。  \n\n**[B] 神经⽹络可抽象为⼈⼯神经元结构，对输⼊数据处理之后进⾏求和，紧接着⽤激活函数丰富其线性特征，得到输出结果**  \n“丰富其线性特征”说法错误。激活函数的作用是引入**非线性**，而不是丰富线性特征。因此这一项错误。  \n\n**[C] 神经⽹络是通过模仿⼈类神经组织⾏为特征实现串⾏信息处理**  \n错误。生物神经组织是**并行**处理信息，神经网络也是并行计算（尤其是层内神经元），而不是串行。  \n\n**[D] 激活函数的主要作⽤是给神经⽹络加⼊些⾮线性因素使得神经⽹络可以更好地解决较为复杂的问题**  \n正确。  \n\n**[E] 如果神经⽹络参数数量过多,训练速度会⽐较慢**  \n正确（一般情况下参数多则计算量大，训练慢）。  \n\n题目问“描述错误的”，参考答案给的是 **BC**，即 B 和 C 两项错误。  \n\n**最终答案：BC** ✅"
+      "zhcn": "我们逐条分析：  \n\n**[A] 神经网络是一种仿生的算法结果**  \n正确。神经网络最初是受生物神经元启发设计的。  \n\n**[B] 神经网络可抽象为人工神经元结构，对输⼊数据处理之后进行求和，紧接着用激活函数丰富其线性特征，得到输出结果**  \n“丰富其线性特征”说法错误。激活函数的作用是引入**非线性**，而不是丰富线性特征。因此这一项错误。  \n\n**[C] 神经网络是通过模仿人类神经组织行为特征实现串行信息处理**  \n错误。生物神经组织是**并行**处理信息，神经网络也是并行计算（尤其是层内神经元），而不是串行。  \n\n**[D] 激活函数的主要作用是给神经网络加⼊些非线性因素使得神经网络可以更好地解决较为复杂的问题**  \n正确。  \n\n**[E] 如果神经网络参数数量过多,训练速度会比较慢**  \n正确（一般情况下参数多则计算量大，训练慢）。  \n\n题目问“描述错误的”，参考答案给的是 **BC**，即 B 和 C 两项错误。  \n\n**最终答案：BC** ✅"
     },
     "answer": "BC"
   },
@@ -8254,8 +8254,8 @@
     "option": [
       {
         "option_text": {
-          "enus": "基于⽂本检索",
-          "zhcn": "基于⽂本检索"
+          "enus": "基于文本检索",
+          "zhcn": "基于文本检索"
         },
         "option_flag": true
       },
@@ -8310,85 +8310,85 @@
     "option": [
       {
         "option_text": {
-          "enus": "⽬标检测",
-          "zhcn": "⽬标检测"
+          "enus": "目标检测",
+          "zhcn": "目标检测"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "⽂本分类",
-          "zhcn": "⽂本分类"
+          "enus": "文本分类",
+          "zhcn": "文本分类"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "⼈脸识别",
-          "zhcn": "⼈脸识别"
+          "enus": "人脸识别",
+          "zhcn": "人脸识别"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "语⾳识别",
-          "zhcn": "语⾳识别"
+          "enus": "语音识别",
+          "zhcn": "语音识别"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "⼈脸检测",
-          "zhcn": "⼈脸检测"
+          "enus": "人脸检测",
+          "zhcn": "人脸检测"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "⼈群计数",
-          "zhcn": "⼈群计数"
+          "enus": "人群计数",
+          "zhcn": "人群计数"
         },
         "option_flag": true
       }
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "正确答案是：**A C E F**\n\n**详细解析：**\n\n视觉智能（计算机视觉）是指让计算机从图像或视频中“看到”并理解信息的技术。其算法的核心是处理**视觉数据**（如图片、视频）。\n\n我们逐一分析每个选项：\n\n*   **[A] ⽬标检测：** ✅\n    *   这是计算机视觉的经典任务，旨在识别图像中的特定物体（如猫、狗、汽车）并确定其位置（用边界框标出）。\n*   **[B] ⽂本分类：** ❌\n    *   这是**自然语言处理（NLP）** 领域的任务，处理的是文本内容，而不是视觉图像。例如，判断一封邮件是垃圾邮件还是正常邮件。\n*   **[C] ⼈脸识别：** ✅\n    *   在检测到人脸的基础上，进一步识别出该人脸的**身份信息**（这是张三还是李四）。这属于高级的视觉智能任务。\n*   **[D] 语⾳识别：** ❌\n    *   这是处理**音频信号**的技术，目标是将语音转换成文字。它属于**语音处理**领域，而非视觉智能。\n*   **[E] ⼈脸检测：** ✅\n    *   这是计算机视觉的基础任务，目标是在图像中**定位**出人脸的位置，但不关心是谁的脸。它是人脸识别的前提步骤。\n*   **[F] ⼈群计数：** ✅\n    *   这也是一个典型的计算机视觉任务，通过分析图像或视频，估算场景中的人数。常用于安防、公共管理等。\n\n**总结：**\n*   **属于视觉智能的算法**是处理**图像/视频**的：A（目标检测）、C（人脸识别）、E（人脸检测）、F（人群计数）。\n*   **不属于视觉智能的算法**是处理**其他模态数据**的：B（文本分类，处理文本）和D（语音识别，处理声音）。\n\n所以，正确答案是 **A, C, E, F**。"
+      "zhcn": "正确答案是：**A C E F**\n\n**详细解析：**\n\n视觉智能（计算机视觉）是指让计算机从图像或视频中“看到”并理解信息的技术。其算法的核心是处理**视觉数据**（如图片、视频）。\n\n我们逐一分析每个选项：\n\n*   **[A] 目标检测：** ✅\n    *   这是计算机视觉的经典任务，旨在识别图像中的特定物体（如猫、狗、汽车）并确定其位置（用边界框标出）。\n*   **[B] 文本分类：** ❌\n    *   这是**自然语言处理（NLP）** 领域的任务，处理的是文本内容，而不是视觉图像。例如，判断一封邮件是垃圾邮件还是正常邮件。\n*   **[C] 人脸识别：** ✅\n    *   在检测到人脸的基础上，进一步识别出该人脸的**身份信息**（这是张三还是李四）。这属于高级的视觉智能任务。\n*   **[D] 语音识别：** ❌\n    *   这是处理**音频信号**的技术，目标是将语音转换成文字。它属于**语音处理**领域，而非视觉智能。\n*   **[E] 人脸检测：** ✅\n    *   这是计算机视觉的基础任务，目标是在图像中**定位**出人脸的位置，但不关心是谁的脸。它是人脸识别的前提步骤。\n*   **[F] 人群计数：** ✅\n    *   这也是一个典型的计算机视觉任务，通过分析图像或视频，估算场景中的人数。常用于安防、公共管理等。\n\n**总结：**\n*   **属于视觉智能的算法**是处理**图像/视频**的：A（目标检测）、C（人脸识别）、E（人脸检测）、F（人群计数）。\n*   **不属于视觉智能的算法**是处理**其他模态数据**的：B（文本分类，处理文本）和D（语音识别，处理声音）。\n\n所以，正确答案是 **A, C, E, F**。"
     },
     "answer": "ACEF"
   },
   {
     "id": "186",
     "question": {
-      "enus": "⾃动⽂摘就是利⽤计算机⾃动地从原始⽂献中提取⽂ 摘,⽂摘是全⾯准确地反映某⼀⽂献中⼼内容的简单连贯的短⽂。以下描述哪些是⾃动⽂摘的常⽤⽅法?",
-      "zhcn": "⾃动⽂摘就是利⽤计算机⾃动地从原始⽂献中提取⽂ 摘,⽂摘是全⾯准确地反映某⼀⽂献中⼼内容的简单连贯的短⽂。以下描述哪些是⾃动⽂摘的常⽤⽅法?"
+      "enus": "自动文摘就是利用计算机自动地从原始文献中提取文摘,文摘是全面准确地反映某一文献中心内容的简单连贯的短文。以下描述哪些是自动文摘的常用⽅法?",
+      "zhcn": "自动文摘就是利用计算机自动地从原始文献中提取文摘,文摘是全面准确地反映某一文献中心内容的简单连贯的短文。以下描述哪些是自动文摘的常用⽅法?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "将句⼦作为⽂本的特征向量",
-          "zhcn": "将句⼦作为⽂本的特征向量"
+          "enus": "将句子作为文本的特征向量",
+          "zhcn": "将句子作为文本的特征向量"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "将⽂本作为句⼦的线性序列",
-          "zhcn": "将⽂本作为句⼦的线性序列"
+          "enus": "将文本作为句子的线性序列",
+          "zhcn": "将文本作为句子的线性序列"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "将句⼦表示为词向量",
-          "zhcn": "将句⼦表示为词向量"
+          "enus": "将句子表示为词向量",
+          "zhcn": "将句子表示为词向量"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "将句⼦视为词的线性序列",
-          "zhcn": "将句⼦视为词的线性序列"
+          "enus": "将句子视为词的线性序列",
+          "zhcn": "将句子视为词的线性序列"
         },
         "option_flag": true
       }
@@ -8402,35 +8402,35 @@
   {
     "id": "187",
     "question": {
-      "enus": "阿⾥云智能语⾳识别服务的三个常⽤产品是⼀句话识别、实时语⾳识别、录⾳⽂件识别, 有关三个产品的应⽤场景描述不正确的有()?",
-      "zhcn": "阿⾥云智能语⾳识别服务的三个常⽤产品是⼀句话识别、实时语⾳识别、录⾳⽂件识别, 有关三个产品的应⽤场景描述不正确的有()?"
+      "enus": "阿里云智能语音识别服务的三个常用产品是一句话识别、实时语音识别、录音文件识别, 有关三个产品的应用场景描述不正确的有()?",
+      "zhcn": "阿里云智能语音识别服务的三个常用产品是一句话识别、实时语音识别、录音文件识别, 有关三个产品的应用场景描述不正确的有()?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⼀句话识别适宜呼叫中⼼录⾳质检",
-          "zhcn": "⼀句话识别适宜呼叫中⼼录⾳质检"
+          "enus": "一句话识别适宜呼叫中心录音质检",
+          "zhcn": "一句话识别适宜呼叫中心录音质检"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "录⾳⽂件识别适宜会议记录总结",
-          "zhcn": "录⾳⽂件识别适宜会议记录总结"
+          "enus": "录音文件识别适宜会议记录总结",
+          "zhcn": "录音文件识别适宜会议记录总结"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "实时语⾳识别适宜语⾳短消息",
-          "zhcn": "实时语⾳识别适宜语⾳短消息"
+          "enus": "实时语音识别适宜语音短消息",
+          "zhcn": "实时语音识别适宜语音短消息"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "录⾳⽂件识别适宜实时法庭庭审记录",
-          "zhcn": "录⾳⽂件识别适宜实时法庭庭审记录"
+          "enus": "录音文件识别适宜实时法庭庭审记录",
+          "zhcn": "录音文件识别适宜实时法庭庭审记录"
         },
         "option_flag": true
       }
@@ -8444,8 +8444,8 @@
   {
     "id": "188",
     "question": {
-      "enus": "阿⾥云⾃然语⾔处理选择base模型包括哪两种?",
-      "zhcn": "阿⾥云⾃然语⾔处理选择base模型包括哪两种?"
+      "enus": "阿里云自然语言处理选择base模型包括哪两种?",
+      "zhcn": "阿里云自然语言处理选择base模型包括哪两种?"
     },
     "option": [
       {
@@ -8464,36 +8464,36 @@
       },
       {
         "option_text": {
-          "enus": "⾃建模型",
-          "zhcn": "⾃建模型"
+          "enus": "自建模型",
+          "zhcn": "自建模型"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "其他⼈的模型",
-          "zhcn": "其他⼈的模型"
+          "enus": "其他人的模型",
+          "zhcn": "其他人的模型"
         },
         "option_flag": false
       }
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "根据阿里云官方文档，其自然语言处理（NLP）的自学习平台为用户提供了两种基础的模型选择路径：\n\n*   **[A] 平台智能模型**：这是指直接使用阿里云平台内置的、经过海量数据预训练的通用模型。用户可以直接调用这些模型的API，或者通过“预训练模型”模式，使用自己的少量业务数据进行微调（Fine-tuning），快速得到一个适用于特定场景的模型。这种方式开发效率高，技术门槛低。\n*   **[C] ⾃建模型**：这是指用户从零开始，使用自己的业务数据，通过阿里云平台提供的训练框架和算力，完全独立地训练一个全新的模型。这种方式灵活度最高，但需要用户有标注质量高、数量足够的数据以及一定的模型调优能力。\n\n因此，正确答案是 **A 和 C**。\n\n**【其他选项分析】**\n\n*   **[B] 开源框架**：开源框架（如TensorFlow, PyTorch）是构建和训练模型的工具，而不是阿里云NLP平台直接提供的“基础模型选择”。用户可以在“自建模型”模式下使用这些框架，但它本身不是一种模型来源选项。\n*   **[D] 其他⼈的模型**：阿里云NLP自学习平台主要提供的是阿里云自身的平台模型和用户自建模型，不涉及直接选择或部署第三方他人的模型作为基础。\n\n**总结**：阿里云NLP让用户可以在 **“使用平台现成模型进行微调”** 和 **“完全从零开始自建模型”** 这两种基础模式之间进行选择，以平衡效率与定制化需求。"
+      "zhcn": "根据阿里云官方文档，其自然语言处理（NLP）的自学习平台为用户提供了两种基础的模型选择路径：\n\n*   **[A] 平台智能模型**：这是指直接使用阿里云平台内置的、经过海量数据预训练的通用模型。用户可以直接调用这些模型的API，或者通过“预训练模型”模式，使用自己的少量业务数据进行微调（Fine-tuning），快速得到一个适用于特定场景的模型。这种方式开发效率高，技术门槛低。\n*   **[C] 自建模型**：这是指用户从零开始，使用自己的业务数据，通过阿里云平台提供的训练框架和算力，完全独立地训练一个全新的模型。这种方式灵活度最高，但需要用户有标注质量高、数量足够的数据以及一定的模型调优能力。\n\n因此，正确答案是 **A 和 C**。\n\n**【其他选项分析】**\n\n*   **[B] 开源框架**：开源框架（如TensorFlow, PyTorch）是构建和训练模型的工具，而不是阿里云NLP平台直接提供的“基础模型选择”。用户可以在“自建模型”模式下使用这些框架，但它本身不是一种模型来源选项。\n*   **[D] 其他人的模型**：阿里云NLP自学习平台主要提供的是阿里云自身的平台模型和用户自建模型，不涉及直接选择或部署第三方他人的模型作为基础。\n\n**总结**：阿里云NLP让用户可以在 **“使用平台现成模型进行微调”** 和 **“完全从零开始自建模型”** 这两种基础模式之间进行选择，以平衡效率与定制化需求。"
     },
     "answer": "AC"
   },
   {
     "id": "189",
     "question": {
-      "enus": "阿⾥云⾃然语⾔处理的优势包括",
-      "zhcn": "阿⾥云⾃然语⾔处理的优势包括"
+      "enus": "阿里云自然语言处理的优势包括",
+      "zhcn": "阿里云自然语言处理的优势包括"
     },
     "option": [
       {
         "option_text": {
-          "enus": "接⼝易⽤",
-          "zhcn": "接⼝易⽤"
+          "enus": "接⼝易用",
+          "zhcn": "接⼝易用"
         },
         "option_flag": true
       },
@@ -8506,8 +8506,8 @@
       },
       {
         "option_text": {
-          "enus": "功能全⾯",
-          "zhcn": "功能全⾯"
+          "enus": "功能全面",
+          "zhcn": "功能全面"
         },
         "option_flag": true
       },
@@ -8528,8 +8528,8 @@
   {
     "id": "190",
     "question": {
-      "enus": "⻔循环单元⽹络(GRU)主要有哪两个⻔限函数组成?",
-      "zhcn": "⻔循环单元⽹络(GRU)主要有哪两个⻔限函数组成?"
+      "enus": "⻔循环单元网络(GRU)主要有哪两个⻔限函数组成?",
+      "zhcn": "⻔循环单元网络(GRU)主要有哪两个⻔限函数组成?"
     },
     "option": [
       {
@@ -8570,14 +8570,14 @@
   {
     "id": "191",
     "question": {
-      "enus": "语⾳合成⽀持的SDK正确的是?",
-      "zhcn": "语⾳合成⽀持的SDK正确的是?"
+      "enus": "语音合成⽀持的SDK正确的是?",
+      "zhcn": "语音合成⽀持的SDK正确的是?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⽀持 JavaSDK",
-          "zhcn": "⽀持 JavaSDK"
+          "enus": "⽀持 Java SDK",
+          "zhcn": "⽀持 Java SDK"
         },
         "option_flag": true
       },
@@ -8590,8 +8590,8 @@
       },
       {
         "option_text": {
-          "enus": "⽀持 IOSSDK",
-          "zhcn": "⽀持 IOSSDK"
+          "enus": "⽀持 iOS SDK",
+          "zhcn": "⽀持 iOS SDK"
         },
         "option_flag": true
       },
@@ -8619,8 +8619,8 @@
   {
     "id": "192",
     "question": {
-      "enus": "以下哪些是阿⾥云⾃然语⾔处理提供的⼦服务?(正确答 案个数:2个)",
-      "zhcn": "以下哪些是阿⾥云⾃然语⾔处理提供的⼦服务?(正确答 案个数:2个)"
+      "enus": "以下哪些是阿里云自然语言处理提供的子服务?(正确答案个数:2个)",
+      "zhcn": "以下哪些是阿里云自然语言处理提供的子服务?(正确答案个数:2个)"
     },
     "option": [
       {
@@ -8632,22 +8632,22 @@
       },
       {
         "option_text": {
-          "enus": "N⾃学习平台",
-          "zhcn": "N⾃学习平台"
+          "enus": "NLP自学习平台",
+          "zhcn": "NLP自学习平台"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "n算法开发平台",
-          "zhcn": "n算法开发平台"
+          "enus": "NLP算法开发平台",
+          "zhcn": "NLP算法开发平台"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "NLP⽂字识别服务",
-          "zhcn": "NLP⽂字识别服务"
+          "enus": "NLP文字识别服务",
+          "zhcn": "NLP文字识别服务"
         },
         "option_flag": false
       }
@@ -8661,14 +8661,14 @@
   {
     "id": "193",
     "question": {
-      "enus": "阿⾥云⾃然语⾔处理中创建项⽬包括哪些项⽬类型?",
-      "zhcn": "阿⾥云⾃然语⾔处理中创建项⽬包括哪些项⽬类型?"
+      "enus": "阿里云自然语言处理中创建项目包括哪些项目类型?",
+      "zhcn": "阿里云自然语言处理中创建项目包括哪些项目类型?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⽂本实体抽取",
-          "zhcn": "⽂本实体抽取"
+          "enus": "文本实体抽取",
+          "zhcn": "文本实体抽取"
         },
         "option_flag": true
       },
@@ -8688,8 +8688,8 @@
       },
       {
         "option_text": {
-          "enus": "短⽂本匹配",
-          "zhcn": "短⽂本匹配"
+          "enus": "短文本匹配",
+          "zhcn": "短文本匹配"
         },
         "option_flag": true
       }
@@ -8703,8 +8703,8 @@
   {
     "id": "194",
     "question": {
-      "enus": "在⾃然语⾔处理中,以下哪些是常⻅的分词⽅法?(正确 答案个数:2个)",
-      "zhcn": "在⾃然语⾔处理中,以下哪些是常⻅的分词⽅法?(正确 答案个数:2个)"
+      "enus": "在自然语言处理中,以下哪些是常见的分词⽅法?(正确 答案个数:2个)",
+      "zhcn": "在自然语言处理中,以下哪些是常见的分词⽅法?(正确 答案个数:2个)"
     },
     "option": [
       {
@@ -8730,8 +8730,8 @@
       },
       {
         "option_text": {
-          "enus": "crf+ Bil STM⽹络",
-          "zhcn": "crf+ Bil STM⽹络"
+          "enus": "CRF + BiLSTM网络",
+          "zhcn": "CRF + BiLSTM网络"
         },
         "option_flag": true
       }
@@ -8745,35 +8745,35 @@
   {
     "id": "195",
     "question": {
-      "enus": "使⽤阿⾥云⾃然语⾔处理NLP⾃学习平台预训练模型的前提条件包括如下哪些?",
-      "zhcn": "使⽤阿⾥云⾃然语⾔处理NLP⾃学习平台预训练模型的前提条件包括如下哪些?"
+      "enus": "使用阿里云自然语言处理NLP自学习平台预训练模型的前提条件包括如下哪些?",
+      "zhcn": "使用阿里云自然语言处理NLP自学习平台预训练模型的前提条件包括如下哪些?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "开通阿⾥云⾃然语⾔处理",
-          "zhcn": "开通阿⾥云⾃然语⾔处理"
+          "enus": "开通阿里云自然语言处理",
+          "zhcn": "开通阿里云自然语言处理"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾼级版</span>",
-          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾼级版</span>"
+          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾼级版</span>",
+          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾼级版</span>"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾏业应⽤版</span>",
-          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务⾏业应⽤版</span>"
+          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务行业应用版</span>",
+          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP基础服务行业应用版</span>"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP⾃学习平台</span>",
-          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿⾥云⾃然语⾔处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP⾃学习平台</span>"
+          "enus": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP自学习平台</span>",
+          "zhcn": "开通<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">阿里云自然语言处理中</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">NLP自学习平台</span>"
         },
         "option_flag": true
       }
@@ -8787,8 +8787,8 @@
   {
     "id": "196",
     "question": {
-      "enus": "下列选项中,哪⼏项属于阿⾥云⾃然语⾔处理NLP提供 的⼦服务?",
-      "zhcn": "下列选项中,哪⼏项属于阿⾥云⾃然语⾔处理NLP提供 的⼦服务?"
+      "enus": "下列选项中，哪几项属于阿里云自然语言处理NLP提供的子服务?",
+      "zhcn": "下列选项中，哪几项属于阿里云自然语言处理NLP提供的子服务?"
     },
     "option": [
       {
@@ -8800,8 +8800,8 @@
       },
       {
         "option_text": {
-          "enus": "N⾃学习平台服务",
-          "zhcn": "N⾃学习平台服务"
+          "enus": "N自学习平台服务",
+          "zhcn": "N自学习平台服务"
         },
         "option_flag": true
       },
@@ -8814,8 +8814,8 @@
       },
       {
         "option_text": {
-          "enus": "NLP语⾳合成服务",
-          "zhcn": "NLP语⾳合成服务"
+          "enus": "NLP语音合成服务",
+          "zhcn": "NLP语音合成服务"
         },
         "option_flag": false
       },
@@ -8828,23 +8828,23 @@
       },
       {
         "option_text": {
-          "enus": "NP⽂字识别服务",
-          "zhcn": "NP⽂字识别服务"
+          "enus": "NP文字识别服务",
+          "zhcn": "NP文字识别服务"
         },
         "option_flag": false
       }
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "根据阿里云官方文档，阿里云自然语言处理（NLP）提供的核心子服务主要包括：\n\n*   **NLP基础服务**：提供分词、词性标注、命名实体识别、句法分析等基础自然语言处理能力。\n*   **NLP自学习平台服务**：允许用户使用自己的业务数据，通过可视化界面或简单API调用，快速定制和优化文本分析模型，以满足特定场景的需求。\n\n因此，题目中属于阿里云NLP子服务的是：\n\n**[B] N⾃学习平台服务** (应为 NLP自学习平台服务)\n**[C] NLP基础服务**\n\n---\n\n### 对其他选项的分析：\n\n*   **[A] NP解码服务**：这不是阿里云NLP的官方服务名称，可能是一个拼写错误或混淆的概念。\n*   **[D] NLP语⾳合成服务**：语音合成是另一个独立的服务，名为**阿里云智能语音交互** 中的功能，不属于自然语言处理（NLP）产品线。\n*   **[E] NLP翻译引擎服务**：机器翻译是阿里云的一个独立服务，名为**机器翻译**，虽然它与NLP技术紧密相关，但作为独立产品提供，不归类为NLP的子服务。\n*   **[F] NP⽂字识别服务**：文字识别（OCR）是另一个独立的服务，名为**阿里云文字识别**，不属于自然语言处理（NLP）产品线。\n\n**最终答案：B, C**"
+      "zhcn": "根据阿里云官方文档，阿里云自然语言处理（NLP）提供的核心子服务主要包括：\n\n*   **NLP基础服务**：提供分词、词性标注、命名实体识别、句法分析等基础自然语言处理能力。\n*   **NLP自学习平台服务**：允许用户使用自己的业务数据，通过可视化界面或简单API调用，快速定制和优化文本分析模型，以满足特定场景的需求。\n\n因此，题目中属于阿里云NLP子服务的是：\n\n**[B] N自学习平台服务** (应为 NLP自学习平台服务)\n**[C] NLP基础服务**\n\n---\n\n### 对其他选项的分析：\n\n*   **[A] NP解码服务**：这不是阿里云NLP的官方服务名称，可能是一个拼写错误或混淆的概念。\n*   **[D] NLP语音合成服务**：语音合成是另一个独立的服务，名为**阿里云智能语音交互** 中的功能，不属于自然语言处理（NLP）产品线。\n*   **[E] NLP翻译引擎服务**：机器翻译是阿里云的一个独立服务，名为**机器翻译**，虽然它与NLP技术紧密相关，但作为独立产品提供，不归类为NLP的子服务。\n*   **[F] NP文字识别服务**：文字识别（OCR）是另一个独立的服务，名为**阿里云文字识别**，不属于自然语言处理（NLP）产品线。\n\n**最终答案：B, C**"
     },
     "answer": "BC"
   },
   {
     "id": "197",
     "question": {
-      "enus": "PAI-EAS模型服务公⽹地址调⽤形式（）。",
-      "zhcn": "PAI-EAS模型服务公⽹地址调⽤形式（）。"
+      "enus": "PAI-EAS模型服务公网地址调用形式（）。",
+      "zhcn": "PAI-EAS模型服务公网地址调用形式（）。"
     },
     "option": [
       {
@@ -8856,37 +8856,37 @@
       },
       {
         "option_text": {
-          "enus": "⾃⾏实现调⽤逻辑",
-          "zhcn": "⾃⾏实现调⽤逻辑"
+          "enus": "自行实现调用逻辑",
+          "zhcn": "自行实现调用逻辑"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "API⽹关调⽤",
-          "zhcn": "API⽹关调⽤"
+          "enus": "API网关调用",
+          "zhcn": "API网关调用"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "REST API调⽤",
-          "zhcn": "REST API调⽤"
+          "enus": "REST API调用",
+          "zhcn": "REST API调用"
         },
         "option_flag": false
       }
     ],
     "analysis": {
-      "enus": "解析：PPT-93页。<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">API⽹关调⽤、</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">⾃⾏实现调⽤逻辑、官方SDK方式。</span>",
-      "zhcn": "我们先分析一下题目。  \n\n题目问的是 **PAI-EAS 模型服务公网地址调⽤形式**，也就是在公网环境下，可以通过哪些方式调用部署在 PAI-EAS 上的模型服务。  \n\n**PAI-EAS（Elastic Algorithm Service）** 支持多种调用方式：  \n\n1. **SDK**：PAI 提供了官方 SDK（如 Python SDK），可以方便地调用服务。  \n2. **⾃⾏实现调⽤逻辑**：用户可以根据服务提供的 HTTP 接口，自己用任何语言实现调用逻辑。  \n3. **API ⽹关调⽤**：可以通过阿里云 API 网关对 EAS 服务进行封装和调用。  \n4. **REST API 调⽤**：EAS 服务本身提供的是 HTTP REST 接口，所以直接通过 REST API 调用也是支持的。  \n\n但题目是**多选题**，并且给出的参考答案是 **ABC**，没有选 D（REST API 调⽤）。  \n这可能是出题者的一个分类逻辑：  \n- SDK、⾃⾏实现调⽤逻辑、API ⽹关调⽤ 是**三种不同的调用形式**。  \n- 而 REST API 其实是“⾃⾏实现调⽤逻辑”时使用的底层协议，并不是一个独立的调用形式分类，或者在某些题目分类中认为“REST API”是默认的底层方式，不算在“调用形式”中。  \n\n因此，从考试或题库答案的角度，他们可能把“REST API”归为“⾃⾏实现调⽤逻辑”的一部分，不单独列出。  \n\n---\n\n**最终答案**：  \n\\[\n\\boxed{ABC}\n\\]"
+      "enus": "解析：PPT-93页。<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">API网关调用、</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">自行实现调用逻辑、官方SDK方式。</span>",
+      "zhcn": "我们先分析一下题目。  \n\n题目问的是 **PAI-EAS 模型服务公网地址调用形式**，也就是在公网环境下，可以通过哪些方式调用部署在 PAI-EAS 上的模型服务。  \n\n**PAI-EAS（Elastic Algorithm Service）** 支持多种调用方式：  \n\n1. **SDK**：PAI 提供了官方 SDK（如 Python SDK），可以方便地调用服务。  \n2. **自行实现调用逻辑**：用户可以根据服务提供的 HTTP 接口，自己用任何语言实现调用逻辑。  \n3. **API 网关调用**：可以通过阿里云 API 网关对 EAS 服务进行封装和调用。  \n4. **REST API 调用**：EAS 服务本身提供的是 HTTP REST 接口，所以直接通过 REST API 调用也是支持的。  \n\n但题目是**多选题**，并且给出的参考答案是 **ABC**，没有选 D（REST API 调用）。  \n这可能是出题者的一个分类逻辑：  \n- SDK、自行实现调用逻辑、API 网关调用 是**三种不同的调用形式**。  \n- 而 REST API 其实是“自行实现调用逻辑”时使用的底层协议，并不是一个独立的调用形式分类，或者在某些题目分类中认为“REST API”是默认的底层方式，不算在“调用形式”中。  \n\n因此，从考试或题库答案的角度，他们可能把“REST API”归为“自行实现调用逻辑”的一部分，不单独列出。  \n\n---\n\n**最终答案**：  \n\\[\n\\boxed{ABC}\n\\]"
     },
     "answer": "ABC"
   },
   {
     "id": "198",
     "question": {
-      "enus": "阿⾥云⾃然语⾔处理新建项⽬中的⾏业类型包括哪⼏类?",
-      "zhcn": "阿⾥云⾃然语⾔处理新建项⽬中的⾏业类型包括哪⼏类?"
+      "enus": "阿里云自然语言处理新建项目中的行业类型包括哪几类?",
+      "zhcn": "阿里云自然语言处理新建项目中的行业类型包括哪几类?"
     },
     "option": [
       {
@@ -8927,8 +8927,8 @@
   {
     "id": "199",
     "question": {
-      "enus": "⼈脸识别任务中, triplet loss与⼆元交叉熵损失相⽐的优 势是",
-      "zhcn": "⼈脸识别任务中, triplet loss与⼆元交叉熵损失相⽐的优 势是"
+      "enus": "人脸识别任务中, Triplet Loss与⼆元交叉熵损失相比的优势是（）？",
+      "zhcn": "人脸识别任务中, Triplet Loss与⼆元交叉熵损失相比的优势是（）？"
     },
     "option": [
       {
@@ -8969,14 +8969,14 @@
   {
     "id": "200",
     "question": {
-      "enus": "某线上商场app主要提供线上购物服务，分析师计划根据⽤户的访问⾏为、购买⾏为，对⽤户进⾏分组，以便对不同组的客户实施不同类型的推荐策略，针对此种场景，考虑成本控制，可使⽤阿⾥云提供的哪些云产品进⾏数据存储及数据挖掘分析?",
-      "zhcn": "某线上商场app主要提供线上购物服务，分析师计划根据⽤户的访问⾏为、购买⾏为，对⽤户进⾏分组，以便对不同组的客户实施不同类型的推荐策略，针对此种场景，考虑成本控制，可使⽤阿⾥云提供的哪些云产品进⾏数据存储及数据挖掘分析?"
+      "enus": "某线上商场app主要提供线上购物服务，分析师计划根据用户的访问行为、购买行为，对用户进行分组，以便对不同组的客户实施不同类型的推荐策略，针对此种场景，考虑成本控制，可使用阿里云提供的哪些云产品进行数据存储及数据挖掘分析?",
+      "zhcn": "某线上商场app主要提供线上购物服务，分析师计划根据用户的访问行为、购买行为，对用户进行分组，以便对不同组的客户实施不同类型的推荐策略，针对此种场景，考虑成本控制，可使用阿里云提供的哪些云产品进行数据存储及数据挖掘分析?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⼤数据计算服务 MaxCompute",
-          "zhcn": "⼤数据计算服务 MaxCompute"
+          "enus": "大数据计算服务 MaxCompute",
+          "zhcn": "大数据计算服务 MaxCompute"
         },
         "option_flag": true
       },
@@ -9018,14 +9018,14 @@
   {
     "id": "201",
     "question": {
-      "enus": "阿⾥云视觉智能开放平台将围绕多个视觉领域,以下哪些AI能⼒属于阿⾥云视觉智能?",
-      "zhcn": "阿⾥云视觉智能开放平台将围绕多个视觉领域,以下哪些AI能⼒属于阿⾥云视觉智能?"
+      "enus": "阿里云视觉智能开放平台将围绕多个视觉领域,以下哪些AI能⼒属于阿里云视觉智能?",
+      "zhcn": "阿里云视觉智能开放平台将围绕多个视觉领域,以下哪些AI能⼒属于阿里云视觉智能?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⽂字识别",
-          "zhcn": "⽂字识别"
+          "enus": "文字识别",
+          "zhcn": "文字识别"
         },
         "option_flag": true
       },
@@ -9038,8 +9038,8 @@
       },
       {
         "option_text": {
-          "enus": "语⾳识别",
-          "zhcn": "语⾳识别"
+          "enus": "语音识别",
+          "zhcn": "语音识别"
         },
         "option_flag": false
       },
@@ -9059,8 +9059,8 @@
       },
       {
         "option_text": {
-          "enus": "语⾳合成",
-          "zhcn": "语⾳合成"
+          "enus": "语音合成",
+          "zhcn": "语音合成"
         },
         "option_flag": false
       }
@@ -10019,8 +10019,8 @@
   {
     "id": "222",
     "question": {
-      "enus": "阿里云智能语音交互(In tell gent Speech Interaction) 是基于语音识别、语音合成、自然语言理解等技术， 为企业在多种实际应用场景下，赋予产品\"能听、会说、懂你“式的智能人机交互功能。下述所列条目中，不属于阿里云智能语音识别技术",
-      "zhcn": "阿里云智能语音交互(In tell gent Speech Interaction) 是基于语音识别、语音合成、自然语言理解等技术， 为企业在多种实际应用场景下，赋予产品\"能听、会说、懂你“式的智能人机交互功能。下述所列条目中，不属于阿里云智能语音识别技术"
+      "enus": "阿里云智能语音交互(Intelligent Speech Interaction) 是基于语音识别、语音合成、自然语言理解等技术， 为企业在多种实际应用场景下，赋予产品\"能听、会说、懂你“式的智能人机交互功能。下述所列条目中，不属于阿里云智能语音识别技术",
+      "zhcn": "阿里云智能语音交互(Intelligent Speech Interaction) 是基于语音识别、语音合成、自然语言理解等技术， 为企业在多种实际应用场景下，赋予产品\"能听、会说、懂你“式的智能人机交互功能。下述所列条目中，不属于阿里云智能语音识别技术"
     },
     "option": [
       {
@@ -10354,15 +10354,15 @@
       },
       {
         "option_text": {
-          "enus": "使用PAl-AutoLearning自动学习训练模型",
-          "zhcn": "使用PAl-AutoLearning自动学习训练模型"
+          "enus": "使用PAI-AutoLearning自动学习训练模型",
+          "zhcn": "使用PAI-AutoLearning自动学习训练模型"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "使用PAl-Studio可视化建模的多分类组件训练模型",
-          "zhcn": "使用PAl-Studio可视化建模的多分类组件训练模型"
+          "enus": "使用PAI-Studio可视化建模的多分类组件训练模型",
+          "zhcn": "使用PAI-Studio可视化建模的多分类组件训练模型"
         },
         "option_flag": true
       },
@@ -10376,7 +10376,7 @@
     ],
     "analysis": {
       "enus": "",
-      "zhcn": "这道题考察的是在阿里云 PAI 平台上实现图片分类任务的不同路径。我们来逐一分析每个选项：\n\n**题目解析**\n\n图片分类是一个典型的计算机视觉任务，通常使用深度学习模型（如 CNN）来实现最佳效果，但理论上也可以用传统机器学习方法处理。\n\n---\n\n**A. 使用PAI-Studio可视化建模中线性支持向量机组件训练模型**\n\n*   **可行性**：理论上可行，但**不实用且效果通常很差**。\n*   **实现方式**：需要先将图片转换为特征向量（例如，使用特征提取组件或手动进行特征工程，如颜色直方图、HOG、SIFT等），然后将这些特征向量输入到线性支持向量机中进行分类。\n*   **结论**：这是一种“可以实现”的方法，尽管不是最佳实践。因此，从“可以通过哪些方法得以实现”这个角度看，它属于一个可选的途径。\n\n**B. 使用PAl-AutoLearning自动学习训练模型**\n\n*   **可行性**：**非常可行且是推荐方法之一**。\n*   **实现方式**：PAI-AutoLearning 是为不具备深厚机器学习背景的用户设计的。用户只需上传已标注的图片数据，平台会自动进行数据预处理、模型选择、超参数调优和训练，最终生成一个可部署的模型。它内部很可能使用了深度学习技术。\n*   **结论**：这是实现图片分类的官方高效路径。\n\n**C. 使用PAl-Studio可视化建模的多分类组件训练模型**\n\n*   **可行性**：**可行**。\n*   **实现方式**：这里的“多分类组件”通常指传统的机器学习算法（如逻辑回归、随机森林、XGBoost等）。与选项 A 类似，需要先将图像数据转换为特征向量，然后使用这些组件进行分类。PAI-Studio 的可视化界面使得这个流程可以拖拽完成。\n*   **结论**：这也是一个可以实现的方法。\n\n**D. 使用PAI-Studio可视化建模中深度学习组件训练模型**\n\n*   **可行性**：**最可行且是主流方法**。\n*   **实现方式**：PAI-Studio 提供了丰富的深度学习框架组件（如 TensorFlow, PyTorch）。用户可以直接配置经典的深度学习模型（如 ResNet, VGG）或自定义网络结构，输入原始图片数据进行端到端的训练。这是解决图片分类问题最有效、最先进的方法。\n*   **结论**：这是实现图片分类的核心和标准方法。\n\n---\n\n### 最终判断\n\n题目问的是“可以通过以下哪些方法得以实现”，强调的是**可能性**，而非“最佳方法”或“唯一方法”。\n\n*   **A, C** 代表了使用**传统机器学习方法**的路径。虽然效果不如深度学习，但技术上确实可以完成图片分类任务。\n*   **B** 代表了**自动化/低代码**的路径，是平台推荐的简易方式。\n*   **D** 代表了**主流深度学习**的路径，是效果最好的方式。\n\n因此，从“可以实现”的角度来看，**A, B, C, D 四个选项描述的方法都是可行的**。\n\n**正确答案：ABCD**"
+      "zhcn": "这道题考察的是在阿里云 PAI 平台上实现图片分类任务的不同路径。我们来逐一分析每个选项：\n\n**题目解析**\n\n图片分类是一个典型的计算机视觉任务，通常使用深度学习模型（如 CNN）来实现最佳效果，但理论上也可以用传统机器学习方法处理。\n\n---\n\n**A. 使用PAI-Studio可视化建模中线性支持向量机组件训练模型**\n\n*   **可行性**：理论上可行，但**不实用且效果通常很差**。\n*   **实现方式**：需要先将图片转换为特征向量（例如，使用特征提取组件或手动进行特征工程，如颜色直方图、HOG、SIFT等），然后将这些特征向量输入到线性支持向量机中进行分类。\n*   **结论**：这是一种“可以实现”的方法，尽管不是最佳实践。因此，从“可以通过哪些方法得以实现”这个角度看，它属于一个可选的途径。\n\n**B. 使用PAI-AutoLearning自动学习训练模型**\n\n*   **可行性**：**非常可行且是推荐方法之一**。\n*   **实现方式**：PAI-AutoLearning 是为不具备深厚机器学习背景的用户设计的。用户只需上传已标注的图片数据，平台会自动进行数据预处理、模型选择、超参数调优和训练，最终生成一个可部署的模型。它内部很可能使用了深度学习技术。\n*   **结论**：这是实现图片分类的官方高效路径。\n\n**C. 使用PAI-Studio可视化建模的多分类组件训练模型**\n\n*   **可行性**：**可行**。\n*   **实现方式**：这里的“多分类组件”通常指传统的机器学习算法（如逻辑回归、随机森林、XGBoost等）。与选项 A 类似，需要先将图像数据转换为特征向量，然后使用这些组件进行分类。PAI-Studio 的可视化界面使得这个流程可以拖拽完成。\n*   **结论**：这也是一个可以实现的方法。\n\n**D. 使用PAI-Studio可视化建模中深度学习组件训练模型**\n\n*   **可行性**：**最可行且是主流方法**。\n*   **实现方式**：PAI-Studio 提供了丰富的深度学习框架组件（如 TensorFlow, PyTorch）。用户可以直接配置经典的深度学习模型（如 ResNet, VGG）或自定义网络结构，输入原始图片数据进行端到端的训练。这是解决图片分类问题最有效、最先进的方法。\n*   **结论**：这是实现图片分类的核心和标准方法。\n\n---\n\n### 最终判断\n\n题目问的是“可以通过以下哪些方法得以实现”，强调的是**可能性**，而非“最佳方法”或“唯一方法”。\n\n*   **A, C** 代表了使用**传统机器学习方法**的路径。虽然效果不如深度学习，但技术上确实可以完成图片分类任务。\n*   **B** 代表了**自动化/低代码**的路径，是平台推荐的简易方式。\n*   **D** 代表了**主流深度学习**的路径，是效果最好的方式。\n\n因此，从“可以实现”的角度来看，**A, B, C, D 四个选项描述的方法都是可行的**。\n\n**正确答案：ABCD**"
     },
     "answer": "ABCD"
   },
@@ -10992,14 +10992,14 @@
   {
     "id": "243",
     "question": {
-      "enus": "某线上商场app主要提供线上购物服务，分析师计划根据⽤户的访问⾏为、购买⾏为，对⽤户进⾏分组，以便对不同组的客户实施不同类型的推荐策略，请问使用以下哪些阿里云产品的组合可实现上述要求？",
-      "zhcn": "某线上商场app主要提供线上购物服务，分析师计划根据⽤户的访问⾏为、购买⾏为，对⽤户进⾏分组，以便对不同组的客户实施不同类型的推荐策略，请问使用以下哪些阿里云产品的组合可实现上述要求？"
+      "enus": "某线上商场app主要提供线上购物服务，分析师计划根据用户的访问行为、购买行为，对用户进行分组，以便对不同组的客户实施不同类型的推荐策略，请问使用以下哪些阿里云产品的组合可实现上述要求？",
+      "zhcn": "某线上商场app主要提供线上购物服务，分析师计划根据用户的访问行为、购买行为，对用户进行分组，以便对不同组的客户实施不同类型的推荐策略，请问使用以下哪些阿里云产品的组合可实现上述要求？"
     },
     "option": [
       {
         "option_text": {
-          "enus": "⼤数据计算服务 MaxCompute",
-          "zhcn": "⼤数据计算服务 MaxCompute"
+          "enus": "大数据计算服务 MaxCompute",
+          "zhcn": "大数据计算服务 MaxCompute"
         },
         "option_flag": true
       },

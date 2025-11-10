@@ -8366,8 +8366,8 @@
     "option": [
       {
         "option_text": {
-          "enus": "DataWork和MaxCompute",
-          "zhcn": "DataWork和MaxCompute"
+          "enus": "DataWorks和MaxCompute",
+          "zhcn": "DataWorks和MaxCompute"
         },
         "option_flag": true
       },
@@ -14660,8 +14660,8 @@
   {
     "id": "350",
     "question": {
-      "enus": "[D]系统计算时，count数按两列间同时非空的元素个数计算，两两列之间可能不同",
-      "zhcn": "[D]系统计算时，count数按两列间同时非空的元素个数计算，两两列之间可能不同"
+      "enus": "在PAI-Studio可视化建模中，关于相关系数矩阵描述不正确的选项（）",
+      "zhcn": "在PAI-Studio可视化建模中，关于相关系数矩阵描述不正确的选项（）"
     },
     "option": [
       {
@@ -14695,7 +14695,7 @@
     ],
     "analysis": {
       "enus": "解析：\n相关系数算法用于计算一个矩阵中每列之间的相关系数，取值范围为[-1,1]。系统计算时，count数按两列间同时非空的元素个数计算，两两列之间可能不同。\nhttps://help.aliyun.com/zh/pai/user-guide/correlation-coefficient-matrix?spm=a2c4g.11186623.0.i149",
-      "zhcn": "好的，我们先来理解题意。  \n\n---\n\n## 1. 题目信息提取\n\n- 数据表 `D` 有 4 列：`A, B, C, D`。\n- 计算 **两列之间的相关系数** 时，只取 **这两列同时非空** 的样本（成对删除，pairwise deletion）。\n- 因此，不同列之间的样本数量（用于计算相关系数的有效样本数）可能不同。\n- 题目说：**“count 数按两列间同时非空的元素个数计算”**，意思是计算皮尔逊相关系数时，只使用两列都非空的行，样本数记为 \\( n_{ij} \\)（第 i 列与第 j 列的有效样本数）。\n\n---\n\n## 2. 已知相关系数矩阵\n\n\\[\nR = \\begin{bmatrix}\n1.00 & 0.85 & 0.78 & 0.75 \\\\\n0.85 & 1.00 & 0.69 & 0.67 \\\\\n0.78 & 0.69 & 1.00 & 0.12 \\\\\n0.75 & 0.67 & 0.12 & 1.00\n\\end{bmatrix}\n\\]\n顺序是 A, B, C, D。\n\n---\n\n## 3. 已知样本数（用于计算相关系数的成对样本数）\n\n\\[\nn_{AB} = 100,\\quad n_{AC} = 90,\\quad n_{AD} = 90\n\\]\n\\[\nn_{BC} = 80,\\quad n_{BD} = 80\n\\]\n\\[\nn_{CD} = 70\n\\]\n\n---\n\n## 4. 问题\n\n判断缺失模式是否属于 **可忽略的缺失（MCAR 或 MAR）**，还是不可忽略（MNAR）。  \n题目说：**“缺失模式是否可忽略”**，在多重插补的背景下，通常指：  \n- 若缺失与缺失变量的值本身有关 → MNAR（不可忽略）  \n- 若缺失只与其他变量有关或完全随机 → MAR 或 MCAR（可忽略）\n\n这里判断依据是：**如果缺失机制是可忽略的，那么相关系数矩阵在样本量不同时仍然应该“内在一致”**，不会出现明显矛盾。\n\n---\n\n## 5. 检查矛盾\n\n看 \\( r_{CD} = 0.12 \\) 明显很小，而 \\( r_{AD} = 0.75 \\)，\\( r_{AC} = 0.78 \\) 很大。  \n如果 A 与 C 强相关，A 与 D 强相关，那么 C 与 D 应该也有较强的正相关，除非有缺失机制导致偏差。\n\n更精确的方法：用 **Fisher z 变换** 检查相关系数在不同子样本间是否一致。\n\n---\n\n### 5.1 子样本一致性检验思路\n\n例如，比较：\n- 用 \\( n_{AC}, r_{AC} \\) 和 \\( n_{AD}, r_{AD} \\) 推测 \\( r_{CD} \\) 应该多大？\n\n如果数据是完整的，我们可以用三角不等式（相关性的约束），但这里样本不同，可能是由于缺失导致某个子样本的相关系数有偏。\n\n一种常用检查：  \n在可忽略缺失下，任意两列相关系数应该与用第三列间接推算的一致（例如通过回归预测）。\n\n---\n\n### 5.2 具体看 C 和 D 的关系\n\n已知：\n\\[\nr_{AC} = 0.78,\\quad r_{AD} = 0.75,\\quad r_{CD} = 0.12\n\\]\n如果缺失可忽略，那么所有样本的“真实”相关结构应一致。  \n但这里 \\( r_{CD} \\) 很小，可能因为计算 \\( r_{CD} \\) 所用的 70 个样本是某个有偏子集。\n\n例如：假设 D 缺失与 C 的值有关（比如 C 很小的时候，D 容易缺失，但 C 很大时 D 存在且与 A 关系不同），那么只用 C、D 都存在的样本计算的 \\( r_{CD} \\) 会偏离整体应有的相关。\n\n---\n\n### 5.3 用回归预测验证\n\n如果数据是多元正态，且缺失可忽略，那么给定 A、B 存在时，C 和 D 的关系应与完整数据一致。  \n但这里 \\( r_{CD} \\) 异常低，而 A 与 C、A 与 D 都很高，这违反多元正态分布的正定协方差性质（除非样本量差异导致矩阵不正定，但这里 0.12 太低，几乎导致相关矩阵非正定）。\n\n检查正定性：  \n矩阵 R 的行列式或最小特征值：  \n计算特征值近似：  \n矩阵：\n\\[\n\\begin{bmatrix}\n1 & 0.85 & 0.78 & 0.75 \\\\\n0.85 & 1 & 0.69 & 0.67 \\\\\n0.78 & 0.69 & 1 & 0.12 \\\\\n0.75 & 0.67 & 0.12 & 1\n\\end{bmatrix}\n\\]\n用快速判断：3×3 子矩阵 {A,B,C} 应正定，加入 D 后，若 rCD=0.12 太小，可能非正定。  \n算一下 {A,C,D} 子矩阵：\n\\[\n\\begin{bmatrix}\n1 & 0.78 & 0.75 \\\\\n0.78 & 1 & 0.12 \\\\\n0.75 & 0.12 & 1\n\\end{bmatrix}\n\\]\n行列式 = \\( 1 - 0.78^2 - 0.75^2 + 2\\cdot 0.78\\cdot 0.75\\cdot 0.12 - 0.12^2 \\)  \n= \\( 1 - 0.6084 - 0.5625 + 0.1404 - 0.0144 \\)  \n= \\( 1 - 1.1709 + 0.1404 - 0.0144 \\)  \n= \\( -0.1709 + 0.1260 \\) = -0.0449 < 0  \n\n所以这个 3×3 矩阵不是正定（行列式负），意味着在全体样本上这个相关结构不可能成立，因此一定是缺失机制导致 rCD 有偏，说明缺失不可忽略（MNAR）。\n\n---\n\n## 6. 结论\n\n这种矛盾通常出现在：D 的缺失依赖于 C 的值（或 C 的缺失依赖于 D 的值），导致在同时有 C 和 D 的样本中，它们的相关性被扭曲。\n\n因此答案是 **不可忽略（MNAR）**。\n\n---\n\n**最终答案：**\n\n\\[\n\\boxed{B}\n\\]"
+      "zhcn": "我们先逐一分析每个选项。  \n\n---\n\n**A**：相关系数矩阵确实是计算矩阵（或数据表）中每两列之间的相关系数（如皮尔逊相关系数），描述正确。  \n\n**B**：取值范围为 [0,1] —— 这是错误的，因为相关系数可以是负数，实际范围是 [-1,1]。  \n\n**C**：取值范围为 [-1,1] —— 这是正确的。  \n\n**D**：系统计算时，count 数按两列间同时非空的元素个数计算，两两列之间可能不同 —— 正确，因为缺失值处理是按 pairwise 进行的，不同列对的有效样本数可能不同。  \n\n---\n\n题目问“描述不正确的选项”，显然 **B** 是错的。  \n\n所以答案是 **B**，与参考答案一致。"
     },
     "answer": "B"
   },
@@ -14870,8 +14870,8 @@
   {
     "id": "355",
     "question": {
-      "enus": "在PAI-Studio可视化建模中，配置线性支持向量机组件参数的命令方式：PAI -name LinearSVM-project algo_public -DinputTableName=\\\"bank_data\\\" -DmodelName=\\\"xlab_m_LinearSVM_6143\\\"-DfeatureColNames=\\\"pdays,emp_var_rate,cons_conf_idx\\\" -DlabelColName=\\\"y\\\"-DpositiveLabel=\\\"0\\\"; -DpositiveCost=\\\"1.0\\\" -DnegativeCost=\\\"1.0\\\"-Depsilon=\\\"0.001\\\"，中的参数featureColNames描述正确的是（）",
-      "zhcn": "在PAI-Studio可视化建模中，配置线性支持向量机组件参数的命令方式：PAI -name LinearSVM-project algo_public -DinputTableName=\\\"bank_data\\\" -DmodelName=\\\"xlab_m_LinearSVM_6143\\\"-DfeatureColNames=\\\"pdays,emp_var_rate,cons_conf_idx\\\" -DlabelColName=\\\"y\\\"-DpositiveLabel=\\\"0\\\"; -DpositiveCost=\\\"1.0\\\" -DnegativeCost=\\\"1.0\\\"-Depsilon=\\\"0.001\\\"，中的参数featureColNames描述正确的是（）"
+      "enus": "在PAI-Studio可视化建模中，配置线性支持向量机组件参数的命令方式：\n```bash\nPAI -name LinearSVM \\\n    -project algo_public \\\n    -DinputTableName=\"bank_data\" \\\n    -DmodelName=\"xlab_m_LinearSVM_6143\" \\\n    -DfeatureColNames=\"pdays,emp_var_rate,cons_conf_idx\" \\\n    -DlabelColName=\"y\" \\\n    -DpositiveLabel=\"0\" \\\n    -DpositiveCost=\"1.0\" \\\n    -DnegativeCost=\"1.0\" \\\n    -Depsilon=\"0.001\"\n```\n中的参数`featureColNames`描述正确的是（）",
+      "zhcn": "在PAI-Studio可视化建模中，配置线性支持向量机组件参数的命令方式：\n```bash\nPAI -name LinearSVM \\\n    -project algo_public \\\n    -DinputTableName=\"bank_data\" \\\n    -DmodelName=\"xlab_m_LinearSVM_6143\" \\\n    -DfeatureColNames=\"pdays,emp_var_rate,cons_conf_idx\" \\\n    -DlabelColName=\"y\" \\\n    -DpositiveLabel=\"0\" \\\n    -DpositiveCost=\"1.0\" \\\n    -DnegativeCost=\"1.0\" \\\n    -Depsilon=\"0.001\"\n```\n中的参数`featureColNames`描述正确的是（）"
     },
     "option": [
       {
@@ -19846,8 +19846,8 @@
       },
       {
         "option_text": {
-          "enus": "TexICNN核心模块包括卷积层和池化层",
-          "zhcn": "TexICNN核心模块包括卷积层和池化层"
+          "enus": "TextCNN核心模块包括卷积层和池化层",
+          "zhcn": "TextCNN核心模块包括卷积层和池化层"
         },
         "option_flag": false
       },
