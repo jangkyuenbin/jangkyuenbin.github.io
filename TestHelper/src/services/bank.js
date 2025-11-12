@@ -53,6 +53,42 @@ export function isCorrectAnswer(question, userAnswer) {
 }
 
 /**
+ * 检查多选题是否有漏选情况
+ * @param {Object} question 题目对象
+ * @param {Array|Object} userAnswer 用户答案
+ * @returns {boolean} 是否有漏选
+ */
+export function hasMissedOptions(question, userAnswer) {
+    // 验证题目对象和选项数组是否存在
+    if (!question || !question.option || !Array.isArray(question.option)) {
+        console.error('无效的题目对象:', question);
+        return false;
+    }
+    
+    // 处理新格式的用户答案
+    let userOptions;
+    if (Array.isArray(userAnswer)) {
+        userOptions = userAnswer;
+    } else if (userAnswer && userAnswer.options && Array.isArray(userAnswer.options)) {
+        userOptions = userAnswer.options;
+    } else {
+        console.error('无效的用户答案:', userAnswer);
+        return false;
+    }
+    
+    const correctAnswers = question.option
+        .map((opt, index) => opt.option_flag ? index : -1)
+        .filter(index => index !== -1);
+    
+    // 如果用户没有选择任何正确答案，说明有漏选
+    const hasCorrectSelected = correctAnswers.some(ans => userOptions.includes(ans));
+    const hasAllCorrect = correctAnswers.every(ans => userOptions.includes(ans));
+    
+    // 有正确答案被选中但不是全部正确答案都被选中，说明有漏选
+    return hasCorrectSelected && !hasAllCorrect;
+}
+
+/**
  * 加载题库数据
  * @param {string} bankName 题库名称
  * @returns {Promise<Array>} 题目数组

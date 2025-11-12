@@ -47,6 +47,9 @@ export function generateQuestionHTML(question, index, userAnswer, isStudyMode, i
                 optionClass += ' correct';
             } else if (isSelected && !isCorrect) {
                 optionClass += ' incorrect';
+            } else if (isCorrect && !isSelected && window.hasMissedOptions && window.hasMissedOptions(question, userAnswer)) {
+                // 如果是正确答案但未被选中，且存在漏选情况，显示漏选状态
+                optionClass += ' missed';
             }
         } else if (isSelected) {
             optionClass += ' selected';
@@ -168,12 +171,12 @@ export function displayQuestion(index, state) {
     setTimeout(() => {
         const questionContent = document.getElementById('questionContent');
         if (questionContent) {
-            console.log('准备渲染公式，内容元素:', questionContent);
+            console.debug('准备渲染公式，内容元素:', questionContent);
             const success = window.renderMathFormulas(questionContent);
             
             // 如果首次渲染失败，尝试再次渲染
             if (!success) {
-                console.log('首次渲染失败，尝试重新渲染...');
+                console.debug('首次渲染失败，尝试重新渲染...');
                 setTimeout(() => {
                     if (document.getElementById('questionContent')) {
                         window.renderMathFormulas(document.getElementById('questionContent'));
@@ -189,12 +192,12 @@ export function displayQuestion(index, state) {
     setTimeout(() => {
         const questionContent = document.getElementById('questionContent');
         if (questionContent) {
-            console.log('准备渲染代码高亮，内容元素:', questionContent);
+            console.debug('准备渲染代码高亮，内容元素:', questionContent);
             const success = window.renderCodeHighlight(questionContent);
             
             // 如果首次渲染失败，尝试再次渲染
             if (!success) {
-                console.log('代码高亮首次渲染失败，尝试重新渲染...');
+                console.debug('代码高亮首次渲染失败，尝试重新渲染...');
                 setTimeout(() => {
                     if (document.getElementById('questionContent')) {
                         window.renderCodeHighlight(document.getElementById('questionContent'));

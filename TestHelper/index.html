@@ -227,16 +227,16 @@
     <script>
         // 页面加载完成后初始化公式渲染
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('页面加载完成，准备初始化KaTeX');
+            console.debug('页面加载完成，准备初始化KaTeX');
             // 延迟一下以确保所有资源都已加载
             setTimeout(function() {
-                console.log('检查KaTeX是否可用:', typeof renderMathInElement !== 'undefined');
+                console.debug('检查KaTeX是否可用:', typeof renderMathInElement !== 'undefined');
             }, 1000);
         });
 
         // 手动测试公式渲染的函数
         function testMathRendering() {
-            console.log('手动测试公式渲染');
+            console.debug('手动测试公式渲染');
             const testDiv = document.createElement('div');
             testDiv.innerHTML = '测试公式: $E=mc^2$ 和 $$\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$$';
             testDiv.style.position = 'fixed';
@@ -615,6 +615,11 @@
             background: #fff2f0;
         }
 
+        .option-item.missed {
+            border-color: #faad14;
+            background: #fffbe6;
+        }
+
         .option-checkbox {
             width: 20px;
             height: 20px;
@@ -655,6 +660,17 @@
 
         .option-item.incorrect .option-checkbox::after {
             content: '✗';
+            color: white;
+            font-weight: bold;
+        }
+
+        .option-item.missed .option-checkbox {
+            background: #faad14;
+            border-color: #faad14;
+        }
+
+        .option-item.missed .option-checkbox::after {
+            content: '✓';
             color: white;
             font-weight: bold;
         }
@@ -828,9 +844,9 @@
         /* 提示信息 */
         .toast {
             position: fixed;
-            bottom: 2rem;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             background: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 1rem 2rem;
@@ -841,17 +857,17 @@
 
         .toast.show {
             display: block;
-            animation: slideUp 0.3s ease;
+            animation: fadeIn 0.3s ease;
         }
 
-        @keyframes slideUp {
+        @keyframes fadeIn {
             from {
-                transform: translateX(-50%) translateY(100%);
                 opacity: 0;
+                transform: translate(-50%, -60%);
             }
             to {
-                transform: translateX(-50%) translateY(0);
                 opacity: 1;
+                transform: translate(-50%, -50%);
             }
         }
 

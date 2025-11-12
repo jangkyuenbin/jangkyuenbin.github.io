@@ -12,7 +12,7 @@ const currentStyle = 'markdown-academic';
 export function parseMarkdown(text, customStyle = null) {
     if (!text || typeof text !== 'string') return '';
 
-    console.log('开始解析Markdown内容，长度:', text.length);
+    console.debug('开始解析Markdown内容，长度:', text.length);
 
     try {
         // 确保marked库已加载
@@ -20,7 +20,7 @@ export function parseMarkdown(text, customStyle = null) {
             // 配置marked以更好地处理数学公式和代码高亮
             // 检查marked是否已正确初始化，如果未初始化则进行配置
             if (!marked.defaults || !marked.defaults.renderer) {
-                console.log('marked默认配置未正确初始化，进行默认配置...');
+                console.debug('marked默认配置未正确初始化，进行默认配置...');
                 // 设置marked的默认配置
                 marked.setOptions({
                 breaks: false,
@@ -50,7 +50,7 @@ export function parseMarkdown(text, customStyle = null) {
             const needsBackslashFix = processedText.includes('\(') || processedText.includes('\[');
 
             if (needsBackslashFix) {
-                console.log('检测到可能需要修复反斜杠的内容');
+                console.debug('检测到可能需要修复反斜杠的内容');
 
                 // 尝试1: 直接使用当前格式，如果解析后能正确保留则继续
                 let testHtml = marked.parse(processedText);
@@ -58,7 +58,7 @@ export function parseMarkdown(text, customStyle = null) {
 
                 // 如果尝试1失败，进行备选处理
                 if (!hasValidMathMarkers) {
-                    console.log('反斜杠格式无法正确保留，尝试备选方案');
+                    console.debug('反斜杠格式无法正确保留，尝试备选方案');
 
                     // 尝试将 \( 和 \[ 转换为 $$ 和 $ 格式
                     // 块级公式: \[ ... \] 转换为 $$ ... $$
@@ -66,7 +66,7 @@ export function parseMarkdown(text, customStyle = null) {
                     // 行内公式: \( ... \) 转换为 $ ... $
                     processedText = processedText.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
 
-                    console.log('已将LaTeX公式标记转换为$格式');
+                    console.debug('已将LaTeX公式标记转换为$格式');
                 }
             }
 
@@ -92,7 +92,7 @@ export function parseMarkdown(text, customStyle = null) {
             // 检查解析后的HTML中的数学公式标记
             const containsDollar = html.includes('$');
             const containsBracket = html.includes('\(') || html.includes('\[');
-            console.log('解析后的HTML是否保留公式标记: $=', containsDollar, '\()/\[]=', containsBracket);
+            console.debug('解析后的HTML是否保留公式标记: $=', containsDollar, '\()/\[]=', containsBracket);
 
             // 添加样式包装
             const styleToUse = customStyle || currentStyle;
@@ -116,7 +116,7 @@ export function parseMarkdown(text, customStyle = null) {
  * @returns {boolean} 是否渲染成功
  */
 export function renderCodeHighlight(element) {
-    console.log('尝试渲染代码高亮');
+    console.debug('尝试渲染代码高亮');
 
     // 检查是否已加载Prism.js
     if (!window.Prism || !window.Prism.highlightAllUnder) {
@@ -130,10 +130,10 @@ export function renderCodeHighlight(element) {
     }
 
     try {
-        console.log('正在渲染代码高亮，元素:', element);
+        console.debug('正在渲染代码高亮，元素:', element);
         // 使用Prism.js渲染代码高亮
         window.Prism.highlightAllUnder(element);
-        console.log('代码高亮渲染成功');
+        console.debug('代码高亮渲染成功');
         return true;
     } catch (e) {
         console.error('代码高亮渲染失败:', e);
@@ -147,7 +147,7 @@ export function renderCodeHighlight(element) {
  * @returns {boolean} 是否渲染成功
  */
 export function renderMathFormulas(element) {
-    console.log('尝试渲染数学公式');
+    console.debug('尝试渲染数学公式');
 
     // 检查是否已加载KaTeX和auto-render
     if (!window.renderMathInElement) {
@@ -161,7 +161,7 @@ export function renderMathFormulas(element) {
     }
 
     try {
-        console.log('正在渲染元素:', element);
+        console.debug('正在渲染元素:', element);
         // 使用更详细的配置并增加错误处理
         window.renderMathInElement(element, {
             delimiters: [
@@ -175,7 +175,7 @@ export function renderMathFormulas(element) {
             trust: true, // 允许渲染所有公式（提高兼容性）
             strict: 'ignore' // 忽略严格模式下的错误
         });
-        console.log('数学公式渲染成功');
+        console.debug('数学公式渲染成功');
         return true;
     } catch (e) {
         console.error('数学公式渲染失败:', e);

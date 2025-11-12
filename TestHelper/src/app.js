@@ -21,7 +21,7 @@ import { parseMarkdown, renderMathFormulas, renderCodeHighlight } from './utils/
 import { saveStateToCookie, loadStateFromCookie, saveSettings, loadSettings } from './utils/storage.js';
 
 // 导入服务模块
-import { getBankName, isCorrectAnswer, loadBankData } from './services/bank.js';
+import { getBankName, isCorrectAnswer, loadBankData, hasMissedOptions } from './services/bank.js';
 import { loadExamTemplate, loadExamQuestions, calculateExamResult } from './services/exam.js';
 
 // 导入UI组件
@@ -38,6 +38,7 @@ window.saveSettings = saveSettings;
 window.loadSettings = loadSettings;
 window.getBankName = getBankName;
 window.isCorrectAnswer = isCorrectAnswer;
+window.hasMissedOptions = hasMissedOptions;
 window.loadBankData = loadBankData;
 window.loadExamTemplate = loadExamTemplate;
 window.loadExamQuestions = loadExamQuestions;
@@ -181,8 +182,65 @@ window.selectOption = function(optionIndex) {
     // 重新生成题目导航，确保颜色状态正确更新
     generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
     
-    // 更新显示
-    displayQuestion(window.currentQuestionIndex);
+    // 更新显示 - 所有题目类型点击选项时都不重新定位，只更新选项状态
+    updateQuestionOptions(window.currentQuestionIndex);
+};
+
+// 更新多选题选项状态（不重新定位）
+window.updateQuestionOptions = function(questionIndex) {
+    const question = window.questions[questionIndex];
+    const userAnswer = window.userAnswers[questionIndex];
+    
+    if (!question || !userAnswer) return;
+    
+    // 获取所有选项元素
+    const optionElements = document.querySelectorAll('.option-item');
+    
+    optionElements.forEach((optionElement, index) => {
+        // 清除所有状态类
+        optionElement.classList.remove('selected', 'correct', 'incorrect', 'missed');
+        
+        // 检查是否被选中
+        const isSelected = userAnswer.options && userAnswer.options.includes(index);
+        
+        if (isSelected) {
+            optionElement.classList.add('selected');
+        }
+        
+        // 如果是背题模式或已提交答案，显示正确/错误状态
+        const isSubmitted = userAnswer.isSubmitted;
+        const showResult = window.isStudyMode || (!window.isExamMode && isSubmitted);
+        
+        if (showResult) {
+            const isCorrect = question.option[index] && question.option[index].option_flag;
+            if (isCorrect) {
+                optionElement.classList.add('correct');
+            } else if (isSelected && !isCorrect) {
+                optionElement.classList.add('incorrect');
+            } else if (isCorrect && !isSelected && window.hasMissedOptions && window.hasMissedOptions(question, userAnswer)) {
+                // 如果是正确答案但未被选中，且存在漏选情况，显示漏选状态
+                optionElement.classList.add('missed');
+            }
+        }
+    });
+};
+
+// 统一处理用户答案格式
+window.normalizeUserAnswer = function(answerIndex) {
+    const currentAnswer = window.userAnswers[answerIndex];
+    
+    // 如果当前答案不是对象格式，转换为对象格式
+    if (!currentAnswer || typeof currentAnswer !== 'object' || Array.isArray(currentAnswer)) {
+        window.userAnswers[answerIndex] = {
+            options: currentAnswer || [],
+            isSubmitted: true,
+            submittedDate: new Date().toISOString()
+        };
+    } else {
+        // 已经是对象格式，更新提交状态和日期
+        window.userAnswers[answerIndex].isSubmitted = true;
+        window.userAnswers[answerIndex].submittedDate = new Date().toISOString();
+    }
 };
 
 // 提交答案
@@ -226,21 +284,8 @@ window.submitAnswer = function() {
         }
     } else {
         // 非考试模式的正常处理
-        // 确保用户答案是一个对象，包含选项和提交信息
-        const currentAnswer = window.userAnswers[window.currentQuestionIndex];
-        
-        // 如果当前答案不是对象格式，转换为对象格式
-        if (!currentAnswer || typeof currentAnswer !== 'object' || Array.isArray(currentAnswer)) {
-            window.userAnswers[window.currentQuestionIndex] = {
-                options: currentAnswer || [],
-                isSubmitted: true,
-                submittedDate: new Date().toISOString()
-            };
-        } else {
-            // 已经是对象格式，更新提交状态和日期
-            window.userAnswers[window.currentQuestionIndex].isSubmitted = true;
-            window.userAnswers[window.currentQuestionIndex].submittedDate = new Date().toISOString();
-        }
+        // 使用统一的答案格式处理函数
+        window.normalizeUserAnswer(window.currentQuestionIndex);
 
         // 更新统计
         updateStatsDisplay(window.userAnswers, window.questions);
@@ -251,28 +296,47 @@ window.submitAnswer = function() {
         // 显示结果
         displayQuestion(window.currentQuestionIndex);
 
-        // 在练习模式下，提交答案后自动滚动到解析模块
-        if (!window.isStudyMode) {
-            setTimeout(() => {
-                const analysisSection = document.querySelector('.analysis-section');
-                if (analysisSection) {
-                    analysisSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            }, 100);
-        }
-
-        // 显示提示
+        // 检查答案是否正确
         const isCorrect = window.isCorrectAnswer(window.questions[window.currentQuestionIndex], window.userAnswers[window.currentQuestionIndex]);
+        
+        // 显示提示
         showToast(isCorrect ? '✅ 回答正确！' : '❌ 回答错误，请查看解析');
         
         // 保存状态
         window.saveStateToCookie();
 
-        // 自动下一题
-        if (window.autoNext && window.currentQuestionIndex < window.questions.length - 1) {
-            setTimeout(() => {
-                displayQuestion(window.currentQuestionIndex + 1);
-            }, 1500);
+        // 练习模式下的特殊处理
+        if (!window.isStudyMode) {
+            if (isCorrect) {
+                // 答案正确：直接跳转到下一题
+                if (window.currentQuestionIndex < window.questions.length - 1) {
+                    setTimeout(() => {
+                        displayQuestion(window.currentQuestionIndex + 1);
+                    }, 50);
+                }
+            } else {
+                // 答案错误：定位到解析模块
+                setTimeout(() => {
+                    const analysisSection = document.querySelector('.analysis-section');
+                    if (analysisSection) {
+                        analysisSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 100);
+                
+                // 如果启用了自动下一题，延迟一段时间后跳转
+                if (window.autoNext && window.currentQuestionIndex < window.questions.length - 1) {
+                    setTimeout(() => {
+                        displayQuestion(window.currentQuestionIndex + 1);
+                    }, 3000);
+                }
+            }
+        } else {
+            // 背题模式：保持原有逻辑
+            if (window.autoNext && window.currentQuestionIndex < window.questions.length - 1) {
+                setTimeout(() => {
+                    displayQuestion(window.currentQuestionIndex + 1);
+                }, 1500);
+            }
         }
     }
 };
@@ -285,21 +349,8 @@ window.submitSingleAnswer = function() {
         return;
     }
 
-    // 确保用户答案是一个对象，包含选项和提交信息
-    const currentAnswer = window.userAnswers[window.currentQuestionIndex];
-    
-    // 如果当前答案不是对象格式，转换为对象格式
-    if (!currentAnswer || typeof currentAnswer !== 'object' || Array.isArray(currentAnswer)) {
-        window.userAnswers[window.currentQuestionIndex] = {
-            options: currentAnswer || [],
-            isSubmitted: true,
-            submittedDate: new Date().toISOString()
-        };
-    } else {
-        // 已经是对象格式，更新提交状态和日期
-        window.userAnswers[window.currentQuestionIndex].isSubmitted = true;
-        window.userAnswers[window.currentQuestionIndex].submittedDate = new Date().toISOString();
-    }
+    // 使用统一的答案格式处理函数
+    window.normalizeUserAnswer(window.currentQuestionIndex);
 
     // 更新导航
     generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
@@ -312,6 +363,13 @@ window.submitSingleAnswer = function() {
     
     // 保存状态（考试模式下不保存到cookie，但这里仍然调用以保持一致性）
     window.saveStateToCookie();
+    
+    // 考试模式下提交答案后自动跳转到下一题
+    if (window.isExamMode && window.currentQuestionIndex < window.questions.length - 1) {
+        setTimeout(() => {
+            displayQuestion(window.currentQuestionIndex + 1);
+        }, 400);
+    }
 };
 
 // 切换模式
@@ -373,9 +431,6 @@ window.changeMode = function() {
     // 更新模式显示
     document.getElementById('currentModeDisplay').textContent = window.isStudyMode ? '当前模式: 📖 背题模式' : '当前模式: ✏️ 练习模式';
     
-    // 保存模式切换状态，但保持当前题目索引不变
-    window.saveStateToCookie();
-    
     // 更新统计信息
     updateStatsDisplay(window.userAnswers, window.questions);
     
@@ -384,7 +439,7 @@ window.changeMode = function() {
         generateQuestionNav(window.questions, window.userAnswers, window.isStudyMode, document.getElementById('questionGrid'));
     }
     
-    // 保存状态
+    // 保存状态（只调用一次）
     window.saveStateToCookie();
 
     // 重新显示当前题目
@@ -790,7 +845,7 @@ window.showToast = function(message) {
 
     setTimeout(() => {
         toast.classList.remove('show');
-    }, 3000);
+    }, 500);
 };
 
 // 重置练习状态
@@ -917,11 +972,19 @@ document.addEventListener('DOMContentLoaded', function () {
                             isSubmitted: savedAnswer.isSubmitted || false,
                             submittedDate: savedAnswer.submittedDate
                         };
+                    } else if (savedAnswer && typeof savedAnswer === 'object' && 'isSubmitted' in savedAnswer) {
+                        // 兼容格式：包含isSubmitted但没有options
+                        window.userAnswers[index] = {
+                            options: savedAnswer || [],
+                            isSubmitted: savedAnswer.isSubmitted || false,
+                            submittedDate: savedAnswer.submittedDate
+                        };
                     } else {
                         // 旧格式：直接是数组，转换为新格式
                         window.userAnswers[index] = {
                             options: JSON.parse(JSON.stringify(savedAnswer)) || [],
-                            isSubmitted: false
+                            isSubmitted: false,
+                            submittedDate: null
                         };
                     }
                 });

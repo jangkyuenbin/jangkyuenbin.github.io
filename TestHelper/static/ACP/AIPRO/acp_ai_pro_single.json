@@ -7604,8 +7604,8 @@
   {
     "id": "182",
     "question": {
-      "enus": "AutoLearning是一个自动机器学习平台， 下列选项中，哪一项不属于Autol earning支持的操作?",
-      "zhcn": "AutoLearning是一个自动机器学习平台， 下列选项中，哪一项不属于Autol earning支持的操作?"
+      "enus": "AutoLearning是一个自动机器学习平台， 下列选项中，哪一项不属于AutoLearning支持的操作?",
+      "zhcn": "AutoLearning是一个自动机器学习平台， 下列选项中，哪一项不属于AutoLearning支持的操作?"
     },
     "option": [
       {
@@ -11930,14 +11930,14 @@
   {
     "id": "285",
     "question": {
-      "enus": "下列关于GMM-HMM的说法错误的是？",
-      "zhcn": "下列关于GMM-HMM的说法错误的是？"
+      "enus": "下列关于GMM-HMM的说法**错误**的是？",
+      "zhcn": "下列关于GMM-HMM的说法**错误**的是？"
     },
     "option": [
       {
         "option_text": {
-          "enus": "输入是特征向量，输出是因素。",
-          "zhcn": "输入是特征向量，输出是因素。"
+          "enus": "输入是特征向量，输出是音素。",
+          "zhcn": "输入是特征向量，输出是音素。"
         },
         "option_flag": false
       },
@@ -12020,29 +12020,29 @@
     "option": [
       {
         "option_text": {
-          "enus": "straight-vocoder",
-          "zhcn": "straight-vocoder"
+          "enus": "STRAIGHT-Vocoder",
+          "zhcn": "STRAIGHT-Vocoder"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "world",
-          "zhcn": "world"
+          "enus": "WORLD",
+          "zhcn": "WORLD"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "wavenet",
-          "zhcn": "wavenet"
+          "enus": "WaveNet",
+          "zhcn": "WaveNet"
         },
         "option_flag": true
       },
       {
         "option_text": {
-          "enus": "speechnet",
-          "zhcn": "speechnet"
+          "enus": "SpeechNet",
+          "zhcn": "SpeechNet"
         },
         "option_flag": false
       }
@@ -12056,8 +12056,8 @@
   {
     "id": "288",
     "question": {
-      "enus": "下列不是tactron2使用的网络结构是？",
-      "zhcn": "下列不是tactron2使用的网络结构是？"
+      "enus": "下列不是Tacotron 2 使用的网络结构是？",
+      "zhcn": "下列不是Tacotron 2 使用的网络结构是？"
     },
     "option": [
       {
@@ -12069,8 +12069,8 @@
       },
       {
         "option_text": {
-          "enus": "Convlution",
-          "zhcn": "Convlution"
+          "enus": "Convolution",
+          "zhcn": "Convolution"
         },
         "option_flag": false
       },
@@ -12182,8 +12182,8 @@
   {
     "id": "291",
     "question": {
-      "enus": "下列不属于fastspeech的结构的是？",
-      "zhcn": "下列不属于fastspeech的结构的是？"
+      "enus": "下列不属于FastSpeech的结构的是？",
+      "zhcn": "下列不属于FastSpeech的结构的是？"
     },
     "option": [
       {
@@ -12202,8 +12202,8 @@
       },
       {
         "option_text": {
-          "enus": "lstm",
-          "zhcn": "lstm"
+          "enus": "LSTM",
+          "zhcn": "LSTM"
         },
         "option_flag": true
       },
@@ -12217,7 +12217,7 @@
     ],
     "analysis": {
       "enus": "FastSpeech整个结构包含Feed-Forward Transformer,feed-forward transformer block,The length regulator,the duration predictor",
-      "zhcn": "我们先回顾一下 FastSpeech 模型的结构特点。  \n\nFastSpeech 是 2019 年提出的非自回归 TTS 模型，主要模块包括：  \n\n1. **Encoder**（基于 Transformer 或 FFT block）  \n2. **Length Regulator**（通过 duration predictor 对音素进行扩展，对齐 mel-spectrogram 长度）  \n3. **Decoder**（同样基于 FFT block）  \n4. **Duration Predictor**（预测每个音素的帧数）  \n\n其中 **Feed-Forward Transformer (FFT)** 是它的主要结构块（自注意力 + 前馈网络），而 **LSTM** 并不是 FastSpeech 的主要模块，它是传统 TTS 或 Tacotron 等模型常用的结构。  \n\n所以，题目问“不属于 FastSpeech 的结构”，选项分析：  \n\n- [A] Feed-Forward Transformer → 属于  \n- [B] Length Regulator → 属于  \n- [C] LSTM → 不属于  \n- [D] Duration Predictor → 属于  \n\n**答案：[C] lstm** ✅"
+      "zhcn": "我们先回顾一下 FastSpeech 模型的结构特点。  \n\nFastSpeech 是 2019 年提出的非自回归 TTS 模型，主要模块包括：  \n\n1. **Encoder**（基于 Transformer 或 FFT block）  \n2. **Length Regulator**（通过 duration predictor 对音素进行扩展，对齐 mel-spectrogram 长度）  \n3. **Decoder**（同样基于 FFT block）  \n4. **Duration Predictor**（预测每个音素的帧数）  \n\n其中 **Feed-Forward Transformer (FFT)** 是它的主要结构块（自注意力 + 前馈网络），而 **LSTM** 并不是 FastSpeech 的主要模块，它是传统 TTS 或 Tacotron 等模型常用的结构。  \n\n所以，题目问“不属于 FastSpeech 的结构”，选项分析：  \n\n- [A] Feed-Forward Transformer → 属于  \n- [B] Length Regulator → 属于  \n- [C] LSTM → 不属于  \n- [D] Duration Predictor → 属于  \n\n**答案：[C] LSTM** ✅"
     },
     "answer": "C"
   },
@@ -14702,8 +14702,8 @@
   {
     "id": "351",
     "question": {
-      "enus": "在PAI-Studio可视化建模中，关于相关系数矩阵参数配置PAI命令：PAI -name corrcoef    -project algo_public    -DinputTableName=maple_test_corrcoef_basic12x10_input    -DoutputTableName=maple_test_corrcoef_basic12x10_output    -DcoreNum=1    -DmemSizePerCore=110;，参数selectedColNames描述正确的是（）",
-      "zhcn": "在PAI-Studio可视化建模中，关于相关系数矩阵参数配置PAI命令：PAI -name corrcoef    -project algo_public    -DinputTableName=maple_test_corrcoef_basic12x10_input    -DoutputTableName=maple_test_corrcoef_basic12x10_output    -DcoreNum=1    -DmemSizePerCore=110;，参数selectedColNames描述正确的是（）"
+      "enus": "在PAI-Studio可视化建模中，关于相关系数矩阵参数配置PAI命令：\n```bash\nPAI -name corrcoef \\\n    -project algo_public \\\n    -DinputTableName=maple_test_corrcoef_basic12x10_input \\\n    -DoutputTableName=maple_test_corrcoef_basic12x10_output \\\n    -DcoreNum=1 \\\n    -DmemSizePerCore=110;\n```\n参数selectedColNames描述正确的是（）",
+      "zhcn": "在PAI-Studio可视化建模中，关于相关系数矩阵参数配置PAI命令：\n```bash\nPAI -name corrcoef \\\n    -project algo_public \\\n    -DinputTableName=maple_test_corrcoef_basic12x10_input \\\n    -DoutputTableName=maple_test_corrcoef_basic12x10_output \\\n    -DcoreNum=1 \\\n    -DmemSizePerCore=110;\n```\n参数selectedColNames描述正确的是（）"
     },
     "option": [
       {
@@ -21338,14 +21338,14 @@
   {
     "id": "509",
     "question": {
-      "enus": "下列关于朴素⻉叶斯的描述中,描述错误的是?",
-      "zhcn": "下列关于朴素⻉叶斯的描述中,描述错误的是?"
+      "enus": "下列关于朴素贝叶斯的描述中,描述错误的是?",
+      "zhcn": "下列关于朴素贝叶斯的描述中,描述错误的是?"
     },
     "option": [
       {
         "option_text": {
-          "enus": "朴索⻉叶斯属于⽣成学习",
-          "zhcn": "朴索⻉叶斯属于⽣成学习"
+          "enus": "朴索贝叶斯属于生成学习",
+          "zhcn": "朴索贝叶斯属于生成学习"
         },
         "option_flag": false
       },
@@ -21365,8 +21365,8 @@
       },
       {
         "option_text": {
-          "enus": "朴表⻉叶斯假设样本的特征之中彼此独立,没有相关关系",
-          "zhcn": "朴表⻉叶斯假设样本的特征之中彼此独立,没有相关关系"
+          "enus": "朴表贝叶斯假设样本的特征之中彼此独立,没有相关关系",
+          "zhcn": "朴表贝叶斯假设样本的特征之中彼此独立,没有相关关系"
         },
         "option_flag": false
       }
@@ -21386,8 +21386,8 @@
     "option": [
       {
         "option_text": {
-          "enus": "⽀持在线标注、自动模型训练、超参优化及模型评 估",
-          "zhcn": "⽀持在线标注、自动模型训练、超参优化及模型评 估"
+          "enus": "⽀持在线标注、自动模型训练、超参优化及模型评估",
+          "zhcn": "⽀持在线标注、自动模型训练、超参优化及模型评估"
         },
         "option_flag": true
       },
@@ -21470,15 +21470,15 @@
     "option": [
       {
         "option_text": {
-          "enus": "防⽌梯度消失",
-          "zhcn": "防⽌梯度消失"
+          "enus": "防止梯度消失",
+          "zhcn": "防止梯度消失"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "防⽌梯度爆炸",
-          "zhcn": "防⽌梯度爆炸"
+          "enus": "防止梯度爆炸",
+          "zhcn": "防止梯度爆炸"
         },
         "option_flag": false
       },
@@ -22149,15 +22149,15 @@
       },
       {
         "option_text": {
-          "enus": "拆分是对数据进行对半拆分，用于⽣成训练和测试集",
-          "zhcn": "拆分是对数据进行对半拆分，用于⽣成训练和测试集"
+          "enus": "拆分是对数据进行对半拆分，用于生成训练和测试集",
+          "zhcn": "拆分是对数据进行对半拆分，用于生成训练和测试集"
         },
         "option_flag": false
       },
       {
         "option_text": {
-          "enus": "拆分是对数据进行随机拆分，用于⽣成训练和测试集",
-          "zhcn": "拆分是对数据进行随机拆分，用于⽣成训练和测试集"
+          "enus": "拆分是对数据进行随机拆分，用于生成训练和测试集",
+          "zhcn": "拆分是对数据进行随机拆分，用于生成训练和测试集"
         },
         "option_flag": true
       },
@@ -22766,8 +22766,8 @@
   {
     "id": "543",
     "question": {
-      "enus": "通过带有标签的数据⽣成一个函数(模型),将输⼊映 射到合适的输出,例如分类等。该过程属于哪类学习方 法?",
-      "zhcn": "通过带有标签的数据⽣成一个函数(模型),将输⼊映 射到合适的输出,例如分类等。该过程属于哪类学习方 法?"
+      "enus": "通过带有标签的数据生成一个函数(模型),将输⼊映 射到合适的输出,例如分类等。该过程属于哪类学习方 法?",
+      "zhcn": "通过带有标签的数据生成一个函数(模型),将输⼊映 射到合适的输出,例如分类等。该过程属于哪类学习方 法?"
     },
     "option": [
       {
@@ -23409,8 +23409,8 @@
       },
       {
         "option_text": {
-          "enus": "自动⽣成训练数据",
-          "zhcn": "自动⽣成训练数据"
+          "enus": "自动生成训练数据",
+          "zhcn": "自动生成训练数据"
         },
         "option_flag": true
       },
@@ -23528,8 +23528,8 @@
     "option": [
       {
         "option_text": {
-          "enus": "self-attention-和卷积来并行⽣成mel-spec但是mel-spec的长度远远长于输⼊的音素序列的长度",
-          "zhcn": "self-attention-和卷积来并行⽣成mel-spec但是mel-spec的长度远远长于输⼊的音素序列的长度"
+          "enus": "self-attention-和卷积来并行生成mel-spec但是mel-spec的长度远远长于输⼊的音素序列的长度",
+          "zhcn": "self-attention-和卷积来并行生成mel-spec但是mel-spec的长度远远长于输⼊的音素序列的长度"
         },
         "option_flag": true
       },
@@ -23969,8 +23969,8 @@
       },
       {
         "option_text": {
-          "enus": "语音增强是抑制、降低噪声⼲扰的语音",
-          "zhcn": "语音增强是抑制、降低噪声⼲扰的语音"
+          "enus": "语音增强是抑制、降低噪声干扰的语音",
+          "zhcn": "语音增强是抑制、降低噪声干扰的语音"
         },
         "option_flag": false
       }

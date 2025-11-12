@@ -32,6 +32,15 @@ export function getCookie(name) {
                 // 检查是否是有效的JSON字符串
                 if (cookieValue === "[object Object]" || cookieValue === "undefined" || cookieValue === "null") {
                     console.warn(`Cookie "${name}" 包含无效值: ${cookieValue}`);
+                    // 清理损坏的Cookie
+                    deleteCookie(name);
+                    return null;
+                }
+                
+                // 检查空值或无效字符串
+                if (!cookieValue || cookieValue.trim() === '') {
+                    console.warn(`Cookie "${name}" 为空值`);
+                    deleteCookie(name);
                     return null;
                 }
                 
@@ -46,15 +55,24 @@ export function getCookie(name) {
                     
                     if (!hasExpectedKey && Object.keys(parsedValue).length === 1 && 'isTrusted' in parsedValue) {
                         console.warn(`Cookie "${name}" 包含无效的事件对象属性，将清理此Cookie`);
-                        // 清理损坏的Cookie
+                        deleteCookie(name);
+                        return null;
+                    }
+                    
+                    // 额外的验证：检查userAnswers是否为有效对象
+                    if (parsedValue.userAnswers && typeof parsedValue.userAnswers !== 'object') {
+                        console.warn(`Cookie "${name}" 包含无效的userAnswers格式，将清理此Cookie`);
                         deleteCookie(name);
                         return null;
                     }
                 }
                 
+                console.log(`🔍 Cookie "${name}" 解析成功`);
                 return parsedValue;
             } catch (e) {
                 console.warn(`解析Cookie "${name}" 失败:`, e);
+                // 清理损坏的Cookie
+                deleteCookie(name);
                 return null;
             }
         }
