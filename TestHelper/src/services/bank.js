@@ -13,6 +13,8 @@ export function getBankName(bankName) {
         aws_mls_c01_all_doubao: 'AWS-MLS(C01) DouBao',
         aws_mls_c01_all_deepseek: 'AWS-MLS(C01) DeepSeek',
         acp_ai_pro_single: 'ACP 人工智能高级(单选题)',
+        acp_ai_pro_numbers: 'ACP 人工智能高级(数字)',
+        acp_ai_pro_errors: 'ACP 人工智能高级(错题集)',
         acp_ai_pro_single_example: 'ACP 人工智能高级(单选题) Example',
         acp_ai_pro_multi: 'ACP 人工智能高级(多选题)'
     };
