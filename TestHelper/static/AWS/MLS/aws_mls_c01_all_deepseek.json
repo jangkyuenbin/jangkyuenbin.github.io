@@ -506,8 +506,8 @@
   {
     "id": "13",
     "question": {
-      "enus": "The displayed graph is from a forecasting model for testing a time series. Considering the graph only, which conclusion should a Machine Learning Specialist make about the behavior of the model? ",
-      "zhcn": "根据图表所示，该图像源自用于时间序列测试的预测模型。仅从图像表现判断，机器学习专家应如何评价该模型的行为特征？"
+      "enus": "The displayed graph is from a forecasting model for testing a time series.\n ![](./static/AWS/MLS/picture/13_00.png) \n\n Considering the graph only, which conclusion should a Machine Learning Specialist make about the behavior of the model? ",
+      "zhcn": "根据图表所示，该图像源自用于时间序列测试的预测模型。\n ![](./static/AWS/MLS/picture/13_00.png) \n\n 仅从图像表现判断，机器学习专家应如何评价该模型的行为特征？"
     },
     "option": [
       {
